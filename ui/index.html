@@ -75,7 +75,7 @@
           <!-- FRONT FACE -->
           <div class="card-face card-front">
             <div class="card-top">
-              <div class="badge-row">
+              <div class="badge-row" id="badgeRow">
                 <span class="badge badge-medium" id="badgeDifficulty">Medium</span>
                 <span class="badge badge-pattern" id="badgePattern">Two Pointers</span>
                 <span class="badge badge-company" id="badgeCompanies">Google, Meta</span>
@@ -122,6 +122,17 @@ unordered_map<int, int> seen;
               <div class="pitfall-box" id="backPitfall">
                 <span>⚠️</span>
                 <span><strong>Pitfall:</strong> Cannot use same index twice. Check map before inserting!</span>
+              </div>
+
+              <!-- Live Local C++ Test Runner -->
+              <div style="display: flex; flex-direction: column; gap: 8px; margin-top: 4px;">
+                <div style="display: flex; justify-content: space-between; align-items: center;">
+                  <button id="runCppBtn" style="background: rgba(16, 185, 129, 0.2); border: 1px solid rgba(16, 185, 129, 0.4); color: #34d399; padding: 6px 14px; border-radius: var(--radius-sm); font-size: 12px; font-weight: 700; cursor: pointer; display: flex; align-items: center; gap: 6px;">
+                    ▶ Run C++ Tests on Mac
+                  </button>
+                  <span id="runStatus" style="font-size: 11px; color: var(--text-dim); font-family: var(--font-mono);"></span>
+                </div>
+                <pre id="runOutput" style="display: none; background: #050811; border: 1px solid var(--border-subtle); border-radius: var(--radius-sm); padding: 8px 12px; font-family: var(--font-mono); font-size: 11px; color: #a5f3fc; max-height: 80px; overflow-y: auto; white-space: pre-wrap;"></pre>
               </div>
             </div>
 

@@ -1,31 +1,54 @@
-// Initial High-Yield MNC Problem Flashcards Dataset
+// Exhaustive MNC Problem Archetypes Dataset
 const initialProblems = [
   {
     id: 1,
-    title: "Two Sum",
+    title: "LC 1: Two Sum",
     difficulty: "Easy",
     companies: ["Google", "Meta", "Amazon", "Apple"],
     pattern: "Hash Map / Complement",
     topic: "Arrays & Hashing",
     constraints: "N = 10^5, nums[i] = -10^9 to 10^9, target = -10^9 to 10^9",
     teaser: "Find two distinct indices in an unsorted array that add up to target.",
-    intuition: "Store seen numbers in an unordered_map {value -> index}. For each element x, check if (target - x) was already seen in O(1) time.",
+    intuition: "Store seen numbers in an unordered_map {value -> index}. For each element x, check if (target - x) was already seen in O(1) time using iterator.",
     timeComplexity: "O(N)",
     spaceComplexity: "O(N)",
-    pitfall: "Cannot use the same element twice (e.g., [3, 3] with target 6). Check map BEFORE inserting current element.",
-    code: `unordered_map<int, int> seen;
+    pitfall: "Cannot use the same element twice (e.g., [3, 3] with target 6). Check map BEFORE inserting current element. Use iterator to avoid double hashing.",
+    code: `unordered_map<int, int> mpp;
 for (int i = 0; i < nums.size(); ++i) {
     int comp = target - nums[i];
-    if (seen.count(comp)) return {seen[comp], i};
-    seen[nums[i]] = i;
+    auto it = mpp.find(comp);
+    if (it != mpp.end()) return {it->second, i};
+    mpp[nums[i]] = i;
 }
 return {};`,
-    confidence: "new",
+    confidence: "mastered",
+    nextReviewDays: 10
+  },
+  {
+    id: 121,
+    title: "LC 121: Best Time to Buy and Sell Stock",
+    difficulty: "Easy",
+    companies: ["Google", "Meta", "Amazon", "Microsoft", "Apple"],
+    pattern: "Running Minimum / Kadane's",
+    topic: "Arrays & Hashing",
+    constraints: "N = 10^5, prices[i] = 0 to 10^4",
+    teaser: "Maximize profit by choosing a single day to buy and a future day to sell.",
+    intuition: "Maintain the minimum buying price seen so far (minPrice). At each day i, calculate current profit = prices[i] - minPrice, and update maxProfit.",
+    timeComplexity: "O(N)",
+    spaceComplexity: "O(1)",
+    pitfall: "You cannot sell before you buy! Must process strictly left-to-right maintaining past minimum.",
+    code: `int minPrice = INT_MAX, maxProfit = 0;
+for (int price : prices) {
+    minPrice = min(minPrice, price);
+    maxProfit = max(maxProfit, price - minPrice);
+}
+return maxProfit;`,
+    confidence: "again",
     nextReviewDays: 0
   },
   {
-    id: 2,
-    title: "3Sum",
+    id: 15,
+    title: "LC 15: 3Sum",
     difficulty: "Medium",
     companies: ["Meta", "Amazon", "Google", "Microsoft"],
     pattern: "Two Pointers (Sort First)",
@@ -51,12 +74,12 @@ for (int i = 0; i < n - 2; ++i) {
         else r--;
     }
 }`,
-    confidence: "new",
+    confidence: "again",
     nextReviewDays: 0
   },
   {
     id: 3,
-    title: "Longest Substring Without Repeating Characters",
+    title: "LC 3: Longest Substring Without Repeating Characters",
     difficulty: "Medium",
     companies: ["Amazon", "Google", "Meta", "Bloomberg"],
     pattern: "Dynamic Sliding Window",
@@ -74,15 +97,15 @@ for (int r = 0; r < s.size(); ++r) {
     last[s[r]] = r;
     maxLen = max(maxLen, r - l + 1);
 }`,
-    confidence: "new",
+    confidence: "again",
     nextReviewDays: 0
   },
   {
-    id: 4,
-    title: "Trapping Rain Water",
+    id: 42,
+    title: "LC 42: Trapping Rain Water",
     difficulty: "Hard",
     companies: ["Google", "Amazon", "Meta", "Goldman Sachs"],
-    pattern: "Two Pointers or Monotonic Stack",
+    pattern: "Two Pointers / Invariant Boundaries",
     topic: "Two Pointers",
     constraints: "N = 2 * 10^4, height[i] >= 0",
     teaser: "Calculate how much water an elevation map can trap after raining.",
@@ -102,12 +125,12 @@ while (l < r) {
         r--;
     }
 }`,
-    confidence: "new",
+    confidence: "again",
     nextReviewDays: 0
   },
   {
-    id: 5,
-    title: "Daily Temperatures (Next Greater Element)",
+    id: 739,
+    title: "LC 739: Daily Temperatures",
     difficulty: "Medium",
     companies: ["Meta", "Amazon", "Google"],
     pattern: "Monotonic Decreasing Stack",
@@ -127,12 +150,12 @@ for (int i = 0; i < n; ++i) {
     }
     st.push(i);
 }`,
-    confidence: "new",
+    confidence: "again",
     nextReviewDays: 0
   },
   {
-    id: 6,
-    title: "Koko Eating Bananas",
+    id: 875,
+    title: "LC 875: Koko Eating Bananas",
     difficulty: "Medium",
     companies: ["Google", "Uber", "Amazon", "Airbnb"],
     pattern: "Binary Search on Answer (Predicate)",
@@ -154,12 +177,34 @@ while (low <= high) {
     if (canEat(mid)) { ans = mid; high = mid - 1; }
     else low = mid + 1;
 }`,
-    confidence: "new",
+    confidence: "again",
     nextReviewDays: 0
   },
   {
-    id: 7,
-    title: "Course Schedule (Cycle in Directed Graph)",
+    id: 200,
+    title: "LC 200: Number of Islands",
+    difficulty: "Medium",
+    companies: ["Amazon", "Google", "Microsoft", "Bloomberg"],
+    pattern: "Graph DFS / BFS / Flood Fill",
+    topic: "Graphs",
+    constraints: "m, n <= 300, grid[i][j] is '0' or '1'",
+    teaser: "Count the number of connected components of '1's (land) surrounded by '0's (water).",
+    intuition: "Iterate over all cells. When grid[r][c] == '1', increment island count and trigger DFS/BFS to sink the entire island (flip '1' to '0' in-place).",
+    timeComplexity: "O(M * N)",
+    spaceComplexity: "O(M * N) recursion stack worst-case",
+    pitfall: "Check grid boundaries (r >= 0 && r < m && c >= 0 && c < n) BEFORE accessing grid[r][c]. Sink visited land to avoid infinite loop.",
+    code: `void dfs(vector<vector<char>>& grid, int r, int c) {
+    if (r < 0 || r >= grid.size() || c < 0 || c >= grid[0].size() || grid[r][c] != '1') return;
+    grid[r][c] = '0'; // Sink island
+    dfs(grid, r+1, c); dfs(grid, r-1, c);
+    dfs(grid, r, c+1); dfs(grid, r, c-1);
+}`,
+    confidence: "again",
+    nextReviewDays: 0
+  },
+  {
+    id: 207,
+    title: "LC 207: Course Schedule",
     difficulty: "Medium",
     companies: ["Google", "Amazon", "Microsoft", "Uber"],
     pattern: "Topological Sort / Kahn's Algorithm",
@@ -184,12 +229,12 @@ while (!q.empty()) {
     for (int v : adj[u]) if (--inDegree[v] == 0) q.push(v);
 }
 return count == n;`,
-    confidence: "new",
+    confidence: "again",
     nextReviewDays: 0
   },
   {
-    id: 8,
-    title: "Coin Change (Min Coins for Amount)",
+    id: 322,
+    title: "LC 322: Coin Change",
     difficulty: "Medium",
     companies: ["Amazon", "Bloomberg", "Google", "Apple"],
     pattern: "Unbounded Knapsack DP (1D)",
@@ -210,7 +255,7 @@ for (int a = 1; a <= amount; ++a) {
     }
 }
 return dp[amount] > amount ? -1 : dp[amount];`,
-    confidence: "new",
+    confidence: "again",
     nextReviewDays: 0
   }
 ];
@@ -223,23 +268,50 @@ let currentFilter = 'all';
 let currentCategory = 'all';
 let searchQuery = '';
 
-// Load from LocalStorage or initialize
+// Load from LocalStorage or initialize with merge
 function initData() {
   const saved = localStorage.getItem('nithin_dsa_problems');
   if (saved) {
     try {
-      problems = JSON.parse(saved);
+      const parsed = JSON.parse(saved);
+      const stateMap = new Map(parsed.map(p => [p.id, p]));
+      problems = initialProblems.map(p => {
+        if (stateMap.has(p.id)) {
+          const s = stateMap.get(p.id);
+          return { ...p, confidence: s.confidence || p.confidence, nextReviewDays: s.nextReviewDays ?? p.nextReviewDays };
+        }
+        return p;
+      });
     } catch (e) {
       problems = initialProblems;
     }
   } else {
     problems = initialProblems;
-    saveData();
   }
+  saveData();
 }
 
 function saveData() {
   localStorage.setItem('nithin_dsa_problems', JSON.stringify(problems));
+}
+
+// Reset all filters to show everything
+function resetAllFilters() {
+  currentFilter = 'all';
+  currentCategory = 'all';
+  searchQuery = '';
+  searchInput.value = '';
+
+  document.querySelectorAll('.filter-btn').forEach(b => b.classList.remove('active'));
+  const allFilterBtn = document.querySelector('.filter-btn[data-filter="all"]');
+  if (allFilterBtn) allFilterBtn.classList.add('active');
+
+  document.querySelectorAll('.tag-chip').forEach(c => c.classList.remove('active'));
+  const allTagChip = document.querySelector('.tag-chip[data-topic="all"]');
+  if (allTagChip) allTagChip.classList.add('active');
+
+  currentIndex = 0;
+  renderActiveCard();
 }
 
 // Get filtered problem list
@@ -271,6 +343,7 @@ function getFilteredProblems() {
 // DOM Elements
 const flipper = document.getElementById('flashcardFlipper');
 const cardCounter = document.getElementById('cardCounter');
+const badgeRow = document.getElementById('badgeRow');
 const badgeDifficulty = document.getElementById('badgeDifficulty');
 const badgePattern = document.getElementById('badgePattern');
 const badgeCompanies = document.getElementById('badgeCompanies');
@@ -298,26 +371,47 @@ const statDue = document.getElementById('statDue');
 // Render active card
 function renderActiveCard() {
   const filtered = getFilteredProblems();
-  if (filtered.length === 0) {
-    problemTitle.innerText = "No problems match your filter";
-    problemTeaser.innerText = "Try resetting filters or search query.";
-    constraintsText.innerText = "";
-    cardCounter.innerText = "0 / 0";
-    prevBtn.disabled = true;
-    nextBtn.disabled = true;
-    return;
-  }
-
-  if (currentIndex >= filtered.length) currentIndex = 0;
-  if (currentIndex < 0) currentIndex = filtered.length - 1;
-
-  const p = filtered[currentIndex];
 
   // Unflip first if flipped
   if (isFlipped) {
     flipper.classList.remove('flipped');
     isFlipped = false;
   }
+
+  if (filtered.length === 0) {
+    // Empty state handling
+    badgeRow.style.display = 'none';
+    cardCounter.innerText = "0 / 0";
+    problemTitle.innerHTML = `<span style="color: var(--accent-amber);">No problems match this combination</span>`;
+    problemTeaser.innerHTML = `
+      <div style="margin-top: 10px; display: flex; flex-direction: column; align-items: center; gap: 14px;">
+        <span style="color: var(--text-muted); font-size: 14px;">
+          Filter: <strong>${currentFilter.toUpperCase()}</strong> | Topic: <strong>${currentCategory}</strong>
+        </span>
+        <button id="emptyResetBtn" style="background: linear-gradient(135deg, var(--accent-cyan), var(--accent-indigo)); color: white; border: none; padding: 10px 22px; border-radius: var(--radius-full); font-weight: 700; cursor: pointer; box-shadow: 0 4px 15px rgba(56, 189, 248, 0.4); font-size: 13px;">
+          ⚡ Reset Filters & Show All
+        </button>
+      </div>
+    `;
+    constraintsText.innerText = "";
+    prevBtn.disabled = true;
+    nextBtn.disabled = true;
+
+    const btn = document.getElementById('emptyResetBtn');
+    if (btn) btn.addEventListener('click', resetAllFilters);
+
+    updateStats();
+    renderGrid();
+    return;
+  }
+
+  // Restore badge visibility
+  badgeRow.style.display = 'flex';
+
+  if (currentIndex >= filtered.length) currentIndex = 0;
+  if (currentIndex < 0) currentIndex = filtered.length - 1;
+
+  const p = filtered[currentIndex];
 
   // Front Face
   cardCounter.innerText = `${currentIndex + 1} / ${filtered.length}`;
@@ -362,6 +456,8 @@ function updateStats() {
 
 // Flip Card
 function flipCard() {
+  const filtered = getFilteredProblems();
+  if (filtered.length === 0) return;
   isFlipped = !isFlipped;
   if (isFlipped) flipper.classList.add('flipped');
   else flipper.classList.remove('flipped');
@@ -401,7 +497,6 @@ function rateCard(confidenceLevel) {
     saveData();
   }
 
-  // Micro vibration / visual transition then move to next
   nextCard();
 }
 
@@ -471,12 +566,60 @@ document.querySelectorAll('.tag-chip').forEach(chip => {
   });
 });
 
-// Search input
-searchInput.addEventListener('input', (e) => {
-  searchQuery = e.target.value;
-  currentIndex = 0;
-  renderActiveCard();
-});
+// Live Local C++ Test Runner Listener
+const runCppBtn = document.getElementById('runCppBtn');
+const runStatus = document.getElementById('runStatus');
+const runOutput = document.getElementById('runOutput');
+
+if (runCppBtn) {
+  runCppBtn.addEventListener('click', async (e) => {
+    e.stopPropagation();
+    const filtered = getFilteredProblems();
+    if (filtered.length === 0) return;
+    const current = filtered[currentIndex];
+    
+    // Map default filepaths if missing
+    let targetPath = current.filepath;
+    if (!targetPath) {
+      if (current.id === 1) targetPath = "01_arrays_hashing/lc_0001_two_sum.cpp";
+      else if (current.id === 121) targetPath = "01_arrays_hashing/lc_0121_best_time_to_buy_and_sell_stock.cpp";
+      else {
+        runStatus.innerText = "File not created yet";
+        runStatus.style.color = "var(--accent-amber)";
+        runOutput.style.display = "block";
+        runOutput.innerText = "This problem starter file is coming up next!";
+        return;
+      }
+    }
+
+    runStatus.innerText = "Compiling & executing...";
+    runStatus.style.color = "var(--accent-amber)";
+    runOutput.style.display = "block";
+    runOutput.innerText = `Running clang++ -std=c++20 ${targetPath}...`;
+
+    try {
+      const res = await fetch('/api/run-code', {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify({ filepath: targetPath })
+      });
+      if (!res.ok) throw new Error("API call failed");
+      const data = await res.json();
+      if (data.success) {
+        runStatus.innerText = "PASSED (Exit 0)";
+        runStatus.style.color = "var(--accent-emerald)";
+      } else {
+        runStatus.innerText = "FAILED in " + data.stage;
+        runStatus.style.color = "var(--accent-rose)";
+      }
+      runOutput.innerText = data.output || "No output returned.";
+    } catch (err) {
+      runStatus.innerText = "Server not running";
+      runStatus.style.color = "var(--accent-rose)";
+      runOutput.innerText = "Start the FastAPI backend with: ./venv_ads/bin/python server.py\nThen click Run again!";
+    }
+  });
+}
 
 // Keyboard Navigation
 window.addEventListener('keydown', (e) => {
@@ -503,3 +646,4 @@ window.addEventListener('keydown', (e) => {
 // Boot app
 initData();
 renderActiveCard();
+

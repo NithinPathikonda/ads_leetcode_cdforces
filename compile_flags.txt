@@ -1,3 +1,5 @@
 -std=c++20
 -Wall
 -Wextra
+-Wno-unused-const-variable
+-Wno-unused-variable

@@ -9,7 +9,7 @@
 
 **A rigorous, zero-gap algorithmic problem-solving repository structured by patterns, optimal complexities, and MNC interview archetypes.**
 
-[Profile & Goals](PROFILE.md) • [Roadmap](#-27-topic-master-curriculum) • [Progress Tracker](TRACKER.md) • [90-Day Sprint](REVISION_AND_TIMELINE.md) • [Contests](contests/CONTEST_LOG.md) • [Skills Audit](SKILLS_AUDIT.md) • [Memory Maps](MEMORY_MAPS.md) • [CP Toolkit](cp_toolkit/)
+[⚡ AlgoDeck UI](ui/index.html) • [Profile & Goals](PROFILE.md) • [Roadmap](#-27-topic-master-curriculum) • [Progress Tracker](TRACKER.md) • [90-Day Sprint](REVISION_AND_TIMELINE.md) • [Contests](contests/CONTEST_LOG.md) • [Memory Maps](MEMORY_MAPS.md) • [CP Toolkit](cp_toolkit/)
 
 </div>
 

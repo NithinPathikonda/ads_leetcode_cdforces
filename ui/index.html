@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>AlgoDeck — Nithin's MNC & Candidate Master Flashcards</title>
+  <meta name="description" content="Personalized algorithmic flashcards and active recall engine for Tier-1 MNC interviews and Codeforces/LeetCode mastery.">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- Header -->
+  <header>
+    <div class="brand-wrapper">
+      <div class="brand-icon">⚡</div>
+      <div>
+        <h1 class="brand-title">AlgoDeck</h1>
+        <div class="brand-subtitle">Nithin's MNC & Candidate Master Prep</div>
+      </div>
+    </div>
+
+    <div class="stats-bar">
+      <div class="stat-item">
+        <span class="stat-dot emerald"></span>
+        <span>Mastered: <strong id="statMastered">0</strong></span>
+      </div>
+      <div class="stat-item">
+        <span class="stat-dot amber"></span>
+        <span>Learning: <strong id="statLearning">0</strong></span>
+      </div>
+      <div class="stat-item">
+        <span class="stat-dot cyan"></span>
+        <span>Due for Review: <strong id="statDue">0</strong></span>
+      </div>
+    </div>
+  </header>
+
+  <!-- Main Content -->
+  <main>
+
+    <!-- Controls & Filters Strip -->
+    <section class="controls-container">
+      <div class="filter-row-top">
+        <div class="search-input-wrapper">
+          <span class="search-icon">🔍</span>
+          <input type="text" id="searchInput" placeholder="Search by problem, pattern, or company (e.g. Google, Sliding Window)...">
+        </div>
+
+        <div class="tab-group">
+          <button class="filter-btn active" data-filter="all">All Problems</button>
+          <button class="filter-btn" data-filter="due">Due Review</button>
+          <button class="filter-btn" data-filter="google">Google</button>
+          <button class="filter-btn" data-filter="meta">Meta</button>
+          <button class="filter-btn" data-filter="mastered">Mastered</button>
+        </div>
+      </div>
+
+      <!-- Category Filter Chips -->
+      <div class="filter-tags-scroll">
+        <button class="tag-chip active" data-topic="all">All Topics</button>
+        <button class="tag-chip" data-topic="Arrays & Hashing">01. Arrays & Hashing</button>
+        <button class="tag-chip" data-topic="Two Pointers">02. Two Pointers & Window</button>
+        <button class="tag-chip" data-topic="Binary Search">03. Binary Search</button>
+        <button class="tag-chip" data-topic="Stack & Monotonic Stack">04. Monotonic Stack</button>
+        <button class="tag-chip" data-topic="Graphs">11. Graphs & TopoSort</button>
+        <button class="tag-chip" data-topic="Dynamic Programming">14. Dynamic Programming</button>
+      </div>
+    </section>
+
+    <!-- Flashcard Arena -->
+    <section class="flashcard-arena">
+      <div class="card-perspective">
+        <div class="flashcard-flipper" id="flashcardFlipper">
+          
+          <!-- FRONT FACE -->
+          <div class="card-face card-front">
+            <div class="card-top">
+              <div class="badge-row">
+                <span class="badge badge-medium" id="badgeDifficulty">Medium</span>
+                <span class="badge badge-pattern" id="badgePattern">Two Pointers</span>
+                <span class="badge badge-company" id="badgeCompanies">Google, Meta</span>
+              </div>
+              <div class="card-counter" id="cardCounter">1 / 8</div>
+            </div>
+
+            <div class="card-content">
+              <h2 class="problem-title" id="problemTitle">Two Sum</h2>
+              <p class="problem-teaser" id="problemTeaser">Find two distinct indices in an unsorted array that add up to target.</p>
+              <div class="constraints-box" id="constraintsText">Constraints: N = 10^5, nums[i] = -10^9 to 10^9</div>
+            </div>
+
+            <div class="card-bottom">
+              <div class="flip-hint">
+                <span class="kbd">Space</span> or <span class="kbd">Click</span> to reveal pattern & solution
+              </div>
+              <div>⚡ MNC High Frequency</div>
+            </div>
+          </div>
+
+          <!-- BACK FACE -->
+          <div class="card-face card-back">
+            <div class="card-top">
+              <div class="solution-pattern-tag">
+                <span>💡</span> <span id="backPatternTitle">Hash Map / Complement</span>
+              </div>
+              <div class="complexity-pill-row">
+                <div class="comp-pill">Time: <span id="backTimeComp">O(N)</span></div>
+                <div class="comp-pill">Space: <span id="backSpaceComp">O(N)</span></div>
+              </div>
+            </div>
+
+            <div class="back-section">
+              <p style="font-size: 14px; color: var(--text-main); line-height: 1.5;" id="backIntuition">
+                Store seen numbers in an unordered_map. For each element x, check if target - x exists.
+              </p>
+              
+              <div class="code-snippet-box" id="backCode">
+unordered_map<int, int> seen;
+// C++ solution here
+              </div>
+
+              <div class="pitfall-box" id="backPitfall">
+                <span>⚠️</span>
+                <span><strong>Pitfall:</strong> Cannot use same index twice. Check map before inserting!</span>
+              </div>
+            </div>
+
+            <div class="card-bottom">
+              <div class="flip-hint">
+                <span class="kbd">Space</span> to flip back
+              </div>
+              <div style="color: var(--accent-emerald); font-weight: 600;">C++20 Optimal Solution</div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+
+      <!-- Action & Spaced Repetition Rating Toolbar -->
+      <div class="action-toolbar">
+        <button class="nav-btn" id="prevBtn" id="prevBtn">
+          <span>←</span> Previous
+        </button>
+
+        <div class="rating-group">
+          <button class="rate-btn again" id="rateAgain" title="Reset (Day 0)">
+            <span>🔴</span> Again <span class="kbd" style="margin-left: 4px;">1</span>
+          </button>
+          <button class="rate-btn hard" id="rateHard" title="Due in 3 days (R1)">
+            <span>🟡</span> Hard (+3d) <span class="kbd" style="margin-left: 4px;">2</span>
+          </button>
+          <button class="rate-btn good" id="rateGood" title="Mastered / Due in 10 days (R2)">
+            <span>🟢</span> Mastered (+10d) <span class="kbd" style="margin-left: 4px;">3</span>
+          </button>
+        </div>
+
+        <button class="nav-btn" id="nextBtn">
+          Next <span>→</span>
+        </button>
+      </div>
+    </section>
+
+    <!-- Problem Table & Grid Explorer -->
+    <section class="table-section">
+      <div class="section-header-row">
+        <h3 class="section-title">All Curated MNC Problem Archetypes</h3>
+        <span style="font-size: 13px; color: var(--text-dim);">Click any card to load into flashcard deck</span>
+      </div>
+      <div class="problem-grid-list" id="problemsGrid">
+        <!-- Rendered dynamically by app.js -->
+      </div>
+    </section>
+
+  </main>
+
+  <script src="app.js"></script>
+</body>
+</html>

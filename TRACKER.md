@@ -44,7 +44,7 @@
 
 | # | Problem Name | Topic / Pattern | Difficulty | Companies | Status | Solution Link | Key Takeaways & Edge Cases |
 |---|---|---|---|---|---|---|---|
-| 001 | *Upcoming: Problem 1* | Arrays / Two Pointers | Medium | Google, Meta, Amazon | ⏳ In Progress | - | - |
+| 001 | [Two Sum](https://leetcode.com/problems/two-sum/) | Hash Map / Complement | Easy/Foundation | Google, Meta, Amazon, Apple | ⏳ In Progress | [001_two_sum.cpp](01_arrays_hashing/001_two_sum.cpp) | Unsorted pair sum -> 1-pass hash map. Check complement before insert to handle duplicates. |
 
 ---
 

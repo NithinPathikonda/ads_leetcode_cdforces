@@ -40,7 +40,7 @@ public:
             }
             mpp[nums[i]] = i;
         }
-        return {};
+        return {-1,-1};
     }
 };
 

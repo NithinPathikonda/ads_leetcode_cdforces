@@ -9,7 +9,7 @@
 
 **A rigorous, zero-gap algorithmic problem-solving repository structured by patterns, optimal complexities, and MNC interview archetypes.**
 
-[Explore Roadmap](#-27-topic-master-curriculum) • [Progress Tracker](TRACKER.md) • [Memory Maps](MEMORY_MAPS.md) • [Interview Blueprint](#-5-step-interview-framework) • [C++ Setup](#-local-c-compilation)
+[Explore Roadmap](#-27-topic-master-curriculum) • [Progress Tracker](TRACKER.md) • [Memory Maps](MEMORY_MAPS.md) • [Error Log](learnings_and_error_logs/ERROR_LOG.md) • [Learnings](learnings_and_error_logs/CORE_LEARNINGS.md) • [C++ Setup](#-local-c-compilation)
 
 </div>
 

@@ -58,7 +58,7 @@ To prevent burnout and guarantee maximum retention, split your daily session int
 
 | # | Problem Name | Topic | Solved Date | R1 (+3 Days)<br>Mental Recall | R2 (+10 Days)<br>Cold Re-code | R3 (+30 Days)<br>Hard Variant | Confidence (🟢/🟡/🔴) |
 |---|---|---|:---:|:---:|:---:|:---:|:---:|
-| 001 | Two Sum | 01_arrays_hashing | *Day 1* | ⏳ Pending | ⏳ Pending | ⏳ Pending | 🟡 Need Speed |
+| 001 | [Two Sum](01_arrays_hashing/001_two_sum.cpp) | 01_arrays_hashing | Day 1 | 📅 Due Day 4 | ⏳ Day 11 | ⏳ Day 31 | 🟢 Solid (O(N)) |
 | 002 | Best Time to Buy and Sell Stock | 01_arrays_hashing | *Day 1* | ⏳ Pending | ⏳ Pending | ⏳ Pending | ⏳ Pending |
 | 003 | Contains Duplicate / Valid Anagram | 01_arrays_hashing | *Day 1* | ⏳ Pending | ⏳ Pending | ⏳ Pending | ⏳ Pending |
 

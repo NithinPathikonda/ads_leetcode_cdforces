@@ -1,0 +1,70 @@
+# 🗓️ 90-Day MNC Sprint Timeline & Spaced Repetition Engine
+
+> **Target**: Crack Tier-1 MNCs (Google, Meta, Microsoft, Amazon, Uber, Apple) in 90 Days.  
+> **Retention Strategy**: Automated R1 (Day +3) ➔ R2 (Day +10) ➔ R3 (Day +30) Spaced Repetition.
+
+---
+
+## ⏳ 90-Day (12-Week) Master Milestone Calendar
+
+```mermaid
+gantt
+    title 90-Day MNC Preparation Roadmap
+    dateFormat  YYYY-MM-DD
+    section Month 1: Foundation
+    Arrays, Two Pointers, Sliding Window :2026-10-01, 10d
+    Binary Search & Monotonic Stack     :10d
+    Linked Lists & Binary Trees / BST   :10d
+    section Month 2: Graphs & DP
+    Heaps, Intervals & Graphs (BFS/DFS) :10d
+    TopoSort, DSU, Shortest Paths (Dijkstra) :10d
+    Dynamic Programming (1D, 2D, Strings, Knapsack) :10d
+    section Month 3: Mastery & Mocks
+    Tries, Advanced DP (Trees/Bitmask), Strings (KMP) :10d
+    Company Tagged Drills (Google, Meta, Uber) :10d
+    Full Mock Interviews & Timed Assessments  :10d
+```
+
+### 📅 Phase Breakdown
+
+| Phase | Weeks | Core Focus Areas | Target Problems |
+| :--- | :--- | :--- | :---: |
+| **Phase 1: Linear & Hierarchical** | **Weeks 1–4** | Arrays, Sliding Window, Binary Search, Monotonic Stack, Linked Lists, Trees & BST | 60 |
+| **Phase 2: Optimization & Graphs** | **Weeks 5–8** | Heaps, Intervals, Graph Traversals, TopoSort, DSU, Dijkstra, Dynamic Programming (1D/2D/Strings/Knapsack) | 75 |
+| **Phase 3: Advanced & Company Tagged** | **Weeks 9–12** | Advanced DP, Tries, Advanced Strings (KMP), Segment Trees, Google/Meta Tagged, 45-min Timed Mock Interviews | 65 |
+| **Total** | **12 Weeks** | **Complete High-Yield MNC Problem Bank** | **200** |
+
+---
+
+## ⏰ The Daily 2.5-Hour High-Yield Routine
+
+To prevent burnout and guarantee maximum retention, split your daily session into 3 blocks:
+
+```
+┌────────────────────────────────────────────────────────────────────────┐
+│ 1. [20 Mins] Spaced Repetition (Review 2 previous problems from R-Queue)│
+├────────────────────────────────────────────────────────────────────────┤
+│ 2. [90 Mins] New Problem Solving (2 problems: Deep Dive + Clean C++20) │
+├────────────────────────────────────────────────────────────────────────┤
+│ 3. [20 Mins] Logging & Post-Mortem (Update TRACKER.md + ERROR_LOG.md)  │
+└────────────────────────────────────────────────────────────────────────┘
+```
+
+---
+
+## 🔁 Active Spaced Repetition Queue
+
+> **How to use**: When you solve a problem, log it below with today's date. Mark R1 (+3 days), R2 (+10 days), and R3 (+30 days).
+
+| # | Problem Name | Topic | Solved Date | R1 (+3 Days)<br>Mental Recall | R2 (+10 Days)<br>Cold Re-code | R3 (+30 Days)<br>Hard Variant | Confidence (🟢/🟡/🔴) |
+|---|---|---|:---:|:---:|:---:|:---:|:---:|
+| 001 | Two Sum | 01_arrays_hashing | *Day 1* | ⏳ Pending | ⏳ Pending | ⏳ Pending | 🟡 Need Speed |
+| 002 | Best Time to Buy and Sell Stock | 01_arrays_hashing | *Day 1* | ⏳ Pending | ⏳ Pending | ⏳ Pending | ⏳ Pending |
+| 003 | Contains Duplicate / Valid Anagram | 01_arrays_hashing | *Day 1* | ⏳ Pending | ⏳ Pending | ⏳ Pending | ⏳ Pending |
+
+---
+
+## 🎯 Weekly Revision Rules
+1. **Never skip R1**: If you can't recall the trigger clue in 5 minutes on Day 3, demote the problem back to Day 0.
+2. **Cold Re-coding on R2**: Do NOT look at your old solution. Open an empty `.cpp` file and code it with a 15-minute stopwatch.
+3. **If you fail any test case**: Immediately record the root cause in [`learnings_and_error_logs/ERROR_LOG.md`](learnings_and_error_logs/ERROR_LOG.md).

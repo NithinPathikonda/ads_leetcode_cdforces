@@ -17,6 +17,7 @@
 #include <unordered_map>
 #include <unordered_set>
 #include <chrono>
+#include <cstdint>
 
 using namespace std;
 
@@ -29,10 +30,10 @@ using vi = vector<int>;
 using vll = vector<ll>;
 
 // Constants
-constexpr ll INF64 = 1e18;
-constexpr int INF32 = 1e9;
-constexpr ll MOD = 1e9 + 7;       // Default CP modulo
-constexpr ll MOD_998 = 998244353; // NTT modulo
+[[maybe_unused]] constexpr ll INF64 = 1e18;
+[[maybe_unused]] constexpr int INF32 = 1e9;
+[[maybe_unused]] constexpr ll MOD = 1e9 + 7;       // Default CP modulo
+[[maybe_unused]] constexpr ll MOD_998 = 998244353; // NTT modulo
 
 // Anti-Hash Collision (Prevents O(N^2) hacks on unordered_map in Codeforces)
 struct custom_hash {

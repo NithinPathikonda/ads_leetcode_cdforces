@@ -327,13 +327,15 @@ function getFilteredProblems() {
     // Category filter
     if (currentCategory !== 'all' && p.topic !== currentCategory) return false;
 
-    // Search query
+    // Search query (fuzzy match title, pattern, company, topic, ID)
     if (searchQuery.trim() !== '') {
-      const q = searchQuery.toLowerCase();
+      const q = searchQuery.toLowerCase().trim();
       const matchTitle = p.title.toLowerCase().includes(q);
       const matchPattern = p.pattern.toLowerCase().includes(q);
       const matchCompany = p.companies.some(c => c.toLowerCase().includes(q));
-      if (!matchTitle && !matchPattern && !matchCompany) return false;
+      const matchTopic = (p.topic || '').toLowerCase().includes(q);
+      const matchId = String(p.id) === q || `lc ${p.id}` === q;
+      if (!matchTitle && !matchPattern && !matchCompany && !matchTopic && !matchId) return false;
     }
 
     return true;
@@ -565,6 +567,15 @@ document.querySelectorAll('.tag-chip').forEach(chip => {
     renderActiveCard();
   });
 });
+
+// Search input live filtering
+if (searchInput) {
+  searchInput.addEventListener('input', (e) => {
+    searchQuery = e.target.value;
+    currentIndex = 0;
+    renderActiveCard();
+  });
+}
 
 // Live Local C++ Test Runner Listener
 const runCppBtn = document.getElementById('runCppBtn');

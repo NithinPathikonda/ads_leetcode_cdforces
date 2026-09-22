@@ -44,7 +44,8 @@
 
 | # | Problem Name | Topic / Pattern | Difficulty | Companies | Status | Solution Link | Key Takeaways & Edge Cases |
 |---|---|---|---|---|---|---|---|
-| 001 | [Two Sum](https://leetcode.com/problems/two-sum/) | Hash Map / Complement | Easy/Foundation | Google, Meta, Amazon, Apple | ✅ Solved | [001_two_sum.cpp](01_arrays_hashing/001_two_sum.cpp) | Unsorted pair sum -> 1-pass hash map. Check complement before insert to handle duplicates. Use iterator to avoid double hash. |
+| 001 | [LC 1: Two Sum](https://leetcode.com/problems/two-sum/) | Hash Map / Complement | Easy/Foundation | Google, Meta, Amazon, Apple | ✅ Solved | [lc_0001_two_sum.cpp](01_arrays_hashing/lc_0001_two_sum.cpp) | Unsorted pair sum -> 1-pass hash map. Check complement before insert to handle duplicates. Use iterator to avoid double hash. |
+| 002 | [LC 121: Best Time to Buy & Sell Stock](https://leetcode.com/problems/best-time-to-buy-and-sell-stock/) | Running Min / Kadane's | Easy/Foundation | Google, Meta, Amazon, Microsoft | ⏳ In Progress | [lc_0121_best_time_to_buy_and_sell_stock.cpp](01_arrays_hashing/lc_0121_best_time_to_buy_and_sell_stock.cpp) | Track minimum buying price seen so far. Maximize current price - minPrice. |
 
 ---
 

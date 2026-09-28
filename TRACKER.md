@@ -9,7 +9,7 @@
 
 | # | Topic / Pattern | Key Focus Areas | Problems | Solved | Status |
 |---|---|---|:---:|:---:|:---:|
-| **01** | **Arrays & Hashing** | Prefix Sums, Kadane's, Difference Array, Dutch National Flag, Matrix Traversal | 12 | 2 | 🟡 In Progress |
+| **01** | **Arrays & Hashing** | Prefix Sums, Kadane's, Difference Array, Dutch National Flag, Matrix Traversal | 12 | 4 | 🟡 In Progress |
 | **02** | **Two Pointers & Sliding Window** | Fixed & Dynamic Window, 2-Sum/3-Sum/4-Sum, Substrings with Constraints | 14 | 0 | ⏳ Not Started |
 | **03** | **Binary Search** | Standard, Rotated Arrays, Binary Search on Answer (Predicate/Monotonicity), 2D Matrix | 12 | 0 | ⏳ Not Started |
 | **04** | **Stack & Monotonic Stack** | Next Greater/Smaller Element, Largest Rectangle in Histogram, Rainwater Trapping, Infix/Postfix | 10 | 0 | ⏳ Not Started |
@@ -36,7 +36,7 @@
 | **25** | **Game Theory & Minimax** | Minimax / Alpha-Beta Pruning, Nim Game, Stone Game I/II/III/IV/VII | 5 | 0 | ⏳ Not Started |
 | **26** | **Reservoir Sampling & Randomized** | Reservoir Sampling ($K$ from Stream), Fisher-Yates Shuffle, Random Pick with Weight | 4 | 0 | ⏳ Not Started |
 | **27** | **Computational Geometry & Math** | Convex Hull (Graham Scan), Overlapping Area, Matrix Exponentiation | 4 | 0 | ⏳ Not Started |
-| | **TOTAL** | **100% Complete MNC Syllabus** | **230** | **2** | **0.9% Completed** |
+| | **TOTAL** | **100% Complete MNC Syllabus** | **230** | **4** | **1.7% Completed** |
 
 ---
 
@@ -46,6 +46,8 @@
 |---|---|---|---|---|---|---|---|
 | 001 | [LC 1: Two Sum](https://leetcode.com/problems/two-sum/) | Hash Map / Complement | Easy/Foundation | Google, Meta, Amazon, Apple | ✅ Solved | [lc_0001_two_sum.cpp](01_arrays_hashing/lc_0001_two_sum.cpp) | Unsorted pair sum -> 1-pass hash map. Check complement before insert to handle duplicates. Use iterator to avoid double hash. |
 | 002 | [LC 121: Best Time to Buy & Sell Stock](https://leetcode.com/problems/best-time-to-buy-and-sell-stock/) | Running Min / Kadane's | Easy/Foundation | Google, Meta, Amazon, Microsoft | ✅ Solved | [lc_0121_best_time_to_buy_and_sell_stock.cpp](01_arrays_hashing/lc_0121_best_time_to_buy_and_sell_stock.cpp) | Track minimum buying price seen so far. Maximize current price - minPrice. O(N) time, O(1) space. |
+| 003 | [LC 242: Valid Anagram](https://leetcode.com/problems/valid-anagram/) | Frequency Array / Hashing | Easy/Foundation | Google, Meta, Amazon, Microsoft, Bloomberg | ✅ Solved | [lc_0242_valid_anagram.cpp](01_arrays_hashing/lc_0242_valid_anagram.cpp) | Check length equality first. Count frequencies with 26-int array in single pass (+1 for s, -1 for t). O(N) time, O(1) space. |
+| 004 | [LC 49: Group Anagrams](https://leetcode.com/problems/group-anagrams/) | Hash Map / Canonical Key | Medium | Amazon, Meta, Google, Microsoft, Apple | ✅ Solved | [lc_0049_group_anagrams.cpp](01_arrays_hashing/lc_0049_group_anagrams.cpp) | Equivalence grouping -> Sort string as hash map key O(N*K log K) or 26-char count signature O(N*K). Use std::move when building result. |
 
 ---
 

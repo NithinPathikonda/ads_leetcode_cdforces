@@ -588,7 +588,7 @@ if (runCppBtn) {
     const filtered = getFilteredProblems();
     if (filtered.length === 0) return;
     const current = filtered[currentIndex];
-    
+
     // Map default filepaths if missing
     let targetPath = current.filepath;
     if (!targetPath) {

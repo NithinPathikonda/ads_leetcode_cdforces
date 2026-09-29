@@ -62,6 +62,7 @@ To prevent burnout and guarantee maximum retention, split your daily session int
 | 002 | [LC 121: Best Time to Buy & Sell Stock](01_arrays_hashing/lc_0121_best_time_to_buy_and_sell_stock.cpp) | 01_arrays_hashing | Day 1 | 📅 Due Day 4 | ⏳ Day 11 | ⏳ Day 31 | 🟢 Solid (O(N)) |
 | 003 | [LC 242: Valid Anagram](01_arrays_hashing/lc_0242_valid_anagram.cpp) | 01_arrays_hashing | Day 1 | 📅 Due Day 4 | ⏳ Day 11 | ⏳ Day 31 | 🟢 Solid (O(N)) |
 | 004 | [LC 49: Group Anagrams](01_arrays_hashing/lc_0049_group_anagrams.cpp) | 01_arrays_hashing | Day 1 | 📅 Due Day 4 | ⏳ Day 11 | ⏳ Day 31 | 🟢 Solid (O(N*K log K)) |
+| 005 | [LC 347: Top K Frequent Elements](01_arrays_hashing/lc_0347_top_k_frequent_elements.cpp) | 01_arrays_hashing | Day 2 | 📅 Due Day 5 | ⏳ Day 12 | ⏳ Day 32 | 🟢 Solid (O(N)) |
 
 ---
 

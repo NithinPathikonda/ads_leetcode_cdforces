@@ -9,7 +9,7 @@
 
 | # | Topic / Pattern | Key Focus Areas | Problems | Solved | Status |
 |---|---|---|:---:|:---:|:---:|
-| **01** | **Arrays & Hashing** | Prefix Sums, Kadane's, Difference Array, Dutch National Flag, Matrix Traversal | 12 | 5 | 🟡 In Progress |
+| **01** | **Arrays & Hashing** | Prefix Sums, Kadane's, Difference Array, Dutch National Flag, Matrix Traversal | 12 | 6 | 🟡 In Progress |
 | **02** | **Two Pointers & Sliding Window** | Fixed & Dynamic Window, 2-Sum/3-Sum/4-Sum, Substrings with Constraints | 14 | 0 | ⏳ Not Started |
 | **03** | **Binary Search** | Standard, Rotated Arrays, Binary Search on Answer (Predicate/Monotonicity), 2D Matrix | 12 | 0 | ⏳ Not Started |
 | **04** | **Stack & Monotonic Stack** | Next Greater/Smaller Element, Largest Rectangle in Histogram, Rainwater Trapping, Infix/Postfix | 10 | 0 | ⏳ Not Started |
@@ -36,7 +36,7 @@
 | **25** | **Game Theory & Minimax** | Minimax / Alpha-Beta Pruning, Nim Game, Stone Game I/II/III/IV/VII | 5 | 0 | ⏳ Not Started |
 | **26** | **Reservoir Sampling & Randomized** | Reservoir Sampling ($K$ from Stream), Fisher-Yates Shuffle, Random Pick with Weight | 4 | 0 | ⏳ Not Started |
 | **27** | **Computational Geometry & Math** | Convex Hull (Graham Scan), Overlapping Area, Matrix Exponentiation | 4 | 0 | ⏳ Not Started |
-| | **TOTAL** | **100% Complete MNC Syllabus** | **230** | **5** | **2.2% Completed** |
+| | **TOTAL** | **100% Complete MNC Syllabus** | **230** | **6** | **2.6% Completed** |
 
 ---
 
@@ -49,6 +49,7 @@
 | 003 | [LC 242: Valid Anagram](https://leetcode.com/problems/valid-anagram/) | Frequency Array / Hashing | Easy/Foundation | Google, Meta, Amazon, Microsoft, Bloomberg | ✅ Solved | [lc_0242_valid_anagram.cpp](01_arrays_hashing/lc_0242_valid_anagram.cpp) | Check length equality first. Count frequencies with 26-int array in single pass (+1 for s, -1 for t). O(N) time, O(1) space. |
 | 004 | [LC 49: Group Anagrams](https://leetcode.com/problems/group-anagrams/) | Hash Map / Canonical Key | Medium | Amazon, Meta, Google, Microsoft, Apple | ✅ Solved | [lc_0049_group_anagrams.cpp](01_arrays_hashing/lc_0049_group_anagrams.cpp) | Equivalence grouping -> Sort string as hash map key O(N*K log K) or 26-char count signature O(N*K). Use std::move when building result. |
 | 005 | [LC 347: Top K Frequent Elements](https://leetcode.com/problems/top-k-frequent-elements/) | Frequency Map + Bucket Sort | Medium | Meta, Amazon, Google, Microsoft, Apple | ✅ Solved | [lc_0347_top_k_frequent_elements.cpp](01_arrays_hashing/lc_0347_top_k_frequent_elements.cpp) | Count frequencies with hash map. Sort vector O(D log D) baseline. Optimize to O(N) using frequency buckets (max freq is N). Min-heap takes O(D log K). |
+| 006 | [LC 238: Product of Array Except Self](https://leetcode.com/problems/product-of-array-except-self/) | Prefix & Suffix Products | Medium | Meta, Amazon, Apple, Google, Microsoft | ✅ Solved | [lc_0238_product_of_array_except_self.cpp](01_arrays_hashing/lc_0238_product_of_array_except_self.cpp) | No-division constraint: ans[i] = Left product * Right product. Baseline with zero counting. Optimal: In-place prefix pass in output vector + reverse pass with single running suffix scalar O(N) time O(1) extra space. |
 
 ---
 

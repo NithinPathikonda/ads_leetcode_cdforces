@@ -65,6 +65,7 @@ To prevent burnout and guarantee maximum retention, split your daily session int
 | 005 | [LC 347: Top K Frequent Elements](01_arrays_hashing/lc_0347_top_k_frequent_elements.cpp) | 01_arrays_hashing | Day 2 | 📅 Due Day 5 | ⏳ Day 12 | ⏳ Day 32 | 🟢 Solid (O(N)) |
 | 006 | [LC 238: Product of Array Except Self](01_arrays_hashing/lc_0238_product_of_array_except_self.cpp) | 01_arrays_hashing | Day 2 | 📅 Due Day 5 | ⏳ Day 12 | ⏳ Day 32 | 🟢 Solid (O(N) time, O(1) space) |
 | 007 | [LC 128: Longest Consecutive Sequence](01_arrays_hashing/lc_0128_longest_consecutive_sequence.cpp) | 01_arrays_hashing | Day 2 | 📅 Due Day 5 | ⏳ Day 12 | ⏳ Day 32 | 🟢 Solid (O(N)) |
+| 008 | [LC 560: Subarray Sum Equals K](01_arrays_hashing/lc_0560_subarray_sum_equals_k.cpp) | 01_arrays_hashing | Day 3 | 📅 Due Day 6 | ⏳ Day 13 | ⏳ Day 33 | 🟢 Solid (O(N)) |
 
 ---
 

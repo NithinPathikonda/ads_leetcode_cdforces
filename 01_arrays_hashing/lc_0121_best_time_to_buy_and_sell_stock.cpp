@@ -33,9 +33,10 @@ class Solution {
 public:
   int maxProfit(const vector<int> &prices) {
     // TODO: Write your optimal O(N) Time, O(1) Space solution here
-    if (prices.empty()) return 0;
+    if (prices.empty())
+      return 0;
     int mini = prices[0], profit = 0;
-    for (size_t i = 0; i < prices.size(); ++i) {
+    for (int i = 0; i < prices.size(); ++i) {
       profit = max(profit, prices[i] - mini);
       mini = min(mini, prices[i]);
     }

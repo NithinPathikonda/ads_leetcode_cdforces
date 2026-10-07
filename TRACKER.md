@@ -10,7 +10,7 @@
 | # | Topic / Pattern | Key Focus Areas | Problems | Solved | Status |
 |---|---|---|:---:|:---:|:---:|
 | **01** | **Arrays & Hashing** | Prefix Sums, Kadane's, Difference Array, Dutch National Flag, Matrix Traversal | 12 | 11 | 🟡 In Progress |
-| **02** | **Two Pointers & Sliding Window** | Fixed & Dynamic Window, 2-Sum/3-Sum/4-Sum, Substrings with Constraints | 14 | 2 | 🟡 In Progress |
+| **02** | **Two Pointers & Sliding Window** | Fixed & Dynamic Window, 2-Sum/3-Sum/4-Sum, Substrings with Constraints | 14 | 3 | 🟡 In Progress |
 | **03** | **Binary Search** | Standard, Rotated Arrays, Binary Search on Answer (Predicate/Monotonicity), 2D Matrix | 12 | 0 | ⏳ Not Started |
 | **04** | **Stack & Monotonic Stack** | Next Greater/Smaller Element, Largest Rectangle in Histogram, Rainwater Trapping, Infix/Postfix | 10 | 0 | ⏳ Not Started |
 | **05** | **Linked Lists** | In-place Reversal, Cycle Detection & Entry (Floyd's), Merge K Lists, Flattening | 8 | 0 | ⏳ Not Started |
@@ -36,7 +36,7 @@
 | **25** | **Game Theory & Minimax** | Minimax / Alpha-Beta Pruning, Nim Game, Stone Game I/II/III/IV/VII | 5 | 0 | ⏳ Not Started |
 | **26** | **Reservoir Sampling & Randomized** | Reservoir Sampling ($K$ from Stream), Fisher-Yates Shuffle, Random Pick with Weight | 4 | 0 | ⏳ Not Started |
 | **27** | **Computational Geometry & Math** | Convex Hull (Graham Scan), Overlapping Area, Matrix Exponentiation | 4 | 0 | ⏳ Not Started |
-| | **TOTAL** | **100% Complete MNC Syllabus** | **230** | **13** | **5.7% Completed** |
+| | **TOTAL** | **100% Complete MNC Syllabus** | **230** | **14** | **6.1% Completed** |
 
 ---
 
@@ -57,6 +57,7 @@
 | 011 | [LC 54: Spiral Matrix](https://leetcode.com/problems/spiral-matrix/) | 4-Boundary Layer Traversal | Medium | Microsoft, Apple, Amazon, Google, Meta | ✅ Solved | [lc_0054_spiral_matrix.cpp](01_arrays_hashing/lc_0054_spiral_matrix.cpp) | 4 pointers: top, bottom, left, right. Golden rule: check (top <= bottom) before going Left, and (left <= right) before going Up to prevent duplicate traversals on 1-row/1-col matrices. O(M*N) time, O(1) space. |
 | 012 | [LC 167: Two Sum II - Input Array Is Sorted](https://leetcode.com/problems/two-sum-ii-input-array-is-sorted/) | Two Pointers (Opposite Direction) | Medium | Amazon, Google, Apple, Meta, Microsoft | ✅ Solved | [lc_0167_two_sum_ii.cpp](02_two_pointers_sliding_window/lc_0167_two_sum_ii.cpp) | Sorted array allows eliminating candidate elements: sum > target -> r--; sum < target -> l++. Return 1-based indices. O(N) time, O(1) space. |
 | 013 | [LC 15: 3Sum](https://leetcode.com/problems/3sum/) | Sorting + Two Pointers | Medium | Meta, Amazon, Apple, Google, Microsoft | ✅ Solved | [lc_0015_three_sum.cpp](02_two_pointers_sliding_window/lc_0015_three_sum.cpp) | Sort first to enable Two Sum II and deduplication. Skip nums[i]==nums[i-1]. Skip duplicates for j and k guarded by j < k to prevent segfaults. O(N^2) time, O(1) auxiliary space. |
+| 014 | [LC 11: Container With Most Water](https://leetcode.com/problems/container-with-most-water/) | Greedy Two Pointers | Medium | Google, Meta, Amazon, Apple, Microsoft | ✅ Solved | [lc_0011_container_with_most_water.cpp](02_two_pointers_sliding_window/lc_0011_container_with_most_water.cpp) | Maximize min(h[i], h[j]) * (j - i). Greedy choice: always move the shorter line inward because keeping the shorter line while decreasing width cannot possibly increase area. O(N) time, O(1) space. |
 
 ---
 

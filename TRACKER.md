@@ -9,7 +9,7 @@
 
 | # | Topic / Pattern | Key Focus Areas | Problems | Solved | Status |
 |---|---|---|:---:|:---:|:---:|
-| **01** | **Arrays & Hashing** | Prefix Sums, Kadane's, Difference Array, Dutch National Flag, Matrix Traversal | 12 | 10 | 🟡 In Progress |
+| **01** | **Arrays & Hashing** | Prefix Sums, Kadane's, Difference Array, Dutch National Flag, Matrix Traversal | 12 | 11 | 🟡 In Progress |
 | **02** | **Two Pointers & Sliding Window** | Fixed & Dynamic Window, 2-Sum/3-Sum/4-Sum, Substrings with Constraints | 14 | 0 | ⏳ Not Started |
 | **03** | **Binary Search** | Standard, Rotated Arrays, Binary Search on Answer (Predicate/Monotonicity), 2D Matrix | 12 | 0 | ⏳ Not Started |
 | **04** | **Stack & Monotonic Stack** | Next Greater/Smaller Element, Largest Rectangle in Histogram, Rainwater Trapping, Infix/Postfix | 10 | 0 | ⏳ Not Started |
@@ -36,7 +36,7 @@
 | **25** | **Game Theory & Minimax** | Minimax / Alpha-Beta Pruning, Nim Game, Stone Game I/II/III/IV/VII | 5 | 0 | ⏳ Not Started |
 | **26** | **Reservoir Sampling & Randomized** | Reservoir Sampling ($K$ from Stream), Fisher-Yates Shuffle, Random Pick with Weight | 4 | 0 | ⏳ Not Started |
 | **27** | **Computational Geometry & Math** | Convex Hull (Graham Scan), Overlapping Area, Matrix Exponentiation | 4 | 0 | ⏳ Not Started |
-| | **TOTAL** | **100% Complete MNC Syllabus** | **230** | **10** | **4.3% Completed** |
+| | **TOTAL** | **100% Complete MNC Syllabus** | **230** | **11** | **4.8% Completed** |
 
 ---
 
@@ -54,6 +54,7 @@
 | 008 | [LC 560: Subarray Sum Equals K](https://leetcode.com/problems/subarray-sum-equals-k/) | Prefix Sum + Hash Map | Medium | Meta, Google, Amazon, Microsoft, Apple | ✅ Solved | [lc_0560_subarray_sum_equals_k.cpp](01_arrays_hashing/lc_0560_subarray_sum_equals_k.cpp) | Running prefix sum with hash map frequencies. Check (prefix - k) before inserting prefix. Must initialize mpp[0] = 1 for subarrays starting at index 0. O(N) time, O(N) space. |
 | 009 | [LC 53: Maximum Subarray](https://leetcode.com/problems/maximum-subarray/) | Kadane's Algorithm | Medium | Amazon, Microsoft, Apple, Google, Meta | ✅ Solved | [lc_0053_maximum_subarray.cpp](01_arrays_hashing/lc_0053_maximum_subarray.cpp) | Running sum reset when < 0. Update global max before reset to handle all-negative arrays. O(N) time, O(1) space. Divide & Conquer O(N log N). |
 | 010 | [LC 75: Sort Colors](https://leetcode.com/problems/sort-colors/) | Dutch National Flag | Medium | Microsoft, Amazon, Meta, Google, Apple | ✅ Solved | [lc_0075_sort_colors.cpp](01_arrays_hashing/lc_0075_sort_colors.cpp) | 3-pointer partition: low, mid, high. Swap(mid, low) advances mid & low. Swap(mid, high) decrements high but does NOT advance mid because incoming element is unknown. O(N) 1-pass, O(1) space. |
+| 011 | [LC 54: Spiral Matrix](https://leetcode.com/problems/spiral-matrix/) | 4-Boundary Layer Traversal | Medium | Microsoft, Apple, Amazon, Google, Meta | ✅ Solved | [lc_0054_spiral_matrix.cpp](01_arrays_hashing/lc_0054_spiral_matrix.cpp) | 4 pointers: top, bottom, left, right. Golden rule: check (top <= bottom) before going Left, and (left <= right) before going Up to prevent duplicate traversals on 1-row/1-col matrices. O(M*N) time, O(1) space. |
 
 ---
 

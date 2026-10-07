@@ -68,6 +68,7 @@ To prevent burnout and guarantee maximum retention, split your daily session int
 | 008 | [LC 560: Subarray Sum Equals K](01_arrays_hashing/lc_0560_subarray_sum_equals_k.cpp) | 01_arrays_hashing | Day 3 | 📅 Due Day 6 | ⏳ Day 13 | ⏳ Day 33 | 🟢 Solid (O(N)) |
 | 009 | [LC 53: Maximum Subarray](01_arrays_hashing/lc_0053_maximum_subarray.cpp) | 01_arrays_hashing | Day 3 | 📅 Due Day 6 | ⏳ Day 13 | ⏳ Day 33 | 🟢 Solid (O(N)) |
 | 010 | [LC 75: Sort Colors](01_arrays_hashing/lc_0075_sort_colors.cpp) | 01_arrays_hashing | Day 3 | 📅 Due Day 6 | ⏳ Day 13 | ⏳ Day 33 | 🟢 Solid (O(N)) |
+| 011 | [LC 54: Spiral Matrix](01_arrays_hashing/lc_0054_spiral_matrix.cpp) | 01_arrays_hashing | Day 4 | 📅 Due Day 7 | ⏳ Day 14 | ⏳ Day 34 | 🟢 Solid (O(M*N)) |
 
 ---
 

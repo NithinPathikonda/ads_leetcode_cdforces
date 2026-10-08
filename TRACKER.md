@@ -9,7 +9,7 @@
 
 | # | Topic / Pattern | Key Focus Areas | Problems | Solved | Status |
 |---|---|---|:---:|:---:| **01** | **Arrays & Hashing** | Prefix Sums, Kadane's, Difference Array, Dutch National Flag, Matrix Traversal | 12 | 11 | 🟡 In Progress |
-| **02** | **Two Pointers & Sliding Window** | Fixed & Dynamic Window, 2-Sum/3-Sum/4-Sum, Substrings with Constraints | 14 | 4 | 🟡 In Progress |
+| **02** | **Two Pointers & Sliding Window** | Fixed & Dynamic Window, 2-Sum/3-Sum/4-Sum, Substrings with Constraints | 14 | 5 | 🟡 In Progress |
 | **03** | **Binary Search** | Standard, Rotated Arrays, Binary Search on Answer (Predicate/Monotonicity), 2D Matrix | 12 | 0 | ⏳ Not Started |
 | **04** | **Stack & Monotonic Stack** | Next Greater/Smaller Element, Largest Rectangle in Histogram, Rainwater Trapping, Infix/Postfix | 10 | 0 | ⏳ Not Started |
 | **05** | **Linked Lists** | In-place Reversal, Cycle Detection & Entry (Floyd's), Merge K Lists, Flattening | 8 | 0 | ⏳ Not Started |
@@ -35,7 +35,7 @@
 | **25** | **Game Theory & Minimax** | Minimax / Alpha-Beta Pruning, Nim Game, Stone Game I/II/III/IV/VII | 5 | 0 | ⏳ Not Started |
 | **26** | **Reservoir Sampling & Randomized** | Reservoir Sampling ($K$ from Stream), Fisher-Yates Shuffle, Random Pick with Weight | 4 | 0 | ⏳ Not Started |
 | **27** | **Computational Geometry & Math** | Convex Hull (Graham Scan), Overlapping Area, Matrix Exponentiation | 4 | 0 | ⏳ Not Started |
-| | **TOTAL** | **100% Complete MNC Syllabus** | **230** | **15** | **6.5% Completed** |
+| | **TOTAL** | **100% Complete MNC Syllabus** | **230** | **16** | **7.0% Completed** |
 
 ---
 
@@ -58,7 +58,8 @@
 | 013 | [LC 15: 3Sum](https://leetcode.com/problems/3sum/) | Sorting + Two Pointers | Medium | Meta, Amazon, Apple, Google, Microsoft | ✅ Solved | [lc_0015_three_sum.cpp](02_two_pointers_sliding_window/lc_0015_three_sum.cpp) | Sort first to enable Two Sum II and deduplication. Skip nums[i]==nums[i-1]. Skip duplicates for j and k guarded by j < k to prevent segfaults. O(N^2) time, O(1) auxiliary space. |
 | 014 | [LC 11: Container With Most Water](https://leetcode.com/problems/container-with-most-water/) | Greedy Two Pointers | Medium | Google, Meta, Amazon, Apple, Microsoft | ✅ Solved | [lc_0011_container_with_most_water.cpp](02_two_pointers_sliding_window/lc_0011_container_with_most_water.cpp) | Maximize min(h[i], h[j]) * (j - i). Greedy choice: always move the shorter line inward because keeping the shorter line while decreasing width cannot possibly increase area. O(N) time, O(1) space. |
 | 015 | [LC 3: Longest Substring Without Repeating Characters](https://leetcode.com/problems/longest-substring-without-repeating-characters/) | Dynamic Sliding Window | Medium | Amazon, Meta, Microsoft, Google, Apple | ✅ Solved | [lc_0003_longest_substring_without_repeating_characters.cpp](02_two_pointers_sliding_window/lc_0003_longest_substring_without_repeating_characters.cpp) | Expand r; on duplicate, shrink l and erase from map (O(2N)). Optimal 1-pass: store last seen index and jump l = max(l, last_seen[c] + 1) using 128-element array (O(N) time, O(1) space). |
-| 016 | [LC 424: Longest Repeating Character Replacement](https://leetcode.com/problems/longest-repeating-character-replacement/) | Dynamic Sliding Window / Frequency Invariant | Medium | Amazon, Meta, Google, Microsoft | ⏳ Queued (Day 5) | - | Invariant: `(window_len - max_freq) <= k`. Expand r, shrink l when replacements exceed k. |
+| 016 | [LC 424: Longest Repeating Character Replacement](https://leetcode.com/problems/longest-repeating-character-replacement/) | Dynamic Sliding Window / Frequency Invariant | Medium | Amazon, Meta, Google, Microsoft | ✅ Solved | [lc_0424_longest_repeating_character_replacement.cpp](02_two_pointers_sliding_window/lc_0424_longest_repeating_character_replacement.cpp) | Dynamic sliding window with invariant `(window_len - max_freq) <= k`. Expand r, shrink l when replacements exceed k. max_freq never needs to decrement on shrink because only a higher max_freq can expand the maximum window. O(N) time, O(1) space. |
+| 017 | [LC 567: Permutation in String](https://leetcode.com/problems/permutation-in-string/) | Fixed-Size Sliding Window / Frequency Match | Medium | Meta, Microsoft, Amazon, Google, Apple | ⏳ Queued (Day 5) | - | Check if s2 contains a permutation of s1. Fixed window of size s1.length(). Match frequencies with 26-int array in O(1) per slide. O(N) time, O(1) space. |
 
 
 

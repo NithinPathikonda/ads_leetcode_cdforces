@@ -74,6 +74,7 @@ To prevent burnout and guarantee maximum retention, split your daily session int
 | 014 | [LC 11: Container With Most Water](02_two_pointers_sliding_window/lc_0011_container_with_most_water.cpp) | 02_two_pointers | Day 4 | 📅 Due Day 7 | ⏳ Day 14 | ⏳ Day 34 | 🟢 Solid (O(N) time, O(1) space) |
 | 015 | [LC 3: Longest Substring Without Repeating Characters](02_two_pointers_sliding_window/lc_0003_longest_substring_without_repeating_characters.cpp) | 02_two_pointers | Day 4 | 📅 Due Day 7 | ⏳ Day 14 | ⏳ Day 34 | 🟢 Solid (O(N) time, O(1) space) |
 | 016 | [LC 424: Longest Repeating Character Replacement](02_two_pointers_sliding_window/lc_0424_longest_repeating_character_replacement.cpp) | 02_two_pointers | Day 5 | 📅 Due Day 8 | ⏳ Day 15 | ⏳ Day 35 | 🟢 Solid (O(N) time, O(1) space) |
+| 017 | [LC 567: Permutation in String](02_two_pointers_sliding_window/lc_0567_permutation_in_string.cpp) | 02_two_pointers | Day 5 | 📅 Due Day 8 | ⏳ Day 15 | ⏳ Day 35 | 🟡 Review Appr 2 on R2 |
 
 
 ---

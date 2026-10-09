@@ -78,6 +78,7 @@ To prevent burnout and guarantee maximum retention, split your daily session int
 | 018 | [LC 209: Minimum Size Subarray Sum](02_two_pointers_sliding_window/lc_0209_minimum_size_subarray_sum.cpp) | 02_two_pointers | Day 6 | 📅 Due Day 9 | ⏳ Day 16 | ⏳ Day 36 | 🟢 Solid (O(N) time, O(1) space) |
 | 019 | [LC 42: Trapping Rain Water](02_two_pointers_sliding_window/lc_0042_trapping_rain_water.cpp) | 02_two_pointers | Day 6 | 📅 Due Day 9 | ⏳ Day 16 | ⏳ Day 36 | 🟢 Solid (O(N) time, O(1) space) |
 | 020 | [LC 1004: Max Consecutive Ones III](02_two_pointers_sliding_window/lc_1004_max_consecutive_ones_iii.cpp) | 02_two_pointers | Day 6 | 📅 Due Day 9 | ⏳ Day 16 | ⏳ Day 36 | 🟢 Solid (O(N) time, O(1) space) |
+| 021 | [LC 713: Subarray Product Less Than K](02_two_pointers_sliding_window/lc_0713_subarray_product_less_than_k.cpp) | 02_two_pointers | Day 6 | 📅 Due Day 9 | ⏳ Day 16 | ⏳ Day 36 | 🟢 Solid (O(N) time, O(1) space) |
 
 
 ---

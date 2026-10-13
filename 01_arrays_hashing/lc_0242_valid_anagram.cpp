@@ -28,6 +28,7 @@
  * - Different lengths: Immediate false (s.size() != t.size()).
  * - Duplicate characters in different frequencies: Caught when checking alpha_count != 0.
  * -------------------------------------------------------------
+ Revision: 13Ot26'1
  */
 
 #include <iostream>

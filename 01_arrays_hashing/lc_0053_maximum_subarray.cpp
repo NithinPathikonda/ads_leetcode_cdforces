@@ -47,6 +47,7 @@
  * - Single element: nums = [-1] -> -1; nums = [5] -> 5.
  * - Array with all positive numbers: nums = [1, 2, 3] -> 6.
  * - Alternating signs: nums = [-2, 1, -3, 4, -1, 2, 1, -5, 4] -> 6.
+ Revision: 13Ot26'1
  * -------------------------------------------------------------
  */
 

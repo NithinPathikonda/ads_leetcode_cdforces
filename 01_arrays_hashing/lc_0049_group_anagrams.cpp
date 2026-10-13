@@ -38,6 +38,7 @@
  * - No anagrams exist (all unique) -> each word forms its own singleton group
  * - Multiple identical strings (e.g. `["tea", "tea"]`) -> correctly grouped together
  * -------------------------------------------------------------
+ Revision: 13Ot26'1
  */
 
 #include <algorithm>

@@ -34,6 +34,7 @@
  *     - Count all valid subarrays terminating at index `r`:
  *       `count += (r - l + 1)`.
  * -------------------------------------------------------------
+ Revision: 15Ot26'1
  */
 
 #include <iostream>

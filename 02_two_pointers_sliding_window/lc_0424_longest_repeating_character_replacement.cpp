@@ -34,6 +34,7 @@
  *     A smaller max_freq can only produce a window smaller than our historical
  *     best. Only a new peak max_freq can expand our maximum window.
  * -------------------------------------------------------------
+ 15Ot26'1
  */
 
 #include <algorithm>

@@ -29,6 +29,7 @@
  *       left_max <= right_max, left is guaranteed to be the bottleneck.
  *       Process left and advance l++; else process right and advance r--.
  * -------------------------------------------------------------
+ Revision: 15Ot26'1
  */
 
 #include <algorithm>

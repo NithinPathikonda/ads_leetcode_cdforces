@@ -42,6 +42,7 @@
  *    - Without `j < k`, an array of identical values (e.g., [0,0,0,0]) would cause
  *      `j` to cross `k` and march out-of-bounds, triggering a segmentation fault!
  * -------------------------------------------------------------
+ Revision: 15Ot26'1
  */
 
 #include <algorithm>

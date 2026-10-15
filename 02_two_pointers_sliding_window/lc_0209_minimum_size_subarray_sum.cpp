@@ -34,6 +34,7 @@
  *     2. Whenever `sum >= target`, record candidate minimal length and shrink
  *        `l` to find the tightest valid window.
  * -------------------------------------------------------------
+ Revison: 15Ot26'1
  */
 
 #include <algorithm>

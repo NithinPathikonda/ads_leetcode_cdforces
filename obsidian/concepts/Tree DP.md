@@ -6,12 +6,13 @@ tags:
   - concept
 ---
 
-# 🟢 Concept: Tree DP
+# 💡 Concept: Tree DP
 
-- **Parent Module**: [[18 Dynamic Programming 5 Trees, Bitmask & Digit DP]]
-- **Mental Trigger / Intuition**: Postorder state aggregation across subtrees.
+> [!abstract] 🧠 Mental Model & Invariant
+> - **Parent Module**: [[18 Dynamic Programming 5 Trees, Bitmask & Digit DP]]
+> - **Core Intuition**: Postorder state aggregation across subtrees.
 
 ---
 
-## 🎯 Problems Utilizing Tree DP
-- [[LC 337 House Robber III]] (Medium)
+## 🎯 Benchmark Problems Utilizing Tree DP
+- [[LC 337 House Robber III]] — Medium (`O(N)`)

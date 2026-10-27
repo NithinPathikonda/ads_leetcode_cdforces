@@ -6,12 +6,13 @@ tags:
   - concept
 ---
 
-# 🟢 Concept: Tree BFS & Level Order
+# 💡 Concept: Tree BFS & Level Order
 
-- **Parent Module**: [[07 Binary Trees & BST]]
-- **Mental Trigger / Intuition**: Queue-based level-by-level exploration.
+> [!abstract] 🧠 Mental Model & Invariant
+> - **Parent Module**: [[07 Binary Trees & BST]]
+> - **Core Intuition**: Queue-based level-by-level exploration.
 
 ---
 
-## 🎯 Problems Utilizing Tree BFS & Level Order
-- [[LC 102 Binary Tree Level Order Traversal]] (Medium)
+## 🎯 Benchmark Problems Utilizing Tree BFS & Level Order
+- [[LC 102 Binary Tree Level Order Traversal]] — Medium (`O(N)`)

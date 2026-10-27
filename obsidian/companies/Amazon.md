@@ -7,7 +7,9 @@ tags:
 
 # 🟣 Target MNC Hub: Amazon
 
-> **Curated Question Count**: `93 problems`
+> [!abstract] 🏢 Interview Question Frequency
+> - **Tier**: Tier-1 Tech Titan
+> - **Curated Question Count**: `93 benchmark problems`
 
 ---
 

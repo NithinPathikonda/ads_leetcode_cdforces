@@ -7,7 +7,9 @@ tags:
 
 # 🟣 Target MNC Hub: Microsoft
 
-> **Curated Question Count**: `30 problems`
+> [!abstract] 🏢 Interview Question Frequency
+> - **Tier**: Tier-1 Tech Titan
+> - **Curated Question Count**: `30 benchmark problems`
 
 ---
 

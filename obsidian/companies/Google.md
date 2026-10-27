@@ -7,7 +7,9 @@ tags:
 
 # 🟣 Target MNC Hub: Google
 
-> **Curated Question Count**: `77 problems`
+> [!abstract] 🏢 Interview Question Frequency
+> - **Tier**: Tier-1 Tech Titan
+> - **Curated Question Count**: `77 benchmark problems`
 
 ---
 

@@ -8,24 +8,25 @@ tags:
 
 # 🌐 Module: 06 Recursion & Backtracking
 
-> **Core Focus**: Subsets, Subsequences, Permutations, Combinations, N-Queens, Sudoku Solver  
-> **Domain Cluster**: Hierarchical & Graphs
+> [!abstract] 📋 Module Scope
+> - **Core Focus**: Subsets, Subsequences, Permutations, Combinations, N-Queens, Sudoku Solver  
+> - **Domain Cluster**: `Hierarchical & Graphs`
 
 ---
 
-## 🟢 Core Concepts
+## 🟢 Core Algorithmic Concepts
 - [[Backtracking & Pruning]]
 - [[Permutations & Combinations]]
 
 ---
 
-## 🎯 Benchmark Problems
-- [[LC 78 Subsets]] (Medium)
-- [[LC 90 Subsets II]] (Medium)
-- [[LC 46 Permutations]] (Medium)
-- [[LC 39 Combination Sum]] (Medium)
-- [[LC 51 N-Queens]] (Hard)
-- [[LC 79 Word Search]] (Medium)
+## 🎯 Benchmark MNC Problems
+- [[LC 78 Subsets]] — Medium (`O(2^N)`)
+- [[LC 90 Subsets II]] — Medium (`O(2^N)`)
+- [[LC 46 Permutations]] — Medium (`O(N!)`)
+- [[LC 39 Combination Sum]] — Medium (`O(2^T)`)
+- [[LC 51 N-Queens]] — Hard (`O(N!)`)
+- [[LC 79 Word Search]] — Medium (`O(M * N * 3^L)`)
 
 ---
 - [[Index|🏠 Master Knowledge Galaxy Root]]

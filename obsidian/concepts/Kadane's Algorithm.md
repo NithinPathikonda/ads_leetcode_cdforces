@@ -6,13 +6,14 @@ tags:
   - concept
 ---
 
-# 🟢 Concept: Kadane's Algorithm
+# 💡 Concept: Kadane's Algorithm
 
-- **Parent Module**: [[01 Arrays & Hashing]]
-- **Mental Trigger / Intuition**: Local vs global optimum. Reset running sum when negative.
+> [!abstract] 🧠 Mental Model & Invariant
+> - **Parent Module**: [[01 Arrays & Hashing]]
+> - **Core Intuition**: Local vs global optimum. Reset running sum when negative.
 
 ---
 
-## 🎯 Problems Utilizing Kadane's Algorithm
-- [[LC 121 Best Time to Buy & Sell Stock]] (Easy)
-- [[LC 53 Maximum Subarray]] (Medium)
+## 🎯 Benchmark Problems Utilizing Kadane's Algorithm
+- [[LC 121 Best Time to Buy & Sell Stock]] — Easy (`O(N)`)
+- [[LC 53 Maximum Subarray]] — Medium (`O(N)`)

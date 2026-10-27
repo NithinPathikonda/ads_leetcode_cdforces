@@ -6,12 +6,13 @@ tags:
   - concept
 ---
 
-# 🟢 Concept: Fast Exponentiation
+# 💡 Concept: Fast Exponentiation
 
-- **Parent Module**: [[20 Bit Manipulation & Math]]
-- **Mental Trigger / Intuition**: Binary exponentiation in O(log N).
+> [!abstract] 🧠 Mental Model & Invariant
+> - **Parent Module**: [[20 Bit Manipulation & Math]]
+> - **Core Intuition**: Binary exponentiation in O(log N).
 
 ---
 
-## 🎯 Problems Utilizing Fast Exponentiation
-- [[LC 50 Pow(x, n)]] (Medium)
+## 🎯 Benchmark Problems Utilizing Fast Exponentiation
+- [[LC 50 Pow(x, n)]] — Medium (`O(log N)`)

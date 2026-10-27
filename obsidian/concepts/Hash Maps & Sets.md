@@ -6,16 +6,17 @@ tags:
   - concept
 ---
 
-# 🟢 Concept: Hash Maps & Sets
+# 💡 Concept: Hash Maps & Sets
 
-- **Parent Module**: [[01 Arrays & Hashing]]
-- **Mental Trigger / Intuition**: O(1) average lookup for complements and frequency counts.
+> [!abstract] 🧠 Mental Model & Invariant
+> - **Parent Module**: [[01 Arrays & Hashing]]
+> - **Core Intuition**: O(1) average lookup for complements and frequency counts.
 
 ---
 
-## 🎯 Problems Utilizing Hash Maps & Sets
-- [[LC 1 Two Sum]] (Easy)
-- [[LC 242 Valid Anagram]] (Easy)
-- [[LC 49 Group Anagrams]] (Medium)
-- [[LC 347 Top K Frequent Elements]] (Medium)
-- [[LC 128 Longest Consecutive Sequence]] (Medium)
+## 🎯 Benchmark Problems Utilizing Hash Maps & Sets
+- [[LC 1 Two Sum]] — Easy (`O(N)`)
+- [[LC 242 Valid Anagram]] — Easy (`O(N)`)
+- [[LC 49 Group Anagrams]] — Medium (`O(N * K)`)
+- [[LC 347 Top K Frequent Elements]] — Medium (`O(N)`)
+- [[LC 128 Longest Consecutive Sequence]] — Medium (`O(N)`)

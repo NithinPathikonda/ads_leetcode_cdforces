@@ -8,19 +8,20 @@ tags:
 
 # 🌐 Module: 25 Game Theory & Minimax
 
-> **Core Focus**: Minimax / Alpha-Beta Pruning, Nim Game, Stone Game I-VII  
-> **Domain Cluster**: Optimization & DP
+> [!abstract] 📋 Module Scope
+> - **Core Focus**: Minimax / Alpha-Beta Pruning, Nim Game, Stone Game I-VII  
+> - **Domain Cluster**: `Optimization & DP`
 
 ---
 
-## 🟢 Core Concepts
+## 🟢 Core Algorithmic Concepts
 - [[Minimax & Game Theory]]
 
 ---
 
-## 🎯 Benchmark Problems
-- [[LC 292 Nim Game]] (Easy)
-- [[LC 877 Stone Game]] (Medium)
+## 🎯 Benchmark MNC Problems
+- [[LC 292 Nim Game]] — Easy (`O(1)`)
+- [[LC 877 Stone Game]] — Medium (`O(1)`)
 
 ---
 - [[Index|🏠 Master Knowledge Galaxy Root]]

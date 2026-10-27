@@ -8,21 +8,22 @@ tags:
 
 # 🌐 Module: 19 Greedy Algorithms
 
-> **Core Focus**: Jump Game I/II, Gas Station, Candy, Job Sequencing, Minimum Platforms  
-> **Domain Cluster**: Optimization & DP
+> [!abstract] 📋 Module Scope
+> - **Core Focus**: Jump Game I/II, Gas Station, Candy, Job Sequencing, Minimum Platforms  
+> - **Domain Cluster**: `Optimization & DP`
 
 ---
 
-## 🟢 Core Concepts
+## 🟢 Core Algorithmic Concepts
 - [[Greedy Intervals & Reachability]]
 
 ---
 
-## 🎯 Benchmark Problems
-- [[LC 55 Jump Game]] (Medium)
-- [[LC 45 Jump Game II]] (Medium)
-- [[LC 134 Gas Station]] (Medium)
-- [[LC 135 Candy]] (Hard)
+## 🎯 Benchmark MNC Problems
+- [[LC 55 Jump Game]] — Medium (`O(N)`)
+- [[LC 45 Jump Game II]] — Medium (`O(N)`)
+- [[LC 134 Gas Station]] — Medium (`O(N)`)
+- [[LC 135 Candy]] — Hard (`O(N)`)
 
 ---
 - [[Index|🏠 Master Knowledge Galaxy Root]]

@@ -6,16 +6,17 @@ tags:
   - concept
 ---
 
-# 🟢 Concept: Backtracking & Pruning
+# 💡 Concept: Backtracking & Pruning
 
-- **Parent Module**: [[06 Recursion & Backtracking]]
-- **Mental Trigger / Intuition**: State-space tree exploration with branch elimination.
+> [!abstract] 🧠 Mental Model & Invariant
+> - **Parent Module**: [[06 Recursion & Backtracking]]
+> - **Core Intuition**: State-space tree exploration with branch elimination.
 
 ---
 
-## 🎯 Problems Utilizing Backtracking & Pruning
-- [[LC 78 Subsets]] (Medium)
-- [[LC 90 Subsets II]] (Medium)
-- [[LC 39 Combination Sum]] (Medium)
-- [[LC 51 N-Queens]] (Hard)
-- [[LC 79 Word Search]] (Medium)
+## 🎯 Benchmark Problems Utilizing Backtracking & Pruning
+- [[LC 78 Subsets]] — Medium (`O(2^N)`)
+- [[LC 90 Subsets II]] — Medium (`O(2^N)`)
+- [[LC 39 Combination Sum]] — Medium (`O(2^T)`)
+- [[LC 51 N-Queens]] — Hard (`O(N!)`)
+- [[LC 79 Word Search]] — Medium (`O(M * N * 3^L)`)

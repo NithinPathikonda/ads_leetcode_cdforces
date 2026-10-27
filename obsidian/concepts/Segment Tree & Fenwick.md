@@ -6,12 +6,13 @@ tags:
   - concept
 ---
 
-# 🟢 Concept: Segment Tree & Fenwick
+# 💡 Concept: Segment Tree & Fenwick
 
-- **Parent Module**: [[21 Segment Trees & Fenwick (BIT)]]
-- **Mental Trigger / Intuition**: Range queries and point/range updates in O(log N).
+> [!abstract] 🧠 Mental Model & Invariant
+> - **Parent Module**: [[21 Segment Trees & Fenwick (BIT)]]
+> - **Core Intuition**: Range queries and point/range updates in O(log N).
 
 ---
 
-## 🎯 Problems Utilizing Segment Tree & Fenwick
-- [[LC 307 Range Sum Query - Mutable]] (Medium)
+## 🎯 Benchmark Problems Utilizing Segment Tree & Fenwick
+- [[LC 307 Range Sum Query - Mutable]] — Medium (`O(log N)`)

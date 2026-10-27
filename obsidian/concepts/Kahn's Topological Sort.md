@@ -6,13 +6,14 @@ tags:
   - concept
 ---
 
-# 🟢 Concept: Kahn's Topological Sort
+# 💡 Concept: Kahn's Topological Sort
 
-- **Parent Module**: [[12 Graphs 2 TopoSort & Shortest Paths]]
-- **Mental Trigger / Intuition**: Indegree array + queue for DAG dependency ordering.
+> [!abstract] 🧠 Mental Model & Invariant
+> - **Parent Module**: [[12 Graphs 2 TopoSort & Shortest Paths]]
+> - **Core Intuition**: Indegree array + queue for DAG dependency ordering.
 
 ---
 
-## 🎯 Problems Utilizing Kahn's Topological Sort
-- [[LC 207 Course Schedule]] (Medium)
-- [[LC 210 Course Schedule II]] (Medium)
+## 🎯 Benchmark Problems Utilizing Kahn's Topological Sort
+- [[LC 207 Course Schedule]] — Medium (`O(V + E)`)
+- [[LC 210 Course Schedule II]] — Medium (`O(V + E)`)

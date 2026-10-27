@@ -6,12 +6,13 @@ tags:
   - concept
 ---
 
-# 🟢 Concept: Bitmask DP
+# 💡 Concept: Bitmask DP
 
-- **Parent Module**: [[18 Dynamic Programming 5 Trees, Bitmask & Digit DP]]
-- **Mental Trigger / Intuition**: Integer bitmask representing subset state space.
+> [!abstract] 🧠 Mental Model & Invariant
+> - **Parent Module**: [[18 Dynamic Programming 5 Trees, Bitmask & Digit DP]]
+> - **Core Intuition**: Integer bitmask representing subset state space.
 
 ---
 
-## 🎯 Problems Utilizing Bitmask DP
-- [[LC 847 Shortest Path Visiting All Nodes]] (Hard)
+## 🎯 Benchmark Problems Utilizing Bitmask DP
+- [[LC 847 Shortest Path Visiting All Nodes]] — Hard (`O(N^2 * 2^N)`)

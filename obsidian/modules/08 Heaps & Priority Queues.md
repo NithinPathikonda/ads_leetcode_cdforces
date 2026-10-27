@@ -8,21 +8,22 @@ tags:
 
 # 🌐 Module: 08 Heaps & Priority Queues
 
-> **Core Focus**: Top-K Elements, K-Way Merge, Median in Stream, Task Scheduler, Two Heaps  
-> **Domain Cluster**: Hierarchical & Graphs
+> [!abstract] 📋 Module Scope
+> - **Core Focus**: Top-K Elements, K-Way Merge, Median in Stream, Task Scheduler, Two Heaps  
+> - **Domain Cluster**: `Hierarchical & Graphs`
 
 ---
 
-## 🟢 Core Concepts
+## 🟢 Core Algorithmic Concepts
 - [[Binary Heap & Priority Queue]]
 - [[Two Heaps Running Median]]
 
 ---
 
-## 🎯 Benchmark Problems
-- [[LC 215 Kth Largest Element in an Array]] (Medium)
-- [[LC 295 Find Median from Data Stream]] (Hard)
-- [[LC 621 Task Scheduler]] (Medium)
+## 🎯 Benchmark MNC Problems
+- [[LC 215 Kth Largest Element in an Array]] — Medium (`O(N log K)`)
+- [[LC 295 Find Median from Data Stream]] — Hard (`O(log N)`)
+- [[LC 621 Task Scheduler]] — Medium (`O(N)`)
 
 ---
 - [[Index|🏠 Master Knowledge Galaxy Root]]

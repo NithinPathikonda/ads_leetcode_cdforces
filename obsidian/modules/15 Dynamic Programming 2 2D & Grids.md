@@ -8,22 +8,23 @@ tags:
 
 # 🌐 Module: 15 Dynamic Programming 2 2D & Grids
 
-> **Core Focus**: Unique Paths, Min Path Sum, Maximal Square, Dungeon Game  
-> **Domain Cluster**: Optimization & DP
+> [!abstract] 📋 Module Scope
+> - **Core Focus**: Unique Paths, Min Path Sum, Maximal Square, Dungeon Game  
+> - **Domain Cluster**: `Optimization & DP`
 
 ---
 
-## 🟢 Core Concepts
+## 🟢 Core Algorithmic Concepts
 - [[2D Grid DP]]
 - [[Constructive Grid Path]]
 
 ---
 
-## 🎯 Benchmark Problems
-- [[LC 62 Unique Paths]] (Medium)
-- [[LC 64 Minimum Path Sum]] (Medium)
-- [[LC 221 Maximal Square]] (Medium)
-- [[LC 3963 Create Grid With Exactly One Path]] (Easy)
+## 🎯 Benchmark MNC Problems
+- [[LC 62 Unique Paths]] — Medium (`O(M * N)`)
+- [[LC 64 Minimum Path Sum]] — Medium (`O(M * N)`)
+- [[LC 221 Maximal Square]] — Medium (`O(M * N)`)
+- [[LC 3963 Create Grid With Exactly One Path]] — Easy (`O(M + N)`)
 
 ---
 - [[Index|🏠 Master Knowledge Galaxy Root]]

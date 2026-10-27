@@ -246,6 +246,18 @@
       border-radius: 50%;
     }
 
+    /* Quadrant Watermark Anchors */
+    .quadrant-label {
+      position: absolute;
+      font-size: 0.75rem;
+      font-weight: 800;
+      text-transform: uppercase;
+      letter-spacing: 0.15em;
+      color: rgba(255, 255, 255, 0.15);
+      pointer-events: none;
+      z-index: 5;
+    }
+
     /* Floating Cursor Tooltip Card */
     #nodeTooltip {
       position: absolute;
@@ -283,7 +295,7 @@
       right: 0;
       width: 440px;
       height: 100vh;
-      background: rgba(10, 15, 26, 0.95);
+      background: rgba(10, 15, 26, 0.96);
       backdrop-filter: blur(28px);
       border-left: 1px solid rgba(56, 189, 248, 0.25);
       box-shadow: -15px 0 45px rgba(0,0,0,0.8);
@@ -551,7 +563,7 @@
     <span>🔍</span>
     <input type="text" id="galaxySearch" placeholder="Search patterns, problems (e.g. 3Sum, Tree, Kadane)..." autocomplete="off">
     <div style="display: flex; gap: 4px;">
-      <button class="label-toggle-btn active" id="btnLODSmart" title="Adaptive Smart Labels">Smart LOD</button>
+      <button class="label-toggle-btn active" id="btnLODSmart" title="Adaptive Smart Labels (Anti-Collision)">Smart LOD</button>
       <button class="label-toggle-btn" id="btnLODAll" title="Show All Labels">All</button>
       <button class="label-toggle-btn" id="btnLODNone" title="Stars Only">Stars Only</button>
     </div>
@@ -594,9 +606,9 @@
     const NODE_RADIUS = {
       root: 14,
       module: 8.5,
-      concept: 5.8,
-      company: 6.8,
-      problem: 4.2
+      concept: 5.5,
+      company: 6.5,
+      problem: 4.0
     };
 
     let graphData = null;
@@ -641,7 +653,7 @@
         .attr("width", "200%")
         .attr("height", "200%");
       starFilter.append("feGaussianBlur")
-        .attr("stdDeviation", "2.5")
+        .attr("stdDeviation", "2.2")
         .attr("result", "coloredBlur");
       const feMerge1 = starFilter.append("feMerge");
       feMerge1.append("feMergeNode").attr("in", "coloredBlur");
@@ -664,7 +676,7 @@
       g = svg.append("g");
 
       zoomBehavior = d3.zoom()
-        .scaleExtent([0.2, 6])
+        .scaleExtent([0.25, 6])
         .on("zoom", (e) => {
           currentZoom = e.transform.k;
           g.attr("transform", e.transform);
@@ -672,25 +684,53 @@
         });
       svg.call(zoomBehavior);
 
-      // Force Simulation tuned for cohesive organic celestial sphere (No artificial 4 corners!)
+      // Force Simulation: Soft quadrant cluster guidance eliminates messy clumping!
       simulation = d3.forceSimulation(graphData.nodes)
         .force("link", d3.forceLink(graphData.links).id(d => d.id).distance(d => {
-          if (d.type === "module-root") return 110;
-          if (d.type === "module-concept") return 70;
-          if (d.type === "ladder") return 45;
-          if (d.type === "problem-company") return 65;
+          if (d.type === "module-root") return 130;
+          if (d.type === "module-concept") return 75;
+          if (d.type === "ladder") return 40;
+          if (d.type === "problem-company") return 90;
           return 50;
-        }).strength(d => d.type === "ladder" ? 0.95 : (d.type === "module-root" ? 0.8 : 0.65)))
+        }).strength(d => {
+          if (d.type === "problem-company") return 0.04; // Very gentle company spring so it never clumps
+          if (d.type === "ladder") return 0.95;
+          if (d.type === "module-root") return 0.7;
+          return 0.65;
+        }))
         .force("charge", d3.forceManyBody().strength(d => {
-          if (d.group === "root") return -650;
-          if (d.group === "module") return -220;
-          if (d.group === "company") return -160;
-          if (d.group === "concept") return -110;
+          if (d.group === "root") return -800;
+          if (d.group === "module") return -300;
+          if (d.group === "company") return -180;
+          if (d.group === "concept") return -120;
           return -55;
         }))
-        // Anti-Collision Physics: Ensures NO TWO NODES EVER COLLIDE OR OVERLAP!
-        .force("collision", d3.forceCollide().radius(d => (NODE_RADIUS[d.group] || 4) + 14))
-        .force("center", d3.forceCenter(width / 2, height / 2).strength(0.35));
+        // Anti-Collision Physics: Generous collision buffer ensures ZERO overlap
+        .force("collision", d3.forceCollide().radius(d => {
+          if (d.group === "root") return 40;
+          if (d.group === "module") return 45;
+          if (d.group === "company") return 30;
+          if (d.group === "concept") return 22;
+          return 14;
+        }))
+        .force("center", d3.forceCenter(width / 2, height / 2).strength(0.25))
+        // Natural Quadrant Guiding Force (Keeps modules beautifully organized into their 4 domains)
+        .force("quadrantX", d3.forceX(d => {
+          if (d.group === "root") return width / 2;
+          if (d.details && d.details.cluster === "Linear & Search") return width * 0.32;
+          if (d.details && d.details.cluster === "Hierarchical & Graphs") return width * 0.68;
+          if (d.details && d.details.cluster === "Optimization & DP") return width * 0.32;
+          if (d.details && d.details.cluster === "Advanced & Quant") return width * 0.68;
+          return width / 2;
+        }).strength(d => d.group === "module" ? 0.42 : (d.group === "concept" ? 0.25 : 0.06)))
+        .force("quadrantY", d3.forceY(d => {
+          if (d.group === "root") return height / 2;
+          if (d.details && d.details.cluster === "Linear & Search") return height * 0.32;
+          if (d.details && d.details.cluster === "Hierarchical & Graphs") return height * 0.32;
+          if (d.details && d.details.cluster === "Optimization & DP") return height * 0.68;
+          if (d.details && d.details.cluster === "Advanced & Quant") return height * 0.68;
+          return height / 2;
+        }).strength(d => d.group === "module" ? 0.42 : (d.group === "concept" ? 0.25 : 0.06)));
 
       // 1. Render Visible Geometric Links (Crisp, luminescent threads!)
       linkElements = g.append("g")
@@ -699,12 +739,12 @@
         .data(graphData.links)
         .join("line")
         .attr("stroke", d => {
-          if (d.type === "ladder") return "rgba(168, 85, 247, 0.55)";   // Radiant Violet
-          if (d.type === "problem-company") return "rgba(245, 158, 11, 0.45)"; // Warm Amber
-          if (d.type === "module-root") return "rgba(56, 189, 248, 0.4)";    // Cyan
-          return "rgba(148, 163, 184, 0.25)";                               // Silver lattice
+          if (d.type === "ladder") return "rgba(168, 85, 247, 0.55)";
+          if (d.type === "problem-company") return "rgba(245, 158, 11, 0.25)";
+          if (d.type === "module-root") return "rgba(56, 189, 248, 0.35)";
+          return "rgba(148, 163, 184, 0.22)";
         })
-        .attr("stroke-width", d => d.type === "ladder" ? 1.6 : (d.type === "module-root" ? 1.4 : 0.95));
+        .attr("stroke-width", d => d.type === "ladder" ? 1.5 : (d.type === "module-root" ? 1.3 : 0.85));
 
       // 2. Render Glowing Constellation Nodes
       nodeElements = g.append("g")
@@ -715,7 +755,7 @@
         .attr("r", d => NODE_RADIUS[d.group] || 4)
         .attr("fill", d => GROUP_COLORS[d.group] || "#fff")
         .attr("stroke", d => {
-          if (d.group === "problem") return "rgba(255, 255, 255, 0.75)";
+          if (d.group === "problem") return "rgba(255, 255, 255, 0.7)";
           return GROUP_COLORS[d.group] || "#fff";
         })
         .attr("stroke-width", d => (d.group === "module" || d.group === "root") ? 2.2 : 1.2)
@@ -726,7 +766,7 @@
         .on("mouseenter", (e, d) => hoverNode(e, d))
         .on("mouseleave", () => unhover());
 
-      // 3. Render High-Contrast Smart Labels
+      // 3. Render High-Contrast Smart Labels (No overlapping text!)
       textElements = g.append("g")
         .attr("class", "labels")
         .selectAll("text")
@@ -736,9 +776,9 @@
         .attr("text-anchor", "middle")
         .attr("dy", d => (NODE_RADIUS[d.group] || 4) + 12)
         .attr("fill", d => GROUP_COLORS[d.group] || "#fff")
-        .attr("font-size", d => d.group === "root" ? "12px" : (d.group === "module" ? "10px" : "8px"))
+        .attr("font-size", d => d.group === "root" ? "12px" : (d.group === "module" ? "9.5px" : "8px"))
         .attr("font-weight", d => (d.group === "module" || d.group === "root" || d.group === "company") ? "700" : "500")
-        .attr("opacity", d => (d.group === "root" || d.group === "module") ? 1 : 0)
+        .attr("opacity", d => d.group === "root" ? 1 : 0)
         .text(d => d.name);
 
       simulation.on("tick", () => {
@@ -792,11 +832,12 @@
         if (labelMode === "none") return 0;
         if (labelMode === "all") return 1;
 
-        // Smart Zoom-based Level of Detail (LOD) - No label collisions!
-        if (d.group === "root" || d.group === "module") return 1;
-        if (d.group === "company" && currentZoom > 1.0) return 1;
-        if (d.group === "concept" && currentZoom > 1.4) return 1;
-        if (d.group === "problem" && currentZoom > 2.2) return 1;
+        // Smart Zoom-based Level of Detail (LOD) - ZERO LABEL COLLISION
+        if (d.group === "root") return 1;
+        if (d.group === "module" && currentZoom > 1.15) return 1;
+        if (d.group === "company" && currentZoom > 1.35) return 1;
+        if (d.group === "concept" && currentZoom > 1.8) return 1;
+        if (d.group === "problem" && currentZoom > 2.6) return 1;
 
         return 0;
       });
@@ -837,12 +878,12 @@
             if (l.type === "problem-company") return "#f59e0b"; // Warm gold
             return "#38bdf8"; // Radiant cyan
           }
-          return "rgba(148, 163, 184, 0.25)";
+          return "rgba(148, 163, 184, 0.22)";
         })
         .attr("stroke-width", l => {
           const sId = typeof l.source === "object" ? l.source.id : l.source;
           const tId = typeof l.target === "object" ? l.target.id : l.target;
-          return (sId === target.id || tId === target.id) ? 2.8 : 0.95;
+          return (sId === target.id || tId === target.id) ? 2.8 : 0.85;
         });
 
       updateLabelVisibility(directNeighbors);
@@ -872,11 +913,11 @@
         .attr("opacity", 1)
         .attr("stroke", d => {
           if (d.type === "ladder") return "rgba(168, 85, 247, 0.55)";
-          if (d.type === "problem-company") return "rgba(245, 158, 11, 0.45)";
-          if (d.type === "module-root") return "rgba(56, 189, 248, 0.4)";
-          return "rgba(148, 163, 184, 0.25)";
+          if (d.type === "problem-company") return "rgba(245, 158, 11, 0.25)";
+          if (d.type === "module-root") return "rgba(56, 189, 248, 0.35)";
+          return "rgba(148, 163, 184, 0.22)";
         })
-        .attr("stroke-width", d => d.type === "ladder" ? 1.6 : (d.type === "module-root" ? 1.4 : 0.95));
+        .attr("stroke-width", d => d.type === "ladder" ? 1.5 : (d.type === "module-root" ? 1.3 : 0.85));
 
       updateLabelVisibility();
     }
@@ -1207,11 +1248,11 @@
           .transition().duration(600)
           .attr("stroke", d => {
             if (d.type === "ladder") return "rgba(168, 85, 247, 0.55)";
-            if (d.type === "problem-company") return "rgba(245, 158, 11, 0.45)";
-            if (d.type === "module-root") return "rgba(56, 189, 248, 0.4)";
-            return "rgba(148, 163, 184, 0.25)";
+            if (d.type === "problem-company") return "rgba(245, 158, 11, 0.25)";
+            if (d.type === "module-root") return "rgba(56, 189, 248, 0.35)";
+            return "rgba(148, 163, 184, 0.22)";
           })
-          .attr("stroke-width", d => d.type === "ladder" ? 1.6 : (d.type === "module-root" ? 1.4 : 0.95));
+          .attr("stroke-width", d => d.type === "ladder" ? 1.5 : (d.type === "module-root" ? 1.3 : 0.85));
       });
     }
 

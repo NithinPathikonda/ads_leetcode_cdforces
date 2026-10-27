@@ -6,13 +6,14 @@ tags:
   - concept
 ---
 
-# 🟢 Concept: Prefix Sums
+# 💡 Concept: Prefix Sums
 
-- **Parent Module**: [[01 Arrays & Hashing]]
-- **Mental Trigger / Intuition**: Running cumulative sum array enables O(1) range sum queries.
+> [!abstract] 🧠 Mental Model & Invariant
+> - **Parent Module**: [[01 Arrays & Hashing]]
+> - **Core Intuition**: Running cumulative sum array enables O(1) range sum queries.
 
 ---
 
-## 🎯 Problems Utilizing Prefix Sums
-- [[LC 238 Product of Array Except Self]] (Medium)
-- [[LC 560 Subarray Sum Equals K]] (Medium)
+## 🎯 Benchmark Problems Utilizing Prefix Sums
+- [[LC 238 Product of Array Except Self]] — Medium (`O(N)`)
+- [[LC 560 Subarray Sum Equals K]] — Medium (`O(N)`)

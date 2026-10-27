@@ -10,12 +10,13 @@ tags:
 
 Welcome to your **Obsidian DSA Second Brain & Neural Knowledge Constellation**!
 
-This graph represents a living, unified constellation mapping:
-- **27 Complete Master Curriculum Modules**
-- **45+ Algorithmic Concept Hubs**
-- **100+ Top MNC Benchmark Problems**
-- **Target Product Companies (Google, Meta, Amazon, Apple, Microsoft...)**
-- **Progressive Problem Ladders**
+> [!abstract] 🪐 Knowledge Network Overview
+> This vault houses a unified, non-clumping algorithmic network linking:
+> - **27 Master Curriculum Modules**
+> - **53 High-Yield Concept Hubs**
+> - **112 MNC Benchmark Problems**
+> - **Progressive Problem Ladders & Solution Code**
+> - **Target MNC Question Banks (Google, Meta, Amazon, Microsoft, Apple, Bloomberg, Adobe)**
 
 ---
 
@@ -51,10 +52,10 @@ This graph represents a living, unified constellation mapping:
 ---
 
 ## 🟣 Target MNC Constellations
-- [[Adobe]] (1 problems)
-- [[Amazon]] (93 problems)
-- [[Apple]] (10 problems)
-- [[Bloomberg]] (6 problems)
-- [[Google]] (77 problems)
-- [[Meta]] (49 problems)
-- [[Microsoft]] (30 problems)
+- [[Adobe]] (1 curated questions)
+- [[Amazon]] (93 curated questions)
+- [[Apple]] (10 curated questions)
+- [[Bloomberg]] (6 curated questions)
+- [[Google]] (77 curated questions)
+- [[Meta]] (49 curated questions)
+- [[Microsoft]] (30 curated questions)

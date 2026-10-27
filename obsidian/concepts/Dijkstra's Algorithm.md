@@ -6,13 +6,14 @@ tags:
   - concept
 ---
 
-# 🟢 Concept: Dijkstra's Algorithm
+# 💡 Concept: Dijkstra's Algorithm
 
-- **Parent Module**: [[12 Graphs 2 TopoSort & Shortest Paths]]
-- **Mental Trigger / Intuition**: Greedy non-negative weighted shortest paths via Min-Heap.
+> [!abstract] 🧠 Mental Model & Invariant
+> - **Parent Module**: [[12 Graphs 2 TopoSort & Shortest Paths]]
+> - **Core Intuition**: Greedy non-negative weighted shortest paths via Min-Heap.
 
 ---
 
-## 🎯 Problems Utilizing Dijkstra's Algorithm
-- [[LC 743 Network Delay Time]] (Medium)
-- [[LC 787 Cheapest Flights Within K Stops]] (Medium)
+## 🎯 Benchmark Problems Utilizing Dijkstra's Algorithm
+- [[LC 743 Network Delay Time]] — Medium (`O((V + E) log V)`)
+- [[LC 787 Cheapest Flights Within K Stops]] — Medium (`O(K * E)`)

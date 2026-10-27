@@ -8,21 +8,22 @@ tags:
 
 # 🌐 Module: 20 Bit Manipulation & Math
 
-> **Core Focus**: Bitwise tricks, Single Number I/II/III, Fast Exponentiation, Sieve of Eratosthenes  
-> **Domain Cluster**: Advanced & Quant
+> [!abstract] 📋 Module Scope
+> - **Core Focus**: Bitwise tricks, Single Number I/II/III, Fast Exponentiation, Sieve of Eratosthenes  
+> - **Domain Cluster**: `Advanced & Quant`
 
 ---
 
-## 🟢 Core Concepts
+## 🟢 Core Algorithmic Concepts
 - [[Bitwise Tricks]]
 - [[Fast Exponentiation]]
 
 ---
 
-## 🎯 Benchmark Problems
-- [[LC 136 Single Number]] (Easy)
-- [[LC 191 Number of 1 Bits]] (Easy)
-- [[LC 50 Pow(x, n)]] (Medium)
+## 🎯 Benchmark MNC Problems
+- [[LC 136 Single Number]] — Easy (`O(N)`)
+- [[LC 191 Number of 1 Bits]] — Easy (`O(k)`)
+- [[LC 50 Pow(x, n)]] — Medium (`O(log N)`)
 
 ---
 - [[Index|🏠 Master Knowledge Galaxy Root]]

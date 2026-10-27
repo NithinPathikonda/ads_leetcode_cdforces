@@ -6,12 +6,13 @@ tags:
   - concept
 ---
 
-# 🟢 Concept: Dutch National Flag
+# 💡 Concept: Dutch National Flag
 
-- **Parent Module**: [[01 Arrays & Hashing]]
-- **Mental Trigger / Intuition**: 3-way partition using low, mid, high pointers in O(N).
+> [!abstract] 🧠 Mental Model & Invariant
+> - **Parent Module**: [[01 Arrays & Hashing]]
+> - **Core Intuition**: 3-way partition using low, mid, high pointers in O(N).
 
 ---
 
-## 🎯 Problems Utilizing Dutch National Flag
-- [[LC 75 Sort Colors]] (Medium)
+## 🎯 Benchmark Problems Utilizing Dutch National Flag
+- [[LC 75 Sort Colors]] — Medium (`O(N)`)

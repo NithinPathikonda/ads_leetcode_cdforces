@@ -7,7 +7,9 @@ tags:
 
 # 🟣 Target MNC Hub: Bloomberg
 
-> **Curated Question Count**: `6 problems`
+> [!abstract] 🏢 Interview Question Frequency
+> - **Tier**: Tier-1 Tech Titan
+> - **Curated Question Count**: `6 benchmark problems`
 
 ---
 

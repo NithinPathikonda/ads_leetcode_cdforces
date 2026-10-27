@@ -6,12 +6,13 @@ tags:
   - concept
 ---
 
-# 🟢 Concept: Permutations & Combinations
+# 💡 Concept: Permutations & Combinations
 
-- **Parent Module**: [[06 Recursion & Backtracking]]
-- **Mental Trigger / Intuition**: Subsets and orderings with deduplication.
+> [!abstract] 🧠 Mental Model & Invariant
+> - **Parent Module**: [[06 Recursion & Backtracking]]
+> - **Core Intuition**: Subsets and orderings with deduplication.
 
 ---
 
-## 🎯 Problems Utilizing Permutations & Combinations
-- [[LC 46 Permutations]] (Medium)
+## 🎯 Benchmark Problems Utilizing Permutations & Combinations
+- [[LC 46 Permutations]] — Medium (`O(N!)`)

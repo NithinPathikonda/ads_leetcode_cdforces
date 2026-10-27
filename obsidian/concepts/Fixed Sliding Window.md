@@ -6,13 +6,14 @@ tags:
   - concept
 ---
 
-# 🟢 Concept: Fixed Sliding Window
+# 💡 Concept: Fixed Sliding Window
 
-- **Parent Module**: [[02 Two Pointers & Sliding Window]]
-- **Mental Trigger / Intuition**: Window of constant width K; slides 1 step in O(1).
+> [!abstract] 🧠 Mental Model & Invariant
+> - **Parent Module**: [[02 Two Pointers & Sliding Window]]
+> - **Core Intuition**: Window of constant width K; slides 1 step in O(1).
 
 ---
 
-## 🎯 Problems Utilizing Fixed Sliding Window
-- [[LC 567 Permutation in String]] (Medium)
-- [[LC 438 Find All Anagrams in a String]] (Medium)
+## 🎯 Benchmark Problems Utilizing Fixed Sliding Window
+- [[LC 567 Permutation in String]] — Medium (`O(N)`)
+- [[LC 438 Find All Anagrams in a String]] — Medium (`O(N)`)

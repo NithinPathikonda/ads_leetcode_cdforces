@@ -6,13 +6,14 @@ tags:
   - concept
 ---
 
-# 🟢 Concept: Graph DFS & Components
+# 💡 Concept: Graph DFS & Components
 
-- **Parent Module**: [[11 Graphs 1 Traversals & Fundamentals]]
-- **Mental Trigger / Intuition**: Cycle detection and connected component exploration.
+> [!abstract] 🧠 Mental Model & Invariant
+> - **Parent Module**: [[11 Graphs 1 Traversals & Fundamentals]]
+> - **Core Intuition**: Cycle detection and connected component exploration.
 
 ---
 
-## 🎯 Problems Utilizing Graph DFS & Components
-- [[LC 133 Clone Graph]] (Medium)
-- [[LC 785 Is Graph Bipartite]] (Medium)
+## 🎯 Benchmark Problems Utilizing Graph DFS & Components
+- [[LC 133 Clone Graph]] — Medium (`O(V + E)`)
+- [[LC 785 Is Graph Bipartite]] — Medium (`O(V + E)`)

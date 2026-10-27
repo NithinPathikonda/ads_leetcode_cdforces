@@ -1,12 +1,7 @@
 #!/usr/bin/env python3
 """
-Exports Master DSA Knowledge Galaxy with Complete Brain Memory Metadata:
-- 15-Second Mental Trigger
-- The Golden Invariant
-- Critical Interview Trap / Pitfall
-- Progressive Pattern Ladder (Previous -> Current -> Next)
-- Target Companies
-- C++ Solution Code Path
+Exports Master DSA Knowledge Galaxy with Clean, Balanced Constellation Topology
+and Complete Brain Memory Metadata.
 """
 
 import sys
@@ -22,10 +17,41 @@ from obsidian.build_master_knowledge_galaxy import (
 
 OUTPUT_FILE = BASE_DIR / "ui" / "graph_data.json"
 
-# Brain Memory Maps: (trigger, invariant, pitfall, code_path)
+# Concise, punchy display names for clean graph readability (eliminates label wrapping/clumping)
+SHORT_MODULE_NAMES = {
+    "01 Arrays & Hashing": "01 Arrays & Hash",
+    "02 Two Pointers & Sliding Window": "02 Two Pointers",
+    "03 Binary Search": "03 Binary Search",
+    "04 Stack & Monotonic Stack": "04 Monotonic Stack",
+    "05 Linked Lists": "05 Linked Lists",
+    "06 Recursion & Backtracking": "06 Backtracking",
+    "07 Binary Trees & BST": "07 Binary Trees",
+    "08 Heaps & Priority Queues": "08 Heaps & PQ",
+    "09 Intervals & Sweepline": "09 Intervals & Sweep",
+    "10 Tries (Prefix Trees)": "10 Tries",
+    "11 Graphs 1 Traversals & Fundamentals": "11 Graph Traversals",
+    "12 Graphs 2 TopoSort & Shortest Paths": "12 TopoSort & Paths",
+    "13 Disjoint Set Union (DSU) & MST": "13 DSU & MST",
+    "14 Dynamic Programming 1 1D & Classics": "14 1D Linear DP",
+    "15 Dynamic Programming 2 2D & Grids": "15 2D Grid DP",
+    "16 Dynamic Programming 3 Strings & Sequences": "16 String DP",
+    "17 Dynamic Programming 4 Knapsack & Partition": "17 Knapsack DP",
+    "18 Dynamic Programming 5 Trees, Bitmask & Digit DP": "18 Tree & Bitmask DP",
+    "19 Greedy Algorithms": "19 Greedy Algorithms",
+    "20 Bit Manipulation & Math": "20 Bit Manipulation",
+    "21 Segment Trees & Fenwick (BIT)": "21 Segment Trees",
+    "22 Design Data Structures": "22 System Design",
+    "23 Advanced Strings (KMP & Rabin-Karp)": "23 KMP & Rabin-Karp",
+    "24 Advanced Graphs (Tarjan & Eulerian)": "24 Tarjan & Eulerian",
+    "25 Game Theory & Minimax": "25 Game Theory",
+    "26 Reservoir Sampling & Randomized": "26 Randomized & Stream",
+    "27 Computational Geometry & Math": "27 Geometry & Math"
+}
+
+# Rich Brain Memory Metadata Dictionary
 BRAIN_METADATA = {
     "LC 1: Two Sum": {
-        "trigger": "Unsorted array + Pair Sum -> 1-pass Hash Map complement lookup.",
+        "trigger": "Unsorted array + Pair Sum -> 1-pass Hash Map complement lookup in O(N).",
         "invariant": "At step i, all elements before i are in map. We check target - nums[i] BEFORE inserting.",
         "pitfall": "Do NOT insert before checking, or element might pair with itself.",
         "code_path": "01_arrays_hashing/lc_0001_two_sum.cpp"
@@ -37,7 +63,7 @@ BRAIN_METADATA = {
         "code_path": "01_arrays_hashing/lc_0121_best_time_to_buy_and_sell_stock.cpp"
     },
     "LC 242: Valid Anagram": {
-        "trigger": "Permutation character match -> 26-int frequency signature.",
+        "trigger": "Permutation character match -> 26-int frequency signature in single pass.",
         "invariant": "Lengths must match; +1 for s and -1 for t leaves all counts at exactly 0.",
         "pitfall": "Check s.length() == t.length() first before allocating memory.",
         "code_path": "01_arrays_hashing/lc_0242_valid_anagram.cpp"
@@ -156,6 +182,12 @@ BRAIN_METADATA = {
         "pitfall": "Append dummy 0-height bar at the end to flush all remaining elements in stack.",
         "code_path": "04_stack_monotonic_stack/lc_0084_largest_rectangle_in_histogram.cpp"
     },
+    "LC 51: N-Queens": {
+        "trigger": "Placing N non-attacking pieces on N×N board -> Row-by-row backtracking with O(1) diagonal sets.",
+        "invariant": "One queen per row. Column `col`, Main diag `row - col + n`, Anti diag `row + col` must be free.",
+        "pitfall": "Never scan the board in O(N) to check diagonals. Use 3 boolean lookup sets. Revert state on backtrack.",
+        "code_path": ""
+    },
     "LC 146: LRU Cache": {
         "trigger": "O(1) get, put, and eviction of least recently used -> Hash Map + Doubly Linked List.",
         "invariant": "Head = Most Recently Used (MRU), Tail = Least Recently Used (LRU). Map stores node pointers.",
@@ -208,34 +240,37 @@ def build_web_graph():
                 "type": link_type
             })
 
-    # 1. Galaxy Core (Central Master Node)
+    # 1. Galaxy Core (Central Anchor)
     add_node("root", "Master DSA Constellation", "root", "Core Constellation", 14, {
         "title": "Master DSA Constellation",
         "cluster": "Core",
         "description": "Unified 27-Module Algorithmic Master Brain"
     })
 
-    # 2. 27 Curriculum Modules
+    # 2. 27 Curriculum Modules (with punchy short names to prevent label collisions)
     for mod_name, mdata in MODULE_DETAILS.items():
         mid = f"mod:{mod_name}"
-        add_node(mid, mod_name, "module", "Curriculum Module", 8.5, {
+        short_name = SHORT_MODULE_NAMES.get(mod_name, mod_name)
+        add_node(mid, short_name, "module", "Curriculum Module", 8.5, {
             "title": mod_name,
+            "short_name": short_name,
             "cluster": mdata["cluster"],
             "focus": mdata["focus"]
         })
-        add_link("root", mid, 2, "module-root")
+        add_link("root", mid, 1.8, "module-root")
 
     # 3. Concepts
     for cname, (cmod, cdesc) in CONCEPTS.items():
         cid = f"concept:{cname}"
-        add_node(cid, cname, "concept", "Algorithmic Pattern", 5.8, {
+        add_node(cid, cname, "concept", "Algorithmic Pattern", 5.5, {
             "name": cname,
             "module": cmod,
+            "cluster": MODULE_DETAILS.get(cmod, {}).get("cluster", "Core"),
             "intuition": cdesc
         })
-        add_link(f"mod:{cmod}", cid, 1.5, "module-concept")
+        add_link(f"mod:{cmod}", cid, 1.4, "module-concept")
 
-    # 4. Target Companies
+    # 4. Target Companies (Positioned harmoniously without collapsing onto Module 01)
     all_companies = set()
     for prob in PROBLEMS:
         for c in prob[6]:
@@ -243,7 +278,7 @@ def build_web_graph():
 
     for comp in sorted(all_companies):
         cid = f"company:{comp}"
-        add_node(cid, comp, "company", "Target MNC", 6.8, {
+        add_node(cid, comp, "company", "Target MNC", 6.5, {
             "name": comp,
             "tier": "Tier-1 Tech Titan"
         })
@@ -274,17 +309,16 @@ def build_web_graph():
             "ladder_next": next_map.get(ptitle, None)
         }
 
-        add_node(pid, ptitle, "problem", "Problem Node", 4.2, details)
+        add_node(pid, ptitle, "problem", "Problem Node", 4.0, details)
 
-        # Connect Problem to its Module & Concept
+        # Primary link to its Concept Hub
         add_link(f"concept:{pconcept}", pid, 1.2, "problem-concept")
-        add_link(f"mod:{pmod}", pid, 0.9, "problem-module")
 
-        # Connect Problem to Companies
+        # Soft company links (lightweight so they don't drag company nodes into knots)
         for comp in pcompanies:
-            add_link(f"company:{comp}", pid, 0.7, "problem-company")
+            add_link(f"company:{comp}", pid, 0.35, "problem-company")
 
-    # 7. Semantic Progressive Ladders
+    # 7. Semantic Progressive Ladders (Highlight progressive pattern ladders)
     for a, b in SEMANTIC_BRIDGES:
         pid_a = f"prob:{a}"
         pid_b = f"prob:{b}"

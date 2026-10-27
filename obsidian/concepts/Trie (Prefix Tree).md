@@ -6,13 +6,14 @@ tags:
   - concept
 ---
 
-# 🟢 Concept: Trie (Prefix Tree)
+# 💡 Concept: Trie (Prefix Tree)
 
-- **Parent Module**: [[10 Tries (Prefix Trees)]]
-- **Mental Trigger / Intuition**: Character branch tree for prefix matching and autocomplete.
+> [!abstract] 🧠 Mental Model & Invariant
+> - **Parent Module**: [[10 Tries (Prefix Trees)]]
+> - **Core Intuition**: Character branch tree for prefix matching and autocomplete.
 
 ---
 
-## 🎯 Problems Utilizing Trie (Prefix Tree)
-- [[LC 208 Implement Trie (Prefix Tree)]] (Medium)
-- [[LC 211 Design Add and Search Words]] (Medium)
+## 🎯 Benchmark Problems Utilizing Trie (Prefix Tree)
+- [[LC 208 Implement Trie (Prefix Tree)]] — Medium (`O(L)`)
+- [[LC 211 Design Add and Search Words]] — Medium (`O(26^dots)`)

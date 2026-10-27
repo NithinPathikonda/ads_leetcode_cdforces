@@ -6,13 +6,14 @@ tags:
   - concept
 ---
 
-# 🟢 Concept: Binary Search on Array
+# 💡 Concept: Binary Search on Array
 
-- **Parent Module**: [[03 Binary Search]]
-- **Mental Trigger / Intuition**: Halving sorted search space in O(log N).
+> [!abstract] 🧠 Mental Model & Invariant
+> - **Parent Module**: [[03 Binary Search]]
+> - **Core Intuition**: Halving sorted search space in O(log N).
 
 ---
 
-## 🎯 Problems Utilizing Binary Search on Array
-- [[LC 704 Binary Search]] (Easy)
-- [[LC 4 Median of Two Sorted Arrays]] (Hard)
+## 🎯 Benchmark Problems Utilizing Binary Search on Array
+- [[LC 704 Binary Search]] — Easy (`O(log N)`)
+- [[LC 4 Median of Two Sorted Arrays]] — Hard (`O(log(min(M, N)))`)

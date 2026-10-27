@@ -6,14 +6,15 @@ tags:
   - concept
 ---
 
-# 🟢 Concept: 2D Grid DP
+# 💡 Concept: 2D Grid DP
 
-- **Parent Module**: [[15 Dynamic Programming 2 2D & Grids]]
-- **Mental Trigger / Intuition**: Cell transitions from top and left neighbors.
+> [!abstract] 🧠 Mental Model & Invariant
+> - **Parent Module**: [[15 Dynamic Programming 2 2D & Grids]]
+> - **Core Intuition**: Cell transitions from top and left neighbors.
 
 ---
 
-## 🎯 Problems Utilizing 2D Grid DP
-- [[LC 62 Unique Paths]] (Medium)
-- [[LC 64 Minimum Path Sum]] (Medium)
-- [[LC 221 Maximal Square]] (Medium)
+## 🎯 Benchmark Problems Utilizing 2D Grid DP
+- [[LC 62 Unique Paths]] — Medium (`O(M * N)`)
+- [[LC 64 Minimum Path Sum]] — Medium (`O(M * N)`)
+- [[LC 221 Maximal Square]] — Medium (`O(M * N)`)

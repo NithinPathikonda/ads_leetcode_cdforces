@@ -6,12 +6,13 @@ tags:
   - concept
 ---
 
-# 🟢 Concept: BST Properties
+# 💡 Concept: BST Properties
 
-- **Parent Module**: [[07 Binary Trees & BST]]
-- **Mental Trigger / Intuition**: Inorder traversal produces strictly ascending sorted order.
+> [!abstract] 🧠 Mental Model & Invariant
+> - **Parent Module**: [[07 Binary Trees & BST]]
+> - **Core Intuition**: Inorder traversal produces strictly ascending sorted order.
 
 ---
 
-## 🎯 Problems Utilizing BST Properties
-- [[LC 98 Validate Binary Search Tree]] (Medium)
+## 🎯 Benchmark Problems Utilizing BST Properties
+- [[LC 98 Validate Binary Search Tree]] — Medium (`O(N)`)

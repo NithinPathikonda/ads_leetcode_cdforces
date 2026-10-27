@@ -8,19 +8,20 @@ tags:
 
 # 🌐 Module: 27 Computational Geometry & Math
 
-> **Core Focus**: Convex Hull (Graham Scan), Overlapping Area, Matrix Exponentiation  
-> **Domain Cluster**: Advanced & Quant
+> [!abstract] 📋 Module Scope
+> - **Core Focus**: Convex Hull (Graham Scan), Overlapping Area, Matrix Exponentiation  
+> - **Domain Cluster**: `Advanced & Quant`
 
 ---
 
-## 🟢 Core Concepts
+## 🟢 Core Algorithmic Concepts
 - [[Convex Hull & Geometry]]
 
 ---
 
-## 🎯 Benchmark Problems
-- [[LC 587 Erect the Fence]] (Hard)
-- [[LC 149 Max Points on a Line]] (Hard)
+## 🎯 Benchmark MNC Problems
+- [[LC 587 Erect the Fence]] — Hard (`O(N log N)`)
+- [[LC 149 Max Points on a Line]] — Hard (`O(N^2)`)
 
 ---
 - [[Index|🏠 Master Knowledge Galaxy Root]]

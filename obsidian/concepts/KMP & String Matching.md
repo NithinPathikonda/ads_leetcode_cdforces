@@ -6,14 +6,15 @@ tags:
   - concept
 ---
 
-# 🟢 Concept: KMP & String Matching
+# 💡 Concept: KMP & String Matching
 
-- **Parent Module**: [[23 Advanced Strings (KMP & Rabin-Karp)]]
-- **Mental Trigger / Intuition**: LPS prefix table and rolling hash string matching.
+> [!abstract] 🧠 Mental Model & Invariant
+> - **Parent Module**: [[23 Advanced Strings (KMP & Rabin-Karp)]]
+> - **Core Intuition**: LPS prefix table and rolling hash string matching.
 
 ---
 
-## 🎯 Problems Utilizing KMP & String Matching
-- [[LC 28 Find the Index of the First Occurrence in a String]] (Easy)
-- [[LC 214 Shortest Palindrome]] (Hard)
-- [[LC 5 Longest Palindromic Substring]] (Medium)
+## 🎯 Benchmark Problems Utilizing KMP & String Matching
+- [[LC 28 Find the Index of the First Occurrence in a String]] — Easy (`O(N + M)`)
+- [[LC 214 Shortest Palindrome]] — Hard (`O(N)`)
+- [[LC 5 Longest Palindromic Substring]] — Medium (`O(N)`)

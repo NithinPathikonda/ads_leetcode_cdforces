@@ -8,18 +8,19 @@ tags:
 
 # 🌐 Module: 21 Segment Trees & Fenwick (BIT)
 
-> **Core Focus**: Range Sum/Min Query, Point Updates, Range Updates with Lazy Propagation  
-> **Domain Cluster**: Advanced & Quant
+> [!abstract] 📋 Module Scope
+> - **Core Focus**: Range Sum/Min Query, Point Updates, Range Updates with Lazy Propagation  
+> - **Domain Cluster**: `Advanced & Quant`
 
 ---
 
-## 🟢 Core Concepts
+## 🟢 Core Algorithmic Concepts
 - [[Segment Tree & Fenwick]]
 
 ---
 
-## 🎯 Benchmark Problems
-- [[LC 307 Range Sum Query - Mutable]] (Medium)
+## 🎯 Benchmark MNC Problems
+- [[LC 307 Range Sum Query - Mutable]] — Medium (`O(log N)`)
 
 ---
 - [[Index|🏠 Master Knowledge Galaxy Root]]

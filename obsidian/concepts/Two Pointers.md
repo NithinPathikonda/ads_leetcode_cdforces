@@ -6,14 +6,15 @@ tags:
   - concept
 ---
 
-# 🟢 Concept: Two Pointers
+# 💡 Concept: Two Pointers
 
-- **Parent Module**: [[02 Two Pointers & Sliding Window]]
-- **Mental Trigger / Intuition**: Shrinking bounds or opposite direction pointers on sorted sequences.
+> [!abstract] 🧠 Mental Model & Invariant
+> - **Parent Module**: [[02 Two Pointers & Sliding Window]]
+> - **Core Intuition**: Shrinking bounds or opposite direction pointers on sorted sequences.
 
 ---
 
-## 🎯 Problems Utilizing Two Pointers
-- [[LC 167 Two Sum II - Input Array Is Sorted]] (Medium)
-- [[LC 15 3Sum]] (Medium)
-- [[LC 11 Container With Most Water]] (Medium)
+## 🎯 Benchmark Problems Utilizing Two Pointers
+- [[LC 167 Two Sum II - Input Array Is Sorted]] — Medium (`O(N)`)
+- [[LC 15 3Sum]] — Medium (`O(N^2)`)
+- [[LC 11 Container With Most Water]] — Medium (`O(N)`)

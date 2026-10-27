@@ -6,13 +6,14 @@ tags:
   - concept
 ---
 
-# 🟢 Concept: Minimax & Game Theory
+# 💡 Concept: Minimax & Game Theory
 
-- **Parent Module**: [[25 Game Theory & Minimax]]
-- **Mental Trigger / Intuition**: Adversarial evaluation with Alpha-Beta pruning.
+> [!abstract] 🧠 Mental Model & Invariant
+> - **Parent Module**: [[25 Game Theory & Minimax]]
+> - **Core Intuition**: Adversarial evaluation with Alpha-Beta pruning.
 
 ---
 
-## 🎯 Problems Utilizing Minimax & Game Theory
-- [[LC 292 Nim Game]] (Easy)
-- [[LC 877 Stone Game]] (Medium)
+## 🎯 Benchmark Problems Utilizing Minimax & Game Theory
+- [[LC 292 Nim Game]] — Easy (`O(1)`)
+- [[LC 877 Stone Game]] — Medium (`O(1)`)

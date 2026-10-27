@@ -6,13 +6,14 @@ tags:
   - concept
 ---
 
-# 🟢 Concept: Bitwise Tricks
+# 💡 Concept: Bitwise Tricks
 
-- **Parent Module**: [[20 Bit Manipulation & Math]]
-- **Mental Trigger / Intuition**: XOR identity, bit masks, and power-of-two tests.
+> [!abstract] 🧠 Mental Model & Invariant
+> - **Parent Module**: [[20 Bit Manipulation & Math]]
+> - **Core Intuition**: XOR identity, bit masks, and power-of-two tests.
 
 ---
 
-## 🎯 Problems Utilizing Bitwise Tricks
-- [[LC 136 Single Number]] (Easy)
-- [[LC 191 Number of 1 Bits]] (Easy)
+## 🎯 Benchmark Problems Utilizing Bitwise Tricks
+- [[LC 136 Single Number]] — Easy (`O(N)`)
+- [[LC 191 Number of 1 Bits]] — Easy (`O(k)`)

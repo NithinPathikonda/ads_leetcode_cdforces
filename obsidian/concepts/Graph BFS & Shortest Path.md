@@ -6,13 +6,14 @@ tags:
   - concept
 ---
 
-# 🟢 Concept: Graph BFS & Shortest Path
+# 💡 Concept: Graph BFS & Shortest Path
 
-- **Parent Module**: [[11 Graphs 1 Traversals & Fundamentals]]
-- **Mental Trigger / Intuition**: Unweighted shortest paths and multi-source flood fill.
+> [!abstract] 🧠 Mental Model & Invariant
+> - **Parent Module**: [[11 Graphs 1 Traversals & Fundamentals]]
+> - **Core Intuition**: Unweighted shortest paths and multi-source flood fill.
 
 ---
 
-## 🎯 Problems Utilizing Graph BFS & Shortest Path
-- [[LC 200 Number of Islands]] (Medium)
-- [[LC 994 Rotting Oranges]] (Medium)
+## 🎯 Benchmark Problems Utilizing Graph BFS & Shortest Path
+- [[LC 200 Number of Islands]] — Medium (`O(M * N)`)
+- [[LC 994 Rotting Oranges]] — Medium (`O(M * N)`)

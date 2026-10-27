@@ -14,24 +14,26 @@
     },
     {
       "id": "mod:01 Arrays & Hashing",
-      "name": "01 Arrays & Hashing",
+      "name": "01 Arrays & Hash",
       "group": "module",
       "type": "Curriculum Module",
       "val": 8.5,
       "details": {
         "title": "01 Arrays & Hashing",
+        "short_name": "01 Arrays & Hash",
         "cluster": "Linear & Search",
         "focus": "Prefix Sums, Kadane's, Difference Array, Dutch National Flag, Matrix Traversal"
       }
     },
     {
       "id": "mod:02 Two Pointers & Sliding Window",
-      "name": "02 Two Pointers & Sliding Window",
+      "name": "02 Two Pointers",
       "group": "module",
       "type": "Curriculum Module",
       "val": 8.5,
       "details": {
         "title": "02 Two Pointers & Sliding Window",
+        "short_name": "02 Two Pointers",
         "cluster": "Linear & Search",
         "focus": "Fixed & Dynamic Window, 2-Sum/3-Sum/4-Sum, Substrings with Constraints"
       }
@@ -44,18 +46,20 @@
       "val": 8.5,
       "details": {
         "title": "03 Binary Search",
+        "short_name": "03 Binary Search",
         "cluster": "Linear & Search",
         "focus": "Standard, Rotated Arrays, Binary Search on Answer (Predicate/Monotonicity), 2D Matrix"
       }
     },
     {
       "id": "mod:04 Stack & Monotonic Stack",
-      "name": "04 Stack & Monotonic Stack",
+      "name": "04 Monotonic Stack",
       "group": "module",
       "type": "Curriculum Module",
       "val": 8.5,
       "details": {
         "title": "04 Stack & Monotonic Stack",
+        "short_name": "04 Monotonic Stack",
         "cluster": "Linear & Search",
         "focus": "Next Greater/Smaller Element, Largest Rectangle in Histogram, Rainwater Trapping"
       }
@@ -68,162 +72,176 @@
       "val": 8.5,
       "details": {
         "title": "05 Linked Lists",
+        "short_name": "05 Linked Lists",
         "cluster": "Linear & Search",
         "focus": "In-place Reversal, Cycle Detection & Entry (Floyd's), Merge K Lists, Flattening"
       }
     },
     {
       "id": "mod:06 Recursion & Backtracking",
-      "name": "06 Recursion & Backtracking",
+      "name": "06 Backtracking",
       "group": "module",
       "type": "Curriculum Module",
       "val": 8.5,
       "details": {
         "title": "06 Recursion & Backtracking",
+        "short_name": "06 Backtracking",
         "cluster": "Hierarchical & Graphs",
         "focus": "Subsets, Subsequences, Permutations, Combinations, N-Queens, Sudoku Solver"
       }
     },
     {
       "id": "mod:07 Binary Trees & BST",
-      "name": "07 Binary Trees & BST",
+      "name": "07 Binary Trees",
       "group": "module",
       "type": "Curriculum Module",
       "val": 8.5,
       "details": {
         "title": "07 Binary Trees & BST",
+        "short_name": "07 Binary Trees",
         "cluster": "Hierarchical & Graphs",
         "focus": "DFS/BFS, LCA, Tree Views, Morris Traversal, Path Sum, BST Properties"
       }
     },
     {
       "id": "mod:08 Heaps & Priority Queues",
-      "name": "08 Heaps & Priority Queues",
+      "name": "08 Heaps & PQ",
       "group": "module",
       "type": "Curriculum Module",
       "val": 8.5,
       "details": {
         "title": "08 Heaps & Priority Queues",
+        "short_name": "08 Heaps & PQ",
         "cluster": "Hierarchical & Graphs",
         "focus": "Top-K Elements, K-Way Merge, Median in Stream, Task Scheduler, Two Heaps"
       }
     },
     {
       "id": "mod:09 Intervals & Sweepline",
-      "name": "09 Intervals & Sweepline",
+      "name": "09 Intervals & Sweep",
       "group": "module",
       "type": "Curriculum Module",
       "val": 8.5,
       "details": {
         "title": "09 Intervals & Sweepline",
+        "short_name": "09 Intervals & Sweep",
         "cluster": "Advanced & Quant",
         "focus": "Merge/Insert Intervals, Non-overlapping, Meeting Rooms I/II/III, Skyline"
       }
     },
     {
       "id": "mod:10 Tries (Prefix Trees)",
-      "name": "10 Tries (Prefix Trees)",
+      "name": "10 Tries",
       "group": "module",
       "type": "Curriculum Module",
       "val": 8.5,
       "details": {
         "title": "10 Tries (Prefix Trees)",
+        "short_name": "10 Tries",
         "cluster": "Hierarchical & Graphs",
         "focus": "Autocomplete, Wildcard Search, Max XOR of Two Numbers, Word Boggle"
       }
     },
     {
       "id": "mod:11 Graphs 1 Traversals & Fundamentals",
-      "name": "11 Graphs 1 Traversals & Fundamentals",
+      "name": "11 Graph Traversals",
       "group": "module",
       "type": "Curriculum Module",
       "val": 8.5,
       "details": {
         "title": "11 Graphs 1 Traversals & Fundamentals",
+        "short_name": "11 Graph Traversals",
         "cluster": "Hierarchical & Graphs",
         "focus": "BFS, DFS, Flood Fill, Connected Components, Bipartite Graph, Cycle Detection"
       }
     },
     {
       "id": "mod:12 Graphs 2 TopoSort & Shortest Paths",
-      "name": "12 Graphs 2 TopoSort & Shortest Paths",
+      "name": "12 TopoSort & Paths",
       "group": "module",
       "type": "Curriculum Module",
       "val": 8.5,
       "details": {
         "title": "12 Graphs 2 TopoSort & Shortest Paths",
+        "short_name": "12 TopoSort & Paths",
         "cluster": "Hierarchical & Graphs",
         "focus": "Kahn's TopoSort, Dijkstra, Bellman-Ford, Floyd-Warshall, 0-1 BFS"
       }
     },
     {
       "id": "mod:13 Disjoint Set Union (DSU) & MST",
-      "name": "13 Disjoint Set Union (DSU) & MST",
+      "name": "13 DSU & MST",
       "group": "module",
       "type": "Curriculum Module",
       "val": 8.5,
       "details": {
         "title": "13 Disjoint Set Union (DSU) & MST",
+        "short_name": "13 DSU & MST",
         "cluster": "Hierarchical & Graphs",
         "focus": "Union by Rank & Path Compression, Kruskal's, Prim's Algorithm"
       }
     },
     {
       "id": "mod:14 Dynamic Programming 1 1D & Classics",
-      "name": "14 Dynamic Programming 1 1D & Classics",
+      "name": "14 1D Linear DP",
       "group": "module",
       "type": "Curriculum Module",
       "val": 8.5,
       "details": {
         "title": "14 Dynamic Programming 1 1D & Classics",
+        "short_name": "14 1D Linear DP",
         "cluster": "Optimization & DP",
         "focus": "Climbing Stairs, House Robber, Coin Change, LIS Patience Sort"
       }
     },
     {
       "id": "mod:15 Dynamic Programming 2 2D & Grids",
-      "name": "15 Dynamic Programming 2 2D & Grids",
+      "name": "15 2D Grid DP",
       "group": "module",
       "type": "Curriculum Module",
       "val": 8.5,
       "details": {
         "title": "15 Dynamic Programming 2 2D & Grids",
+        "short_name": "15 2D Grid DP",
         "cluster": "Optimization & DP",
         "focus": "Unique Paths, Min Path Sum, Maximal Square, Dungeon Game"
       }
     },
     {
       "id": "mod:16 Dynamic Programming 3 Strings & Sequences",
-      "name": "16 Dynamic Programming 3 Strings & Sequences",
+      "name": "16 String DP",
       "group": "module",
       "type": "Curriculum Module",
       "val": 8.5,
       "details": {
         "title": "16 Dynamic Programming 3 Strings & Sequences",
+        "short_name": "16 String DP",
         "cluster": "Optimization & DP",
         "focus": "LCS, Edit Distance, Distinct Subsequences, Regex/Wildcard Matching"
       }
     },
     {
       "id": "mod:17 Dynamic Programming 4 Knapsack & Partition",
-      "name": "17 Dynamic Programming 4 Knapsack & Partition",
+      "name": "17 Knapsack DP",
       "group": "module",
       "type": "Curriculum Module",
       "val": 8.5,
       "details": {
         "title": "17 Dynamic Programming 4 Knapsack & Partition",
+        "short_name": "17 Knapsack DP",
         "cluster": "Optimization & DP",
         "focus": "0/1 Knapsack, Unbounded Knapsack, Target Sum, Subset Partition"
       }
     },
     {
       "id": "mod:18 Dynamic Programming 5 Trees, Bitmask & Digit DP",
-      "name": "18 Dynamic Programming 5 Trees, Bitmask & Digit DP",
+      "name": "18 Tree & Bitmask DP",
       "group": "module",
       "type": "Curriculum Module",
       "val": 8.5,
       "details": {
         "title": "18 Dynamic Programming 5 Trees, Bitmask & Digit DP",
+        "short_name": "18 Tree & Bitmask DP",
         "cluster": "Optimization & DP",
         "focus": "Tree DP, Traveling Salesman (Bitmask DP), Digit DP"
       }
@@ -236,102 +254,111 @@
       "val": 8.5,
       "details": {
         "title": "19 Greedy Algorithms",
+        "short_name": "19 Greedy Algorithms",
         "cluster": "Optimization & DP",
         "focus": "Jump Game I/II, Gas Station, Candy, Job Sequencing, Minimum Platforms"
       }
     },
     {
       "id": "mod:20 Bit Manipulation & Math",
-      "name": "20 Bit Manipulation & Math",
+      "name": "20 Bit Manipulation",
       "group": "module",
       "type": "Curriculum Module",
       "val": 8.5,
       "details": {
         "title": "20 Bit Manipulation & Math",
+        "short_name": "20 Bit Manipulation",
         "cluster": "Advanced & Quant",
         "focus": "Bitwise tricks, Single Number I/II/III, Fast Exponentiation, Sieve of Eratosthenes"
       }
     },
     {
       "id": "mod:21 Segment Trees & Fenwick (BIT)",
-      "name": "21 Segment Trees & Fenwick (BIT)",
+      "name": "21 Segment Trees",
       "group": "module",
       "type": "Curriculum Module",
       "val": 8.5,
       "details": {
         "title": "21 Segment Trees & Fenwick (BIT)",
+        "short_name": "21 Segment Trees",
         "cluster": "Advanced & Quant",
         "focus": "Range Sum/Min Query, Point Updates, Range Updates with Lazy Propagation"
       }
     },
     {
       "id": "mod:22 Design Data Structures",
-      "name": "22 Design Data Structures",
+      "name": "22 System Design",
       "group": "module",
       "type": "Curriculum Module",
       "val": 8.5,
       "details": {
         "title": "22 Design Data Structures",
+        "short_name": "22 System Design",
         "cluster": "Advanced & Quant",
         "focus": "LRU Cache, LFU Cache, Time-Based Key-Value Store, Min/Max Stack"
       }
     },
     {
       "id": "mod:23 Advanced Strings (KMP & Rabin-Karp)",
-      "name": "23 Advanced Strings (KMP & Rabin-Karp)",
+      "name": "23 KMP & Rabin-Karp",
       "group": "module",
       "type": "Curriculum Module",
       "val": 8.5,
       "details": {
         "title": "23 Advanced Strings (KMP & Rabin-Karp)",
+        "short_name": "23 KMP & Rabin-Karp",
         "cluster": "Advanced & Quant",
         "focus": "KMP Algorithm, Rolling Hash (Rabin-Karp), Manacher's Longest Palindrome"
       }
     },
     {
       "id": "mod:24 Advanced Graphs (Tarjan & Eulerian)",
-      "name": "24 Advanced Graphs (Tarjan & Eulerian)",
+      "name": "24 Tarjan & Eulerian",
       "group": "module",
       "type": "Curriculum Module",
       "val": 8.5,
       "details": {
         "title": "24 Advanced Graphs (Tarjan & Eulerian)",
+        "short_name": "24 Tarjan & Eulerian",
         "cluster": "Hierarchical & Graphs",
         "focus": "Tarjan's Bridges & Articulation Points, Kosaraju SCC, Hierholzer Eulerian Path"
       }
     },
     {
       "id": "mod:25 Game Theory & Minimax",
-      "name": "25 Game Theory & Minimax",
+      "name": "25 Game Theory",
       "group": "module",
       "type": "Curriculum Module",
       "val": 8.5,
       "details": {
         "title": "25 Game Theory & Minimax",
+        "short_name": "25 Game Theory",
         "cluster": "Optimization & DP",
         "focus": "Minimax / Alpha-Beta Pruning, Nim Game, Stone Game I-VII"
       }
     },
     {
       "id": "mod:26 Reservoir Sampling & Randomized",
-      "name": "26 Reservoir Sampling & Randomized",
+      "name": "26 Randomized & Stream",
       "group": "module",
       "type": "Curriculum Module",
       "val": 8.5,
       "details": {
         "title": "26 Reservoir Sampling & Randomized",
+        "short_name": "26 Randomized & Stream",
         "cluster": "Advanced & Quant",
         "focus": "Reservoir Sampling (K from Stream), Fisher-Yates Shuffle, Random Pick with Weight"
       }
     },
     {
       "id": "mod:27 Computational Geometry & Math",
-      "name": "27 Computational Geometry & Math",
+      "name": "27 Geometry & Math",
       "group": "module",
       "type": "Curriculum Module",
       "val": 8.5,
       "details": {
         "title": "27 Computational Geometry & Math",
+        "short_name": "27 Geometry & Math",
         "cluster": "Advanced & Quant",
         "focus": "Convex Hull (Graham Scan), Overlapping Area, Matrix Exponentiation"
       }
@@ -341,10 +368,11 @@
       "name": "Prefix Sums",
       "group": "concept",
       "type": "Algorithmic Pattern",
-      "val": 5.8,
+      "val": 5.5,
       "details": {
         "name": "Prefix Sums",
         "module": "01 Arrays & Hashing",
+        "cluster": "Linear & Search",
         "intuition": "Running cumulative sum array enables O(1) range sum queries."
       }
     },
@@ -353,10 +381,11 @@
       "name": "Kadane's Algorithm",
       "group": "concept",
       "type": "Algorithmic Pattern",
-      "val": 5.8,
+      "val": 5.5,
       "details": {
         "name": "Kadane's Algorithm",
         "module": "01 Arrays & Hashing",
+        "cluster": "Linear & Search",
         "intuition": "Local vs global optimum. Reset running sum when negative."
       }
     },
@@ -365,10 +394,11 @@
       "name": "Difference Array",
       "group": "concept",
       "type": "Algorithmic Pattern",
-      "val": 5.8,
+      "val": 5.5,
       "details": {
         "name": "Difference Array",
         "module": "01 Arrays & Hashing",
+        "cluster": "Linear & Search",
         "intuition": "Range updates [L, R] in O(1) via diff[L] += val, diff[R+1] -= val."
       }
     },
@@ -377,10 +407,11 @@
       "name": "Dutch National Flag",
       "group": "concept",
       "type": "Algorithmic Pattern",
-      "val": 5.8,
+      "val": 5.5,
       "details": {
         "name": "Dutch National Flag",
         "module": "01 Arrays & Hashing",
+        "cluster": "Linear & Search",
         "intuition": "3-way partition using low, mid, high pointers in O(N)."
       }
     },
@@ -389,10 +420,11 @@
       "name": "Matrix Traversal",
       "group": "concept",
       "type": "Algorithmic Pattern",
-      "val": 5.8,
+      "val": 5.5,
       "details": {
         "name": "Matrix Traversal",
         "module": "01 Arrays & Hashing",
+        "cluster": "Linear & Search",
         "intuition": "Boundary pointer shrinkage and spiral layer peeling."
       }
     },
@@ -401,10 +433,11 @@
       "name": "Hash Maps & Sets",
       "group": "concept",
       "type": "Algorithmic Pattern",
-      "val": 5.8,
+      "val": 5.5,
       "details": {
         "name": "Hash Maps & Sets",
         "module": "01 Arrays & Hashing",
+        "cluster": "Linear & Search",
         "intuition": "O(1) average lookup for complements and frequency counts."
       }
     },
@@ -413,10 +446,11 @@
       "name": "Two Pointers",
       "group": "concept",
       "type": "Algorithmic Pattern",
-      "val": 5.8,
+      "val": 5.5,
       "details": {
         "name": "Two Pointers",
         "module": "02 Two Pointers & Sliding Window",
+        "cluster": "Linear & Search",
         "intuition": "Shrinking bounds or opposite direction pointers on sorted sequences."
       }
     },
@@ -425,10 +459,11 @@
       "name": "Fixed Sliding Window",
       "group": "concept",
       "type": "Algorithmic Pattern",
-      "val": 5.8,
+      "val": 5.5,
       "details": {
         "name": "Fixed Sliding Window",
         "module": "02 Two Pointers & Sliding Window",
+        "cluster": "Linear & Search",
         "intuition": "Window of constant width K; slides 1 step in O(1)."
       }
     },
@@ -437,10 +472,11 @@
       "name": "Dynamic Sliding Window",
       "group": "concept",
       "type": "Algorithmic Pattern",
-      "val": 5.8,
+      "val": 5.5,
       "details": {
         "name": "Dynamic Sliding Window",
         "module": "02 Two Pointers & Sliding Window",
+        "cluster": "Linear & Search",
         "intuition": "Expand right pointer to satisfy condition, contract left to minimize."
       }
     },
@@ -449,10 +485,11 @@
       "name": "Monotonic Window Invariant",
       "group": "concept",
       "type": "Algorithmic Pattern",
-      "val": 5.8,
+      "val": 5.5,
       "details": {
         "name": "Monotonic Window Invariant",
         "module": "02 Two Pointers & Sliding Window",
+        "cluster": "Linear & Search",
         "intuition": "Window size never shrinks, tracking historical best in 1 pass."
       }
     },
@@ -461,10 +498,11 @@
       "name": "Binary Search on Array",
       "group": "concept",
       "type": "Algorithmic Pattern",
-      "val": 5.8,
+      "val": 5.5,
       "details": {
         "name": "Binary Search on Array",
         "module": "03 Binary Search",
+        "cluster": "Linear & Search",
         "intuition": "Halving sorted search space in O(log N)."
       }
     },
@@ -473,10 +511,11 @@
       "name": "Rotated Array Binary Search",
       "group": "concept",
       "type": "Algorithmic Pattern",
-      "val": 5.8,
+      "val": 5.5,
       "details": {
         "name": "Rotated Array Binary Search",
         "module": "03 Binary Search",
+        "cluster": "Linear & Search",
         "intuition": "Identifying sorted half to prune candidates."
       }
     },
@@ -485,10 +524,11 @@
       "name": "Binary Search on Answer",
       "group": "concept",
       "type": "Algorithmic Pattern",
-      "val": 5.8,
+      "val": 5.5,
       "details": {
         "name": "Binary Search on Answer",
         "module": "03 Binary Search",
+        "cluster": "Linear & Search",
         "intuition": "Monotonic predicate search for min-max threshold."
       }
     },
@@ -497,10 +537,11 @@
       "name": "2D Matrix Binary Search",
       "group": "concept",
       "type": "Algorithmic Pattern",
-      "val": 5.8,
+      "val": 5.5,
       "details": {
         "name": "2D Matrix Binary Search",
         "module": "03 Binary Search",
+        "cluster": "Linear & Search",
         "intuition": "Treating 2D grid as flattened 1D array or top-right staircase search."
       }
     },
@@ -509,10 +550,11 @@
       "name": "Monotonic Stack",
       "group": "concept",
       "type": "Algorithmic Pattern",
-      "val": 5.8,
+      "val": 5.5,
       "details": {
         "name": "Monotonic Stack",
         "module": "04 Stack & Monotonic Stack",
+        "cluster": "Linear & Search",
         "intuition": "Maintains elements in monotonic order for next greater/smaller in O(N)."
       }
     },
@@ -521,10 +563,11 @@
       "name": "Rainwater Trapping",
       "group": "concept",
       "type": "Algorithmic Pattern",
-      "val": 5.8,
+      "val": 5.5,
       "details": {
         "name": "Rainwater Trapping",
         "module": "04 Stack & Monotonic Stack",
+        "cluster": "Linear & Search",
         "intuition": "Height boundary bounds via Two Pointers or Monotonic Stack."
       }
     },
@@ -533,10 +576,11 @@
       "name": "In-Place Linked List Reversal",
       "group": "concept",
       "type": "Algorithmic Pattern",
-      "val": 5.8,
+      "val": 5.5,
       "details": {
         "name": "In-Place Linked List Reversal",
         "module": "05 Linked Lists",
+        "cluster": "Linear & Search",
         "intuition": "Iterative pointer redirection (prev, curr, next) in O(1) space."
       }
     },
@@ -545,10 +589,11 @@
       "name": "Floyd's Cycle Detection",
       "group": "concept",
       "type": "Algorithmic Pattern",
-      "val": 5.8,
+      "val": 5.5,
       "details": {
         "name": "Floyd's Cycle Detection",
         "module": "05 Linked Lists",
+        "cluster": "Linear & Search",
         "intuition": "Fast and slow pointers for cycle presence and cycle entry."
       }
     },
@@ -557,10 +602,11 @@
       "name": "Backtracking & Pruning",
       "group": "concept",
       "type": "Algorithmic Pattern",
-      "val": 5.8,
+      "val": 5.5,
       "details": {
         "name": "Backtracking & Pruning",
         "module": "06 Recursion & Backtracking",
+        "cluster": "Hierarchical & Graphs",
         "intuition": "State-space tree exploration with branch elimination."
       }
     },
@@ -569,10 +615,11 @@
       "name": "Permutations & Combinations",
       "group": "concept",
       "type": "Algorithmic Pattern",
-      "val": 5.8,
+      "val": 5.5,
       "details": {
         "name": "Permutations & Combinations",
         "module": "06 Recursion & Backtracking",
+        "cluster": "Hierarchical & Graphs",
         "intuition": "Subsets and orderings with deduplication."
       }
     },
@@ -581,10 +628,11 @@
       "name": "Tree DFS & Traversals",
       "group": "concept",
       "type": "Algorithmic Pattern",
-      "val": 5.8,
+      "val": 5.5,
       "details": {
         "name": "Tree DFS & Traversals",
         "module": "07 Binary Trees & BST",
+        "cluster": "Hierarchical & Graphs",
         "intuition": "Inorder, preorder, and postorder tree decompositions."
       }
     },
@@ -593,10 +641,11 @@
       "name": "Tree BFS & Level Order",
       "group": "concept",
       "type": "Algorithmic Pattern",
-      "val": 5.8,
+      "val": 5.5,
       "details": {
         "name": "Tree BFS & Level Order",
         "module": "07 Binary Trees & BST",
+        "cluster": "Hierarchical & Graphs",
         "intuition": "Queue-based level-by-level exploration."
       }
     },
@@ -605,10 +654,11 @@
       "name": "Lowest Common Ancestor (LCA)",
       "group": "concept",
       "type": "Algorithmic Pattern",
-      "val": 5.8,
+      "val": 5.5,
       "details": {
         "name": "Lowest Common Ancestor (LCA)",
         "module": "07 Binary Trees & BST",
+        "cluster": "Hierarchical & Graphs",
         "intuition": "Finding first split point between nodes p and q."
       }
     },
@@ -617,10 +667,11 @@
       "name": "BST Properties",
       "group": "concept",
       "type": "Algorithmic Pattern",
-      "val": 5.8,
+      "val": 5.5,
       "details": {
         "name": "BST Properties",
         "module": "07 Binary Trees & BST",
+        "cluster": "Hierarchical & Graphs",
         "intuition": "Inorder traversal produces strictly ascending sorted order."
       }
     },
@@ -629,10 +680,11 @@
       "name": "Binary Heap & Priority Queue",
       "group": "concept",
       "type": "Algorithmic Pattern",
-      "val": 5.8,
+      "val": 5.5,
       "details": {
         "name": "Binary Heap & Priority Queue",
         "module": "08 Heaps & Priority Queues",
+        "cluster": "Hierarchical & Graphs",
         "intuition": "O(log N) push/pop, O(1) peek for running extremes."
       }
     },
@@ -641,10 +693,11 @@
       "name": "Two Heaps Running Median",
       "group": "concept",
       "type": "Algorithmic Pattern",
-      "val": 5.8,
+      "val": 5.5,
       "details": {
         "name": "Two Heaps Running Median",
         "module": "08 Heaps & Priority Queues",
+        "cluster": "Hierarchical & Graphs",
         "intuition": "Balancing max-heap and min-heap for O(1) median."
       }
     },
@@ -653,10 +706,11 @@
       "name": "Interval Merging & Sweepline",
       "group": "concept",
       "type": "Algorithmic Pattern",
-      "val": 5.8,
+      "val": 5.5,
       "details": {
         "name": "Interval Merging & Sweepline",
         "module": "09 Intervals & Sweepline",
+        "cluster": "Advanced & Quant",
         "intuition": "Sorting endpoints along timeline for room/interval merging."
       }
     },
@@ -665,10 +719,11 @@
       "name": "Trie (Prefix Tree)",
       "group": "concept",
       "type": "Algorithmic Pattern",
-      "val": 5.8,
+      "val": 5.5,
       "details": {
         "name": "Trie (Prefix Tree)",
         "module": "10 Tries (Prefix Trees)",
+        "cluster": "Hierarchical & Graphs",
         "intuition": "Character branch tree for prefix matching and autocomplete."
       }
     },
@@ -677,10 +732,11 @@
       "name": "Graph BFS & Shortest Path",
       "group": "concept",
       "type": "Algorithmic Pattern",
-      "val": 5.8,
+      "val": 5.5,
       "details": {
         "name": "Graph BFS & Shortest Path",
         "module": "11 Graphs 1 Traversals & Fundamentals",
+        "cluster": "Hierarchical & Graphs",
         "intuition": "Unweighted shortest paths and multi-source flood fill."
       }
     },
@@ -689,10 +745,11 @@
       "name": "Graph DFS & Components",
       "group": "concept",
       "type": "Algorithmic Pattern",
-      "val": 5.8,
+      "val": 5.5,
       "details": {
         "name": "Graph DFS & Components",
         "module": "11 Graphs 1 Traversals & Fundamentals",
+        "cluster": "Hierarchical & Graphs",
         "intuition": "Cycle detection and connected component exploration."
       }
     },
@@ -701,10 +758,11 @@
       "name": "Kahn's Topological Sort",
       "group": "concept",
       "type": "Algorithmic Pattern",
-      "val": 5.8,
+      "val": 5.5,
       "details": {
         "name": "Kahn's Topological Sort",
         "module": "12 Graphs 2 TopoSort & Shortest Paths",
+        "cluster": "Hierarchical & Graphs",
         "intuition": "Indegree array + queue for DAG dependency ordering."
       }
     },
@@ -713,10 +771,11 @@
       "name": "Dijkstra's Algorithm",
       "group": "concept",
       "type": "Algorithmic Pattern",
-      "val": 5.8,
+      "val": 5.5,
       "details": {
         "name": "Dijkstra's Algorithm",
         "module": "12 Graphs 2 TopoSort & Shortest Paths",
+        "cluster": "Hierarchical & Graphs",
         "intuition": "Greedy non-negative weighted shortest paths via Min-Heap."
       }
     },
@@ -725,10 +784,11 @@
       "name": "Disjoint Set Union (DSU)",
       "group": "concept",
       "type": "Algorithmic Pattern",
-      "val": 5.8,
+      "val": 5.5,
       "details": {
         "name": "Disjoint Set Union (DSU)",
         "module": "13 Disjoint Set Union (DSU) & MST",
+        "cluster": "Hierarchical & Graphs",
         "intuition": "Union by Rank & Path Compression for dynamic connectivity."
       }
     },
@@ -737,10 +797,11 @@
       "name": "Kruskal's & Prim's MST",
       "group": "concept",
       "type": "Algorithmic Pattern",
-      "val": 5.8,
+      "val": 5.5,
       "details": {
         "name": "Kruskal's & Prim's MST",
         "module": "13 Disjoint Set Union (DSU) & MST",
+        "cluster": "Hierarchical & Graphs",
         "intuition": "Greedy minimum spanning tree construction."
       }
     },
@@ -749,10 +810,11 @@
       "name": "1D Linear DP",
       "group": "concept",
       "type": "Algorithmic Pattern",
-      "val": 5.8,
+      "val": 5.5,
       "details": {
         "name": "1D Linear DP",
         "module": "14 Dynamic Programming 1 1D & Classics",
+        "cluster": "Optimization & DP",
         "intuition": "Subproblems dependent on constant preceding states."
       }
     },
@@ -761,10 +823,11 @@
       "name": "Longest Increasing Subsequence",
       "group": "concept",
       "type": "Algorithmic Pattern",
-      "val": 5.8,
+      "val": 5.5,
       "details": {
         "name": "Longest Increasing Subsequence",
         "module": "14 Dynamic Programming 1 1D & Classics",
+        "cluster": "Optimization & DP",
         "intuition": "Patience sort tails array with binary search O(N log N)."
       }
     },
@@ -773,10 +836,11 @@
       "name": "2D Grid DP",
       "group": "concept",
       "type": "Algorithmic Pattern",
-      "val": 5.8,
+      "val": 5.5,
       "details": {
         "name": "2D Grid DP",
         "module": "15 Dynamic Programming 2 2D & Grids",
+        "cluster": "Optimization & DP",
         "intuition": "Cell transitions from top and left neighbors."
       }
     },
@@ -785,10 +849,11 @@
       "name": "Constructive Grid Path",
       "group": "concept",
       "type": "Algorithmic Pattern",
-      "val": 5.8,
+      "val": 5.5,
       "details": {
         "name": "Constructive Grid Path",
         "module": "15 Dynamic Programming 2 2D & Grids",
+        "cluster": "Optimization & DP",
         "intuition": "Deterministic path construction avoiding unwanted branches."
       }
     },
@@ -797,10 +862,11 @@
       "name": "Longest Common Subsequence",
       "group": "concept",
       "type": "Algorithmic Pattern",
-      "val": 5.8,
+      "val": 5.5,
       "details": {
         "name": "Longest Common Subsequence",
         "module": "16 Dynamic Programming 3 Strings & Sequences",
+        "cluster": "Optimization & DP",
         "intuition": "2D string matrix matching and mismatches."
       }
     },
@@ -809,10 +875,11 @@
       "name": "Edit Distance DP",
       "group": "concept",
       "type": "Algorithmic Pattern",
-      "val": 5.8,
+      "val": 5.5,
       "details": {
         "name": "Edit Distance DP",
         "module": "16 Dynamic Programming 3 Strings & Sequences",
+        "cluster": "Optimization & DP",
         "intuition": "Levenshtein insertion, deletion, replacement in O(M*N)."
       }
     },
@@ -821,10 +888,11 @@
       "name": "0-1 Knapsack",
       "group": "concept",
       "type": "Algorithmic Pattern",
-      "val": 5.8,
+      "val": 5.5,
       "details": {
         "name": "0-1 Knapsack",
         "module": "17 Dynamic Programming 4 Knapsack & Partition",
+        "cluster": "Optimization & DP",
         "intuition": "Include/exclude choice with capacity iteration."
       }
     },
@@ -833,10 +901,11 @@
       "name": "Tree DP",
       "group": "concept",
       "type": "Algorithmic Pattern",
-      "val": 5.8,
+      "val": 5.5,
       "details": {
         "name": "Tree DP",
         "module": "18 Dynamic Programming 5 Trees, Bitmask & Digit DP",
+        "cluster": "Optimization & DP",
         "intuition": "Postorder state aggregation across subtrees."
       }
     },
@@ -845,10 +914,11 @@
       "name": "Bitmask DP",
       "group": "concept",
       "type": "Algorithmic Pattern",
-      "val": 5.8,
+      "val": 5.5,
       "details": {
         "name": "Bitmask DP",
         "module": "18 Dynamic Programming 5 Trees, Bitmask & Digit DP",
+        "cluster": "Optimization & DP",
         "intuition": "Integer bitmask representing subset state space."
       }
     },
@@ -857,10 +927,11 @@
       "name": "Greedy Intervals & Reachability",
       "group": "concept",
       "type": "Algorithmic Pattern",
-      "val": 5.8,
+      "val": 5.5,
       "details": {
         "name": "Greedy Intervals & Reachability",
         "module": "19 Greedy Algorithms",
+        "cluster": "Optimization & DP",
         "intuition": "Locally optimal choice yields global optimum."
       }
     },
@@ -869,10 +940,11 @@
       "name": "Bitwise Tricks",
       "group": "concept",
       "type": "Algorithmic Pattern",
-      "val": 5.8,
+      "val": 5.5,
       "details": {
         "name": "Bitwise Tricks",
         "module": "20 Bit Manipulation & Math",
+        "cluster": "Advanced & Quant",
         "intuition": "XOR identity, bit masks, and power-of-two tests."
       }
     },
@@ -881,10 +953,11 @@
       "name": "Fast Exponentiation",
       "group": "concept",
       "type": "Algorithmic Pattern",
-      "val": 5.8,
+      "val": 5.5,
       "details": {
         "name": "Fast Exponentiation",
         "module": "20 Bit Manipulation & Math",
+        "cluster": "Advanced & Quant",
         "intuition": "Binary exponentiation in O(log N)."
       }
     },
@@ -893,10 +966,11 @@
       "name": "Segment Tree & Fenwick",
       "group": "concept",
       "type": "Algorithmic Pattern",
-      "val": 5.8,
+      "val": 5.5,
       "details": {
         "name": "Segment Tree & Fenwick",
         "module": "21 Segment Trees & Fenwick (BIT)",
+        "cluster": "Advanced & Quant",
         "intuition": "Range queries and point/range updates in O(log N)."
       }
     },
@@ -905,10 +979,11 @@
       "name": "LRU & LFU Cache Design",
       "group": "concept",
       "type": "Algorithmic Pattern",
-      "val": 5.8,
+      "val": 5.5,
       "details": {
         "name": "LRU & LFU Cache Design",
         "module": "22 Design Data Structures",
+        "cluster": "Advanced & Quant",
         "intuition": "Hash Map + Doubly Linked Lists for O(1) cache eviction."
       }
     },
@@ -917,10 +992,11 @@
       "name": "KMP & String Matching",
       "group": "concept",
       "type": "Algorithmic Pattern",
-      "val": 5.8,
+      "val": 5.5,
       "details": {
         "name": "KMP & String Matching",
         "module": "23 Advanced Strings (KMP & Rabin-Karp)",
+        "cluster": "Advanced & Quant",
         "intuition": "LPS prefix table and rolling hash string matching."
       }
     },
@@ -929,10 +1005,11 @@
       "name": "Tarjan's Bridges & SCC",
       "group": "concept",
       "type": "Algorithmic Pattern",
-      "val": 5.8,
+      "val": 5.5,
       "details": {
         "name": "Tarjan's Bridges & SCC",
         "module": "24 Advanced Graphs (Tarjan & Eulerian)",
+        "cluster": "Hierarchical & Graphs",
         "intuition": "Discovery time and low-link values for bridges and SCCs."
       }
     },
@@ -941,10 +1018,11 @@
       "name": "Minimax & Game Theory",
       "group": "concept",
       "type": "Algorithmic Pattern",
-      "val": 5.8,
+      "val": 5.5,
       "details": {
         "name": "Minimax & Game Theory",
         "module": "25 Game Theory & Minimax",
+        "cluster": "Optimization & DP",
         "intuition": "Adversarial evaluation with Alpha-Beta pruning."
       }
     },
@@ -953,10 +1031,11 @@
       "name": "Reservoir Sampling",
       "group": "concept",
       "type": "Algorithmic Pattern",
-      "val": 5.8,
+      "val": 5.5,
       "details": {
         "name": "Reservoir Sampling",
         "module": "26 Reservoir Sampling & Randomized",
+        "cluster": "Advanced & Quant",
         "intuition": "Uniform 1/N stream sampling in O(K) space."
       }
     },
@@ -965,10 +1044,11 @@
       "name": "Convex Hull & Geometry",
       "group": "concept",
       "type": "Algorithmic Pattern",
-      "val": 5.8,
+      "val": 5.5,
       "details": {
         "name": "Convex Hull & Geometry",
         "module": "27 Computational Geometry & Math",
+        "cluster": "Advanced & Quant",
         "intuition": "Cross-product orientation and Graham scan."
       }
     },
@@ -977,7 +1057,7 @@
       "name": "Adobe",
       "group": "company",
       "type": "Target MNC",
-      "val": 6.8,
+      "val": 6.5,
       "details": {
         "name": "Adobe",
         "tier": "Tier-1 Tech Titan"
@@ -988,7 +1068,7 @@
       "name": "Amazon",
       "group": "company",
       "type": "Target MNC",
-      "val": 6.8,
+      "val": 6.5,
       "details": {
         "name": "Amazon",
         "tier": "Tier-1 Tech Titan"
@@ -999,7 +1079,7 @@
       "name": "Apple",
       "group": "company",
       "type": "Target MNC",
-      "val": 6.8,
+      "val": 6.5,
       "details": {
         "name": "Apple",
         "tier": "Tier-1 Tech Titan"
@@ -1010,7 +1090,7 @@
       "name": "Bloomberg",
       "group": "company",
       "type": "Target MNC",
-      "val": 6.8,
+      "val": 6.5,
       "details": {
         "name": "Bloomberg",
         "tier": "Tier-1 Tech Titan"
@@ -1021,7 +1101,7 @@
       "name": "Google",
       "group": "company",
       "type": "Target MNC",
-      "val": 6.8,
+      "val": 6.5,
       "details": {
         "name": "Google",
         "tier": "Tier-1 Tech Titan"
@@ -1032,7 +1112,7 @@
       "name": "Meta",
       "group": "company",
       "type": "Target MNC",
-      "val": 6.8,
+      "val": 6.5,
       "details": {
         "name": "Meta",
         "tier": "Tier-1 Tech Titan"
@@ -1043,7 +1123,7 @@
       "name": "Microsoft",
       "group": "company",
       "type": "Target MNC",
-      "val": 6.8,
+      "val": 6.5,
       "details": {
         "name": "Microsoft",
         "tier": "Tier-1 Tech Titan"
@@ -1054,7 +1134,7 @@
       "name": "LC 1: Two Sum",
       "group": "problem",
       "type": "Problem Node",
-      "val": 4.2,
+      "val": 4.0,
       "details": {
         "title": "LC 1: Two Sum",
         "module": "01 Arrays & Hashing",
@@ -1070,7 +1150,7 @@
           "Apple"
         ],
         "intuition": "Hash map complement lookup in single pass.",
-        "trigger": "Unsorted array + Pair Sum -> 1-pass Hash Map complement lookup.",
+        "trigger": "Unsorted array + Pair Sum -> 1-pass Hash Map complement lookup in O(N).",
         "invariant": "At step i, all elements before i are in map. We check target - nums[i] BEFORE inserting.",
         "pitfall": "Do NOT insert before checking, or element might pair with itself.",
         "code_path": "01_arrays_hashing/lc_0001_two_sum.cpp",
@@ -1083,7 +1163,7 @@
       "name": "LC 121: Best Time to Buy & Sell Stock",
       "group": "problem",
       "type": "Problem Node",
-      "val": 4.2,
+      "val": 4.0,
       "details": {
         "title": "LC 121: Best Time to Buy & Sell Stock",
         "module": "01 Arrays & Hashing",
@@ -1111,7 +1191,7 @@
       "name": "LC 242: Valid Anagram",
       "group": "problem",
       "type": "Problem Node",
-      "val": 4.2,
+      "val": 4.0,
       "details": {
         "title": "LC 242: Valid Anagram",
         "module": "01 Arrays & Hashing",
@@ -1125,7 +1205,7 @@
           "Microsoft"
         ],
         "intuition": "26-int frequency count comparison in single pass.",
-        "trigger": "Permutation character match -> 26-int frequency signature.",
+        "trigger": "Permutation character match -> 26-int frequency signature in single pass.",
         "invariant": "Lengths must match; +1 for s and -1 for t leaves all counts at exactly 0.",
         "pitfall": "Check s.length() == t.length() first before allocating memory.",
         "code_path": "01_arrays_hashing/lc_0242_valid_anagram.cpp",
@@ -1138,7 +1218,7 @@
       "name": "LC 49: Group Anagrams",
       "group": "problem",
       "type": "Problem Node",
-      "val": 4.2,
+      "val": 4.0,
       "details": {
         "title": "LC 49: Group Anagrams",
         "module": "01 Arrays & Hashing",
@@ -1165,7 +1245,7 @@
       "name": "LC 347: Top K Frequent Elements",
       "group": "problem",
       "type": "Problem Node",
-      "val": 4.2,
+      "val": 4.0,
       "details": {
         "title": "LC 347: Top K Frequent Elements",
         "module": "01 Arrays & Hashing",
@@ -1192,7 +1272,7 @@
       "name": "LC 238: Product of Array Except Self",
       "group": "problem",
       "type": "Problem Node",
-      "val": 4.2,
+      "val": 4.0,
       "details": {
         "title": "LC 238: Product of Array Except Self",
         "module": "01 Arrays & Hashing",
@@ -1219,7 +1299,7 @@
       "name": "LC 128: Longest Consecutive Sequence",
       "group": "problem",
       "type": "Problem Node",
-      "val": 4.2,
+      "val": 4.0,
       "details": {
         "title": "LC 128: Longest Consecutive Sequence",
         "module": "01 Arrays & Hashing",
@@ -1246,7 +1326,7 @@
       "name": "LC 560: Subarray Sum Equals K",
       "group": "problem",
       "type": "Problem Node",
-      "val": 4.2,
+      "val": 4.0,
       "details": {
         "title": "LC 560: Subarray Sum Equals K",
         "module": "01 Arrays & Hashing",
@@ -1273,7 +1353,7 @@
       "name": "LC 53: Maximum Subarray",
       "group": "problem",
       "type": "Problem Node",
-      "val": 4.2,
+      "val": 4.0,
       "details": {
         "title": "LC 53: Maximum Subarray",
         "module": "01 Arrays & Hashing",
@@ -1300,7 +1380,7 @@
       "name": "LC 75: Sort Colors",
       "group": "problem",
       "type": "Problem Node",
-      "val": 4.2,
+      "val": 4.0,
       "details": {
         "title": "LC 75: Sort Colors",
         "module": "01 Arrays & Hashing",
@@ -1327,7 +1407,7 @@
       "name": "LC 54: Spiral Matrix",
       "group": "problem",
       "type": "Problem Node",
-      "val": 4.2,
+      "val": 4.0,
       "details": {
         "title": "LC 54: Spiral Matrix",
         "module": "01 Arrays & Hashing",
@@ -1354,7 +1434,7 @@
       "name": "LC 167: Two Sum II - Input Array Is Sorted",
       "group": "problem",
       "type": "Problem Node",
-      "val": 4.2,
+      "val": 4.0,
       "details": {
         "title": "LC 167: Two Sum II - Input Array Is Sorted",
         "module": "02 Two Pointers & Sliding Window",
@@ -1380,7 +1460,7 @@
       "name": "LC 15: 3Sum",
       "group": "problem",
       "type": "Problem Node",
-      "val": 4.2,
+      "val": 4.0,
       "details": {
         "title": "LC 15: 3Sum",
         "module": "02 Two Pointers & Sliding Window",
@@ -1408,7 +1488,7 @@
       "name": "LC 11: Container With Most Water",
       "group": "problem",
       "type": "Problem Node",
-      "val": 4.2,
+      "val": 4.0,
       "details": {
         "title": "LC 11: Container With Most Water",
         "module": "02 Two Pointers & Sliding Window",
@@ -1435,7 +1515,7 @@
       "name": "LC 3: Longest Substring Without Repeating Characters",
       "group": "problem",
       "type": "Problem Node",
-      "val": 4.2,
+      "val": 4.0,
       "details": {
         "title": "LC 3: Longest Substring Without Repeating Characters",
         "module": "02 Two Pointers & Sliding Window",
@@ -1463,7 +1543,7 @@
       "name": "LC 424: Longest Repeating Character Replacement",
       "group": "problem",
       "type": "Problem Node",
-      "val": 4.2,
+      "val": 4.0,
       "details": {
         "title": "LC 424: Longest Repeating Character Replacement",
         "module": "02 Two Pointers & Sliding Window",
@@ -1489,7 +1569,7 @@
       "name": "LC 567: Permutation in String",
       "group": "problem",
       "type": "Problem Node",
-      "val": 4.2,
+      "val": 4.0,
       "details": {
         "title": "LC 567: Permutation in String",
         "module": "02 Two Pointers & Sliding Window",
@@ -1515,7 +1595,7 @@
       "name": "LC 209: Minimum Size Subarray Sum",
       "group": "problem",
       "type": "Problem Node",
-      "val": 4.2,
+      "val": 4.0,
       "details": {
         "title": "LC 209: Minimum Size Subarray Sum",
         "module": "02 Two Pointers & Sliding Window",
@@ -1541,7 +1621,7 @@
       "name": "LC 42: Trapping Rain Water",
       "group": "problem",
       "type": "Problem Node",
-      "val": 4.2,
+      "val": 4.0,
       "details": {
         "title": "LC 42: Trapping Rain Water",
         "module": "02 Two Pointers & Sliding Window",
@@ -1569,7 +1649,7 @@
       "name": "LC 1004: Max Consecutive Ones III",
       "group": "problem",
       "type": "Problem Node",
-      "val": 4.2,
+      "val": 4.0,
       "details": {
         "title": "LC 1004: Max Consecutive Ones III",
         "module": "02 Two Pointers & Sliding Window",
@@ -1595,7 +1675,7 @@
       "name": "LC 713: Subarray Product Less Than K",
       "group": "problem",
       "type": "Problem Node",
-      "val": 4.2,
+      "val": 4.0,
       "details": {
         "title": "LC 713: Subarray Product Less Than K",
         "module": "02 Two Pointers & Sliding Window",
@@ -1620,7 +1700,7 @@
       "name": "LC 438: Find All Anagrams in a String",
       "group": "problem",
       "type": "Problem Node",
-      "val": 4.2,
+      "val": 4.0,
       "details": {
         "title": "LC 438: Find All Anagrams in a String",
         "module": "02 Two Pointers & Sliding Window",
@@ -1646,7 +1726,7 @@
       "name": "LC 76: Minimum Window Substring",
       "group": "problem",
       "type": "Problem Node",
-      "val": 4.2,
+      "val": 4.0,
       "details": {
         "title": "LC 76: Minimum Window Substring",
         "module": "02 Two Pointers & Sliding Window",
@@ -1674,7 +1754,7 @@
       "name": "LC 239: Sliding Window Maximum",
       "group": "problem",
       "type": "Problem Node",
-      "val": 4.2,
+      "val": 4.0,
       "details": {
         "title": "LC 239: Sliding Window Maximum",
         "module": "02 Two Pointers & Sliding Window",
@@ -1700,7 +1780,7 @@
       "name": "LC 704: Binary Search",
       "group": "problem",
       "type": "Problem Node",
-      "val": 4.2,
+      "val": 4.0,
       "details": {
         "title": "LC 704: Binary Search",
         "module": "03 Binary Search",
@@ -1726,7 +1806,7 @@
       "name": "LC 33: Search in Rotated Sorted Array",
       "group": "problem",
       "type": "Problem Node",
-      "val": 4.2,
+      "val": 4.0,
       "details": {
         "title": "LC 33: Search in Rotated Sorted Array",
         "module": "03 Binary Search",
@@ -1753,7 +1833,7 @@
       "name": "LC 153: Find Minimum in Rotated Sorted Array",
       "group": "problem",
       "type": "Problem Node",
-      "val": 4.2,
+      "val": 4.0,
       "details": {
         "title": "LC 153: Find Minimum in Rotated Sorted Array",
         "module": "03 Binary Search",
@@ -1779,7 +1859,7 @@
       "name": "LC 74: Search a 2D Matrix",
       "group": "problem",
       "type": "Problem Node",
-      "val": 4.2,
+      "val": 4.0,
       "details": {
         "title": "LC 74: Search a 2D Matrix",
         "module": "03 Binary Search",
@@ -1805,7 +1885,7 @@
       "name": "LC 240: Search a 2D Matrix II",
       "group": "problem",
       "type": "Problem Node",
-      "val": 4.2,
+      "val": 4.0,
       "details": {
         "title": "LC 240: Search a 2D Matrix II",
         "module": "03 Binary Search",
@@ -1831,7 +1911,7 @@
       "name": "LC 875: Koko Eating Bananas",
       "group": "problem",
       "type": "Problem Node",
-      "val": 4.2,
+      "val": 4.0,
       "details": {
         "title": "LC 875: Koko Eating Bananas",
         "module": "03 Binary Search",
@@ -1857,7 +1937,7 @@
       "name": "LC 1011: Capacity To Ship Packages Within D Days",
       "group": "problem",
       "type": "Problem Node",
-      "val": 4.2,
+      "val": 4.0,
       "details": {
         "title": "LC 1011: Capacity To Ship Packages Within D Days",
         "module": "03 Binary Search",
@@ -1883,7 +1963,7 @@
       "name": "LC 410: Split Array Largest Sum",
       "group": "problem",
       "type": "Problem Node",
-      "val": 4.2,
+      "val": 4.0,
       "details": {
         "title": "LC 410: Split Array Largest Sum",
         "module": "03 Binary Search",
@@ -1909,7 +1989,7 @@
       "name": "LC 4: Median of Two Sorted Arrays",
       "group": "problem",
       "type": "Problem Node",
-      "val": 4.2,
+      "val": 4.0,
       "details": {
         "title": "LC 4: Median of Two Sorted Arrays",
         "module": "03 Binary Search",
@@ -1936,7 +2016,7 @@
       "name": "LC 20: Valid Parentheses",
       "group": "problem",
       "type": "Problem Node",
-      "val": 4.2,
+      "val": 4.0,
       "details": {
         "title": "LC 20: Valid Parentheses",
         "module": "04 Stack & Monotonic Stack",
@@ -1963,7 +2043,7 @@
       "name": "LC 155: Min Stack",
       "group": "problem",
       "type": "Problem Node",
-      "val": 4.2,
+      "val": 4.0,
       "details": {
         "title": "LC 155: Min Stack",
         "module": "04 Stack & Monotonic Stack",
@@ -1990,7 +2070,7 @@
       "name": "LC 739: Daily Temperatures",
       "group": "problem",
       "type": "Problem Node",
-      "val": 4.2,
+      "val": 4.0,
       "details": {
         "title": "LC 739: Daily Temperatures",
         "module": "04 Stack & Monotonic Stack",
@@ -2016,7 +2096,7 @@
       "name": "LC 84: Largest Rectangle in Histogram",
       "group": "problem",
       "type": "Problem Node",
-      "val": 4.2,
+      "val": 4.0,
       "details": {
         "title": "LC 84: Largest Rectangle in Histogram",
         "module": "04 Stack & Monotonic Stack",
@@ -2042,7 +2122,7 @@
       "name": "LC 85: Maximal Rectangle",
       "group": "problem",
       "type": "Problem Node",
-      "val": 4.2,
+      "val": 4.0,
       "details": {
         "title": "LC 85: Maximal Rectangle",
         "module": "04 Stack & Monotonic Stack",
@@ -2068,7 +2148,7 @@
       "name": "LC 1614: Maximum Nesting Depth of the Parentheses",
       "group": "problem",
       "type": "Problem Node",
-      "val": 4.2,
+      "val": 4.0,
       "details": {
         "title": "LC 1614: Maximum Nesting Depth of the Parentheses",
         "module": "04 Stack & Monotonic Stack",
@@ -2094,7 +2174,7 @@
       "name": "LC 206: Reverse Linked List",
       "group": "problem",
       "type": "Problem Node",
-      "val": 4.2,
+      "val": 4.0,
       "details": {
         "title": "LC 206: Reverse Linked List",
         "module": "05 Linked Lists",
@@ -2122,7 +2202,7 @@
       "name": "LC 141: Linked List Cycle",
       "group": "problem",
       "type": "Problem Node",
-      "val": 4.2,
+      "val": 4.0,
       "details": {
         "title": "LC 141: Linked List Cycle",
         "module": "05 Linked Lists",
@@ -2148,7 +2228,7 @@
       "name": "LC 142: Linked List Cycle II",
       "group": "problem",
       "type": "Problem Node",
-      "val": 4.2,
+      "val": 4.0,
       "details": {
         "title": "LC 142: Linked List Cycle II",
         "module": "05 Linked Lists",
@@ -2174,7 +2254,7 @@
       "name": "LC 21: Merge Two Sorted Lists",
       "group": "problem",
       "type": "Problem Node",
-      "val": 4.2,
+      "val": 4.0,
       "details": {
         "title": "LC 21: Merge Two Sorted Lists",
         "module": "05 Linked Lists",
@@ -2201,7 +2281,7 @@
       "name": "LC 23: Merge k Sorted Lists",
       "group": "problem",
       "type": "Problem Node",
-      "val": 4.2,
+      "val": 4.0,
       "details": {
         "title": "LC 23: Merge k Sorted Lists",
         "module": "05 Linked Lists",
@@ -2228,7 +2308,7 @@
       "name": "LC 143: Reorder List",
       "group": "problem",
       "type": "Problem Node",
-      "val": 4.2,
+      "val": 4.0,
       "details": {
         "title": "LC 143: Reorder List",
         "module": "05 Linked Lists",
@@ -2254,7 +2334,7 @@
       "name": "LC 78: Subsets",
       "group": "problem",
       "type": "Problem Node",
-      "val": 4.2,
+      "val": 4.0,
       "details": {
         "title": "LC 78: Subsets",
         "module": "06 Recursion & Backtracking",
@@ -2281,7 +2361,7 @@
       "name": "LC 90: Subsets II",
       "group": "problem",
       "type": "Problem Node",
-      "val": 4.2,
+      "val": 4.0,
       "details": {
         "title": "LC 90: Subsets II",
         "module": "06 Recursion & Backtracking",
@@ -2306,7 +2386,7 @@
       "name": "LC 46: Permutations",
       "group": "problem",
       "type": "Problem Node",
-      "val": 4.2,
+      "val": 4.0,
       "details": {
         "title": "LC 46: Permutations",
         "module": "06 Recursion & Backtracking",
@@ -2333,7 +2413,7 @@
       "name": "LC 39: Combination Sum",
       "group": "problem",
       "type": "Problem Node",
-      "val": 4.2,
+      "val": 4.0,
       "details": {
         "title": "LC 39: Combination Sum",
         "module": "06 Recursion & Backtracking",
@@ -2359,7 +2439,7 @@
       "name": "LC 51: N-Queens",
       "group": "problem",
       "type": "Problem Node",
-      "val": 4.2,
+      "val": 4.0,
       "details": {
         "title": "LC 51: N-Queens",
         "module": "06 Recursion & Backtracking",
@@ -2372,9 +2452,9 @@
           "Microsoft"
         ],
         "intuition": "Row placement tracking occupied cols, diag1, and diag2.",
-        "trigger": "Core 15-second trigger: Backtracking & Pruning pattern match.",
-        "invariant": "Maintain invariant for Backtracking & Pruning across all state transitions.",
-        "pitfall": "Carefully verify boundary termination and duplicate deduplication.",
+        "trigger": "Placing N non-attacking pieces on N\u00d7N board -> Row-by-row backtracking with O(1) diagonal sets.",
+        "invariant": "One queen per row. Column `col`, Main diag `row - col + n`, Anti diag `row + col` must be free.",
+        "pitfall": "Never scan the board in O(N) to check diagonals. Use 3 boolean lookup sets. Revert state on backtrack.",
         "code_path": "",
         "ladder_prev": "LC 46: Permutations",
         "ladder_next": null
@@ -2385,7 +2465,7 @@
       "name": "LC 79: Word Search",
       "group": "problem",
       "type": "Problem Node",
-      "val": 4.2,
+      "val": 4.0,
       "details": {
         "title": "LC 79: Word Search",
         "module": "06 Recursion & Backtracking",
@@ -2412,7 +2492,7 @@
       "name": "LC 104: Maximum Depth of Binary Tree",
       "group": "problem",
       "type": "Problem Node",
-      "val": 4.2,
+      "val": 4.0,
       "details": {
         "title": "LC 104: Maximum Depth of Binary Tree",
         "module": "07 Binary Trees & BST",
@@ -2438,7 +2518,7 @@
       "name": "LC 226: Invert Binary Tree",
       "group": "problem",
       "type": "Problem Node",
-      "val": 4.2,
+      "val": 4.0,
       "details": {
         "title": "LC 226: Invert Binary Tree",
         "module": "07 Binary Trees & BST",
@@ -2464,7 +2544,7 @@
       "name": "LC 543: Diameter of Binary Tree",
       "group": "problem",
       "type": "Problem Node",
-      "val": 4.2,
+      "val": 4.0,
       "details": {
         "title": "LC 543: Diameter of Binary Tree",
         "module": "07 Binary Trees & BST",
@@ -2490,7 +2570,7 @@
       "name": "LC 102: Binary Tree Level Order Traversal",
       "group": "problem",
       "type": "Problem Node",
-      "val": 4.2,
+      "val": 4.0,
       "details": {
         "title": "LC 102: Binary Tree Level Order Traversal",
         "module": "07 Binary Trees & BST",
@@ -2516,7 +2596,7 @@
       "name": "LC 236: Lowest Common Ancestor of a Binary Tree",
       "group": "problem",
       "type": "Problem Node",
-      "val": 4.2,
+      "val": 4.0,
       "details": {
         "title": "LC 236: Lowest Common Ancestor of a Binary Tree",
         "module": "07 Binary Trees & BST",
@@ -2543,7 +2623,7 @@
       "name": "LC 124: Binary Tree Maximum Path Sum",
       "group": "problem",
       "type": "Problem Node",
-      "val": 4.2,
+      "val": 4.0,
       "details": {
         "title": "LC 124: Binary Tree Maximum Path Sum",
         "module": "07 Binary Trees & BST",
@@ -2569,7 +2649,7 @@
       "name": "LC 98: Validate Binary Search Tree",
       "group": "problem",
       "type": "Problem Node",
-      "val": 4.2,
+      "val": 4.0,
       "details": {
         "title": "LC 98: Validate Binary Search Tree",
         "module": "07 Binary Trees & BST",
@@ -2595,7 +2675,7 @@
       "name": "LC 297: Serialize and Deserialize Binary Tree",
       "group": "problem",
       "type": "Problem Node",
-      "val": 4.2,
+      "val": 4.0,
       "details": {
         "title": "LC 297: Serialize and Deserialize Binary Tree",
         "module": "07 Binary Trees & BST",
@@ -2622,7 +2702,7 @@
       "name": "LC 215: Kth Largest Element in an Array",
       "group": "problem",
       "type": "Problem Node",
-      "val": 4.2,
+      "val": 4.0,
       "details": {
         "title": "LC 215: Kth Largest Element in an Array",
         "module": "08 Heaps & Priority Queues",
@@ -2649,7 +2729,7 @@
       "name": "LC 295: Find Median from Data Stream",
       "group": "problem",
       "type": "Problem Node",
-      "val": 4.2,
+      "val": 4.0,
       "details": {
         "title": "LC 295: Find Median from Data Stream",
         "module": "08 Heaps & Priority Queues",
@@ -2675,7 +2755,7 @@
       "name": "LC 621: Task Scheduler",
       "group": "problem",
       "type": "Problem Node",
-      "val": 4.2,
+      "val": 4.0,
       "details": {
         "title": "LC 621: Task Scheduler",
         "module": "08 Heaps & Priority Queues",
@@ -2701,7 +2781,7 @@
       "name": "LC 56: Merge Intervals",
       "group": "problem",
       "type": "Problem Node",
-      "val": 4.2,
+      "val": 4.0,
       "details": {
         "title": "LC 56: Merge Intervals",
         "module": "09 Intervals & Sweepline",
@@ -2728,7 +2808,7 @@
       "name": "LC 57: Insert Interval",
       "group": "problem",
       "type": "Problem Node",
-      "val": 4.2,
+      "val": 4.0,
       "details": {
         "title": "LC 57: Insert Interval",
         "module": "09 Intervals & Sweepline",
@@ -2754,7 +2834,7 @@
       "name": "LC 435: Non-overlapping Intervals",
       "group": "problem",
       "type": "Problem Node",
-      "val": 4.2,
+      "val": 4.0,
       "details": {
         "title": "LC 435: Non-overlapping Intervals",
         "module": "09 Intervals & Sweepline",
@@ -2779,7 +2859,7 @@
       "name": "LC 253: Meeting Rooms II",
       "group": "problem",
       "type": "Problem Node",
-      "val": 4.2,
+      "val": 4.0,
       "details": {
         "title": "LC 253: Meeting Rooms II",
         "module": "09 Intervals & Sweepline",
@@ -2807,7 +2887,7 @@
       "name": "LC 208: Implement Trie (Prefix Tree)",
       "group": "problem",
       "type": "Problem Node",
-      "val": 4.2,
+      "val": 4.0,
       "details": {
         "title": "LC 208: Implement Trie (Prefix Tree)",
         "module": "10 Tries (Prefix Trees)",
@@ -2833,7 +2913,7 @@
       "name": "LC 211: Design Add and Search Words",
       "group": "problem",
       "type": "Problem Node",
-      "val": 4.2,
+      "val": 4.0,
       "details": {
         "title": "LC 211: Design Add and Search Words",
         "module": "10 Tries (Prefix Trees)",
@@ -2859,7 +2939,7 @@
       "name": "LC 200: Number of Islands",
       "group": "problem",
       "type": "Problem Node",
-      "val": 4.2,
+      "val": 4.0,
       "details": {
         "title": "LC 200: Number of Islands",
         "module": "11 Graphs 1 Traversals & Fundamentals",
@@ -2887,7 +2967,7 @@
       "name": "LC 133: Clone Graph",
       "group": "problem",
       "type": "Problem Node",
-      "val": 4.2,
+      "val": 4.0,
       "details": {
         "title": "LC 133: Clone Graph",
         "module": "11 Graphs 1 Traversals & Fundamentals",
@@ -2913,7 +2993,7 @@
       "name": "LC 994: Rotting Oranges",
       "group": "problem",
       "type": "Problem Node",
-      "val": 4.2,
+      "val": 4.0,
       "details": {
         "title": "LC 994: Rotting Oranges",
         "module": "11 Graphs 1 Traversals & Fundamentals",
@@ -2939,7 +3019,7 @@
       "name": "LC 785: Is Graph Bipartite?",
       "group": "problem",
       "type": "Problem Node",
-      "val": 4.2,
+      "val": 4.0,
       "details": {
         "title": "LC 785: Is Graph Bipartite?",
         "module": "11 Graphs 1 Traversals & Fundamentals",
@@ -2965,7 +3045,7 @@
       "name": "LC 207: Course Schedule",
       "group": "problem",
       "type": "Problem Node",
-      "val": 4.2,
+      "val": 4.0,
       "details": {
         "title": "LC 207: Course Schedule",
         "module": "12 Graphs 2 TopoSort & Shortest Paths",
@@ -2992,7 +3072,7 @@
       "name": "LC 210: Course Schedule II",
       "group": "problem",
       "type": "Problem Node",
-      "val": 4.2,
+      "val": 4.0,
       "details": {
         "title": "LC 210: Course Schedule II",
         "module": "12 Graphs 2 TopoSort & Shortest Paths",
@@ -3018,7 +3098,7 @@
       "name": "LC 743: Network Delay Time",
       "group": "problem",
       "type": "Problem Node",
-      "val": 4.2,
+      "val": 4.0,
       "details": {
         "title": "LC 743: Network Delay Time",
         "module": "12 Graphs 2 TopoSort & Shortest Paths",
@@ -3044,7 +3124,7 @@
       "name": "LC 787: Cheapest Flights Within K Stops",
       "group": "problem",
       "type": "Problem Node",
-      "val": 4.2,
+      "val": 4.0,
       "details": {
         "title": "LC 787: Cheapest Flights Within K Stops",
         "module": "12 Graphs 2 TopoSort & Shortest Paths",
@@ -3070,7 +3150,7 @@
       "name": "LC 684: Redundant Connection",
       "group": "problem",
       "type": "Problem Node",
-      "val": 4.2,
+      "val": 4.0,
       "details": {
         "title": "LC 684: Redundant Connection",
         "module": "13 Disjoint Set Union (DSU) & MST",
@@ -3096,7 +3176,7 @@
       "name": "LC 1584: Min Cost to Connect All Points",
       "group": "problem",
       "type": "Problem Node",
-      "val": 4.2,
+      "val": 4.0,
       "details": {
         "title": "LC 1584: Min Cost to Connect All Points",
         "module": "13 Disjoint Set Union (DSU) & MST",
@@ -3122,7 +3202,7 @@
       "name": "LC 70: Climbing Stairs",
       "group": "problem",
       "type": "Problem Node",
-      "val": 4.2,
+      "val": 4.0,
       "details": {
         "title": "LC 70: Climbing Stairs",
         "module": "14 Dynamic Programming 1 1D & Classics",
@@ -3148,7 +3228,7 @@
       "name": "LC 198: House Robber",
       "group": "problem",
       "type": "Problem Node",
-      "val": 4.2,
+      "val": 4.0,
       "details": {
         "title": "LC 198: House Robber",
         "module": "14 Dynamic Programming 1 1D & Classics",
@@ -3175,7 +3255,7 @@
       "name": "LC 322: Coin Change",
       "group": "problem",
       "type": "Problem Node",
-      "val": 4.2,
+      "val": 4.0,
       "details": {
         "title": "LC 322: Coin Change",
         "module": "14 Dynamic Programming 1 1D & Classics",
@@ -3202,7 +3282,7 @@
       "name": "LC 300: Longest Increasing Subsequence",
       "group": "problem",
       "type": "Problem Node",
-      "val": 4.2,
+      "val": 4.0,
       "details": {
         "title": "LC 300: Longest Increasing Subsequence",
         "module": "14 Dynamic Programming 1 1D & Classics",
@@ -3229,7 +3309,7 @@
       "name": "LC 62: Unique Paths",
       "group": "problem",
       "type": "Problem Node",
-      "val": 4.2,
+      "val": 4.0,
       "details": {
         "title": "LC 62: Unique Paths",
         "module": "15 Dynamic Programming 2 2D & Grids",
@@ -3255,7 +3335,7 @@
       "name": "LC 64: Minimum Path Sum",
       "group": "problem",
       "type": "Problem Node",
-      "val": 4.2,
+      "val": 4.0,
       "details": {
         "title": "LC 64: Minimum Path Sum",
         "module": "15 Dynamic Programming 2 2D & Grids",
@@ -3281,7 +3361,7 @@
       "name": "LC 221: Maximal Square",
       "group": "problem",
       "type": "Problem Node",
-      "val": 4.2,
+      "val": 4.0,
       "details": {
         "title": "LC 221: Maximal Square",
         "module": "15 Dynamic Programming 2 2D & Grids",
@@ -3307,7 +3387,7 @@
       "name": "LC 3963: Create Grid With Exactly One Path",
       "group": "problem",
       "type": "Problem Node",
-      "val": 4.2,
+      "val": 4.0,
       "details": {
         "title": "LC 3963: Create Grid With Exactly One Path",
         "module": "15 Dynamic Programming 2 2D & Grids",
@@ -3333,7 +3413,7 @@
       "name": "LC 1143: Longest Common Subsequence",
       "group": "problem",
       "type": "Problem Node",
-      "val": 4.2,
+      "val": 4.0,
       "details": {
         "title": "LC 1143: Longest Common Subsequence",
         "module": "16 Dynamic Programming 3 Strings & Sequences",
@@ -3359,7 +3439,7 @@
       "name": "LC 72: Edit Distance",
       "group": "problem",
       "type": "Problem Node",
-      "val": 4.2,
+      "val": 4.0,
       "details": {
         "title": "LC 72: Edit Distance",
         "module": "16 Dynamic Programming 3 Strings & Sequences",
@@ -3386,7 +3466,7 @@
       "name": "LC 416: Partition Equal Subset Sum",
       "group": "problem",
       "type": "Problem Node",
-      "val": 4.2,
+      "val": 4.0,
       "details": {
         "title": "LC 416: Partition Equal Subset Sum",
         "module": "17 Dynamic Programming 4 Knapsack & Partition",
@@ -3412,7 +3492,7 @@
       "name": "LC 337: House Robber III",
       "group": "problem",
       "type": "Problem Node",
-      "val": 4.2,
+      "val": 4.0,
       "details": {
         "title": "LC 337: House Robber III",
         "module": "18 Dynamic Programming 5 Trees, Bitmask & Digit DP",
@@ -3438,7 +3518,7 @@
       "name": "LC 847: Shortest Path Visiting All Nodes",
       "group": "problem",
       "type": "Problem Node",
-      "val": 4.2,
+      "val": 4.0,
       "details": {
         "title": "LC 847: Shortest Path Visiting All Nodes",
         "module": "18 Dynamic Programming 5 Trees, Bitmask & Digit DP",
@@ -3463,7 +3543,7 @@
       "name": "LC 55: Jump Game",
       "group": "problem",
       "type": "Problem Node",
-      "val": 4.2,
+      "val": 4.0,
       "details": {
         "title": "LC 55: Jump Game",
         "module": "19 Greedy Algorithms",
@@ -3490,7 +3570,7 @@
       "name": "LC 45: Jump Game II",
       "group": "problem",
       "type": "Problem Node",
-      "val": 4.2,
+      "val": 4.0,
       "details": {
         "title": "LC 45: Jump Game II",
         "module": "19 Greedy Algorithms",
@@ -3516,7 +3596,7 @@
       "name": "LC 134: Gas Station",
       "group": "problem",
       "type": "Problem Node",
-      "val": 4.2,
+      "val": 4.0,
       "details": {
         "title": "LC 134: Gas Station",
         "module": "19 Greedy Algorithms",
@@ -3542,7 +3622,7 @@
       "name": "LC 135: Candy",
       "group": "problem",
       "type": "Problem Node",
-      "val": 4.2,
+      "val": 4.0,
       "details": {
         "title": "LC 135: Candy",
         "module": "19 Greedy Algorithms",
@@ -3568,7 +3648,7 @@
       "name": "LC 136: Single Number",
       "group": "problem",
       "type": "Problem Node",
-      "val": 4.2,
+      "val": 4.0,
       "details": {
         "title": "LC 136: Single Number",
         "module": "20 Bit Manipulation & Math",
@@ -3594,7 +3674,7 @@
       "name": "LC 191: Number of 1 Bits",
       "group": "problem",
       "type": "Problem Node",
-      "val": 4.2,
+      "val": 4.0,
       "details": {
         "title": "LC 191: Number of 1 Bits",
         "module": "20 Bit Manipulation & Math",
@@ -3620,7 +3700,7 @@
       "name": "LC 50: Pow(x, n)",
       "group": "problem",
       "type": "Problem Node",
-      "val": 4.2,
+      "val": 4.0,
       "details": {
         "title": "LC 50: Pow(x, n)",
         "module": "20 Bit Manipulation & Math",
@@ -3647,7 +3727,7 @@
       "name": "LC 307: Range Sum Query - Mutable",
       "group": "problem",
       "type": "Problem Node",
-      "val": 4.2,
+      "val": 4.0,
       "details": {
         "title": "LC 307: Range Sum Query - Mutable",
         "module": "21 Segment Trees & Fenwick (BIT)",
@@ -3672,7 +3752,7 @@
       "name": "LC 146: LRU Cache",
       "group": "problem",
       "type": "Problem Node",
-      "val": 4.2,
+      "val": 4.0,
       "details": {
         "title": "LC 146: LRU Cache",
         "module": "22 Design Data Structures",
@@ -3701,7 +3781,7 @@
       "name": "LC 460: LFU Cache",
       "group": "problem",
       "type": "Problem Node",
-      "val": 4.2,
+      "val": 4.0,
       "details": {
         "title": "LC 460: LFU Cache",
         "module": "22 Design Data Structures",
@@ -3727,7 +3807,7 @@
       "name": "LC 28: Find the Index of the First Occurrence in a String",
       "group": "problem",
       "type": "Problem Node",
-      "val": 4.2,
+      "val": 4.0,
       "details": {
         "title": "LC 28: Find the Index of the First Occurrence in a String",
         "module": "23 Advanced Strings (KMP & Rabin-Karp)",
@@ -3753,7 +3833,7 @@
       "name": "LC 214: Shortest Palindrome",
       "group": "problem",
       "type": "Problem Node",
-      "val": 4.2,
+      "val": 4.0,
       "details": {
         "title": "LC 214: Shortest Palindrome",
         "module": "23 Advanced Strings (KMP & Rabin-Karp)",
@@ -3778,7 +3858,7 @@
       "name": "LC 5: Longest Palindromic Substring",
       "group": "problem",
       "type": "Problem Node",
-      "val": 4.2,
+      "val": 4.0,
       "details": {
         "title": "LC 5: Longest Palindromic Substring",
         "module": "23 Advanced Strings (KMP & Rabin-Karp)",
@@ -3805,7 +3885,7 @@
       "name": "LC 1192: Critical Connections in a Network",
       "group": "problem",
       "type": "Problem Node",
-      "val": 4.2,
+      "val": 4.0,
       "details": {
         "title": "LC 1192: Critical Connections in a Network",
         "module": "24 Advanced Graphs (Tarjan & Eulerian)",
@@ -3830,7 +3910,7 @@
       "name": "LC 332: Reconstruct Itinerary",
       "group": "problem",
       "type": "Problem Node",
-      "val": 4.2,
+      "val": 4.0,
       "details": {
         "title": "LC 332: Reconstruct Itinerary",
         "module": "24 Advanced Graphs (Tarjan & Eulerian)",
@@ -3856,7 +3936,7 @@
       "name": "LC 292: Nim Game",
       "group": "problem",
       "type": "Problem Node",
-      "val": 4.2,
+      "val": 4.0,
       "details": {
         "title": "LC 292: Nim Game",
         "module": "25 Game Theory & Minimax",
@@ -3881,7 +3961,7 @@
       "name": "LC 877: Stone Game",
       "group": "problem",
       "type": "Problem Node",
-      "val": 4.2,
+      "val": 4.0,
       "details": {
         "title": "LC 877: Stone Game",
         "module": "25 Game Theory & Minimax",
@@ -3906,7 +3986,7 @@
       "name": "LC 398: Random Pick Index",
       "group": "problem",
       "type": "Problem Node",
-      "val": 4.2,
+      "val": 4.0,
       "details": {
         "title": "LC 398: Random Pick Index",
         "module": "26 Reservoir Sampling & Randomized",
@@ -3931,7 +4011,7 @@
       "name": "LC 384: Shuffle an Array",
       "group": "problem",
       "type": "Problem Node",
-      "val": 4.2,
+      "val": 4.0,
       "details": {
         "title": "LC 384: Shuffle an Array",
         "module": "26 Reservoir Sampling & Randomized",
@@ -3957,7 +4037,7 @@
       "name": "LC 587: Erect the Fence",
       "group": "problem",
       "type": "Problem Node",
-      "val": 4.2,
+      "val": 4.0,
       "details": {
         "title": "LC 587: Erect the Fence",
         "module": "27 Computational Geometry & Math",
@@ -3982,7 +4062,7 @@
       "name": "LC 149: Max Points on a Line",
       "group": "problem",
       "type": "Problem Node",
-      "val": 4.2,
+      "val": 4.0,
       "details": {
         "title": "LC 149: Max Points on a Line",
         "module": "27 Computational Geometry & Math",
@@ -4008,481 +4088,481 @@
     {
       "source": "root",
       "target": "mod:01 Arrays & Hashing",
-      "value": 2,
+      "value": 1.8,
       "type": "module-root"
     },
     {
       "source": "root",
       "target": "mod:02 Two Pointers & Sliding Window",
-      "value": 2,
+      "value": 1.8,
       "type": "module-root"
     },
     {
       "source": "root",
       "target": "mod:03 Binary Search",
-      "value": 2,
+      "value": 1.8,
       "type": "module-root"
     },
     {
       "source": "root",
       "target": "mod:04 Stack & Monotonic Stack",
-      "value": 2,
+      "value": 1.8,
       "type": "module-root"
     },
     {
       "source": "root",
       "target": "mod:05 Linked Lists",
-      "value": 2,
+      "value": 1.8,
       "type": "module-root"
     },
     {
       "source": "root",
       "target": "mod:06 Recursion & Backtracking",
-      "value": 2,
+      "value": 1.8,
       "type": "module-root"
     },
     {
       "source": "root",
       "target": "mod:07 Binary Trees & BST",
-      "value": 2,
+      "value": 1.8,
       "type": "module-root"
     },
     {
       "source": "root",
       "target": "mod:08 Heaps & Priority Queues",
-      "value": 2,
+      "value": 1.8,
       "type": "module-root"
     },
     {
       "source": "root",
       "target": "mod:09 Intervals & Sweepline",
-      "value": 2,
+      "value": 1.8,
       "type": "module-root"
     },
     {
       "source": "root",
       "target": "mod:10 Tries (Prefix Trees)",
-      "value": 2,
+      "value": 1.8,
       "type": "module-root"
     },
     {
       "source": "root",
       "target": "mod:11 Graphs 1 Traversals & Fundamentals",
-      "value": 2,
+      "value": 1.8,
       "type": "module-root"
     },
     {
       "source": "root",
       "target": "mod:12 Graphs 2 TopoSort & Shortest Paths",
-      "value": 2,
+      "value": 1.8,
       "type": "module-root"
     },
     {
       "source": "root",
       "target": "mod:13 Disjoint Set Union (DSU) & MST",
-      "value": 2,
+      "value": 1.8,
       "type": "module-root"
     },
     {
       "source": "root",
       "target": "mod:14 Dynamic Programming 1 1D & Classics",
-      "value": 2,
+      "value": 1.8,
       "type": "module-root"
     },
     {
       "source": "root",
       "target": "mod:15 Dynamic Programming 2 2D & Grids",
-      "value": 2,
+      "value": 1.8,
       "type": "module-root"
     },
     {
       "source": "root",
       "target": "mod:16 Dynamic Programming 3 Strings & Sequences",
-      "value": 2,
+      "value": 1.8,
       "type": "module-root"
     },
     {
       "source": "root",
       "target": "mod:17 Dynamic Programming 4 Knapsack & Partition",
-      "value": 2,
+      "value": 1.8,
       "type": "module-root"
     },
     {
       "source": "root",
       "target": "mod:18 Dynamic Programming 5 Trees, Bitmask & Digit DP",
-      "value": 2,
+      "value": 1.8,
       "type": "module-root"
     },
     {
       "source": "root",
       "target": "mod:19 Greedy Algorithms",
-      "value": 2,
+      "value": 1.8,
       "type": "module-root"
     },
     {
       "source": "root",
       "target": "mod:20 Bit Manipulation & Math",
-      "value": 2,
+      "value": 1.8,
       "type": "module-root"
     },
     {
       "source": "root",
       "target": "mod:21 Segment Trees & Fenwick (BIT)",
-      "value": 2,
+      "value": 1.8,
       "type": "module-root"
     },
     {
       "source": "root",
       "target": "mod:22 Design Data Structures",
-      "value": 2,
+      "value": 1.8,
       "type": "module-root"
     },
     {
       "source": "root",
       "target": "mod:23 Advanced Strings (KMP & Rabin-Karp)",
-      "value": 2,
+      "value": 1.8,
       "type": "module-root"
     },
     {
       "source": "root",
       "target": "mod:24 Advanced Graphs (Tarjan & Eulerian)",
-      "value": 2,
+      "value": 1.8,
       "type": "module-root"
     },
     {
       "source": "root",
       "target": "mod:25 Game Theory & Minimax",
-      "value": 2,
+      "value": 1.8,
       "type": "module-root"
     },
     {
       "source": "root",
       "target": "mod:26 Reservoir Sampling & Randomized",
-      "value": 2,
+      "value": 1.8,
       "type": "module-root"
     },
     {
       "source": "root",
       "target": "mod:27 Computational Geometry & Math",
-      "value": 2,
+      "value": 1.8,
       "type": "module-root"
     },
     {
       "source": "mod:01 Arrays & Hashing",
       "target": "concept:Prefix Sums",
-      "value": 1.5,
+      "value": 1.4,
       "type": "module-concept"
     },
     {
       "source": "mod:01 Arrays & Hashing",
       "target": "concept:Kadane's Algorithm",
-      "value": 1.5,
+      "value": 1.4,
       "type": "module-concept"
     },
     {
       "source": "mod:01 Arrays & Hashing",
       "target": "concept:Difference Array",
-      "value": 1.5,
+      "value": 1.4,
       "type": "module-concept"
     },
     {
       "source": "mod:01 Arrays & Hashing",
       "target": "concept:Dutch National Flag",
-      "value": 1.5,
+      "value": 1.4,
       "type": "module-concept"
     },
     {
       "source": "mod:01 Arrays & Hashing",
       "target": "concept:Matrix Traversal",
-      "value": 1.5,
+      "value": 1.4,
       "type": "module-concept"
     },
     {
       "source": "mod:01 Arrays & Hashing",
       "target": "concept:Hash Maps & Sets",
-      "value": 1.5,
+      "value": 1.4,
       "type": "module-concept"
     },
     {
       "source": "mod:02 Two Pointers & Sliding Window",
       "target": "concept:Two Pointers",
-      "value": 1.5,
+      "value": 1.4,
       "type": "module-concept"
     },
     {
       "source": "mod:02 Two Pointers & Sliding Window",
       "target": "concept:Fixed Sliding Window",
-      "value": 1.5,
+      "value": 1.4,
       "type": "module-concept"
     },
     {
       "source": "mod:02 Two Pointers & Sliding Window",
       "target": "concept:Dynamic Sliding Window",
-      "value": 1.5,
+      "value": 1.4,
       "type": "module-concept"
     },
     {
       "source": "mod:02 Two Pointers & Sliding Window",
       "target": "concept:Monotonic Window Invariant",
-      "value": 1.5,
+      "value": 1.4,
       "type": "module-concept"
     },
     {
       "source": "mod:03 Binary Search",
       "target": "concept:Binary Search on Array",
-      "value": 1.5,
+      "value": 1.4,
       "type": "module-concept"
     },
     {
       "source": "mod:03 Binary Search",
       "target": "concept:Rotated Array Binary Search",
-      "value": 1.5,
+      "value": 1.4,
       "type": "module-concept"
     },
     {
       "source": "mod:03 Binary Search",
       "target": "concept:Binary Search on Answer",
-      "value": 1.5,
+      "value": 1.4,
       "type": "module-concept"
     },
     {
       "source": "mod:03 Binary Search",
       "target": "concept:2D Matrix Binary Search",
-      "value": 1.5,
+      "value": 1.4,
       "type": "module-concept"
     },
     {
       "source": "mod:04 Stack & Monotonic Stack",
       "target": "concept:Monotonic Stack",
-      "value": 1.5,
+      "value": 1.4,
       "type": "module-concept"
     },
     {
       "source": "mod:04 Stack & Monotonic Stack",
       "target": "concept:Rainwater Trapping",
-      "value": 1.5,
+      "value": 1.4,
       "type": "module-concept"
     },
     {
       "source": "mod:05 Linked Lists",
       "target": "concept:In-Place Linked List Reversal",
-      "value": 1.5,
+      "value": 1.4,
       "type": "module-concept"
     },
     {
       "source": "mod:05 Linked Lists",
       "target": "concept:Floyd's Cycle Detection",
-      "value": 1.5,
+      "value": 1.4,
       "type": "module-concept"
     },
     {
       "source": "mod:06 Recursion & Backtracking",
       "target": "concept:Backtracking & Pruning",
-      "value": 1.5,
+      "value": 1.4,
       "type": "module-concept"
     },
     {
       "source": "mod:06 Recursion & Backtracking",
       "target": "concept:Permutations & Combinations",
-      "value": 1.5,
+      "value": 1.4,
       "type": "module-concept"
     },
     {
       "source": "mod:07 Binary Trees & BST",
       "target": "concept:Tree DFS & Traversals",
-      "value": 1.5,
+      "value": 1.4,
       "type": "module-concept"
     },
     {
       "source": "mod:07 Binary Trees & BST",
       "target": "concept:Tree BFS & Level Order",
-      "value": 1.5,
+      "value": 1.4,
       "type": "module-concept"
     },
     {
       "source": "mod:07 Binary Trees & BST",
       "target": "concept:Lowest Common Ancestor (LCA)",
-      "value": 1.5,
+      "value": 1.4,
       "type": "module-concept"
     },
     {
       "source": "mod:07 Binary Trees & BST",
       "target": "concept:BST Properties",
-      "value": 1.5,
+      "value": 1.4,
       "type": "module-concept"
     },
     {
       "source": "mod:08 Heaps & Priority Queues",
       "target": "concept:Binary Heap & Priority Queue",
-      "value": 1.5,
+      "value": 1.4,
       "type": "module-concept"
     },
     {
       "source": "mod:08 Heaps & Priority Queues",
       "target": "concept:Two Heaps Running Median",
-      "value": 1.5,
+      "value": 1.4,
       "type": "module-concept"
     },
     {
       "source": "mod:09 Intervals & Sweepline",
       "target": "concept:Interval Merging & Sweepline",
-      "value": 1.5,
+      "value": 1.4,
       "type": "module-concept"
     },
     {
       "source": "mod:10 Tries (Prefix Trees)",
       "target": "concept:Trie (Prefix Tree)",
-      "value": 1.5,
+      "value": 1.4,
       "type": "module-concept"
     },
     {
       "source": "mod:11 Graphs 1 Traversals & Fundamentals",
       "target": "concept:Graph BFS & Shortest Path",
-      "value": 1.5,
+      "value": 1.4,
       "type": "module-concept"
     },
     {
       "source": "mod:11 Graphs 1 Traversals & Fundamentals",
       "target": "concept:Graph DFS & Components",
-      "value": 1.5,
+      "value": 1.4,
       "type": "module-concept"
     },
     {
       "source": "mod:12 Graphs 2 TopoSort & Shortest Paths",
       "target": "concept:Kahn's Topological Sort",
-      "value": 1.5,
+      "value": 1.4,
       "type": "module-concept"
     },
     {
       "source": "mod:12 Graphs 2 TopoSort & Shortest Paths",
       "target": "concept:Dijkstra's Algorithm",
-      "value": 1.5,
+      "value": 1.4,
       "type": "module-concept"
     },
     {
       "source": "mod:13 Disjoint Set Union (DSU) & MST",
       "target": "concept:Disjoint Set Union (DSU)",
-      "value": 1.5,
+      "value": 1.4,
       "type": "module-concept"
     },
     {
       "source": "mod:13 Disjoint Set Union (DSU) & MST",
       "target": "concept:Kruskal's & Prim's MST",
-      "value": 1.5,
+      "value": 1.4,
       "type": "module-concept"
     },
     {
       "source": "mod:14 Dynamic Programming 1 1D & Classics",
       "target": "concept:1D Linear DP",
-      "value": 1.5,
+      "value": 1.4,
       "type": "module-concept"
     },
     {
       "source": "mod:14 Dynamic Programming 1 1D & Classics",
       "target": "concept:Longest Increasing Subsequence",
-      "value": 1.5,
+      "value": 1.4,
       "type": "module-concept"
     },
     {
       "source": "mod:15 Dynamic Programming 2 2D & Grids",
       "target": "concept:2D Grid DP",
-      "value": 1.5,
+      "value": 1.4,
       "type": "module-concept"
     },
     {
       "source": "mod:15 Dynamic Programming 2 2D & Grids",
       "target": "concept:Constructive Grid Path",
-      "value": 1.5,
+      "value": 1.4,
       "type": "module-concept"
     },
     {
       "source": "mod:16 Dynamic Programming 3 Strings & Sequences",
       "target": "concept:Longest Common Subsequence",
-      "value": 1.5,
+      "value": 1.4,
       "type": "module-concept"
     },
     {
       "source": "mod:16 Dynamic Programming 3 Strings & Sequences",
       "target": "concept:Edit Distance DP",
-      "value": 1.5,
+      "value": 1.4,
       "type": "module-concept"
     },
     {
       "source": "mod:17 Dynamic Programming 4 Knapsack & Partition",
       "target": "concept:0-1 Knapsack",
-      "value": 1.5,
+      "value": 1.4,
       "type": "module-concept"
     },
     {
       "source": "mod:18 Dynamic Programming 5 Trees, Bitmask & Digit DP",
       "target": "concept:Tree DP",
-      "value": 1.5,
+      "value": 1.4,
       "type": "module-concept"
     },
     {
       "source": "mod:18 Dynamic Programming 5 Trees, Bitmask & Digit DP",
       "target": "concept:Bitmask DP",
-      "value": 1.5,
+      "value": 1.4,
       "type": "module-concept"
     },
     {
       "source": "mod:19 Greedy Algorithms",
       "target": "concept:Greedy Intervals & Reachability",
-      "value": 1.5,
+      "value": 1.4,
       "type": "module-concept"
     },
     {
       "source": "mod:20 Bit Manipulation & Math",
       "target": "concept:Bitwise Tricks",
-      "value": 1.5,
+      "value": 1.4,
       "type": "module-concept"
     },
     {
       "source": "mod:20 Bit Manipulation & Math",
       "target": "concept:Fast Exponentiation",
-      "value": 1.5,
+      "value": 1.4,
       "type": "module-concept"
     },
     {
       "source": "mod:21 Segment Trees & Fenwick (BIT)",
       "target": "concept:Segment Tree & Fenwick",
-      "value": 1.5,
+      "value": 1.4,
       "type": "module-concept"
     },
     {
       "source": "mod:22 Design Data Structures",
       "target": "concept:LRU & LFU Cache Design",
-      "value": 1.5,
+      "value": 1.4,
       "type": "module-concept"
     },
     {
       "source": "mod:23 Advanced Strings (KMP & Rabin-Karp)",
       "target": "concept:KMP & String Matching",
-      "value": 1.5,
+      "value": 1.4,
       "type": "module-concept"
     },
     {
       "source": "mod:24 Advanced Graphs (Tarjan & Eulerian)",
       "target": "concept:Tarjan's Bridges & SCC",
-      "value": 1.5,
+      "value": 1.4,
       "type": "module-concept"
     },
     {
       "source": "mod:25 Game Theory & Minimax",
       "target": "concept:Minimax & Game Theory",
-      "value": 1.5,
+      "value": 1.4,
       "type": "module-concept"
     },
     {
       "source": "mod:26 Reservoir Sampling & Randomized",
       "target": "concept:Reservoir Sampling",
-      "value": 1.5,
+      "value": 1.4,
       "type": "module-concept"
     },
     {
       "source": "mod:27 Computational Geometry & Math",
       "target": "concept:Convex Hull & Geometry",
-      "value": 1.5,
+      "value": 1.4,
       "type": "module-concept"
     },
     {
@@ -4492,39 +4572,33 @@
       "type": "problem-concept"
     },
     {
-      "source": "mod:01 Arrays & Hashing",
-      "target": "prob:LC 1: Two Sum",
-      "value": 0.9,
-      "type": "problem-module"
-    },
-    {
       "source": "company:Google",
       "target": "prob:LC 1: Two Sum",
-      "value": 0.7,
+      "value": 0.35,
       "type": "problem-company"
     },
     {
       "source": "company:Meta",
       "target": "prob:LC 1: Two Sum",
-      "value": 0.7,
+      "value": 0.35,
       "type": "problem-company"
     },
     {
       "source": "company:Amazon",
       "target": "prob:LC 1: Two Sum",
-      "value": 0.7,
+      "value": 0.35,
       "type": "problem-company"
     },
     {
       "source": "company:Microsoft",
       "target": "prob:LC 1: Two Sum",
-      "value": 0.7,
+      "value": 0.35,
       "type": "problem-company"
     },
     {
       "source": "company:Apple",
       "target": "prob:LC 1: Two Sum",
-      "value": 0.7,
+      "value": 0.35,
       "type": "problem-company"
     },
     {
@@ -4534,33 +4608,27 @@
       "type": "problem-concept"
     },
     {
-      "source": "mod:01 Arrays & Hashing",
-      "target": "prob:LC 121: Best Time to Buy & Sell Stock",
-      "value": 0.9,
-      "type": "problem-module"
-    },
-    {
       "source": "company:Amazon",
       "target": "prob:LC 121: Best Time to Buy & Sell Stock",
-      "value": 0.7,
+      "value": 0.35,
       "type": "problem-company"
     },
     {
       "source": "company:Meta",
       "target": "prob:LC 121: Best Time to Buy & Sell Stock",
-      "value": 0.7,
+      "value": 0.35,
       "type": "problem-company"
     },
     {
       "source": "company:Apple",
       "target": "prob:LC 121: Best Time to Buy & Sell Stock",
-      "value": 0.7,
+      "value": 0.35,
       "type": "problem-company"
     },
     {
       "source": "company:Google",
       "target": "prob:LC 121: Best Time to Buy & Sell Stock",
-      "value": 0.7,
+      "value": 0.35,
       "type": "problem-company"
     },
     {
@@ -4570,27 +4638,21 @@
       "type": "problem-concept"
     },
     {
-      "source": "mod:01 Arrays & Hashing",
-      "target": "prob:LC 242: Valid Anagram",
-      "value": 0.9,
-      "type": "problem-module"
-    },
-    {
       "source": "company:Google",
       "target": "prob:LC 242: Valid Anagram",
-      "value": 0.7,
+      "value": 0.35,
       "type": "problem-company"
     },
     {
       "source": "company:Amazon",
       "target": "prob:LC 242: Valid Anagram",
-      "value": 0.7,
+      "value": 0.35,
       "type": "problem-company"
     },
     {
       "source": "company:Microsoft",
       "target": "prob:LC 242: Valid Anagram",
-      "value": 0.7,
+      "value": 0.35,
       "type": "problem-company"
     },
     {
@@ -4600,27 +4662,21 @@
       "type": "problem-concept"
     },
     {
-      "source": "mod:01 Arrays & Hashing",
-      "target": "prob:LC 49: Group Anagrams",
-      "value": 0.9,
-      "type": "problem-module"
-    },
-    {
       "source": "company:Amazon",
       "target": "prob:LC 49: Group Anagrams",
-      "value": 0.7,
+      "value": 0.35,
       "type": "problem-company"
     },
     {
       "source": "company:Meta",
       "target": "prob:LC 49: Group Anagrams",
-      "value": 0.7,
+      "value": 0.35,
       "type": "problem-company"
     },
     {
       "source": "company:Apple",
       "target": "prob:LC 49: Group Anagrams",
-      "value": 0.7,
+      "value": 0.35,
       "type": "problem-company"
     },
     {
@@ -4630,27 +4686,21 @@
       "type": "problem-concept"
     },
     {
-      "source": "mod:01 Arrays & Hashing",
-      "target": "prob:LC 347: Top K Frequent Elements",
-      "value": 0.9,
-      "type": "problem-module"
-    },
-    {
       "source": "company:Meta",
       "target": "prob:LC 347: Top K Frequent Elements",
-      "value": 0.7,
+      "value": 0.35,
       "type": "problem-company"
     },
     {
       "source": "company:Amazon",
       "target": "prob:LC 347: Top K Frequent Elements",
-      "value": 0.7,
+      "value": 0.35,
       "type": "problem-company"
     },
     {
       "source": "company:Google",
       "target": "prob:LC 347: Top K Frequent Elements",
-      "value": 0.7,
+      "value": 0.35,
       "type": "problem-company"
     },
     {
@@ -4660,27 +4710,21 @@
       "type": "problem-concept"
     },
     {
-      "source": "mod:01 Arrays & Hashing",
-      "target": "prob:LC 238: Product of Array Except Self",
-      "value": 0.9,
-      "type": "problem-module"
-    },
-    {
       "source": "company:Amazon",
       "target": "prob:LC 238: Product of Array Except Self",
-      "value": 0.7,
+      "value": 0.35,
       "type": "problem-company"
     },
     {
       "source": "company:Apple",
       "target": "prob:LC 238: Product of Array Except Self",
-      "value": 0.7,
+      "value": 0.35,
       "type": "problem-company"
     },
     {
       "source": "company:Microsoft",
       "target": "prob:LC 238: Product of Array Except Self",
-      "value": 0.7,
+      "value": 0.35,
       "type": "problem-company"
     },
     {
@@ -4690,27 +4734,21 @@
       "type": "problem-concept"
     },
     {
-      "source": "mod:01 Arrays & Hashing",
-      "target": "prob:LC 128: Longest Consecutive Sequence",
-      "value": 0.9,
-      "type": "problem-module"
-    },
-    {
       "source": "company:Google",
       "target": "prob:LC 128: Longest Consecutive Sequence",
-      "value": 0.7,
+      "value": 0.35,
       "type": "problem-company"
     },
     {
       "source": "company:Meta",
       "target": "prob:LC 128: Longest Consecutive Sequence",
-      "value": 0.7,
+      "value": 0.35,
       "type": "problem-company"
     },
     {
       "source": "company:Amazon",
       "target": "prob:LC 128: Longest Consecutive Sequence",
-      "value": 0.7,
+      "value": 0.35,
       "type": "problem-company"
     },
     {
@@ -4720,27 +4758,21 @@
       "type": "problem-concept"
     },
     {
-      "source": "mod:01 Arrays & Hashing",
-      "target": "prob:LC 560: Subarray Sum Equals K",
-      "value": 0.9,
-      "type": "problem-module"
-    },
-    {
       "source": "company:Meta",
       "target": "prob:LC 560: Subarray Sum Equals K",
-      "value": 0.7,
+      "value": 0.35,
       "type": "problem-company"
     },
     {
       "source": "company:Google",
       "target": "prob:LC 560: Subarray Sum Equals K",
-      "value": 0.7,
+      "value": 0.35,
       "type": "problem-company"
     },
     {
       "source": "company:Amazon",
       "target": "prob:LC 560: Subarray Sum Equals K",
-      "value": 0.7,
+      "value": 0.35,
       "type": "problem-company"
     },
     {
@@ -4750,27 +4782,21 @@
       "type": "problem-concept"
     },
     {
-      "source": "mod:01 Arrays & Hashing",
-      "target": "prob:LC 53: Maximum Subarray",
-      "value": 0.9,
-      "type": "problem-module"
-    },
-    {
       "source": "company:Amazon",
       "target": "prob:LC 53: Maximum Subarray",
-      "value": 0.7,
+      "value": 0.35,
       "type": "problem-company"
     },
     {
       "source": "company:Microsoft",
       "target": "prob:LC 53: Maximum Subarray",
-      "value": 0.7,
+      "value": 0.35,
       "type": "problem-company"
     },
     {
       "source": "company:Apple",
       "target": "prob:LC 53: Maximum Subarray",
-      "value": 0.7,
+      "value": 0.35,
       "type": "problem-company"
     },
     {
@@ -4780,27 +4806,21 @@
       "type": "problem-concept"
     },
     {
-      "source": "mod:01 Arrays & Hashing",
-      "target": "prob:LC 75: Sort Colors",
-      "value": 0.9,
-      "type": "problem-module"
-    },
-    {
       "source": "company:Microsoft",
       "target": "prob:LC 75: Sort Colors",
-      "value": 0.7,
+      "value": 0.35,
       "type": "problem-company"
     },
     {
       "source": "company:Meta",
       "target": "prob:LC 75: Sort Colors",
-      "value": 0.7,
+      "value": 0.35,
       "type": "problem-company"
     },
     {
       "source": "company:Amazon",
       "target": "prob:LC 75: Sort Colors",
-      "value": 0.7,
+      "value": 0.35,
       "type": "problem-company"
     },
     {
@@ -4810,27 +4830,21 @@
       "type": "problem-concept"
     },
     {
-      "source": "mod:01 Arrays & Hashing",
-      "target": "prob:LC 54: Spiral Matrix",
-      "value": 0.9,
-      "type": "problem-module"
-    },
-    {
       "source": "company:Microsoft",
       "target": "prob:LC 54: Spiral Matrix",
-      "value": 0.7,
+      "value": 0.35,
       "type": "problem-company"
     },
     {
       "source": "company:Google",
       "target": "prob:LC 54: Spiral Matrix",
-      "value": 0.7,
+      "value": 0.35,
       "type": "problem-company"
     },
     {
       "source": "company:Amazon",
       "target": "prob:LC 54: Spiral Matrix",
-      "value": 0.7,
+      "value": 0.35,
       "type": "problem-company"
     },
     {
@@ -4840,21 +4854,15 @@
       "type": "problem-concept"
     },
     {
-      "source": "mod:02 Two Pointers & Sliding Window",
-      "target": "prob:LC 167: Two Sum II - Input Array Is Sorted",
-      "value": 0.9,
-      "type": "problem-module"
-    },
-    {
       "source": "company:Amazon",
       "target": "prob:LC 167: Two Sum II - Input Array Is Sorted",
-      "value": 0.7,
+      "value": 0.35,
       "type": "problem-company"
     },
     {
       "source": "company:Google",
       "target": "prob:LC 167: Two Sum II - Input Array Is Sorted",
-      "value": 0.7,
+      "value": 0.35,
       "type": "problem-company"
     },
     {
@@ -4862,35 +4870,29 @@
       "target": "prob:LC 15: 3Sum",
       "value": 1.2,
       "type": "problem-concept"
-    },
-    {
-      "source": "mod:02 Two Pointers & Sliding Window",
-      "target": "prob:LC 15: 3Sum",
-      "value": 0.9,
-      "type": "problem-module"
     },
     {
       "source": "company:Meta",
       "target": "prob:LC 15: 3Sum",
-      "value": 0.7,
+      "value": 0.35,
       "type": "problem-company"
     },
     {
       "source": "company:Amazon",
       "target": "prob:LC 15: 3Sum",
-      "value": 0.7,
+      "value": 0.35,
       "type": "problem-company"
     },
     {
       "source": "company:Apple",
       "target": "prob:LC 15: 3Sum",
-      "value": 0.7,
+      "value": 0.35,
       "type": "problem-company"
     },
     {
       "source": "company:Microsoft",
       "target": "prob:LC 15: 3Sum",
-      "value": 0.7,
+      "value": 0.35,
       "type": "problem-company"
     },
     {
@@ -4900,27 +4902,21 @@
       "type": "problem-concept"
     },
     {
-      "source": "mod:02 Two Pointers & Sliding Window",
-      "target": "prob:LC 11: Container With Most Water",
-      "value": 0.9,
-      "type": "problem-module"
-    },
-    {
       "source": "company:Amazon",
       "target": "prob:LC 11: Container With Most Water",
-      "value": 0.7,
+      "value": 0.35,
       "type": "problem-company"
     },
     {
       "source": "company:Google",
       "target": "prob:LC 11: Container With Most Water",
-      "value": 0.7,
+      "value": 0.35,
       "type": "problem-company"
     },
     {
       "source": "company:Meta",
       "target": "prob:LC 11: Container With Most Water",
-      "value": 0.7,
+      "value": 0.35,
       "type": "problem-company"
     },
     {
@@ -4930,33 +4926,27 @@
       "type": "problem-concept"
     },
     {
-      "source": "mod:02 Two Pointers & Sliding Window",
-      "target": "prob:LC 3: Longest Substring Without Repeating Characters",
-      "value": 0.9,
-      "type": "problem-module"
-    },
-    {
       "source": "company:Amazon",
       "target": "prob:LC 3: Longest Substring Without Repeating Characters",
-      "value": 0.7,
+      "value": 0.35,
       "type": "problem-company"
     },
     {
       "source": "company:Google",
       "target": "prob:LC 3: Longest Substring Without Repeating Characters",
-      "value": 0.7,
+      "value": 0.35,
       "type": "problem-company"
     },
     {
       "source": "company:Meta",
       "target": "prob:LC 3: Longest Substring Without Repeating Characters",
-      "value": 0.7,
+      "value": 0.35,
       "type": "problem-company"
     },
     {
       "source": "company:Microsoft",
       "target": "prob:LC 3: Longest Substring Without Repeating Characters",
-      "value": 0.7,
+      "value": 0.35,
       "type": "problem-company"
     },
     {
@@ -4966,21 +4956,15 @@
       "type": "problem-concept"
     },
     {
-      "source": "mod:02 Two Pointers & Sliding Window",
-      "target": "prob:LC 424: Longest Repeating Character Replacement",
-      "value": 0.9,
-      "type": "problem-module"
-    },
-    {
       "source": "company:Google",
       "target": "prob:LC 424: Longest Repeating Character Replacement",
-      "value": 0.7,
+      "value": 0.35,
       "type": "problem-company"
     },
     {
       "source": "company:Amazon",
       "target": "prob:LC 424: Longest Repeating Character Replacement",
-      "value": 0.7,
+      "value": 0.35,
       "type": "problem-company"
     },
     {
@@ -4990,21 +4974,15 @@
       "type": "problem-concept"
     },
     {
-      "source": "mod:02 Two Pointers & Sliding Window",
-      "target": "prob:LC 567: Permutation in String",
-      "value": 0.9,
-      "type": "problem-module"
-    },
-    {
       "source": "company:Microsoft",
       "target": "prob:LC 567: Permutation in String",
-      "value": 0.7,
+      "value": 0.35,
       "type": "problem-company"
     },
     {
       "source": "company:Amazon",
       "target": "prob:LC 567: Permutation in String",
-      "value": 0.7,
+      "value": 0.35,
       "type": "problem-company"
     },
     {
@@ -5014,21 +4992,15 @@
       "type": "problem-concept"
     },
     {
-      "source": "mod:02 Two Pointers & Sliding Window",
-      "target": "prob:LC 209: Minimum Size Subarray Sum",
-      "value": 0.9,
-      "type": "problem-module"
-    },
-    {
       "source": "company:Meta",
       "target": "prob:LC 209: Minimum Size Subarray Sum",
-      "value": 0.7,
+      "value": 0.35,
       "type": "problem-company"
     },
     {
       "source": "company:Google",
       "target": "prob:LC 209: Minimum Size Subarray Sum",
-      "value": 0.7,
+      "value": 0.35,
       "type": "problem-company"
     },
     {
@@ -5038,33 +5010,27 @@
       "type": "problem-concept"
     },
     {
-      "source": "mod:02 Two Pointers & Sliding Window",
-      "target": "prob:LC 42: Trapping Rain Water",
-      "value": 0.9,
-      "type": "problem-module"
-    },
-    {
       "source": "company:Google",
       "target": "prob:LC 42: Trapping Rain Water",
-      "value": 0.7,
+      "value": 0.35,
       "type": "problem-company"
     },
     {
       "source": "company:Amazon",
       "target": "prob:LC 42: Trapping Rain Water",
-      "value": 0.7,
+      "value": 0.35,
       "type": "problem-company"
     },
     {
       "source": "company:Meta",
       "target": "prob:LC 42: Trapping Rain Water",
-      "value": 0.7,
+      "value": 0.35,
       "type": "problem-company"
     },
     {
       "source": "company:Bloomberg",
       "target": "prob:LC 42: Trapping Rain Water",
-      "value": 0.7,
+      "value": 0.35,
       "type": "problem-company"
     },
     {
@@ -5074,21 +5040,15 @@
       "type": "problem-concept"
     },
     {
-      "source": "mod:02 Two Pointers & Sliding Window",
-      "target": "prob:LC 1004: Max Consecutive Ones III",
-      "value": 0.9,
-      "type": "problem-module"
-    },
-    {
       "source": "company:Meta",
       "target": "prob:LC 1004: Max Consecutive Ones III",
-      "value": 0.7,
+      "value": 0.35,
       "type": "problem-company"
     },
     {
       "source": "company:Google",
       "target": "prob:LC 1004: Max Consecutive Ones III",
-      "value": 0.7,
+      "value": 0.35,
       "type": "problem-company"
     },
     {
@@ -5098,15 +5058,9 @@
       "type": "problem-concept"
     },
     {
-      "source": "mod:02 Two Pointers & Sliding Window",
-      "target": "prob:LC 713: Subarray Product Less Than K",
-      "value": 0.9,
-      "type": "problem-module"
-    },
-    {
       "source": "company:Amazon",
       "target": "prob:LC 713: Subarray Product Less Than K",
-      "value": 0.7,
+      "value": 0.35,
       "type": "problem-company"
     },
     {
@@ -5116,21 +5070,15 @@
       "type": "problem-concept"
     },
     {
-      "source": "mod:02 Two Pointers & Sliding Window",
-      "target": "prob:LC 438: Find All Anagrams in a String",
-      "value": 0.9,
-      "type": "problem-module"
-    },
-    {
       "source": "company:Meta",
       "target": "prob:LC 438: Find All Anagrams in a String",
-      "value": 0.7,
+      "value": 0.35,
       "type": "problem-company"
     },
     {
       "source": "company:Amazon",
       "target": "prob:LC 438: Find All Anagrams in a String",
-      "value": 0.7,
+      "value": 0.35,
       "type": "problem-company"
     },
     {
@@ -5140,33 +5088,27 @@
       "type": "problem-concept"
     },
     {
-      "source": "mod:02 Two Pointers & Sliding Window",
-      "target": "prob:LC 76: Minimum Window Substring",
-      "value": 0.9,
-      "type": "problem-module"
-    },
-    {
       "source": "company:Meta",
       "target": "prob:LC 76: Minimum Window Substring",
-      "value": 0.7,
+      "value": 0.35,
       "type": "problem-company"
     },
     {
       "source": "company:Google",
       "target": "prob:LC 76: Minimum Window Substring",
-      "value": 0.7,
+      "value": 0.35,
       "type": "problem-company"
     },
     {
       "source": "company:Amazon",
       "target": "prob:LC 76: Minimum Window Substring",
-      "value": 0.7,
+      "value": 0.35,
       "type": "problem-company"
     },
     {
       "source": "company:Microsoft",
       "target": "prob:LC 76: Minimum Window Substring",
-      "value": 0.7,
+      "value": 0.35,
       "type": "problem-company"
     },
     {
@@ -5176,21 +5118,15 @@
       "type": "problem-concept"
     },
     {
-      "source": "mod:02 Two Pointers & Sliding Window",
-      "target": "prob:LC 239: Sliding Window Maximum",
-      "value": 0.9,
-      "type": "problem-module"
-    },
-    {
       "source": "company:Amazon",
       "target": "prob:LC 239: Sliding Window Maximum",
-      "value": 0.7,
+      "value": 0.35,
       "type": "problem-company"
     },
     {
       "source": "company:Google",
       "target": "prob:LC 239: Sliding Window Maximum",
-      "value": 0.7,
+      "value": 0.35,
       "type": "problem-company"
     },
     {
@@ -5198,23 +5134,17 @@
       "target": "prob:LC 704: Binary Search",
       "value": 1.2,
       "type": "problem-concept"
-    },
-    {
-      "source": "mod:03 Binary Search",
-      "target": "prob:LC 704: Binary Search",
-      "value": 0.9,
-      "type": "problem-module"
     },
     {
       "source": "company:Apple",
       "target": "prob:LC 704: Binary Search",
-      "value": 0.7,
+      "value": 0.35,
       "type": "problem-company"
     },
     {
       "source": "company:Google",
       "target": "prob:LC 704: Binary Search",
-      "value": 0.7,
+      "value": 0.35,
       "type": "problem-company"
     },
     {
@@ -5224,27 +5154,21 @@
       "type": "problem-concept"
     },
     {
-      "source": "mod:03 Binary Search",
-      "target": "prob:LC 33: Search in Rotated Sorted Array",
-      "value": 0.9,
-      "type": "problem-module"
-    },
-    {
       "source": "company:Amazon",
       "target": "prob:LC 33: Search in Rotated Sorted Array",
-      "value": 0.7,
+      "value": 0.35,
       "type": "problem-company"
     },
     {
       "source": "company:Meta",
       "target": "prob:LC 33: Search in Rotated Sorted Array",
-      "value": 0.7,
+      "value": 0.35,
       "type": "problem-company"
     },
     {
       "source": "company:Google",
       "target": "prob:LC 33: Search in Rotated Sorted Array",
-      "value": 0.7,
+      "value": 0.35,
       "type": "problem-company"
     },
     {
@@ -5254,21 +5178,15 @@
       "type": "problem-concept"
     },
     {
-      "source": "mod:03 Binary Search",
-      "target": "prob:LC 153: Find Minimum in Rotated Sorted Array",
-      "value": 0.9,
-      "type": "problem-module"
-    },
-    {
       "source": "company:Meta",
       "target": "prob:LC 153: Find Minimum in Rotated Sorted Array",
-      "value": 0.7,
+      "value": 0.35,
       "type": "problem-company"
     },
     {
       "source": "company:Amazon",
       "target": "prob:LC 153: Find Minimum in Rotated Sorted Array",
-      "value": 0.7,
+      "value": 0.35,
       "type": "problem-company"
     },
     {
@@ -5276,23 +5194,17 @@
       "target": "prob:LC 74: Search a 2D Matrix",
       "value": 1.2,
       "type": "problem-concept"
-    },
-    {
-      "source": "mod:03 Binary Search",
-      "target": "prob:LC 74: Search a 2D Matrix",
-      "value": 0.9,
-      "type": "problem-module"
     },
     {
       "source": "company:Microsoft",
       "target": "prob:LC 74: Search a 2D Matrix",
-      "value": 0.7,
+      "value": 0.35,
       "type": "problem-company"
     },
     {
       "source": "company:Amazon",
       "target": "prob:LC 74: Search a 2D Matrix",
-      "value": 0.7,
+      "value": 0.35,
       "type": "problem-company"
     },
     {
@@ -5302,21 +5214,15 @@
       "type": "problem-concept"
     },
     {
-      "source": "mod:03 Binary Search",
-      "target": "prob:LC 240: Search a 2D Matrix II",
-      "value": 0.9,
-      "type": "problem-module"
-    },
-    {
       "source": "company:Amazon",
       "target": "prob:LC 240: Search a 2D Matrix II",
-      "value": 0.7,
+      "value": 0.35,
       "type": "problem-company"
     },
     {
       "source": "company:Google",
       "target": "prob:LC 240: Search a 2D Matrix II",
-      "value": 0.7,
+      "value": 0.35,
       "type": "problem-company"
     },
     {
@@ -5326,21 +5232,15 @@
       "type": "problem-concept"
     },
     {
-      "source": "mod:03 Binary Search",
-      "target": "prob:LC 875: Koko Eating Bananas",
-      "value": 0.9,
-      "type": "problem-module"
-    },
-    {
       "source": "company:Google",
       "target": "prob:LC 875: Koko Eating Bananas",
-      "value": 0.7,
+      "value": 0.35,
       "type": "problem-company"
     },
     {
       "source": "company:Amazon",
       "target": "prob:LC 875: Koko Eating Bananas",
-      "value": 0.7,
+      "value": 0.35,
       "type": "problem-company"
     },
     {
@@ -5350,21 +5250,15 @@
       "type": "problem-concept"
     },
     {
-      "source": "mod:03 Binary Search",
-      "target": "prob:LC 1011: Capacity To Ship Packages Within D Days",
-      "value": 0.9,
-      "type": "problem-module"
-    },
-    {
       "source": "company:Amazon",
       "target": "prob:LC 1011: Capacity To Ship Packages Within D Days",
-      "value": 0.7,
+      "value": 0.35,
       "type": "problem-company"
     },
     {
       "source": "company:Google",
       "target": "prob:LC 1011: Capacity To Ship Packages Within D Days",
-      "value": 0.7,
+      "value": 0.35,
       "type": "problem-company"
     },
     {
@@ -5374,21 +5268,15 @@
       "type": "problem-concept"
     },
     {
-      "source": "mod:03 Binary Search",
-      "target": "prob:LC 410: Split Array Largest Sum",
-      "value": 0.9,
-      "type": "problem-module"
-    },
-    {
       "source": "company:Google",
       "target": "prob:LC 410: Split Array Largest Sum",
-      "value": 0.7,
+      "value": 0.35,
       "type": "problem-company"
     },
     {
       "source": "company:Meta",
       "target": "prob:LC 410: Split Array Largest Sum",
-      "value": 0.7,
+      "value": 0.35,
       "type": "problem-company"
     },
     {
@@ -5398,27 +5286,21 @@
       "type": "problem-concept"
     },
     {
-      "source": "mod:03 Binary Search",
-      "target": "prob:LC 4: Median of Two Sorted Arrays",
-      "value": 0.9,
-      "type": "problem-module"
-    },
-    {
       "source": "company:Google",
       "target": "prob:LC 4: Median of Two Sorted Arrays",
-      "value": 0.7,
+      "value": 0.35,
       "type": "problem-company"
     },
     {
       "source": "company:Amazon",
       "target": "prob:LC 4: Median of Two Sorted Arrays",
-      "value": 0.7,
+      "value": 0.35,
       "type": "problem-company"
     },
     {
       "source": "company:Microsoft",
       "target": "prob:LC 4: Median of Two Sorted Arrays",
-      "value": 0.7,
+      "value": 0.35,
       "type": "problem-company"
     },
     {
@@ -5428,27 +5310,21 @@
       "type": "problem-concept"
     },
     {
-      "source": "mod:04 Stack & Monotonic Stack",
-      "target": "prob:LC 20: Valid Parentheses",
-      "value": 0.9,
-      "type": "problem-module"
-    },
-    {
       "source": "company:Meta",
       "target": "prob:LC 20: Valid Parentheses",
-      "value": 0.7,
+      "value": 0.35,
       "type": "problem-company"
     },
     {
       "source": "company:Amazon",
       "target": "prob:LC 20: Valid Parentheses",
-      "value": 0.7,
+      "value": 0.35,
       "type": "problem-company"
     },
     {
       "source": "company:Google",
       "target": "prob:LC 20: Valid Parentheses",
-      "value": 0.7,
+      "value": 0.35,
       "type": "problem-company"
     },
     {
@@ -5458,27 +5334,21 @@
       "type": "problem-concept"
     },
     {
-      "source": "mod:04 Stack & Monotonic Stack",
-      "target": "prob:LC 155: Min Stack",
-      "value": 0.9,
-      "type": "problem-module"
-    },
-    {
       "source": "company:Amazon",
       "target": "prob:LC 155: Min Stack",
-      "value": 0.7,
+      "value": 0.35,
       "type": "problem-company"
     },
     {
       "source": "company:Bloomberg",
       "target": "prob:LC 155: Min Stack",
-      "value": 0.7,
+      "value": 0.35,
       "type": "problem-company"
     },
     {
       "source": "company:Microsoft",
       "target": "prob:LC 155: Min Stack",
-      "value": 0.7,
+      "value": 0.35,
       "type": "problem-company"
     },
     {
@@ -5486,23 +5356,17 @@
       "target": "prob:LC 739: Daily Temperatures",
       "value": 1.2,
       "type": "problem-concept"
-    },
-    {
-      "source": "mod:04 Stack & Monotonic Stack",
-      "target": "prob:LC 739: Daily Temperatures",
-      "value": 0.9,
-      "type": "problem-module"
     },
     {
       "source": "company:Meta",
       "target": "prob:LC 739: Daily Temperatures",
-      "value": 0.7,
+      "value": 0.35,
       "type": "problem-company"
     },
     {
       "source": "company:Amazon",
       "target": "prob:LC 739: Daily Temperatures",
-      "value": 0.7,
+      "value": 0.35,
       "type": "problem-company"
     },
     {
@@ -5512,21 +5376,15 @@
       "type": "problem-concept"
     },
     {
-      "source": "mod:04 Stack & Monotonic Stack",
-      "target": "prob:LC 84: Largest Rectangle in Histogram",
-      "value": 0.9,
-      "type": "problem-module"
-    },
-    {
       "source": "company:Google",
       "target": "prob:LC 84: Largest Rectangle in Histogram",
-      "value": 0.7,
+      "value": 0.35,
       "type": "problem-company"
     },
     {
       "source": "company:Amazon",
       "target": "prob:LC 84: Largest Rectangle in Histogram",
-      "value": 0.7,
+      "value": 0.35,
       "type": "problem-company"
     },
     {
@@ -5536,21 +5394,15 @@
       "type": "problem-concept"
     },
     {
-      "source": "mod:04 Stack & Monotonic Stack",
-      "target": "prob:LC 85: Maximal Rectangle",
-      "value": 0.9,
-      "type": "problem-module"
-    },
-    {
       "source": "company:Google",
       "target": "prob:LC 85: Maximal Rectangle",
-      "value": 0.7,
+      "value": 0.35,
       "type": "problem-company"
     },
     {
       "source": "company:Amazon",
       "target": "prob:LC 85: Maximal Rectangle",
-      "value": 0.7,
+      "value": 0.35,
       "type": "problem-company"
     },
     {
@@ -5560,21 +5412,15 @@
       "type": "problem-concept"
     },
     {
-      "source": "mod:04 Stack & Monotonic Stack",
-      "target": "prob:LC 1614: Maximum Nesting Depth of the Parentheses",
-      "value": 0.9,
-      "type": "problem-module"
-    },
-    {
       "source": "company:Google",
       "target": "prob:LC 1614: Maximum Nesting Depth of the Parentheses",
-      "value": 0.7,
+      "value": 0.35,
       "type": "problem-company"
     },
     {
       "source": "company:Amazon",
       "target": "prob:LC 1614: Maximum Nesting Depth of the Parentheses",
-      "value": 0.7,
+      "value": 0.35,
       "type": "problem-company"
     },
     {
@@ -5584,33 +5430,27 @@
       "type": "problem-concept"
     },
     {
-      "source": "mod:05 Linked Lists",
-      "target": "prob:LC 206: Reverse Linked List",
-      "value": 0.9,
-      "type": "problem-module"
-    },
-    {
       "source": "company:Amazon",
       "target": "prob:LC 206: Reverse Linked List",
-      "value": 0.7,
+      "value": 0.35,
       "type": "problem-company"
     },
     {
       "source": "company:Apple",
       "target": "prob:LC 206: Reverse Linked List",
-      "value": 0.7,
+      "value": 0.35,
       "type": "problem-company"
     },
     {
       "source": "company:Microsoft",
       "target": "prob:LC 206: Reverse Linked List",
-      "value": 0.7,
+      "value": 0.35,
       "type": "problem-company"
     },
     {
       "source": "company:Meta",
       "target": "prob:LC 206: Reverse Linked List",
-      "value": 0.7,
+      "value": 0.35,
       "type": "problem-company"
     },
     {
@@ -5620,21 +5460,15 @@
       "type": "problem-concept"
     },
     {
-      "source": "mod:05 Linked Lists",
-      "target": "prob:LC 141: Linked List Cycle",
-      "value": 0.9,
-      "type": "problem-module"
-    },
-    {
       "source": "company:Amazon",
       "target": "prob:LC 141: Linked List Cycle",
-      "value": 0.7,
+      "value": 0.35,
       "type": "problem-company"
     },
     {
       "source": "company:Microsoft",
       "target": "prob:LC 141: Linked List Cycle",
-      "value": 0.7,
+      "value": 0.35,
       "type": "problem-company"
     },
     {
@@ -5644,21 +5478,15 @@
       "type": "problem-concept"
     },
     {
-      "source": "mod:05 Linked Lists",
-      "target": "prob:LC 142: Linked List Cycle II",
-      "value": 0.9,
-      "type": "problem-module"
-    },
-    {
       "source": "company:Microsoft",
       "target": "prob:LC 142: Linked List Cycle II",
-      "value": 0.7,
+      "value": 0.35,
       "type": "problem-company"
     },
     {
       "source": "company:Amazon",
       "target": "prob:LC 142: Linked List Cycle II",
-      "value": 0.7,
+      "value": 0.35,
       "type": "problem-company"
     },
     {
@@ -5668,27 +5496,21 @@
       "type": "problem-concept"
     },
     {
-      "source": "mod:05 Linked Lists",
-      "target": "prob:LC 21: Merge Two Sorted Lists",
-      "value": 0.9,
-      "type": "problem-module"
-    },
-    {
       "source": "company:Amazon",
       "target": "prob:LC 21: Merge Two Sorted Lists",
-      "value": 0.7,
+      "value": 0.35,
       "type": "problem-company"
     },
     {
       "source": "company:Apple",
       "target": "prob:LC 21: Merge Two Sorted Lists",
-      "value": 0.7,
+      "value": 0.35,
       "type": "problem-company"
     },
     {
       "source": "company:Microsoft",
       "target": "prob:LC 21: Merge Two Sorted Lists",
-      "value": 0.7,
+      "value": 0.35,
       "type": "problem-company"
     },
     {
@@ -5698,27 +5520,21 @@
       "type": "problem-concept"
     },
     {
-      "source": "mod:05 Linked Lists",
-      "target": "prob:LC 23: Merge k Sorted Lists",
-      "value": 0.9,
-      "type": "problem-module"
-    },
-    {
       "source": "company:Amazon",
       "target": "prob:LC 23: Merge k Sorted Lists",
-      "value": 0.7,
+      "value": 0.35,
       "type": "problem-company"
     },
     {
       "source": "company:Meta",
       "target": "prob:LC 23: Merge k Sorted Lists",
-      "value": 0.7,
+      "value": 0.35,
       "type": "problem-company"
     },
     {
       "source": "company:Google",
       "target": "prob:LC 23: Merge k Sorted Lists",
-      "value": 0.7,
+      "value": 0.35,
       "type": "problem-company"
     },
     {
@@ -5728,21 +5544,15 @@
       "type": "problem-concept"
     },
     {
-      "source": "mod:05 Linked Lists",
-      "target": "prob:LC 143: Reorder List",
-      "value": 0.9,
-      "type": "problem-module"
-    },
-    {
       "source": "company:Meta",
       "target": "prob:LC 143: Reorder List",
-      "value": 0.7,
+      "value": 0.35,
       "type": "problem-company"
     },
     {
       "source": "company:Amazon",
       "target": "prob:LC 143: Reorder List",
-      "value": 0.7,
+      "value": 0.35,
       "type": "problem-company"
     },
     {
@@ -5752,27 +5562,21 @@
       "type": "problem-concept"
     },
     {
-      "source": "mod:06 Recursion & Backtracking",
-      "target": "prob:LC 78: Subsets",
-      "value": 0.9,
-      "type": "problem-module"
-    },
-    {
       "source": "company:Meta",
       "target": "prob:LC 78: Subsets",
-      "value": 0.7,
+      "value": 0.35,
       "type": "problem-company"
     },
     {
       "source": "company:Amazon",
       "target": "prob:LC 78: Subsets",
-      "value": 0.7,
+      "value": 0.35,
       "type": "problem-company"
     },
     {
       "source": "company:Google",
       "target": "prob:LC 78: Subsets",
-      "value": 0.7,
+      "value": 0.35,
       "type": "problem-company"
     },
     {
@@ -5782,15 +5586,9 @@
       "type": "problem-concept"
     },
     {
-      "source": "mod:06 Recursion & Backtracking",
-      "target": "prob:LC 90: Subsets II",
-      "value": 0.9,
-      "type": "problem-module"
-    },
-    {
       "source": "company:Amazon",
       "target": "prob:LC 90: Subsets II",
-      "value": 0.7,
+      "value": 0.35,
       "type": "problem-company"
     },
     {
@@ -5800,27 +5598,21 @@
       "type": "problem-concept"
     },
     {
-      "source": "mod:06 Recursion & Backtracking",
-      "target": "prob:LC 46: Permutations",
-      "value": 0.9,
-      "type": "problem-module"
-    },
-    {
       "source": "company:Microsoft",
       "target": "prob:LC 46: Permutations",
-      "value": 0.7,
+      "value": 0.35,
       "type": "problem-company"
     },
     {
       "source": "company:Google",
       "target": "prob:LC 46: Permutations",
-      "value": 0.7,
+      "value": 0.35,
       "type": "problem-company"
     },
     {
       "source": "company:Amazon",
       "target": "prob:LC 46: Permutations",
-      "value": 0.7,
+      "value": 0.35,
       "type": "problem-company"
     },
     {
@@ -5830,21 +5622,15 @@
       "type": "problem-concept"
     },
     {
-      "source": "mod:06 Recursion & Backtracking",
-      "target": "prob:LC 39: Combination Sum",
-      "value": 0.9,
-      "type": "problem-module"
-    },
-    {
       "source": "company:Meta",
       "target": "prob:LC 39: Combination Sum",
-      "value": 0.7,
+      "value": 0.35,
       "type": "problem-company"
     },
     {
       "source": "company:Google",
       "target": "prob:LC 39: Combination Sum",
-      "value": 0.7,
+      "value": 0.35,
       "type": "problem-company"
     },
     {
@@ -5854,21 +5640,15 @@
       "type": "problem-concept"
     },
     {
-      "source": "mod:06 Recursion & Backtracking",
-      "target": "prob:LC 51: N-Queens",
-      "value": 0.9,
-      "type": "problem-module"
-    },
-    {
       "source": "company:Meta",
       "target": "prob:LC 51: N-Queens",
-      "value": 0.7,
+      "value": 0.35,
       "type": "problem-company"
     },
     {
       "source": "company:Microsoft",
       "target": "prob:LC 51: N-Queens",
-      "value": 0.7,
+      "value": 0.35,
       "type": "problem-company"
     },
     {
@@ -5878,27 +5658,21 @@
       "type": "problem-concept"
     },
     {
-      "source": "mod:06 Recursion & Backtracking",
-      "target": "prob:LC 79: Word Search",
-      "value": 0.9,
-      "type": "problem-module"
-    },
-    {
       "source": "company:Amazon",
       "target": "prob:LC 79: Word Search",
-      "value": 0.7,
+      "value": 0.35,
       "type": "problem-company"
     },
     {
       "source": "company:Microsoft",
       "target": "prob:LC 79: Word Search",
-      "value": 0.7,
+      "value": 0.35,
       "type": "problem-company"
     },
     {
       "source": "company:Meta",
       "target": "prob:LC 79: Word Search",
-      "value": 0.7,
+      "value": 0.35,
       "type": "problem-company"
     },
     {
@@ -5908,21 +5682,15 @@
       "type": "problem-concept"
     },
     {
-      "source": "mod:07 Binary Trees & BST",
-      "target": "prob:LC 104: Maximum Depth of Binary Tree",
-      "value": 0.9,
-      "type": "problem-module"
-    },
-    {
       "source": "company:Google",
       "target": "prob:LC 104: Maximum Depth of Binary Tree",
-      "value": 0.7,
+      "value": 0.35,
       "type": "problem-company"
     },
     {
       "source": "company:Amazon",
       "target": "prob:LC 104: Maximum Depth of Binary Tree",
-      "value": 0.7,
+      "value": 0.35,
       "type": "problem-company"
     },
     {
@@ -5932,21 +5700,15 @@
       "type": "problem-concept"
     },
     {
-      "source": "mod:07 Binary Trees & BST",
-      "target": "prob:LC 226: Invert Binary Tree",
-      "value": 0.9,
-      "type": "problem-module"
-    },
-    {
       "source": "company:Google",
       "target": "prob:LC 226: Invert Binary Tree",
-      "value": 0.7,
+      "value": 0.35,
       "type": "problem-company"
     },
     {
       "source": "company:Amazon",
       "target": "prob:LC 226: Invert Binary Tree",
-      "value": 0.7,
+      "value": 0.35,
       "type": "problem-company"
     },
     {
@@ -5954,23 +5716,17 @@
       "target": "prob:LC 543: Diameter of Binary Tree",
       "value": 1.2,
       "type": "problem-concept"
-    },
-    {
-      "source": "mod:07 Binary Trees & BST",
-      "target": "prob:LC 543: Diameter of Binary Tree",
-      "value": 0.9,
-      "type": "problem-module"
     },
     {
       "source": "company:Meta",
       "target": "prob:LC 543: Diameter of Binary Tree",
-      "value": 0.7,
+      "value": 0.35,
       "type": "problem-company"
     },
     {
       "source": "company:Amazon",
       "target": "prob:LC 543: Diameter of Binary Tree",
-      "value": 0.7,
+      "value": 0.35,
       "type": "problem-company"
     },
     {
@@ -5980,21 +5736,15 @@
       "type": "problem-concept"
     },
     {
-      "source": "mod:07 Binary Trees & BST",
-      "target": "prob:LC 102: Binary Tree Level Order Traversal",
-      "value": 0.9,
-      "type": "problem-module"
-    },
-    {
       "source": "company:Amazon",
       "target": "prob:LC 102: Binary Tree Level Order Traversal",
-      "value": 0.7,
+      "value": 0.35,
       "type": "problem-company"
     },
     {
       "source": "company:Microsoft",
       "target": "prob:LC 102: Binary Tree Level Order Traversal",
-      "value": 0.7,
+      "value": 0.35,
       "type": "problem-company"
     },
     {
@@ -6004,27 +5754,21 @@
       "type": "problem-concept"
     },
     {
-      "source": "mod:07 Binary Trees & BST",
-      "target": "prob:LC 236: Lowest Common Ancestor of a Binary Tree",
-      "value": 0.9,
-      "type": "problem-module"
-    },
-    {
       "source": "company:Meta",
       "target": "prob:LC 236: Lowest Common Ancestor of a Binary Tree",
-      "value": 0.7,
+      "value": 0.35,
       "type": "problem-company"
     },
     {
       "source": "company:Amazon",
       "target": "prob:LC 236: Lowest Common Ancestor of a Binary Tree",
-      "value": 0.7,
+      "value": 0.35,
       "type": "problem-company"
     },
     {
       "source": "company:Google",
       "target": "prob:LC 236: Lowest Common Ancestor of a Binary Tree",
-      "value": 0.7,
+      "value": 0.35,
       "type": "problem-company"
     },
     {
@@ -6034,21 +5778,15 @@
       "type": "problem-concept"
     },
     {
-      "source": "mod:07 Binary Trees & BST",
-      "target": "prob:LC 124: Binary Tree Maximum Path Sum",
-      "value": 0.9,
-      "type": "problem-module"
-    },
-    {
       "source": "company:Meta",
       "target": "prob:LC 124: Binary Tree Maximum Path Sum",
-      "value": 0.7,
+      "value": 0.35,
       "type": "problem-company"
     },
     {
       "source": "company:Google",
       "target": "prob:LC 124: Binary Tree Maximum Path Sum",
-      "value": 0.7,
+      "value": 0.35,
       "type": "problem-company"
     },
     {
@@ -6058,21 +5796,15 @@
       "type": "problem-concept"
     },
     {
-      "source": "mod:07 Binary Trees & BST",
-      "target": "prob:LC 98: Validate Binary Search Tree",
-      "value": 0.9,
-      "type": "problem-module"
-    },
-    {
       "source": "company:Amazon",
       "target": "prob:LC 98: Validate Binary Search Tree",
-      "value": 0.7,
+      "value": 0.35,
       "type": "problem-company"
     },
     {
       "source": "company:Microsoft",
       "target": "prob:LC 98: Validate Binary Search Tree",
-      "value": 0.7,
+      "value": 0.35,
       "type": "problem-company"
     },
     {
@@ -6082,27 +5814,21 @@
       "type": "problem-concept"
     },
     {
-      "source": "mod:07 Binary Trees & BST",
-      "target": "prob:LC 297: Serialize and Deserialize Binary Tree",
-      "value": 0.9,
-      "type": "problem-module"
-    },
-    {
       "source": "company:Amazon",
       "target": "prob:LC 297: Serialize and Deserialize Binary Tree",
-      "value": 0.7,
+      "value": 0.35,
       "type": "problem-company"
     },
     {
       "source": "company:Google",
       "target": "prob:LC 297: Serialize and Deserialize Binary Tree",
-      "value": 0.7,
+      "value": 0.35,
       "type": "problem-company"
     },
     {
       "source": "company:Meta",
       "target": "prob:LC 297: Serialize and Deserialize Binary Tree",
-      "value": 0.7,
+      "value": 0.35,
       "type": "problem-company"
     },
     {
@@ -6112,27 +5838,21 @@
       "type": "problem-concept"
     },
     {
-      "source": "mod:08 Heaps & Priority Queues",
-      "target": "prob:LC 215: Kth Largest Element in an Array",
-      "value": 0.9,
-      "type": "problem-module"
-    },
-    {
       "source": "company:Meta",
       "target": "prob:LC 215: Kth Largest Element in an Array",
-      "value": 0.7,
+      "value": 0.35,
       "type": "problem-company"
     },
     {
       "source": "company:Amazon",
       "target": "prob:LC 215: Kth Largest Element in an Array",
-      "value": 0.7,
+      "value": 0.35,
       "type": "problem-company"
     },
     {
       "source": "company:Google",
       "target": "prob:LC 215: Kth Largest Element in an Array",
-      "value": 0.7,
+      "value": 0.35,
       "type": "problem-company"
     },
     {
@@ -6142,21 +5862,15 @@
       "type": "problem-concept"
     },
     {
-      "source": "mod:08 Heaps & Priority Queues",
-      "target": "prob:LC 295: Find Median from Data Stream",
-      "value": 0.9,
-      "type": "problem-module"
-    },
-    {
       "source": "company:Google",
       "target": "prob:LC 295: Find Median from Data Stream",
-      "value": 0.7,
+      "value": 0.35,
       "type": "problem-company"
     },
     {
       "source": "company:Amazon",
       "target": "prob:LC 295: Find Median from Data Stream",
-      "value": 0.7,
+      "value": 0.35,
       "type": "problem-company"
     },
     {
@@ -6166,21 +5880,15 @@
       "type": "problem-concept"
     },
     {
-      "source": "mod:08 Heaps & Priority Queues",
-      "target": "prob:LC 621: Task Scheduler",
-      "value": 0.9,
-      "type": "problem-module"
-    },
-    {
       "source": "company:Meta",
       "target": "prob:LC 621: Task Scheduler",
-      "value": 0.7,
+      "value": 0.35,
       "type": "problem-company"
     },
     {
       "source": "company:Amazon",
       "target": "prob:LC 621: Task Scheduler",
-      "value": 0.7,
+      "value": 0.35,
       "type": "problem-company"
     },
     {
@@ -6190,27 +5898,21 @@
       "type": "problem-concept"
     },
     {
-      "source": "mod:09 Intervals & Sweepline",
-      "target": "prob:LC 56: Merge Intervals",
-      "value": 0.9,
-      "type": "problem-module"
-    },
-    {
       "source": "company:Google",
       "target": "prob:LC 56: Merge Intervals",
-      "value": 0.7,
+      "value": 0.35,
       "type": "problem-company"
     },
     {
       "source": "company:Meta",
       "target": "prob:LC 56: Merge Intervals",
-      "value": 0.7,
+      "value": 0.35,
       "type": "problem-company"
     },
     {
       "source": "company:Amazon",
       "target": "prob:LC 56: Merge Intervals",
-      "value": 0.7,
+      "value": 0.35,
       "type": "problem-company"
     },
     {
@@ -6220,21 +5922,15 @@
       "type": "problem-concept"
     },
     {
-      "source": "mod:09 Intervals & Sweepline",
-      "target": "prob:LC 57: Insert Interval",
-      "value": 0.9,
-      "type": "problem-module"
-    },
-    {
       "source": "company:Google",
       "target": "prob:LC 57: Insert Interval",
-      "value": 0.7,
+      "value": 0.35,
       "type": "problem-company"
     },
     {
       "source": "company:Meta",
       "target": "prob:LC 57: Insert Interval",
-      "value": 0.7,
+      "value": 0.35,
       "type": "problem-company"
     },
     {
@@ -6244,15 +5940,9 @@
       "type": "problem-concept"
     },
     {
-      "source": "mod:09 Intervals & Sweepline",
-      "target": "prob:LC 435: Non-overlapping Intervals",
-      "value": 0.9,
-      "type": "problem-module"
-    },
-    {
       "source": "company:Amazon",
       "target": "prob:LC 435: Non-overlapping Intervals",
-      "value": 0.7,
+      "value": 0.35,
       "type": "problem-company"
     },
     {
@@ -6262,33 +5952,27 @@
       "type": "problem-concept"
     },
     {
-      "source": "mod:09 Intervals & Sweepline",
-      "target": "prob:LC 253: Meeting Rooms II",
-      "value": 0.9,
-      "type": "problem-module"
-    },
-    {
       "source": "company:Google",
       "target": "prob:LC 253: Meeting Rooms II",
-      "value": 0.7,
+      "value": 0.35,
       "type": "problem-company"
     },
     {
       "source": "company:Amazon",
       "target": "prob:LC 253: Meeting Rooms II",
-      "value": 0.7,
+      "value": 0.35,
       "type": "problem-company"
     },
     {
       "source": "company:Meta",
       "target": "prob:LC 253: Meeting Rooms II",
-      "value": 0.7,
+      "value": 0.35,
       "type": "problem-company"
     },
     {
       "source": "company:Bloomberg",
       "target": "prob:LC 253: Meeting Rooms II",
-      "value": 0.7,
+      "value": 0.35,
       "type": "problem-company"
     },
     {
@@ -6298,21 +5982,15 @@
       "type": "problem-concept"
     },
     {
-      "source": "mod:10 Tries (Prefix Trees)",
-      "target": "prob:LC 208: Implement Trie (Prefix Tree)",
-      "value": 0.9,
-      "type": "problem-module"
-    },
-    {
       "source": "company:Amazon",
       "target": "prob:LC 208: Implement Trie (Prefix Tree)",
-      "value": 0.7,
+      "value": 0.35,
       "type": "problem-company"
     },
     {
       "source": "company:Google",
       "target": "prob:LC 208: Implement Trie (Prefix Tree)",
-      "value": 0.7,
+      "value": 0.35,
       "type": "problem-company"
     },
     {
@@ -6322,21 +6000,15 @@
       "type": "problem-concept"
     },
     {
-      "source": "mod:10 Tries (Prefix Trees)",
-      "target": "prob:LC 211: Design Add and Search Words",
-      "value": 0.9,
-      "type": "problem-module"
-    },
-    {
       "source": "company:Meta",
       "target": "prob:LC 211: Design Add and Search Words",
-      "value": 0.7,
+      "value": 0.35,
       "type": "problem-company"
     },
     {
       "source": "company:Amazon",
       "target": "prob:LC 211: Design Add and Search Words",
-      "value": 0.7,
+      "value": 0.35,
       "type": "problem-company"
     },
     {
@@ -6346,33 +6018,27 @@
       "type": "problem-concept"
     },
     {
-      "source": "mod:11 Graphs 1 Traversals & Fundamentals",
-      "target": "prob:LC 200: Number of Islands",
-      "value": 0.9,
-      "type": "problem-module"
-    },
-    {
       "source": "company:Amazon",
       "target": "prob:LC 200: Number of Islands",
-      "value": 0.7,
+      "value": 0.35,
       "type": "problem-company"
     },
     {
       "source": "company:Google",
       "target": "prob:LC 200: Number of Islands",
-      "value": 0.7,
+      "value": 0.35,
       "type": "problem-company"
     },
     {
       "source": "company:Meta",
       "target": "prob:LC 200: Number of Islands",
-      "value": 0.7,
+      "value": 0.35,
       "type": "problem-company"
     },
     {
       "source": "company:Bloomberg",
       "target": "prob:LC 200: Number of Islands",
-      "value": 0.7,
+      "value": 0.35,
       "type": "problem-company"
     },
     {
@@ -6382,21 +6048,15 @@
       "type": "problem-concept"
     },
     {
-      "source": "mod:11 Graphs 1 Traversals & Fundamentals",
-      "target": "prob:LC 133: Clone Graph",
-      "value": 0.9,
-      "type": "problem-module"
-    },
-    {
       "source": "company:Meta",
       "target": "prob:LC 133: Clone Graph",
-      "value": 0.7,
+      "value": 0.35,
       "type": "problem-company"
     },
     {
       "source": "company:Amazon",
       "target": "prob:LC 133: Clone Graph",
-      "value": 0.7,
+      "value": 0.35,
       "type": "problem-company"
     },
     {
@@ -6406,21 +6066,15 @@
       "type": "problem-concept"
     },
     {
-      "source": "mod:11 Graphs 1 Traversals & Fundamentals",
-      "target": "prob:LC 994: Rotting Oranges",
-      "value": 0.9,
-      "type": "problem-module"
-    },
-    {
       "source": "company:Amazon",
       "target": "prob:LC 994: Rotting Oranges",
-      "value": 0.7,
+      "value": 0.35,
       "type": "problem-company"
     },
     {
       "source": "company:Microsoft",
       "target": "prob:LC 994: Rotting Oranges",
-      "value": 0.7,
+      "value": 0.35,
       "type": "problem-company"
     },
     {
@@ -6430,21 +6084,15 @@
       "type": "problem-concept"
     },
     {
-      "source": "mod:11 Graphs 1 Traversals & Fundamentals",
-      "target": "prob:LC 785: Is Graph Bipartite?",
-      "value": 0.9,
-      "type": "problem-module"
-    },
-    {
       "source": "company:Google",
       "target": "prob:LC 785: Is Graph Bipartite?",
-      "value": 0.7,
+      "value": 0.35,
       "type": "problem-company"
     },
     {
       "source": "company:Amazon",
       "target": "prob:LC 785: Is Graph Bipartite?",
-      "value": 0.7,
+      "value": 0.35,
       "type": "problem-company"
     },
     {
@@ -6454,27 +6102,21 @@
       "type": "problem-concept"
     },
     {
-      "source": "mod:12 Graphs 2 TopoSort & Shortest Paths",
-      "target": "prob:LC 207: Course Schedule",
-      "value": 0.9,
-      "type": "problem-module"
-    },
-    {
       "source": "company:Amazon",
       "target": "prob:LC 207: Course Schedule",
-      "value": 0.7,
+      "value": 0.35,
       "type": "problem-company"
     },
     {
       "source": "company:Google",
       "target": "prob:LC 207: Course Schedule",
-      "value": 0.7,
+      "value": 0.35,
       "type": "problem-company"
     },
     {
       "source": "company:Meta",
       "target": "prob:LC 207: Course Schedule",
-      "value": 0.7,
+      "value": 0.35,
       "type": "problem-company"
     },
     {
@@ -6484,21 +6126,15 @@
       "type": "problem-concept"
     },
     {
-      "source": "mod:12 Graphs 2 TopoSort & Shortest Paths",
-      "target": "prob:LC 210: Course Schedule II",
-      "value": 0.9,
-      "type": "problem-module"
-    },
-    {
       "source": "company:Amazon",
       "target": "prob:LC 210: Course Schedule II",
-      "value": 0.7,
+      "value": 0.35,
       "type": "problem-company"
     },
     {
       "source": "company:Google",
       "target": "prob:LC 210: Course Schedule II",
-      "value": 0.7,
+      "value": 0.35,
       "type": "problem-company"
     },
     {
@@ -6508,21 +6144,15 @@
       "type": "problem-concept"
     },
     {
-      "source": "mod:12 Graphs 2 TopoSort & Shortest Paths",
-      "target": "prob:LC 743: Network Delay Time",
-      "value": 0.9,
-      "type": "problem-module"
-    },
-    {
       "source": "company:Google",
       "target": "prob:LC 743: Network Delay Time",
-      "value": 0.7,
+      "value": 0.35,
       "type": "problem-company"
     },
     {
       "source": "company:Amazon",
       "target": "prob:LC 743: Network Delay Time",
-      "value": 0.7,
+      "value": 0.35,
       "type": "problem-company"
     },
     {
@@ -6532,21 +6162,15 @@
       "type": "problem-concept"
     },
     {
-      "source": "mod:12 Graphs 2 TopoSort & Shortest Paths",
-      "target": "prob:LC 787: Cheapest Flights Within K Stops",
-      "value": 0.9,
-      "type": "problem-module"
-    },
-    {
       "source": "company:Google",
       "target": "prob:LC 787: Cheapest Flights Within K Stops",
-      "value": 0.7,
+      "value": 0.35,
       "type": "problem-company"
     },
     {
       "source": "company:Amazon",
       "target": "prob:LC 787: Cheapest Flights Within K Stops",
-      "value": 0.7,
+      "value": 0.35,
       "type": "problem-company"
     },
     {
@@ -6556,21 +6180,15 @@
       "type": "problem-concept"
     },
     {
-      "source": "mod:13 Disjoint Set Union (DSU) & MST",
-      "target": "prob:LC 684: Redundant Connection",
-      "value": 0.9,
-      "type": "problem-module"
-    },
-    {
       "source": "company:Google",
       "target": "prob:LC 684: Redundant Connection",
-      "value": 0.7,
+      "value": 0.35,
       "type": "problem-company"
     },
     {
       "source": "company:Amazon",
       "target": "prob:LC 684: Redundant Connection",
-      "value": 0.7,
+      "value": 0.35,
       "type": "problem-company"
     },
     {
@@ -6580,21 +6198,15 @@
       "type": "problem-concept"
     },
     {
-      "source": "mod:13 Disjoint Set Union (DSU) & MST",
-      "target": "prob:LC 1584: Min Cost to Connect All Points",
-      "value": 0.9,
-      "type": "problem-module"
-    },
-    {
       "source": "company:Amazon",
       "target": "prob:LC 1584: Min Cost to Connect All Points",
-      "value": 0.7,
+      "value": 0.35,
       "type": "problem-company"
     },
     {
       "source": "company:Microsoft",
       "target": "prob:LC 1584: Min Cost to Connect All Points",
-      "value": 0.7,
+      "value": 0.35,
       "type": "problem-company"
     },
     {
@@ -6604,21 +6216,15 @@
       "type": "problem-concept"
     },
     {
-      "source": "mod:14 Dynamic Programming 1 1D & Classics",
-      "target": "prob:LC 70: Climbing Stairs",
-      "value": 0.9,
-      "type": "problem-module"
-    },
-    {
       "source": "company:Amazon",
       "target": "prob:LC 70: Climbing Stairs",
-      "value": 0.7,
+      "value": 0.35,
       "type": "problem-company"
     },
     {
       "source": "company:Google",
       "target": "prob:LC 70: Climbing Stairs",
-      "value": 0.7,
+      "value": 0.35,
       "type": "problem-company"
     },
     {
@@ -6628,27 +6234,21 @@
       "type": "problem-concept"
     },
     {
-      "source": "mod:14 Dynamic Programming 1 1D & Classics",
-      "target": "prob:LC 198: House Robber",
-      "value": 0.9,
-      "type": "problem-module"
-    },
-    {
       "source": "company:Amazon",
       "target": "prob:LC 198: House Robber",
-      "value": 0.7,
+      "value": 0.35,
       "type": "problem-company"
     },
     {
       "source": "company:Google",
       "target": "prob:LC 198: House Robber",
-      "value": 0.7,
+      "value": 0.35,
       "type": "problem-company"
     },
     {
       "source": "company:Microsoft",
       "target": "prob:LC 198: House Robber",
-      "value": 0.7,
+      "value": 0.35,
       "type": "problem-company"
     },
     {
@@ -6658,27 +6258,21 @@
       "type": "problem-concept"
     },
     {
-      "source": "mod:14 Dynamic Programming 1 1D & Classics",
-      "target": "prob:LC 322: Coin Change",
-      "value": 0.9,
-      "type": "problem-module"
-    },
-    {
       "source": "company:Amazon",
       "target": "prob:LC 322: Coin Change",
-      "value": 0.7,
+      "value": 0.35,
       "type": "problem-company"
     },
     {
       "source": "company:Google",
       "target": "prob:LC 322: Coin Change",
-      "value": 0.7,
+      "value": 0.35,
       "type": "problem-company"
     },
     {
       "source": "company:Meta",
       "target": "prob:LC 322: Coin Change",
-      "value": 0.7,
+      "value": 0.35,
       "type": "problem-company"
     },
     {
@@ -6688,27 +6282,21 @@
       "type": "problem-concept"
     },
     {
-      "source": "mod:14 Dynamic Programming 1 1D & Classics",
-      "target": "prob:LC 300: Longest Increasing Subsequence",
-      "value": 0.9,
-      "type": "problem-module"
-    },
-    {
       "source": "company:Google",
       "target": "prob:LC 300: Longest Increasing Subsequence",
-      "value": 0.7,
+      "value": 0.35,
       "type": "problem-company"
     },
     {
       "source": "company:Meta",
       "target": "prob:LC 300: Longest Increasing Subsequence",
-      "value": 0.7,
+      "value": 0.35,
       "type": "problem-company"
     },
     {
       "source": "company:Amazon",
       "target": "prob:LC 300: Longest Increasing Subsequence",
-      "value": 0.7,
+      "value": 0.35,
       "type": "problem-company"
     },
     {
@@ -6718,21 +6306,15 @@
       "type": "problem-concept"
     },
     {
-      "source": "mod:15 Dynamic Programming 2 2D & Grids",
-      "target": "prob:LC 62: Unique Paths",
-      "value": 0.9,
-      "type": "problem-module"
-    },
-    {
       "source": "company:Amazon",
       "target": "prob:LC 62: Unique Paths",
-      "value": 0.7,
+      "value": 0.35,
       "type": "problem-company"
     },
     {
       "source": "company:Google",
       "target": "prob:LC 62: Unique Paths",
-      "value": 0.7,
+      "value": 0.35,
       "type": "problem-company"
     },
     {
@@ -6742,21 +6324,15 @@
       "type": "problem-concept"
     },
     {
-      "source": "mod:15 Dynamic Programming 2 2D & Grids",
-      "target": "prob:LC 64: Minimum Path Sum",
-      "value": 0.9,
-      "type": "problem-module"
-    },
-    {
       "source": "company:Google",
       "target": "prob:LC 64: Minimum Path Sum",
-      "value": 0.7,
+      "value": 0.35,
       "type": "problem-company"
     },
     {
       "source": "company:Amazon",
       "target": "prob:LC 64: Minimum Path Sum",
-      "value": 0.7,
+      "value": 0.35,
       "type": "problem-company"
     },
     {
@@ -6766,21 +6342,15 @@
       "type": "problem-concept"
     },
     {
-      "source": "mod:15 Dynamic Programming 2 2D & Grids",
-      "target": "prob:LC 221: Maximal Square",
-      "value": 0.9,
-      "type": "problem-module"
-    },
-    {
       "source": "company:Google",
       "target": "prob:LC 221: Maximal Square",
-      "value": 0.7,
+      "value": 0.35,
       "type": "problem-company"
     },
     {
       "source": "company:Amazon",
       "target": "prob:LC 221: Maximal Square",
-      "value": 0.7,
+      "value": 0.35,
       "type": "problem-company"
     },
     {
@@ -6790,21 +6360,15 @@
       "type": "problem-concept"
     },
     {
-      "source": "mod:15 Dynamic Programming 2 2D & Grids",
-      "target": "prob:LC 3963: Create Grid With Exactly One Path",
-      "value": 0.9,
-      "type": "problem-module"
-    },
-    {
       "source": "company:Google",
       "target": "prob:LC 3963: Create Grid With Exactly One Path",
-      "value": 0.7,
+      "value": 0.35,
       "type": "problem-company"
     },
     {
       "source": "company:Meta",
       "target": "prob:LC 3963: Create Grid With Exactly One Path",
-      "value": 0.7,
+      "value": 0.35,
       "type": "problem-company"
     },
     {
@@ -6814,21 +6378,15 @@
       "type": "problem-concept"
     },
     {
-      "source": "mod:16 Dynamic Programming 3 Strings & Sequences",
-      "target": "prob:LC 1143: Longest Common Subsequence",
-      "value": 0.9,
-      "type": "problem-module"
-    },
-    {
       "source": "company:Amazon",
       "target": "prob:LC 1143: Longest Common Subsequence",
-      "value": 0.7,
+      "value": 0.35,
       "type": "problem-company"
     },
     {
       "source": "company:Google",
       "target": "prob:LC 1143: Longest Common Subsequence",
-      "value": 0.7,
+      "value": 0.35,
       "type": "problem-company"
     },
     {
@@ -6838,27 +6396,21 @@
       "type": "problem-concept"
     },
     {
-      "source": "mod:16 Dynamic Programming 3 Strings & Sequences",
-      "target": "prob:LC 72: Edit Distance",
-      "value": 0.9,
-      "type": "problem-module"
-    },
-    {
       "source": "company:Google",
       "target": "prob:LC 72: Edit Distance",
-      "value": 0.7,
+      "value": 0.35,
       "type": "problem-company"
     },
     {
       "source": "company:Amazon",
       "target": "prob:LC 72: Edit Distance",
-      "value": 0.7,
+      "value": 0.35,
       "type": "problem-company"
     },
     {
       "source": "company:Microsoft",
       "target": "prob:LC 72: Edit Distance",
-      "value": 0.7,
+      "value": 0.35,
       "type": "problem-company"
     },
     {
@@ -6868,21 +6420,15 @@
       "type": "problem-concept"
     },
     {
-      "source": "mod:17 Dynamic Programming 4 Knapsack & Partition",
-      "target": "prob:LC 416: Partition Equal Subset Sum",
-      "value": 0.9,
-      "type": "problem-module"
-    },
-    {
       "source": "company:Meta",
       "target": "prob:LC 416: Partition Equal Subset Sum",
-      "value": 0.7,
+      "value": 0.35,
       "type": "problem-company"
     },
     {
       "source": "company:Amazon",
       "target": "prob:LC 416: Partition Equal Subset Sum",
-      "value": 0.7,
+      "value": 0.35,
       "type": "problem-company"
     },
     {
@@ -6892,21 +6438,15 @@
       "type": "problem-concept"
     },
     {
-      "source": "mod:18 Dynamic Programming 5 Trees, Bitmask & Digit DP",
-      "target": "prob:LC 337: House Robber III",
-      "value": 0.9,
-      "type": "problem-module"
-    },
-    {
       "source": "company:Google",
       "target": "prob:LC 337: House Robber III",
-      "value": 0.7,
+      "value": 0.35,
       "type": "problem-company"
     },
     {
       "source": "company:Amazon",
       "target": "prob:LC 337: House Robber III",
-      "value": 0.7,
+      "value": 0.35,
       "type": "problem-company"
     },
     {
@@ -6916,15 +6456,9 @@
       "type": "problem-concept"
     },
     {
-      "source": "mod:18 Dynamic Programming 5 Trees, Bitmask & Digit DP",
-      "target": "prob:LC 847: Shortest Path Visiting All Nodes",
-      "value": 0.9,
-      "type": "problem-module"
-    },
-    {
       "source": "company:Google",
       "target": "prob:LC 847: Shortest Path Visiting All Nodes",
-      "value": 0.7,
+      "value": 0.35,
       "type": "problem-company"
     },
     {
@@ -6934,27 +6468,21 @@
       "type": "problem-concept"
     },
     {
-      "source": "mod:19 Greedy Algorithms",
-      "target": "prob:LC 55: Jump Game",
-      "value": 0.9,
-      "type": "problem-module"
-    },
-    {
       "source": "company:Amazon",
       "target": "prob:LC 55: Jump Game",
-      "value": 0.7,
+      "value": 0.35,
       "type": "problem-company"
     },
     {
       "source": "company:Google",
       "target": "prob:LC 55: Jump Game",
-      "value": 0.7,
+      "value": 0.35,
       "type": "problem-company"
     },
     {
       "source": "company:Meta",
       "target": "prob:LC 55: Jump Game",
-      "value": 0.7,
+      "value": 0.35,
       "type": "problem-company"
     },
     {
@@ -6964,21 +6492,15 @@
       "type": "problem-concept"
     },
     {
-      "source": "mod:19 Greedy Algorithms",
-      "target": "prob:LC 45: Jump Game II",
-      "value": 0.9,
-      "type": "problem-module"
-    },
-    {
       "source": "company:Amazon",
       "target": "prob:LC 45: Jump Game II",
-      "value": 0.7,
+      "value": 0.35,
       "type": "problem-company"
     },
     {
       "source": "company:Google",
       "target": "prob:LC 45: Jump Game II",
-      "value": 0.7,
+      "value": 0.35,
       "type": "problem-company"
     },
     {
@@ -6988,21 +6510,15 @@
       "type": "problem-concept"
     },
     {
-      "source": "mod:19 Greedy Algorithms",
-      "target": "prob:LC 134: Gas Station",
-      "value": 0.9,
-      "type": "problem-module"
-    },
-    {
       "source": "company:Amazon",
       "target": "prob:LC 134: Gas Station",
-      "value": 0.7,
+      "value": 0.35,
       "type": "problem-company"
     },
     {
       "source": "company:Google",
       "target": "prob:LC 134: Gas Station",
-      "value": 0.7,
+      "value": 0.35,
       "type": "problem-company"
     },
     {
@@ -7012,21 +6528,15 @@
       "type": "problem-concept"
     },
     {
-      "source": "mod:19 Greedy Algorithms",
-      "target": "prob:LC 135: Candy",
-      "value": 0.9,
-      "type": "problem-module"
-    },
-    {
       "source": "company:Google",
       "target": "prob:LC 135: Candy",
-      "value": 0.7,
+      "value": 0.35,
       "type": "problem-company"
     },
     {
       "source": "company:Amazon",
       "target": "prob:LC 135: Candy",
-      "value": 0.7,
+      "value": 0.35,
       "type": "problem-company"
     },
     {
@@ -7036,21 +6546,15 @@
       "type": "problem-concept"
     },
     {
-      "source": "mod:20 Bit Manipulation & Math",
-      "target": "prob:LC 136: Single Number",
-      "value": 0.9,
-      "type": "problem-module"
-    },
-    {
       "source": "company:Amazon",
       "target": "prob:LC 136: Single Number",
-      "value": 0.7,
+      "value": 0.35,
       "type": "problem-company"
     },
     {
       "source": "company:Google",
       "target": "prob:LC 136: Single Number",
-      "value": 0.7,
+      "value": 0.35,
       "type": "problem-company"
     },
     {
@@ -7058,23 +6562,17 @@
       "target": "prob:LC 191: Number of 1 Bits",
       "value": 1.2,
       "type": "problem-concept"
-    },
-    {
-      "source": "mod:20 Bit Manipulation & Math",
-      "target": "prob:LC 191: Number of 1 Bits",
-      "value": 0.9,
-      "type": "problem-module"
     },
     {
       "source": "company:Apple",
       "target": "prob:LC 191: Number of 1 Bits",
-      "value": 0.7,
+      "value": 0.35,
       "type": "problem-company"
     },
     {
       "source": "company:Microsoft",
       "target": "prob:LC 191: Number of 1 Bits",
-      "value": 0.7,
+      "value": 0.35,
       "type": "problem-company"
     },
     {
@@ -7084,27 +6582,21 @@
       "type": "problem-concept"
     },
     {
-      "source": "mod:20 Bit Manipulation & Math",
-      "target": "prob:LC 50: Pow(x, n)",
-      "value": 0.9,
-      "type": "problem-module"
-    },
-    {
       "source": "company:Meta",
       "target": "prob:LC 50: Pow(x, n)",
-      "value": 0.7,
+      "value": 0.35,
       "type": "problem-company"
     },
     {
       "source": "company:Google",
       "target": "prob:LC 50: Pow(x, n)",
-      "value": 0.7,
+      "value": 0.35,
       "type": "problem-company"
     },
     {
       "source": "company:Bloomberg",
       "target": "prob:LC 50: Pow(x, n)",
-      "value": 0.7,
+      "value": 0.35,
       "type": "problem-company"
     },
     {
@@ -7114,15 +6606,9 @@
       "type": "problem-concept"
     },
     {
-      "source": "mod:21 Segment Trees & Fenwick (BIT)",
-      "target": "prob:LC 307: Range Sum Query - Mutable",
-      "value": 0.9,
-      "type": "problem-module"
-    },
-    {
       "source": "company:Google",
       "target": "prob:LC 307: Range Sum Query - Mutable",
-      "value": 0.7,
+      "value": 0.35,
       "type": "problem-company"
     },
     {
@@ -7132,39 +6618,33 @@
       "type": "problem-concept"
     },
     {
-      "source": "mod:22 Design Data Structures",
-      "target": "prob:LC 146: LRU Cache",
-      "value": 0.9,
-      "type": "problem-module"
-    },
-    {
       "source": "company:Amazon",
       "target": "prob:LC 146: LRU Cache",
-      "value": 0.7,
+      "value": 0.35,
       "type": "problem-company"
     },
     {
       "source": "company:Google",
       "target": "prob:LC 146: LRU Cache",
-      "value": 0.7,
+      "value": 0.35,
       "type": "problem-company"
     },
     {
       "source": "company:Meta",
       "target": "prob:LC 146: LRU Cache",
-      "value": 0.7,
+      "value": 0.35,
       "type": "problem-company"
     },
     {
       "source": "company:Microsoft",
       "target": "prob:LC 146: LRU Cache",
-      "value": 0.7,
+      "value": 0.35,
       "type": "problem-company"
     },
     {
       "source": "company:Bloomberg",
       "target": "prob:LC 146: LRU Cache",
-      "value": 0.7,
+      "value": 0.35,
       "type": "problem-company"
     },
     {
@@ -7174,21 +6654,15 @@
       "type": "problem-concept"
     },
     {
-      "source": "mod:22 Design Data Structures",
-      "target": "prob:LC 460: LFU Cache",
-      "value": 0.9,
-      "type": "problem-module"
-    },
-    {
       "source": "company:Amazon",
       "target": "prob:LC 460: LFU Cache",
-      "value": 0.7,
+      "value": 0.35,
       "type": "problem-company"
     },
     {
       "source": "company:Google",
       "target": "prob:LC 460: LFU Cache",
-      "value": 0.7,
+      "value": 0.35,
       "type": "problem-company"
     },
     {
@@ -7196,23 +6670,17 @@
       "target": "prob:LC 28: Find the Index of the First Occurrence in a String",
       "value": 1.2,
       "type": "problem-concept"
-    },
-    {
-      "source": "mod:23 Advanced Strings (KMP & Rabin-Karp)",
-      "target": "prob:LC 28: Find the Index of the First Occurrence in a String",
-      "value": 0.9,
-      "type": "problem-module"
     },
     {
       "source": "company:Microsoft",
       "target": "prob:LC 28: Find the Index of the First Occurrence in a String",
-      "value": 0.7,
+      "value": 0.35,
       "type": "problem-company"
     },
     {
       "source": "company:Google",
       "target": "prob:LC 28: Find the Index of the First Occurrence in a String",
-      "value": 0.7,
+      "value": 0.35,
       "type": "problem-company"
     },
     {
@@ -7220,17 +6688,11 @@
       "target": "prob:LC 214: Shortest Palindrome",
       "value": 1.2,
       "type": "problem-concept"
-    },
-    {
-      "source": "mod:23 Advanced Strings (KMP & Rabin-Karp)",
-      "target": "prob:LC 214: Shortest Palindrome",
-      "value": 0.9,
-      "type": "problem-module"
     },
     {
       "source": "company:Google",
       "target": "prob:LC 214: Shortest Palindrome",
-      "value": 0.7,
+      "value": 0.35,
       "type": "problem-company"
     },
     {
@@ -7240,27 +6702,21 @@
       "type": "problem-concept"
     },
     {
-      "source": "mod:23 Advanced Strings (KMP & Rabin-Karp)",
-      "target": "prob:LC 5: Longest Palindromic Substring",
-      "value": 0.9,
-      "type": "problem-module"
-    },
-    {
       "source": "company:Amazon",
       "target": "prob:LC 5: Longest Palindromic Substring",
-      "value": 0.7,
+      "value": 0.35,
       "type": "problem-company"
     },
     {
       "source": "company:Microsoft",
       "target": "prob:LC 5: Longest Palindromic Substring",
-      "value": 0.7,
+      "value": 0.35,
       "type": "problem-company"
     },
     {
       "source": "company:Meta",
       "target": "prob:LC 5: Longest Palindromic Substring",
-      "value": 0.7,
+      "value": 0.35,
       "type": "problem-company"
     },
     {
@@ -7268,17 +6724,11 @@
       "target": "prob:LC 1192: Critical Connections in a Network",
       "value": 1.2,
       "type": "problem-concept"
-    },
-    {
-      "source": "mod:24 Advanced Graphs (Tarjan & Eulerian)",
-      "target": "prob:LC 1192: Critical Connections in a Network",
-      "value": 0.9,
-      "type": "problem-module"
     },
     {
       "source": "company:Amazon",
       "target": "prob:LC 1192: Critical Connections in a Network",
-      "value": 0.7,
+      "value": 0.35,
       "type": "problem-company"
     },
     {
@@ -7286,23 +6736,17 @@
       "target": "prob:LC 332: Reconstruct Itinerary",
       "value": 1.2,
       "type": "problem-concept"
-    },
-    {
-      "source": "mod:24 Advanced Graphs (Tarjan & Eulerian)",
-      "target": "prob:LC 332: Reconstruct Itinerary",
-      "value": 0.9,
-      "type": "problem-module"
     },
     {
       "source": "company:Google",
       "target": "prob:LC 332: Reconstruct Itinerary",
-      "value": 0.7,
+      "value": 0.35,
       "type": "problem-company"
     },
     {
       "source": "company:Amazon",
       "target": "prob:LC 332: Reconstruct Itinerary",
-      "value": 0.7,
+      "value": 0.35,
       "type": "problem-company"
     },
     {
@@ -7310,17 +6754,11 @@
       "target": "prob:LC 292: Nim Game",
       "value": 1.2,
       "type": "problem-concept"
-    },
-    {
-      "source": "mod:25 Game Theory & Minimax",
-      "target": "prob:LC 292: Nim Game",
-      "value": 0.9,
-      "type": "problem-module"
     },
     {
       "source": "company:Adobe",
       "target": "prob:LC 292: Nim Game",
-      "value": 0.7,
+      "value": 0.35,
       "type": "problem-company"
     },
     {
@@ -7330,15 +6768,9 @@
       "type": "problem-concept"
     },
     {
-      "source": "mod:25 Game Theory & Minimax",
-      "target": "prob:LC 877: Stone Game",
-      "value": 0.9,
-      "type": "problem-module"
-    },
-    {
       "source": "company:Google",
       "target": "prob:LC 877: Stone Game",
-      "value": 0.7,
+      "value": 0.35,
       "type": "problem-company"
     },
     {
@@ -7346,17 +6778,11 @@
       "target": "prob:LC 398: Random Pick Index",
       "value": 1.2,
       "type": "problem-concept"
-    },
-    {
-      "source": "mod:26 Reservoir Sampling & Randomized",
-      "target": "prob:LC 398: Random Pick Index",
-      "value": 0.9,
-      "type": "problem-module"
     },
     {
       "source": "company:Meta",
       "target": "prob:LC 398: Random Pick Index",
-      "value": 0.7,
+      "value": 0.35,
       "type": "problem-company"
     },
     {
@@ -7366,21 +6792,15 @@
       "type": "problem-concept"
     },
     {
-      "source": "mod:26 Reservoir Sampling & Randomized",
-      "target": "prob:LC 384: Shuffle an Array",
-      "value": 0.9,
-      "type": "problem-module"
-    },
-    {
       "source": "company:Google",
       "target": "prob:LC 384: Shuffle an Array",
-      "value": 0.7,
+      "value": 0.35,
       "type": "problem-company"
     },
     {
       "source": "company:Amazon",
       "target": "prob:LC 384: Shuffle an Array",
-      "value": 0.7,
+      "value": 0.35,
       "type": "problem-company"
     },
     {
@@ -7390,15 +6810,9 @@
       "type": "problem-concept"
     },
     {
-      "source": "mod:27 Computational Geometry & Math",
-      "target": "prob:LC 587: Erect the Fence",
-      "value": 0.9,
-      "type": "problem-module"
-    },
-    {
       "source": "company:Google",
       "target": "prob:LC 587: Erect the Fence",
-      "value": 0.7,
+      "value": 0.35,
       "type": "problem-company"
     },
     {
@@ -7408,21 +6822,15 @@
       "type": "problem-concept"
     },
     {
-      "source": "mod:27 Computational Geometry & Math",
-      "target": "prob:LC 149: Max Points on a Line",
-      "value": 0.9,
-      "type": "problem-module"
-    },
-    {
       "source": "company:Google",
       "target": "prob:LC 149: Max Points on a Line",
-      "value": 0.7,
+      "value": 0.35,
       "type": "problem-company"
     },
     {
       "source": "company:Amazon",
       "target": "prob:LC 149: Max Points on a Line",
-      "value": 0.7,
+      "value": 0.35,
       "type": "problem-company"
     },
     {

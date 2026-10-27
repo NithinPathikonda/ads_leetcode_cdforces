@@ -6,12 +6,13 @@ tags:
   - concept
 ---
 
-# 🟢 Concept: Matrix Traversal
+# 💡 Concept: Matrix Traversal
 
-- **Parent Module**: [[01 Arrays & Hashing]]
-- **Mental Trigger / Intuition**: Boundary pointer shrinkage and spiral layer peeling.
+> [!abstract] 🧠 Mental Model & Invariant
+> - **Parent Module**: [[01 Arrays & Hashing]]
+> - **Core Intuition**: Boundary pointer shrinkage and spiral layer peeling.
 
 ---
 
-## 🎯 Problems Utilizing Matrix Traversal
-- [[LC 54 Spiral Matrix]] (Medium)
+## 🎯 Benchmark Problems Utilizing Matrix Traversal
+- [[LC 54 Spiral Matrix]] — Medium (`O(N * M)`)

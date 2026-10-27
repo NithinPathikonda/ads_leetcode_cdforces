@@ -8,20 +8,21 @@ tags:
 
 # 🌐 Module: 23 Advanced Strings (KMP & Rabin-Karp)
 
-> **Core Focus**: KMP Algorithm, Rolling Hash (Rabin-Karp), Manacher's Longest Palindrome  
-> **Domain Cluster**: Advanced & Quant
+> [!abstract] 📋 Module Scope
+> - **Core Focus**: KMP Algorithm, Rolling Hash (Rabin-Karp), Manacher's Longest Palindrome  
+> - **Domain Cluster**: `Advanced & Quant`
 
 ---
 
-## 🟢 Core Concepts
+## 🟢 Core Algorithmic Concepts
 - [[KMP & String Matching]]
 
 ---
 
-## 🎯 Benchmark Problems
-- [[LC 28 Find the Index of the First Occurrence in a String]] (Easy)
-- [[LC 214 Shortest Palindrome]] (Hard)
-- [[LC 5 Longest Palindromic Substring]] (Medium)
+## 🎯 Benchmark MNC Problems
+- [[LC 28 Find the Index of the First Occurrence in a String]] — Easy (`O(N + M)`)
+- [[LC 214 Shortest Palindrome]] — Hard (`O(N)`)
+- [[LC 5 Longest Palindromic Substring]] — Medium (`O(N)`)
 
 ---
 - [[Index|🏠 Master Knowledge Galaxy Root]]

@@ -6,12 +6,13 @@ tags:
   - concept
 ---
 
-# 🟢 Concept: Rainwater Trapping
+# 💡 Concept: Rainwater Trapping
 
-- **Parent Module**: [[04 Stack & Monotonic Stack]]
-- **Mental Trigger / Intuition**: Height boundary bounds via Two Pointers or Monotonic Stack.
+> [!abstract] 🧠 Mental Model & Invariant
+> - **Parent Module**: [[04 Stack & Monotonic Stack]]
+> - **Core Intuition**: Height boundary bounds via Two Pointers or Monotonic Stack.
 
 ---
 
-## 🎯 Problems Utilizing Rainwater Trapping
-- [[LC 42 Trapping Rain Water]] (Hard)
+## 🎯 Benchmark Problems Utilizing Rainwater Trapping
+- [[LC 42 Trapping Rain Water]] — Hard (`O(N)`)

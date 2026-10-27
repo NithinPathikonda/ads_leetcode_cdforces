@@ -7,7 +7,9 @@ tags:
 
 # 🟣 Target MNC Hub: Apple
 
-> **Curated Question Count**: `10 problems`
+> [!abstract] 🏢 Interview Question Frequency
+> - **Tier**: Tier-1 Tech Titan
+> - **Curated Question Count**: `10 benchmark problems`
 
 ---
 

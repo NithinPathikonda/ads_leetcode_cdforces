@@ -6,12 +6,13 @@ tags:
   - concept
 ---
 
-# 🟢 Concept: Constructive Grid Path
+# 💡 Concept: Constructive Grid Path
 
-- **Parent Module**: [[15 Dynamic Programming 2 2D & Grids]]
-- **Mental Trigger / Intuition**: Deterministic path construction avoiding unwanted branches.
+> [!abstract] 🧠 Mental Model & Invariant
+> - **Parent Module**: [[15 Dynamic Programming 2 2D & Grids]]
+> - **Core Intuition**: Deterministic path construction avoiding unwanted branches.
 
 ---
 
-## 🎯 Problems Utilizing Constructive Grid Path
-- [[LC 3963 Create Grid With Exactly One Path]] (Easy)
+## 🎯 Benchmark Problems Utilizing Constructive Grid Path
+- [[LC 3963 Create Grid With Exactly One Path]] — Easy (`O(M + N)`)

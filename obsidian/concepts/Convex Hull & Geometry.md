@@ -6,13 +6,14 @@ tags:
   - concept
 ---
 
-# 🟢 Concept: Convex Hull & Geometry
+# 💡 Concept: Convex Hull & Geometry
 
-- **Parent Module**: [[27 Computational Geometry & Math]]
-- **Mental Trigger / Intuition**: Cross-product orientation and Graham scan.
+> [!abstract] 🧠 Mental Model & Invariant
+> - **Parent Module**: [[27 Computational Geometry & Math]]
+> - **Core Intuition**: Cross-product orientation and Graham scan.
 
 ---
 
-## 🎯 Problems Utilizing Convex Hull & Geometry
-- [[LC 587 Erect the Fence]] (Hard)
-- [[LC 149 Max Points on a Line]] (Hard)
+## 🎯 Benchmark Problems Utilizing Convex Hull & Geometry
+- [[LC 587 Erect the Fence]] — Hard (`O(N log N)`)
+- [[LC 149 Max Points on a Line]] — Hard (`O(N^2)`)

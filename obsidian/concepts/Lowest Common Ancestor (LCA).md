@@ -6,12 +6,13 @@ tags:
   - concept
 ---
 
-# 🟢 Concept: Lowest Common Ancestor (LCA)
+# 💡 Concept: Lowest Common Ancestor (LCA)
 
-- **Parent Module**: [[07 Binary Trees & BST]]
-- **Mental Trigger / Intuition**: Finding first split point between nodes p and q.
+> [!abstract] 🧠 Mental Model & Invariant
+> - **Parent Module**: [[07 Binary Trees & BST]]
+> - **Core Intuition**: Finding first split point between nodes p and q.
 
 ---
 
-## 🎯 Problems Utilizing Lowest Common Ancestor (LCA)
-- [[LC 236 Lowest Common Ancestor of a Binary Tree]] (Medium)
+## 🎯 Benchmark Problems Utilizing Lowest Common Ancestor (LCA)
+- [[LC 236 Lowest Common Ancestor of a Binary Tree]] — Medium (`O(N)`)

@@ -7,7 +7,9 @@ tags:
 
 # 🟣 Target MNC Hub: Adobe
 
-> **Curated Question Count**: `1 problems`
+> [!abstract] 🏢 Interview Question Frequency
+> - **Tier**: Tier-1 Tech Titan
+> - **Curated Question Count**: `1 benchmark problems`
 
 ---
 

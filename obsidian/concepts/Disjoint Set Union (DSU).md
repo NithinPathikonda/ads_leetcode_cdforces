@@ -6,12 +6,13 @@ tags:
   - concept
 ---
 
-# 🟢 Concept: Disjoint Set Union (DSU)
+# 💡 Concept: Disjoint Set Union (DSU)
 
-- **Parent Module**: [[13 Disjoint Set Union (DSU) & MST]]
-- **Mental Trigger / Intuition**: Union by Rank & Path Compression for dynamic connectivity.
+> [!abstract] 🧠 Mental Model & Invariant
+> - **Parent Module**: [[13 Disjoint Set Union (DSU) & MST]]
+> - **Core Intuition**: Union by Rank & Path Compression for dynamic connectivity.
 
 ---
 
-## 🎯 Problems Utilizing Disjoint Set Union (DSU)
-- [[LC 684 Redundant Connection]] (Medium)
+## 🎯 Benchmark Problems Utilizing Disjoint Set Union (DSU)
+- [[LC 684 Redundant Connection]] — Medium (`O(N * alpha(N))`)

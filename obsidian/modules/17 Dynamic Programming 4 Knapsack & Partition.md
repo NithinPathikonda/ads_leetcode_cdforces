@@ -8,18 +8,19 @@ tags:
 
 # 🌐 Module: 17 Dynamic Programming 4 Knapsack & Partition
 
-> **Core Focus**: 0/1 Knapsack, Unbounded Knapsack, Target Sum, Subset Partition  
-> **Domain Cluster**: Optimization & DP
+> [!abstract] 📋 Module Scope
+> - **Core Focus**: 0/1 Knapsack, Unbounded Knapsack, Target Sum, Subset Partition  
+> - **Domain Cluster**: `Optimization & DP`
 
 ---
 
-## 🟢 Core Concepts
+## 🟢 Core Algorithmic Concepts
 - [[0-1 Knapsack]]
 
 ---
 
-## 🎯 Benchmark Problems
-- [[LC 416 Partition Equal Subset Sum]] (Medium)
+## 🎯 Benchmark MNC Problems
+- [[LC 416 Partition Equal Subset Sum]] — Medium (`O(N * target)`)
 
 ---
 - [[Index|🏠 Master Knowledge Galaxy Root]]

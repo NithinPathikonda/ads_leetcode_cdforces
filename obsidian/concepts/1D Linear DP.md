@@ -6,14 +6,15 @@ tags:
   - concept
 ---
 
-# 🟢 Concept: 1D Linear DP
+# 💡 Concept: 1D Linear DP
 
-- **Parent Module**: [[14 Dynamic Programming 1 1D & Classics]]
-- **Mental Trigger / Intuition**: Subproblems dependent on constant preceding states.
+> [!abstract] 🧠 Mental Model & Invariant
+> - **Parent Module**: [[14 Dynamic Programming 1 1D & Classics]]
+> - **Core Intuition**: Subproblems dependent on constant preceding states.
 
 ---
 
-## 🎯 Problems Utilizing 1D Linear DP
-- [[LC 70 Climbing Stairs]] (Easy)
-- [[LC 198 House Robber]] (Medium)
-- [[LC 322 Coin Change]] (Medium)
+## 🎯 Benchmark Problems Utilizing 1D Linear DP
+- [[LC 70 Climbing Stairs]] — Easy (`O(N)`)
+- [[LC 198 House Robber]] — Medium (`O(N)`)
+- [[LC 322 Coin Change]] — Medium (`O(amount * coins)`)

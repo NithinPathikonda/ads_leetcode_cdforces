@@ -8,20 +8,21 @@ tags:
 
 # 🌐 Module: 13 Disjoint Set Union (DSU) & MST
 
-> **Core Focus**: Union by Rank & Path Compression, Kruskal's, Prim's Algorithm  
-> **Domain Cluster**: Hierarchical & Graphs
+> [!abstract] 📋 Module Scope
+> - **Core Focus**: Union by Rank & Path Compression, Kruskal's, Prim's Algorithm  
+> - **Domain Cluster**: `Hierarchical & Graphs`
 
 ---
 
-## 🟢 Core Concepts
+## 🟢 Core Algorithmic Concepts
 - [[Disjoint Set Union (DSU)]]
 - [[Kruskal's & Prim's MST]]
 
 ---
 
-## 🎯 Benchmark Problems
-- [[LC 684 Redundant Connection]] (Medium)
-- [[LC 1584 Min Cost to Connect All Points]] (Medium)
+## 🎯 Benchmark MNC Problems
+- [[LC 684 Redundant Connection]] — Medium (`O(N * alpha(N))`)
+- [[LC 1584 Min Cost to Connect All Points]] — Medium (`O(E log V)`)
 
 ---
 - [[Index|🏠 Master Knowledge Galaxy Root]]

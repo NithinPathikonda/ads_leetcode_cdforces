@@ -6,12 +6,13 @@ tags:
   - concept
 ---
 
-# 🟢 Concept: Longest Common Subsequence
+# 💡 Concept: Longest Common Subsequence
 
-- **Parent Module**: [[16 Dynamic Programming 3 Strings & Sequences]]
-- **Mental Trigger / Intuition**: 2D string matrix matching and mismatches.
+> [!abstract] 🧠 Mental Model & Invariant
+> - **Parent Module**: [[16 Dynamic Programming 3 Strings & Sequences]]
+> - **Core Intuition**: 2D string matrix matching and mismatches.
 
 ---
 
-## 🎯 Problems Utilizing Longest Common Subsequence
-- [[LC 1143 Longest Common Subsequence]] (Medium)
+## 🎯 Benchmark Problems Utilizing Longest Common Subsequence
+- [[LC 1143 Longest Common Subsequence]] — Medium (`O(M * N)`)

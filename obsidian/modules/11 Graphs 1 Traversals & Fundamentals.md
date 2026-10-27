@@ -8,22 +8,23 @@ tags:
 
 # 🌐 Module: 11 Graphs 1 Traversals & Fundamentals
 
-> **Core Focus**: BFS, DFS, Flood Fill, Connected Components, Bipartite Graph, Cycle Detection  
-> **Domain Cluster**: Hierarchical & Graphs
+> [!abstract] 📋 Module Scope
+> - **Core Focus**: BFS, DFS, Flood Fill, Connected Components, Bipartite Graph, Cycle Detection  
+> - **Domain Cluster**: `Hierarchical & Graphs`
 
 ---
 
-## 🟢 Core Concepts
+## 🟢 Core Algorithmic Concepts
 - [[Graph BFS & Shortest Path]]
 - [[Graph DFS & Components]]
 
 ---
 
-## 🎯 Benchmark Problems
-- [[LC 200 Number of Islands]] (Medium)
-- [[LC 133 Clone Graph]] (Medium)
-- [[LC 994 Rotting Oranges]] (Medium)
-- [[LC 785 Is Graph Bipartite]] (Medium)
+## 🎯 Benchmark MNC Problems
+- [[LC 200 Number of Islands]] — Medium (`O(M * N)`)
+- [[LC 133 Clone Graph]] — Medium (`O(V + E)`)
+- [[LC 994 Rotting Oranges]] — Medium (`O(M * N)`)
+- [[LC 785 Is Graph Bipartite]] — Medium (`O(V + E)`)
 
 ---
 - [[Index|🏠 Master Knowledge Galaxy Root]]

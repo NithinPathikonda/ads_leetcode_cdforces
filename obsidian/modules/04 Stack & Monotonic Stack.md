@@ -8,24 +8,25 @@ tags:
 
 # 🌐 Module: 04 Stack & Monotonic Stack
 
-> **Core Focus**: Next Greater/Smaller Element, Largest Rectangle in Histogram, Rainwater Trapping  
-> **Domain Cluster**: Linear & Search
+> [!abstract] 📋 Module Scope
+> - **Core Focus**: Next Greater/Smaller Element, Largest Rectangle in Histogram, Rainwater Trapping  
+> - **Domain Cluster**: `Linear & Search`
 
 ---
 
-## 🟢 Core Concepts
+## 🟢 Core Algorithmic Concepts
 - [[Monotonic Stack]]
 - [[Rainwater Trapping]]
 
 ---
 
-## 🎯 Benchmark Problems
-- [[LC 20 Valid Parentheses]] (Easy)
-- [[LC 155 Min Stack]] (Medium)
-- [[LC 739 Daily Temperatures]] (Medium)
-- [[LC 84 Largest Rectangle in Histogram]] (Hard)
-- [[LC 85 Maximal Rectangle]] (Hard)
-- [[LC 1614 Maximum Nesting Depth of the Parentheses]] (Easy)
+## 🎯 Benchmark MNC Problems
+- [[LC 20 Valid Parentheses]] — Easy (`O(N)`)
+- [[LC 155 Min Stack]] — Medium (`O(1)`)
+- [[LC 739 Daily Temperatures]] — Medium (`O(N)`)
+- [[LC 84 Largest Rectangle in Histogram]] — Hard (`O(N)`)
+- [[LC 85 Maximal Rectangle]] — Hard (`O(M * N)`)
+- [[LC 1614 Maximum Nesting Depth of the Parentheses]] — Easy (`O(N)`)
 
 ---
 - [[Index|🏠 Master Knowledge Galaxy Root]]

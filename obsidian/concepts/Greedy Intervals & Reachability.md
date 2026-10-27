@@ -6,15 +6,16 @@ tags:
   - concept
 ---
 
-# 🟢 Concept: Greedy Intervals & Reachability
+# 💡 Concept: Greedy Intervals & Reachability
 
-- **Parent Module**: [[19 Greedy Algorithms]]
-- **Mental Trigger / Intuition**: Locally optimal choice yields global optimum.
+> [!abstract] 🧠 Mental Model & Invariant
+> - **Parent Module**: [[19 Greedy Algorithms]]
+> - **Core Intuition**: Locally optimal choice yields global optimum.
 
 ---
 
-## 🎯 Problems Utilizing Greedy Intervals & Reachability
-- [[LC 55 Jump Game]] (Medium)
-- [[LC 45 Jump Game II]] (Medium)
-- [[LC 134 Gas Station]] (Medium)
-- [[LC 135 Candy]] (Hard)
+## 🎯 Benchmark Problems Utilizing Greedy Intervals & Reachability
+- [[LC 55 Jump Game]] — Medium (`O(N)`)
+- [[LC 45 Jump Game II]] — Medium (`O(N)`)
+- [[LC 134 Gas Station]] — Medium (`O(N)`)
+- [[LC 135 Candy]] — Hard (`O(N)`)

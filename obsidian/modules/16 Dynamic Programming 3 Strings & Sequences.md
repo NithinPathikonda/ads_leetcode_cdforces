@@ -8,20 +8,21 @@ tags:
 
 # 🌐 Module: 16 Dynamic Programming 3 Strings & Sequences
 
-> **Core Focus**: LCS, Edit Distance, Distinct Subsequences, Regex/Wildcard Matching  
-> **Domain Cluster**: Optimization & DP
+> [!abstract] 📋 Module Scope
+> - **Core Focus**: LCS, Edit Distance, Distinct Subsequences, Regex/Wildcard Matching  
+> - **Domain Cluster**: `Optimization & DP`
 
 ---
 
-## 🟢 Core Concepts
+## 🟢 Core Algorithmic Concepts
 - [[Longest Common Subsequence]]
 - [[Edit Distance DP]]
 
 ---
 
-## 🎯 Benchmark Problems
-- [[LC 1143 Longest Common Subsequence]] (Medium)
-- [[LC 72 Edit Distance]] (Medium)
+## 🎯 Benchmark MNC Problems
+- [[LC 1143 Longest Common Subsequence]] — Medium (`O(M * N)`)
+- [[LC 72 Edit Distance]] — Medium (`O(M * N)`)
 
 ---
 - [[Index|🏠 Master Knowledge Galaxy Root]]

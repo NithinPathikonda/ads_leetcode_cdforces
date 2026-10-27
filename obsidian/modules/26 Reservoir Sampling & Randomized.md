@@ -8,19 +8,20 @@ tags:
 
 # 🌐 Module: 26 Reservoir Sampling & Randomized
 
-> **Core Focus**: Reservoir Sampling (K from Stream), Fisher-Yates Shuffle, Random Pick with Weight  
-> **Domain Cluster**: Advanced & Quant
+> [!abstract] 📋 Module Scope
+> - **Core Focus**: Reservoir Sampling (K from Stream), Fisher-Yates Shuffle, Random Pick with Weight  
+> - **Domain Cluster**: `Advanced & Quant`
 
 ---
 
-## 🟢 Core Concepts
+## 🟢 Core Algorithmic Concepts
 - [[Reservoir Sampling]]
 
 ---
 
-## 🎯 Benchmark Problems
-- [[LC 398 Random Pick Index]] (Medium)
-- [[LC 384 Shuffle an Array]] (Medium)
+## 🎯 Benchmark MNC Problems
+- [[LC 398 Random Pick Index]] — Medium (`O(N)`)
+- [[LC 384 Shuffle an Array]] — Medium (`O(N)`)
 
 ---
 - [[Index|🏠 Master Knowledge Galaxy Root]]

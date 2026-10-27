@@ -8,11 +8,26 @@ A dedicated chronological log for daily LeetCode challenges, organized by year, 
 
 | Date | # | Problem | Difficulty | Category / Pattern | Time | Space | Solution |
 | :---: | :---: | :--- | :---: | :--- | :---: | :---: | :--- |
+| **2026-10-27** | 3963 | [Create Grid With Exactly One Path](https://leetcode.com/problems/create-grid-with-exactly-one-path/) | Easy | Constructive / Grid Path | $O(M \times N)$ | $O(1)$ | [2026_10_27_lc_3963.cpp](2026-10/2026_10_27_lc_3963_create_grid_with_exactly_one_path.cpp) |
 | **2026-09-28** | 1614 | [Maximum Nesting Depth of the Parentheses](https://leetcode.com/problems/maximum-nesting-depth-of-the-parentheses/) | Easy | Stack / Depth Counter | $O(N)$ | $O(1)$ | [2026_09_28_lc_1614.cpp](2026-09/2026_09_28_lc_1614_maximum_nesting_depth_of_the_parentheses.cpp) |
 
 ---
 
 ## 🗓️ Archive by Month
+
+### 📌 October 2026
+
+#### 📅 2026-10-27: LC 3963 — Create Grid With Exactly One Path
+* **Problem Link**: [LeetCode 3963: Create Grid With Exactly One Path](https://leetcode.com/problems/create-grid-with-exactly-one-path/?envType=daily-question&envId=2026-10-27)
+* **Difficulty**: Easy
+* **Topic**: Constructive Algorithms / Matrix Traversal / Grid
+* **Solution File**: [`leetcode_problem_of_the_day/2026-10/2026_10_27_lc_3963_create_grid_with_exactly_one_path.cpp`](2026-10/2026_10_27_lc_3963_create_grid_with_exactly_one_path.cpp)
+* **Core Takeaways**:
+  * Carve an L-shaped path: traverse all the way across the first row `i == 0` then all the way down the last column `j == n - 1`.
+  * Place obstacles `'#'` everywhere else to strictly prevent any alternative branching paths.
+  * Time: $O(M \times N)$, Space: $O(1)$ auxiliary.
+
+---
 
 ### 📌 September 2026
 

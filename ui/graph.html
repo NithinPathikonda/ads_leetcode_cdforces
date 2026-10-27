@@ -1,0 +1,1222 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Brain Memory Galaxy — Nithin's Master DSA Knowledge Graph</title>
+  <meta name="description" content="Luminous, organic constellation knowledge graph mapping 27 modules, 53 concepts, mental triggers, invariants, and progressive problem ladders.">
+  <link rel="stylesheet" href="style.css">
+  <script src="https://d3js.org/d3.v7.min.js"></script>
+  <style>
+    /* Luminous Deep Space Canvas Styling */
+    body {
+      overflow: hidden;
+      margin: 0;
+      padding: 0;
+      background: radial-gradient(circle at 50% 50%, #0d1322 0%, #07090e 70%, #030407 100%);
+      user-select: none;
+      font-family: 'Plus Jakarta Sans', -apple-system, BlinkMacSystemFont, sans-serif;
+    }
+
+    #graph-container {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100vw;
+      height: 100vh;
+      z-index: 1;
+    }
+
+    /* Top Floating Navigation */
+    .top-nav {
+      position: absolute;
+      top: 16px;
+      left: 20px;
+      right: 20px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      z-index: 20;
+      pointer-events: none;
+    }
+
+    .top-nav > * {
+      pointer-events: auto;
+    }
+
+    .nav-brand {
+      display: flex;
+      align-items: center;
+      gap: 12px;
+      background: rgba(15, 22, 36, 0.85);
+      backdrop-filter: blur(16px);
+      border: 1px solid rgba(56, 189, 248, 0.2);
+      padding: 8px 20px;
+      border-radius: var(--radius-full);
+      box-shadow: 0 10px 30px rgba(0,0,0,0.6), 0 0 20px rgba(56, 189, 248, 0.15);
+    }
+
+    .nav-tabs {
+      display: flex;
+      gap: 6px;
+      background: rgba(15, 22, 36, 0.85);
+      backdrop-filter: blur(16px);
+      padding: 4px;
+      border-radius: var(--radius-full);
+      border: 1px solid rgba(255, 255, 255, 0.1);
+    }
+
+    .nav-btn {
+      padding: 7px 16px;
+      border-radius: var(--radius-full);
+      font-size: 0.85rem;
+      font-weight: 600;
+      text-decoration: none;
+      color: #94a3b8;
+      transition: all 0.2s ease;
+      display: flex;
+      align-items: center;
+      gap: 6px;
+    }
+
+    .nav-btn:hover {
+      color: #ffffff;
+      background: rgba(255, 255, 255, 0.06);
+    }
+
+    .nav-btn.active {
+      background: linear-gradient(135deg, #6366f1, #38bdf8);
+      color: #fff;
+      box-shadow: 0 4px 15px rgba(56, 189, 248, 0.35);
+    }
+
+    /* Sector Quick-Filter Chips */
+    .sector-chips-dock {
+      position: absolute;
+      top: 80px;
+      left: 50%;
+      transform: translateX(-50%);
+      display: flex;
+      gap: 8px;
+      z-index: 20;
+      flex-wrap: wrap;
+      justify-content: center;
+      max-width: 90vw;
+    }
+
+    .sector-chip {
+      background: rgba(15, 22, 36, 0.85);
+      backdrop-filter: blur(14px);
+      border: 1px solid rgba(255, 255, 255, 0.08);
+      color: #94a3b8;
+      font-size: 0.78rem;
+      font-weight: 600;
+      padding: 6px 14px;
+      border-radius: var(--radius-full);
+      cursor: pointer;
+      transition: all 0.2s ease;
+      display: flex;
+      align-items: center;
+      gap: 6px;
+    }
+
+    .sector-chip:hover {
+      color: #fff;
+      border-color: rgba(56, 189, 248, 0.3);
+      transform: translateY(-1px);
+    }
+
+    .sector-chip.active {
+      background: rgba(56, 189, 248, 0.18);
+      border-color: #38bdf8;
+      color: #38bdf8;
+      box-shadow: 0 0 15px rgba(56, 189, 248, 0.25);
+    }
+
+    /* HUD Controls */
+    .hud-controls {
+      position: absolute;
+      top: 80px;
+      left: 20px;
+      display: flex;
+      flex-direction: column;
+      gap: 8px;
+      z-index: 20;
+    }
+
+    .hud-btn {
+      width: 36px;
+      height: 36px;
+      background: rgba(15, 22, 36, 0.85);
+      backdrop-filter: blur(14px);
+      border: 1px solid rgba(255, 255, 255, 0.1);
+      color: #94a3b8;
+      border-radius: var(--radius-sm);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      cursor: pointer;
+      font-size: 1rem;
+      transition: all 0.2s ease;
+    }
+
+    .hud-btn:hover {
+      background: rgba(255, 255, 255, 0.15);
+      color: #fff;
+      border-color: #38bdf8;
+    }
+
+    /* Bottom Search & Filter Dock */
+    .search-dock {
+      position: absolute;
+      bottom: 24px;
+      left: 50%;
+      transform: translateX(-50%);
+      display: flex;
+      align-items: center;
+      gap: 12px;
+      background: rgba(15, 22, 36, 0.92);
+      backdrop-filter: blur(20px);
+      padding: 8px 20px;
+      border-radius: var(--radius-full);
+      border: 1px solid rgba(56, 189, 248, 0.25);
+      box-shadow: 0 20px 50px rgba(0,0,0,0.7), 0 0 25px rgba(56, 189, 248, 0.15);
+      z-index: 20;
+    }
+
+    .search-dock input {
+      background: transparent;
+      border: none;
+      outline: none;
+      color: #f8fafc;
+      font-family: inherit;
+      font-size: 0.9rem;
+      width: 320px;
+    }
+
+    .search-dock input::placeholder {
+      color: #64748b;
+    }
+
+    .label-toggle-btn {
+      background: rgba(255, 255, 255, 0.06);
+      border: 1px solid rgba(255, 255, 255, 0.12);
+      color: #94a3b8;
+      font-size: 0.75rem;
+      padding: 5px 12px;
+      border-radius: var(--radius-full);
+      cursor: pointer;
+      transition: all 0.2s ease;
+    }
+
+    .label-toggle-btn:hover, .label-toggle-btn.active {
+      background: rgba(56, 189, 248, 0.2);
+      color: #38bdf8;
+      border-color: rgba(56, 189, 248, 0.4);
+    }
+
+    /* Legend */
+    .legend-dock {
+      position: absolute;
+      bottom: 24px;
+      left: 20px;
+      background: rgba(15, 22, 36, 0.88);
+      backdrop-filter: blur(14px);
+      border: 1px solid rgba(255, 255, 255, 0.08);
+      padding: 12px 18px;
+      border-radius: var(--radius-md);
+      z-index: 20;
+      font-size: 0.8rem;
+      display: flex;
+      flex-direction: column;
+      gap: 7px;
+    }
+
+    .legend-item {
+      display: flex;
+      align-items: center;
+      gap: 9px;
+      color: #94a3b8;
+      font-size: 0.78rem;
+    }
+
+    .legend-dot {
+      width: 9px;
+      height: 9px;
+      border-radius: 50%;
+    }
+
+    /* Floating Cursor Tooltip Card */
+    #nodeTooltip {
+      position: absolute;
+      pointer-events: none;
+      background: rgba(13, 19, 32, 0.96);
+      backdrop-filter: blur(16px);
+      border: 1px solid rgba(56, 189, 248, 0.35);
+      border-radius: var(--radius-md);
+      padding: 10px 14px;
+      box-shadow: 0 10px 30px rgba(0,0,0,0.8), 0 0 20px rgba(56, 189, 248, 0.2);
+      z-index: 100;
+      opacity: 0;
+      transition: opacity 0.15s ease;
+      max-width: 280px;
+      transform: translate(15px, 15px);
+    }
+
+    #ttTitle {
+      font-size: 0.85rem;
+      font-weight: 700;
+      color: #f8fafc;
+      margin-bottom: 4px;
+    }
+
+    #ttSub {
+      font-size: 0.72rem;
+      color: #94a3b8;
+      line-height: 1.3;
+    }
+
+    /* Right-Side Slide-Out Brain Memory Inspector */
+    .inspector-panel {
+      position: absolute;
+      top: 0;
+      right: 0;
+      width: 440px;
+      height: 100vh;
+      background: rgba(10, 15, 26, 0.95);
+      backdrop-filter: blur(28px);
+      border-left: 1px solid rgba(56, 189, 248, 0.25);
+      box-shadow: -15px 0 45px rgba(0,0,0,0.8);
+      z-index: 50;
+      transform: translateX(100%);
+      transition: transform 0.35s cubic-bezier(0.16, 1, 0.3, 1);
+      display: flex;
+      flex-direction: column;
+      overflow: hidden;
+    }
+
+    .inspector-panel.open {
+      transform: translateX(0);
+    }
+
+    .inspector-header {
+      padding: 20px 24px;
+      border-bottom: 1px solid rgba(255, 255, 255, 0.08);
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    .inspector-header h2 {
+      margin: 0;
+      font-size: 1.1rem;
+      font-weight: 700;
+      color: #fff;
+      display: flex;
+      align-items: center;
+      gap: 8px;
+    }
+
+    .close-inspector-btn {
+      background: transparent;
+      border: none;
+      color: #94a3b8;
+      font-size: 1.3rem;
+      cursor: pointer;
+      padding: 4px;
+      line-height: 1;
+      border-radius: var(--radius-sm);
+      transition: all 0.2s ease;
+    }
+
+    .close-inspector-btn:hover {
+      color: #fff;
+      background: rgba(255, 255, 255, 0.1);
+    }
+
+    .inspector-body {
+      padding: 24px;
+      overflow-y: auto;
+      flex: 1;
+      display: flex;
+      flex-direction: column;
+      gap: 16px;
+    }
+
+    .inspector-type {
+      display: inline-block;
+      font-size: 0.72rem;
+      font-weight: 700;
+      text-transform: uppercase;
+      letter-spacing: 0.05em;
+      padding: 4px 10px;
+      border-radius: var(--radius-full);
+      margin-bottom: 4px;
+    }
+
+    .inspector-title {
+      font-size: 1.25rem;
+      font-weight: 800;
+      color: #f8fafc;
+      margin: 0;
+      line-height: 1.3;
+    }
+
+    .badges-row {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 6px;
+      margin-top: 4px;
+    }
+
+    .meta-badge {
+      font-size: 0.72rem;
+      padding: 3px 8px;
+      border-radius: var(--radius-full);
+      background: rgba(255, 255, 255, 0.06);
+      border: 1px solid rgba(255, 255, 255, 0.1);
+      color: #94a3b8;
+    }
+
+    .badge-easy { color: #10b981; border-color: rgba(16, 185, 129, 0.3); background: rgba(16, 185, 129, 0.1); }
+    .badge-medium { color: #f59e0b; border-color: rgba(245, 158, 11, 0.3); background: rgba(245, 158, 11, 0.1); }
+    .badge-hard { color: #ef4444; border-color: rgba(239, 68, 68, 0.3); background: rgba(239, 68, 68, 0.1); }
+
+    /* Brain Memory Card Sections */
+    .brain-section {
+      background: rgba(15, 22, 36, 0.75);
+      border: 1px solid rgba(255, 255, 255, 0.08);
+      border-radius: var(--radius-md);
+      padding: 14px 16px;
+    }
+
+    .brain-section-title {
+      font-size: 0.75rem;
+      font-weight: 700;
+      text-transform: uppercase;
+      letter-spacing: 0.05em;
+      display: flex;
+      align-items: center;
+      gap: 6px;
+      margin-bottom: 8px;
+    }
+
+    .brain-section-content {
+      font-size: 0.85rem;
+      color: #cbd5e1;
+      line-height: 1.5;
+    }
+
+    /* Ladder Stepper */
+    .ladder-stepper {
+      display: flex;
+      flex-direction: column;
+      gap: 8px;
+    }
+
+    .ladder-btn {
+      background: rgba(15, 22, 36, 0.9);
+      border: 1px solid rgba(255, 255, 255, 0.1);
+      border-radius: var(--radius-md);
+      padding: 10px 14px;
+      text-align: left;
+      cursor: pointer;
+      transition: all 0.2s ease;
+      display: flex;
+      flex-direction: column;
+      gap: 3px;
+    }
+
+    .ladder-btn:hover {
+      background: rgba(56, 189, 248, 0.15);
+      border-color: #38bdf8;
+      transform: translateX(3px);
+    }
+
+    .ladder-btn-label {
+      font-size: 0.7rem;
+      font-weight: 700;
+      color: #38bdf8;
+      text-transform: uppercase;
+      letter-spacing: 0.05em;
+    }
+
+    .ladder-btn strong {
+      font-size: 0.85rem;
+      color: #f8fafc;
+    }
+
+    /* Chips container */
+    .chips-group {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 6px;
+      margin-top: 6px;
+    }
+
+    .hub-chip {
+      background: rgba(255, 255, 255, 0.05);
+      border: 1px solid rgba(255, 255, 255, 0.1);
+      border-radius: var(--radius-full);
+      padding: 4px 10px;
+      font-size: 0.75rem;
+      color: #cbd5e1;
+      cursor: pointer;
+      transition: all 0.2s ease;
+    }
+
+    .hub-chip:hover {
+      background: rgba(56, 189, 248, 0.2);
+      border-color: #38bdf8;
+      color: #fff;
+    }
+
+    /* Code Viewer Area */
+    .code-viewer-container {
+      margin-top: 10px;
+      border: 1px solid rgba(255, 255, 255, 0.08);
+      border-radius: var(--radius-md);
+      overflow: hidden;
+      background: #090d16;
+    }
+
+    .code-toolbar {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 8px 12px;
+      background: rgba(255, 255, 255, 0.04);
+      border-bottom: 1px solid rgba(255, 255, 255, 0.06);
+      font-size: 0.75rem;
+      color: #94a3b8;
+    }
+
+    .code-pre {
+      margin: 0;
+      padding: 12px;
+      font-family: 'JetBrains Mono', monospace;
+      font-size: 0.78rem;
+      line-height: 1.45;
+      color: #e2e8f0;
+      overflow-x: auto;
+      max-height: 320px;
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Top Navigation Bar -->
+  <header class="top-nav">
+    <div class="nav-brand">
+      <span style="font-size: 1.3rem;">🧠</span>
+      <div>
+        <div style="font-size: 0.95rem; font-weight: 800; color: #fff; letter-spacing: -0.01em;">
+          BRAIN MEMORY GALAXY
+        </div>
+        <div style="font-size: 0.7rem; color: #38bdf8; font-weight: 600;">
+          Unified Constellation Architecture • <span id="nodeCountBadge">Loading...</span>
+        </div>
+      </div>
+    </div>
+
+    <div class="nav-tabs">
+      <a href="/" class="nav-btn">⚡ Flashcards</a>
+      <a href="/graph.html" class="nav-btn active">🕸️ Knowledge Galaxy</a>
+    </div>
+  </header>
+
+  <!-- Filter Chips Dock -->
+  <div class="sector-chips-dock" id="sectorChipsDock">
+    <button class="sector-chip active" data-filter="all">🌌 Full Galaxy</button>
+    <button class="sector-chip" data-filter="Linear & Search">📊 Linear & Search</button>
+    <button class="sector-chip" data-filter="Hierarchical & Graphs">🌲 Trees & Graphs</button>
+    <button class="sector-chip" data-filter="Optimization & DP">⚡ Dynamic Programming</button>
+    <button class="sector-chip" data-filter="Advanced & Quant">🪐 Advanced & Quant</button>
+    <button class="sector-chip" data-filter="MNC">🏢 Tech Titans</button>
+  </div>
+
+  <!-- HUD Quick Controls -->
+  <div class="hud-controls">
+    <button class="hud-btn" id="btnZoomIn" title="Zoom In">+</button>
+    <button class="hud-btn" id="btnZoomOut" title="Zoom Out">−</button>
+    <button class="hud-btn" id="btnRecenter" title="Recenter Constellation">🎯</button>
+    <button class="hud-btn" id="btnPulse" title="Pulse Neural Links">⚡</button>
+  </div>
+
+  <!-- Fullscreen WebGL/SVG Force Canvas -->
+  <div id="graph-container"></div>
+
+  <!-- Bottom Interactive Search & LOD Controls -->
+  <div class="search-dock">
+    <span>🔍</span>
+    <input type="text" id="galaxySearch" placeholder="Search patterns, problems (e.g. 3Sum, Tree, Kadane)..." autocomplete="off">
+    <div style="display: flex; gap: 4px;">
+      <button class="label-toggle-btn active" id="btnLODSmart" title="Adaptive Smart Labels">Smart LOD</button>
+      <button class="label-toggle-btn" id="btnLODAll" title="Show All Labels">All</button>
+      <button class="label-toggle-btn" id="btnLODNone" title="Stars Only">Stars Only</button>
+    </div>
+  </div>
+
+  <!-- Visual Legend -->
+  <div class="legend-dock">
+    <div style="font-weight: 700; color: #fff; font-size: 0.75rem; margin-bottom: 2px;">NEURAL CONSTELLATION</div>
+    <div class="legend-item"><div class="legend-dot" style="background: #38bdf8; box-shadow: 0 0 8px #38bdf8;"></div> Modules (27 Core Anchors)</div>
+    <div class="legend-item"><div class="legend-dot" style="background: #a855f7; box-shadow: 0 0 8px #a855f7;"></div> Concept Hubs (53 Patterns)</div>
+    <div class="legend-item"><div class="legend-dot" style="background: #f1f5f9; box-shadow: 0 0 8px #f1f5f9;"></div> Problem Stars (112 Benchmarks)</div>
+    <div class="legend-item"><div class="legend-dot" style="background: #f59e0b; box-shadow: 0 0 8px #f59e0b;"></div> Tech Titans (Google, Meta...)</div>
+  </div>
+
+  <!-- Floating Cursor Hover Tooltip -->
+  <div id="nodeTooltip">
+    <div id="ttTitle"></div>
+    <div id="ttSub"></div>
+  </div>
+
+  <!-- Right Slide-Out Brain Memory Inspector -->
+  <div class="inspector-panel" id="inspectorPanel">
+    <div class="inspector-header">
+      <h2><span>🧠</span> Brain Memory Card</h2>
+      <button class="close-inspector-btn" id="btnCloseInspector">✕</button>
+    </div>
+    <div class="inspector-body" id="inspectorContent"></div>
+  </div>
+
+  <script>
+    // Group Color Palette (Matches Obsidian & Reference Monitor)
+    const GROUP_COLORS = {
+      root: "#ffffff",
+      module: "#38bdf8",     // Sky Blue / Cyan
+      concept: "#a855f7",    // Electric Violet
+      company: "#f59e0b",    // Radiant Amber / Gold
+      problem: "#f1f5f9"     // Luminous Silver / White
+    };
+
+    const NODE_RADIUS = {
+      root: 14,
+      module: 8.5,
+      concept: 5.8,
+      company: 6.8,
+      problem: 4.2
+    };
+
+    let graphData = null;
+    let simulation = null;
+    let svg = null;
+    let g = null;
+    let linkElements = null;
+    let nodeElements = null;
+    let textElements = null;
+    let zoomBehavior = null;
+    let currentZoom = 0.85;
+    let labelMode = "smart";
+    let selectedNodeId = null;
+    let activeFilter = "all";
+
+    const tooltip = document.getElementById("nodeTooltip");
+    const ttTitle = document.getElementById("ttTitle");
+    const ttSub = document.getElementById("ttSub");
+
+    const width = window.innerWidth;
+    const height = window.innerHeight;
+
+    async function initGalaxy() {
+      const resp = await fetch("graph_data.json");
+      graphData = await resp.json();
+
+      document.getElementById("nodeCountBadge").innerText = `${graphData.nodes.length} nodes • ${graphData.links.length} links`;
+
+      svg = d3.select("#graph-container")
+        .append("svg")
+        .attr("width", width)
+        .attr("height", height);
+
+      // Defs for glowing stellar halos
+      const defs = svg.append("defs");
+      
+      // Star glow filter
+      const starFilter = defs.append("filter")
+        .attr("id", "starGlow")
+        .attr("x", "-50%")
+        .attr("y", "-50%")
+        .attr("width", "200%")
+        .attr("height", "200%");
+      starFilter.append("feGaussianBlur")
+        .attr("stdDeviation", "2.5")
+        .attr("result", "coloredBlur");
+      const feMerge1 = starFilter.append("feMerge");
+      feMerge1.append("feMergeNode").attr("in", "coloredBlur");
+      feMerge1.append("feMergeNode").attr("in", "SourceGraphic");
+
+      // Super glow for selected active node
+      const activeFilter = defs.append("filter")
+        .attr("id", "superGlow")
+        .attr("x", "-50%")
+        .attr("y", "-50%")
+        .attr("width", "200%")
+        .attr("height", "200%");
+      activeFilter.append("feGaussianBlur")
+        .attr("stdDeviation", "6.0")
+        .attr("result", "coloredBlur");
+      const feMerge2 = activeFilter.append("feMerge");
+      feMerge2.append("feMergeNode").attr("in", "coloredBlur");
+      feMerge2.append("feMergeNode").attr("in", "SourceGraphic");
+
+      g = svg.append("g");
+
+      zoomBehavior = d3.zoom()
+        .scaleExtent([0.2, 6])
+        .on("zoom", (e) => {
+          currentZoom = e.transform.k;
+          g.attr("transform", e.transform);
+          updateLabelVisibility();
+        });
+      svg.call(zoomBehavior);
+
+      // Force Simulation tuned for cohesive organic celestial sphere (No artificial 4 corners!)
+      simulation = d3.forceSimulation(graphData.nodes)
+        .force("link", d3.forceLink(graphData.links).id(d => d.id).distance(d => {
+          if (d.type === "module-root") return 110;
+          if (d.type === "module-concept") return 70;
+          if (d.type === "ladder") return 45;
+          if (d.type === "problem-company") return 65;
+          return 50;
+        }).strength(d => d.type === "ladder" ? 0.95 : (d.type === "module-root" ? 0.8 : 0.65)))
+        .force("charge", d3.forceManyBody().strength(d => {
+          if (d.group === "root") return -650;
+          if (d.group === "module") return -220;
+          if (d.group === "company") return -160;
+          if (d.group === "concept") return -110;
+          return -55;
+        }))
+        // Anti-Collision Physics: Ensures NO TWO NODES EVER COLLIDE OR OVERLAP!
+        .force("collision", d3.forceCollide().radius(d => (NODE_RADIUS[d.group] || 4) + 14))
+        .force("center", d3.forceCenter(width / 2, height / 2).strength(0.35));
+
+      // 1. Render Visible Geometric Links (Crisp, luminescent threads!)
+      linkElements = g.append("g")
+        .attr("class", "links")
+        .selectAll("line")
+        .data(graphData.links)
+        .join("line")
+        .attr("stroke", d => {
+          if (d.type === "ladder") return "rgba(168, 85, 247, 0.55)";   // Radiant Violet
+          if (d.type === "problem-company") return "rgba(245, 158, 11, 0.45)"; // Warm Amber
+          if (d.type === "module-root") return "rgba(56, 189, 248, 0.4)";    // Cyan
+          return "rgba(148, 163, 184, 0.25)";                               // Silver lattice
+        })
+        .attr("stroke-width", d => d.type === "ladder" ? 1.6 : (d.type === "module-root" ? 1.4 : 0.95));
+
+      // 2. Render Glowing Constellation Nodes
+      nodeElements = g.append("g")
+        .attr("class", "nodes")
+        .selectAll("circle")
+        .data(graphData.nodes)
+        .join("circle")
+        .attr("r", d => NODE_RADIUS[d.group] || 4)
+        .attr("fill", d => GROUP_COLORS[d.group] || "#fff")
+        .attr("stroke", d => {
+          if (d.group === "problem") return "rgba(255, 255, 255, 0.75)";
+          return GROUP_COLORS[d.group] || "#fff";
+        })
+        .attr("stroke-width", d => (d.group === "module" || d.group === "root") ? 2.2 : 1.2)
+        .attr("filter", "url(#starGlow)")
+        .attr("cursor", "pointer")
+        .call(drag(simulation))
+        .on("click", (e, d) => inspectBrainNode(d))
+        .on("mouseenter", (e, d) => hoverNode(e, d))
+        .on("mouseleave", () => unhover());
+
+      // 3. Render High-Contrast Smart Labels
+      textElements = g.append("g")
+        .attr("class", "labels")
+        .selectAll("text")
+        .data(graphData.nodes)
+        .join("text")
+        .attr("class", "node-label")
+        .attr("text-anchor", "middle")
+        .attr("dy", d => (NODE_RADIUS[d.group] || 4) + 12)
+        .attr("fill", d => GROUP_COLORS[d.group] || "#fff")
+        .attr("font-size", d => d.group === "root" ? "12px" : (d.group === "module" ? "10px" : "8px"))
+        .attr("font-weight", d => (d.group === "module" || d.group === "root" || d.group === "company") ? "700" : "500")
+        .attr("opacity", d => (d.group === "root" || d.group === "module") ? 1 : 0)
+        .text(d => d.name);
+
+      simulation.on("tick", () => {
+        linkElements
+          .attr("x1", d => d.source.x)
+          .attr("y1", d => d.source.y)
+          .attr("x2", d => d.target.x)
+          .attr("y2", d => d.target.y);
+
+        nodeElements
+          .attr("cx", d => d.x)
+          .attr("cy", d => d.y);
+
+        textElements
+          .attr("x", d => d.x)
+          .attr("y", d => d.y);
+      });
+
+      // Initial View: Centered gracefully
+      svg.call(zoomBehavior.transform, d3.zoomIdentity.translate(width * 0.05, height * 0.05).scale(0.88));
+
+      setupSearch();
+      setupControls();
+      setupFilterChips();
+      updateLabelVisibility();
+    }
+
+    function drag(sim) {
+      return d3.drag()
+        .on("start", (e, d) => {
+          if (!e.active) sim.alphaTarget(0.2).restart();
+          d.fx = d.x;
+          d.fy = d.y;
+        })
+        .on("drag", (e, d) => {
+          d.fx = e.x;
+          d.fy = e.y;
+        })
+        .on("end", (e, d) => {
+          if (!e.active) sim.alphaTarget(0);
+          d.fx = null;
+          d.fy = null;
+        });
+    }
+
+    function updateLabelVisibility(activeNeighborIds = null) {
+      textElements.attr("opacity", d => {
+        if (activeNeighborIds && activeNeighborIds.has(d.id)) return 1;
+        if (selectedNodeId && d.id === selectedNodeId) return 1;
+
+        if (labelMode === "none") return 0;
+        if (labelMode === "all") return 1;
+
+        // Smart Zoom-based Level of Detail (LOD) - No label collisions!
+        if (d.group === "root" || d.group === "module") return 1;
+        if (d.group === "company" && currentZoom > 1.0) return 1;
+        if (d.group === "concept" && currentZoom > 1.4) return 1;
+        if (d.group === "problem" && currentZoom > 2.2) return 1;
+
+        return 0;
+      });
+    }
+
+    // Surgical Brain Memory Interlink Highlighting
+    function highlightSurgicalChain(target) {
+      selectedNodeId = target.id;
+      const directNeighbors = new Set();
+      directNeighbors.add(target.id);
+
+      graphData.links.forEach(l => {
+        const sId = typeof l.source === "object" ? l.source.id : l.source;
+        const tId = typeof l.target === "object" ? l.target.id : l.target;
+        if (sId === target.id) directNeighbors.add(tId);
+        if (tId === target.id) directNeighbors.add(sId);
+      });
+
+      // Focus lighting: connected neighbors stay 100% luminous, non-connected fade to 0.08
+      nodeElements
+        .attr("opacity", d => directNeighbors.has(d.id) ? 1 : 0.08)
+        .attr("stroke", d => d.id === target.id ? "#38bdf8" : (GROUP_COLORS[d.group] || "#fff"))
+        .attr("stroke-width", d => d.id === target.id ? 3.5 : 1.4)
+        .attr("filter", d => d.id === target.id ? "url(#superGlow)" : "url(#starGlow)");
+
+      // Neon energy beams for connected links
+      linkElements
+        .attr("opacity", l => {
+          const sId = typeof l.source === "object" ? l.source.id : l.source;
+          const tId = typeof l.target === "object" ? l.target.id : l.target;
+          return (sId === target.id || tId === target.id) ? 1 : 0.04;
+        })
+        .attr("stroke", l => {
+          const sId = typeof l.source === "object" ? l.source.id : l.source;
+          const tId = typeof l.target === "object" ? l.target.id : l.target;
+          if (sId === target.id || tId === target.id) {
+            if (l.type === "ladder") return "#c084fc"; // Bright violet ladder
+            if (l.type === "problem-company") return "#f59e0b"; // Warm gold
+            return "#38bdf8"; // Radiant cyan
+          }
+          return "rgba(148, 163, 184, 0.25)";
+        })
+        .attr("stroke-width", l => {
+          const sId = typeof l.source === "object" ? l.source.id : l.source;
+          const tId = typeof l.target === "object" ? l.target.id : l.target;
+          return (sId === target.id || tId === target.id) ? 2.8 : 0.95;
+        });
+
+      updateLabelVisibility(directNeighbors);
+    }
+
+    function hoverNode(event, target) {
+      ttTitle.innerText = target.name;
+      ttSub.innerText = `${target.type} • Click to inspect Brain Memory Schema`;
+      tooltip.style.left = `${event.pageX}px`;
+      tooltip.style.top = `${event.pageY}px`;
+      tooltip.style.opacity = 1;
+
+      if (selectedNodeId) return;
+      highlightSurgicalChain(target);
+    }
+
+    function unhover() {
+      tooltip.style.opacity = 0;
+      if (selectedNodeId) return;
+
+      nodeElements
+        .attr("opacity", 1)
+        .attr("filter", "url(#starGlow)")
+        .attr("stroke-width", d => (d.group === "module" || d.group === "root") ? 2.2 : 1.2);
+
+      linkElements
+        .attr("opacity", 1)
+        .attr("stroke", d => {
+          if (d.type === "ladder") return "rgba(168, 85, 247, 0.55)";
+          if (d.type === "problem-company") return "rgba(245, 158, 11, 0.45)";
+          if (d.type === "module-root") return "rgba(56, 189, 248, 0.4)";
+          return "rgba(148, 163, 184, 0.25)";
+        })
+        .attr("stroke-width", d => d.type === "ladder" ? 1.6 : (d.type === "module-root" ? 1.4 : 0.95));
+
+      updateLabelVisibility();
+    }
+
+    // Inspect Brain Node on Click
+    function inspectBrainNode(node) {
+      highlightSurgicalChain(node);
+
+      // Smooth camera pan and zoom to target
+      svg.transition().duration(600).call(
+        zoomBehavior.transform,
+        d3.zoomIdentity.translate(width / 2 - node.x * 1.5, height / 2 - node.y * 1.5).scale(1.5)
+      );
+
+      const panel = document.getElementById("inspectorPanel");
+      const content = document.getElementById("inspectorContent");
+      const color = GROUP_COLORS[node.group] || "#38bdf8";
+
+      let bodyHtml = "";
+
+      if (node.group === "problem") {
+        const d = node.details;
+        const diffClass = (d.difficulty || "").toLowerCase() === "easy" ? "badge-easy" :
+                          ((d.difficulty || "").toLowerCase() === "hard" ? "badge-hard" : "badge-medium");
+
+        const prevBtn = d.ladder_prev ? `
+          <button class="ladder-btn" onclick="flyToNodeId('prob:${d.ladder_prev}')">
+            <span class="ladder-btn-label">⬅ Previous Foundation</span>
+            <strong>${d.ladder_prev}</strong>
+          </button>
+        ` : `<div style="font-size: 0.75rem; color: #64748b; padding: 6px;">*Foundational pattern milestone*</div>`;
+
+        const nextBtn = d.ladder_next ? `
+          <button class="ladder-btn" onclick="flyToNodeId('prob:${d.ladder_next}')">
+            <span class="ladder-btn-label">➔ Next Boss Level Variation</span>
+            <strong>${d.ladder_next}</strong>
+          </button>
+        ` : `<div style="font-size: 0.75rem; color: #64748b; padding: 6px;">*Apex mastery pattern*</div>`;
+
+        const compChips = (d.companies || []).map(c => `
+          <span class="hub-chip" onclick="flyToNodeId('company:${c}')">🏢 ${c}</span>
+        `).join("");
+
+        bodyHtml = `
+          <div class="badges-row">
+            <span class="meta-badge ${diffClass}">${d.difficulty || "Medium"}</span>
+            <span class="meta-badge">⏱️ ${d.complexity || "O(N)"}</span>
+            <span class="meta-badge">🌐 ${d.cluster || "Core"}</span>
+          </div>
+
+          <div class="brain-section" style="border-left: 3px solid #38bdf8;">
+            <div class="brain-section-title" style="color: #38bdf8;">
+              <span>⚡</span> 15-Second Interview Mental Trigger
+            </div>
+            <div class="brain-section-content">${d.trigger}</div>
+          </div>
+
+          <div class="brain-section" style="border-left: 3px solid #10b981;">
+            <div class="brain-section-title" style="color: #10b981;">
+              <span>🛡️</span> The Golden Invariant
+            </div>
+            <div class="brain-section-content">${d.invariant}</div>
+          </div>
+
+          <div class="brain-section" style="border-left: 3px solid #f43f5e;">
+            <div class="brain-section-title" style="color: #f43f5e;">
+              <span>⚠️</span> Sneaky Interview Trap & Pitfall
+            </div>
+            <div class="brain-section-content">${d.pitfall}</div>
+          </div>
+
+          <div>
+            <div class="brain-section-title" style="color: #c084fc;">
+              <span>🪜</span> Progressive Pattern Ladder
+            </div>
+            <div class="ladder-stepper">
+              ${prevBtn}
+              ${nextBtn}
+            </div>
+          </div>
+
+          <div class="brain-section">
+            <div class="brain-section-title" style="color: #94a3b8;">
+              <span>🔗</span> Interlinked Knowledge Hubs
+            </div>
+            <div class="chips-group">
+              <span class="hub-chip" onclick="flyToNodeId('mod:${d.module}')">🌐 ${d.module}</span>
+              <span class="hub-chip" onclick="flyToNodeId('concept:${d.concept}')">💡 ${d.concept}</span>
+              ${compChips}
+            </div>
+          </div>
+
+          ${d.code_path ? `
+            <div class="code-viewer-container">
+              <div class="code-toolbar">
+                <span>💻 C++ Solution Code</span>
+                <button class="label-toggle-btn active" onclick="loadSolutionCode('${d.code_path}')">Load / Toggle Code</button>
+              </div>
+              <div id="codeDisplayArea" style="display: none;"></div>
+            </div>
+          ` : ""}
+        `;
+      } else if (node.group === "module") {
+        const d = node.details;
+        bodyHtml = `
+          <div class="brain-section" style="border-left: 3px solid #38bdf8;">
+            <div class="brain-section-title" style="color: #38bdf8;">
+              <span>🌐</span> Curriculum Focus
+            </div>
+            <div class="brain-section-content">${d.focus || d.title}</div>
+          </div>
+          <div class="brain-section">
+            <div class="brain-section-title" style="color: #94a3b8;">
+              <span>🏛️</span> Domain Cluster
+            </div>
+            <div class="brain-section-content">${d.cluster || "Core DSA"}</div>
+          </div>
+        `;
+      } else if (node.group === "concept") {
+        const d = node.details;
+        bodyHtml = `
+          <div class="brain-section" style="border-left: 3px solid #a855f7;">
+            <div class="brain-section-title" style="color: #a855f7;">
+              <span>💡</span> Algorithmic Mental Model
+            </div>
+            <div class="brain-section-content">${d.intuition}</div>
+          </div>
+          <div class="brain-section">
+            <div class="brain-section-title" style="color: #38bdf8;">
+              <span>🌐</span> Parent Module
+            </div>
+            <div class="chips-group">
+              <span class="hub-chip" onclick="flyToNodeId('mod:${d.module}')">🌐 ${d.module}</span>
+            </div>
+          </div>
+        `;
+      } else if (node.group === "company") {
+        bodyHtml = `
+          <div class="brain-section" style="border-left: 3px solid #f59e0b;">
+            <div class="brain-section-title" style="color: #f59e0b;">
+              <span>🏢</span> Target MNC Archetype
+            </div>
+            <div class="brain-section-content">
+              Top Tier-1 Tech Titan question bank. Connected problems represent frequently repeated MNC interview patterns.
+            </div>
+          </div>
+        `;
+      }
+
+      content.innerHTML = `
+        <span class="inspector-type" style="background: ${color}22; color: ${color}; border: 1px solid ${color}44;">${node.type}</span>
+        <h3 class="inspector-title">${node.name}</h3>
+        ${bodyHtml}
+      `;
+
+      panel.classList.add("open");
+    }
+
+    window.flyToNodeId = function(targetId) {
+      const target = graphData.nodes.find(n => n.id === targetId || n.name === targetId);
+      if (!target) return;
+      inspectBrainNode(target);
+    };
+
+    window.loadSolutionCode = async function(relPath) {
+      const area = document.getElementById("codeDisplayArea");
+      if (!area) return;
+
+      if (area.style.display === "block") {
+        area.style.display = "none";
+        return;
+      }
+
+      try {
+        const resp = await fetch(`/api/file-content?path=${encodeURIComponent(relPath)}`);
+        if (!resp.ok) {
+          area.innerHTML = `<div style="padding: 12px; color: #f87171; font-size: 0.8rem;">Solution file: ${relPath}</div>`;
+        } else {
+          const data = await resp.json();
+          const cleanCode = data.content.replace(/</g, "&lt;").replace(/>/g, "&gt;");
+          area.innerHTML = `<pre class="code-pre"><code>${cleanCode}</code></pre>`;
+        }
+      } catch (e) {
+        area.innerHTML = `<div style="padding: 12px; color: #f87171; font-size: 0.8rem;">Could not load solution path.</div>`;
+      }
+      area.style.display = "block";
+    };
+
+    function setupSearch() {
+      const input = document.getElementById("galaxySearch");
+      input.addEventListener("input", (e) => {
+        const query = e.target.value.toLowerCase().trim();
+        if (!query) {
+          unhover();
+          return;
+        }
+
+        const match = graphData.nodes.find(n => n.name.toLowerCase().includes(query));
+        if (match) {
+          highlightSurgicalChain(match);
+        }
+      });
+
+      input.addEventListener("keydown", (e) => {
+        if (e.key === "Enter") {
+          const query = input.value.toLowerCase().trim();
+          const match = graphData.nodes.find(n => n.name.toLowerCase().includes(query));
+          if (match) {
+            inspectBrainNode(match);
+          }
+        }
+      });
+    }
+
+    function setupFilterChips() {
+      const chips = document.querySelectorAll(".sector-chip");
+      chips.forEach(chip => {
+        chip.addEventListener("click", () => {
+          chips.forEach(c => c.classList.remove("active"));
+          chip.classList.add("active");
+
+          const filter = chip.dataset.filter;
+          activeFilter = filter;
+
+          if (filter === "all") {
+            nodeElements.attr("opacity", 1);
+            linkElements.attr("opacity", 1);
+            return;
+          }
+
+          if (filter === "MNC") {
+            const mncIds = new Set();
+            graphData.nodes.forEach(n => {
+              if (n.group === "company" || (n.details && n.details.companies && n.details.companies.length > 0)) {
+                mncIds.add(n.id);
+              }
+            });
+            nodeElements.attr("opacity", d => mncIds.has(d.id) ? 1 : 0.08);
+            linkElements.attr("opacity", l => {
+              const sId = typeof l.source === "object" ? l.source.id : l.source;
+              const tId = typeof l.target === "object" ? l.target.id : l.target;
+              return (mncIds.has(sId) && mncIds.has(tId)) ? 1 : 0.05;
+            });
+            return;
+          }
+
+          const matchedIds = new Set();
+          graphData.nodes.forEach(n => {
+            if (n.details && n.details.cluster && n.details.cluster.includes(filter)) {
+              matchedIds.add(n.id);
+            }
+          });
+
+          // Expand to connected links
+          graphData.links.forEach(l => {
+            const sId = typeof l.source === "object" ? l.source.id : l.source;
+            const tId = typeof l.target === "object" ? l.target.id : l.target;
+            if (matchedIds.has(sId)) matchedIds.add(tId);
+            if (matchedIds.has(tId)) matchedIds.add(sId);
+          });
+
+          nodeElements.attr("opacity", d => matchedIds.has(d.id) ? 1 : 0.08);
+          linkElements.attr("opacity", l => {
+            const sId = typeof l.source === "object" ? l.source.id : l.source;
+            const tId = typeof l.target === "object" ? l.target.id : l.target;
+            return (matchedIds.has(sId) && matchedIds.has(tId)) ? 1 : 0.05;
+          });
+        });
+      });
+    }
+
+    function setupControls() {
+      document.getElementById("btnZoomIn").addEventListener("click", () => {
+        svg.transition().duration(300).call(zoomBehavior.scaleBy, 1.3);
+      });
+      document.getElementById("btnZoomOut").addEventListener("click", () => {
+        svg.transition().duration(300).call(zoomBehavior.scaleBy, 0.7);
+      });
+      document.getElementById("btnRecenter").addEventListener("click", () => {
+        selectedNodeId = null;
+        unhover();
+        svg.transition().duration(600).call(
+          zoomBehavior.transform,
+          d3.zoomIdentity.translate(width * 0.05, height * 0.05).scale(0.88)
+        );
+      });
+
+      document.getElementById("btnCloseInspector").addEventListener("click", () => {
+        document.getElementById("inspectorPanel").classList.remove("open");
+        selectedNodeId = null;
+        unhover();
+      });
+
+      // LOD Toggles
+      const btnSmart = document.getElementById("btnLODSmart");
+      const btnAll = document.getElementById("btnLODAll");
+      const btnNone = document.getElementById("btnLODNone");
+
+      btnSmart.addEventListener("click", () => {
+        labelMode = "smart";
+        btnSmart.classList.add("active");
+        btnAll.classList.remove("active");
+        btnNone.classList.remove("active");
+        updateLabelVisibility();
+      });
+
+      btnAll.addEventListener("click", () => {
+        labelMode = "all";
+        btnAll.classList.add("active");
+        btnSmart.classList.remove("active");
+        btnNone.classList.remove("active");
+        updateLabelVisibility();
+      });
+
+      btnNone.addEventListener("click", () => {
+        labelMode = "none";
+        btnNone.classList.add("active");
+        btnSmart.classList.remove("active");
+        btnAll.classList.remove("active");
+        updateLabelVisibility();
+      });
+
+      // Pulse Effect
+      document.getElementById("btnPulse").addEventListener("click", () => {
+        linkElements.transition().duration(350)
+          .attr("stroke", "#38bdf8")
+          .attr("stroke-width", 2.5)
+          .transition().duration(600)
+          .attr("stroke", d => {
+            if (d.type === "ladder") return "rgba(168, 85, 247, 0.55)";
+            if (d.type === "problem-company") return "rgba(245, 158, 11, 0.45)";
+            if (d.type === "module-root") return "rgba(56, 189, 248, 0.4)";
+            return "rgba(148, 163, 184, 0.25)";
+          })
+          .attr("stroke-width", d => d.type === "ladder" ? 1.6 : (d.type === "module-root" ? 1.4 : 0.95));
+      });
+    }
+
+    // Launch Galaxy
+    initGalaxy();
+  </script>
+</body>
+</html>

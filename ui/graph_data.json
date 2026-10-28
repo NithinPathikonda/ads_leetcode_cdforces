@@ -1667,7 +1667,7 @@
         "pitfall": "Window size can be maintained non-shrinking for optimal 1-pass O(N).",
         "code_path": "02_two_pointers_sliding_window/lc_1004_max_consecutive_ones_iii.cpp",
         "ladder_prev": "LC 424: Longest Repeating Character Replacement",
-        "ladder_next": null
+        "ladder_next": "LC 904: Fruit Into Baskets"
       }
     },
     {
@@ -1718,6 +1718,34 @@
         "pitfall": "Off-by-one: accessing s[r+1] after r++ skips characters and overflows. Use canonical 1-loop (i and i - m).",
         "code_path": "02_two_pointers_sliding_window/lc_0438_find_all_anagrams_in_a_string.cpp",
         "ladder_prev": "LC 567: Permutation in String",
+        "ladder_next": "LC 76: Minimum Window Substring"
+      }
+    },
+    {
+      "id": "prob:LC 904: Fruit Into Baskets",
+      "name": "LC 904: Fruit Into Baskets",
+      "group": "problem",
+      "type": "Problem Node",
+      "val": 4.0,
+      "details": {
+        "title": "LC 904: Fruit Into Baskets",
+        "module": "02 Two Pointers & Sliding Window",
+        "cluster": "Linear & Search",
+        "concept": "Dynamic Sliding Window",
+        "difficulty": "Medium",
+        "complexity": "O(N)",
+        "companies": [
+          "Google",
+          "Amazon",
+          "Meta",
+          "Microsoft"
+        ],
+        "intuition": "Longest contiguous subarray with at most 2 distinct elements.",
+        "trigger": "Longest contiguous subarray with at most 2 distinct elements -> Dynamic Sliding Window with hash map.",
+        "invariant": "Window valid iff map.size() <= 2. When map.size() > 2, shrink l until key hits 0 and erase.",
+        "pitfall": "Must call map.erase() when frequency drops to 0, otherwise map.size() still counts empty key.",
+        "code_path": "02_two_pointers_sliding_window/lc_0904_fruit_into_baskets.cpp",
+        "ladder_prev": "LC 1004: Max Consecutive Ones III",
         "ladder_next": "LC 76: Minimum Window Substring"
       }
     },
@@ -5083,6 +5111,36 @@
     },
     {
       "source": "concept:Dynamic Sliding Window",
+      "target": "prob:LC 904: Fruit Into Baskets",
+      "value": 1.2,
+      "type": "problem-concept"
+    },
+    {
+      "source": "company:Google",
+      "target": "prob:LC 904: Fruit Into Baskets",
+      "value": 0.35,
+      "type": "problem-company"
+    },
+    {
+      "source": "company:Amazon",
+      "target": "prob:LC 904: Fruit Into Baskets",
+      "value": 0.35,
+      "type": "problem-company"
+    },
+    {
+      "source": "company:Meta",
+      "target": "prob:LC 904: Fruit Into Baskets",
+      "value": 0.35,
+      "type": "problem-company"
+    },
+    {
+      "source": "company:Microsoft",
+      "target": "prob:LC 904: Fruit Into Baskets",
+      "value": 0.35,
+      "type": "problem-company"
+    },
+    {
+      "source": "concept:Dynamic Sliding Window",
       "target": "prob:LC 76: Minimum Window Substring",
       "value": 1.2,
       "type": "problem-concept"
@@ -6872,6 +6930,18 @@
     {
       "source": "prob:LC 424: Longest Repeating Character Replacement",
       "target": "prob:LC 1004: Max Consecutive Ones III",
+      "value": 1.6,
+      "type": "ladder"
+    },
+    {
+      "source": "prob:LC 1004: Max Consecutive Ones III",
+      "target": "prob:LC 904: Fruit Into Baskets",
+      "value": 1.6,
+      "type": "ladder"
+    },
+    {
+      "source": "prob:LC 904: Fruit Into Baskets",
+      "target": "prob:LC 76: Minimum Window Substring",
       "value": 1.6,
       "type": "ladder"
     },

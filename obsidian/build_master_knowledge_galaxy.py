@@ -159,6 +159,8 @@ SEMANTIC_BRIDGES = [
     ("LC 84: Largest Rectangle in Histogram", "LC 85: Maximal Rectangle"),
     ("LC 3: Longest Substring Without Repeating Characters", "LC 424: Longest Repeating Character Replacement"),
     ("LC 424: Longest Repeating Character Replacement", "LC 1004: Max Consecutive Ones III"),
+    ("LC 1004: Max Consecutive Ones III", "LC 904: Fruit Into Baskets"),
+    ("LC 904: Fruit Into Baskets", "LC 76: Minimum Window Substring"),
     ("LC 567: Permutation in String", "LC 438: Find All Anagrams in a String"),
     ("LC 438: Find All Anagrams in a String", "LC 76: Minimum Window Substring"),
     ("LC 209: Minimum Size Subarray Sum", "LC 713: Subarray Product Less Than K"),
@@ -287,6 +289,7 @@ PROBLEMS = [
     ("LC 1004: Max Consecutive Ones III", "02 Two Pointers & Sliding Window", "Dynamic Sliding Window", "Medium", "O(N)", "Dynamic window with at most K zero flips.", ["Meta", "Google"]),
     ("LC 713: Subarray Product Less Than K", "02 Two Pointers & Sliding Window", "Dynamic Sliding Window", "Medium", "O(N)", "Subarray counting: count += (r - l + 1) while product < k.", ["Amazon"]),
     ("LC 438: Find All Anagrams in a String", "02 Two Pointers & Sliding Window", "Fixed Sliding Window", "Medium", "O(N)", "Fixed window size p.length() matching character frequency map.", ["Meta", "Amazon"]),
+    ("LC 904: Fruit Into Baskets", "02 Two Pointers & Sliding Window", "Dynamic Sliding Window", "Medium", "O(N)", "Longest contiguous subarray with at most 2 distinct elements.", ["Google", "Amazon", "Meta", "Microsoft"]),
     ("LC 76: Minimum Window Substring", "02 Two Pointers & Sliding Window", "Dynamic Sliding Window", "Hard", "O(N)", "Dynamic sliding window tracking required distinct character matches.", ["Meta", "Google", "Amazon", "Microsoft"]),
     ("LC 239: Sliding Window Maximum", "02 Two Pointers & Sliding Window", "Monotonic Stack", "Hard", "O(N)", "Monotonic decreasing deque holding indices in window of size K.", ["Amazon", "Google"]),
 

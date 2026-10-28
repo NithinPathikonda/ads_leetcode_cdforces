@@ -182,6 +182,12 @@ BRAIN_METADATA = {
         "pitfall": "k <= 1: return 0 immediately since all positive integers >= 1.",
         "code_path": "02_two_pointers_sliding_window/lc_0713_subarray_product_less_than_k.cpp"
     },
+    "LC 904: Fruit Into Baskets": {
+        "trigger": "Longest contiguous subarray with at most 2 distinct elements -> Dynamic Sliding Window with hash map.",
+        "invariant": "Window valid iff map.size() <= 2. When map.size() > 2, shrink l until key hits 0 and erase.",
+        "pitfall": "Must call map.erase() when frequency drops to 0, otherwise map.size() still counts empty key.",
+        "code_path": "02_two_pointers_sliding_window/lc_0904_fruit_into_baskets.cpp"
+    },
     "LC 84: Largest Rectangle in Histogram": {
         "trigger": "Largest rectangle under bar heights -> Monotonic Increasing Stack of indices.",
         "invariant": "For bar i popped by smaller bar r, its left limit is the previous stack element, right limit is r.",

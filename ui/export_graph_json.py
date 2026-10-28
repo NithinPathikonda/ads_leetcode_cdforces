@@ -152,6 +152,12 @@ BRAIN_METADATA = {
         "pitfall": "Maintain a matches counter (0..26) for O(1) comparison rather than 26-vector diff.",
         "code_path": "02_two_pointers_sliding_window/lc_0567_permutation_in_string.cpp"
     },
+    "LC 438: Find All Anagrams in a String": {
+        "trigger": "All starting indices of anagram substring -> Fixed window of size p.length() with running character counts.",
+        "invariant": "Only 2 chars change per slide: evict left s[i-m], admit right s[i]. Equal freq vector = anagram match.",
+        "pitfall": "Off-by-one: accessing s[r+1] after r++ skips characters and overflows. Use canonical 1-loop (i and i - m).",
+        "code_path": "02_two_pointers_sliding_window/lc_0438_find_all_anagrams_in_a_string.cpp"
+    },
     "LC 209: Minimum Size Subarray Sum": {
         "trigger": "Shortest subarray with sum >= target (positive numbers) -> Dynamic Sliding Window.",
         "invariant": "Monotonicity holds because all numbers are positive. Expand r; shrink l while sum >= target.",

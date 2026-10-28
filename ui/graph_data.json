@@ -1713,10 +1713,10 @@
           "Amazon"
         ],
         "intuition": "Fixed window size p.length() matching character frequency map.",
-        "trigger": "Core 15-second trigger: Fixed Sliding Window pattern match.",
-        "invariant": "Maintain invariant for Fixed Sliding Window across all state transitions.",
-        "pitfall": "Carefully verify boundary termination and duplicate deduplication.",
-        "code_path": "",
+        "trigger": "All starting indices of anagram substring -> Fixed window of size p.length() with running character counts.",
+        "invariant": "Only 2 chars change per slide: evict left s[i-m], admit right s[i]. Equal freq vector = anagram match.",
+        "pitfall": "Off-by-one: accessing s[r+1] after r++ skips characters and overflows. Use canonical 1-loop (i and i - m).",
+        "code_path": "02_two_pointers_sliding_window/lc_0438_find_all_anagrams_in_a_string.cpp",
         "ladder_prev": "LC 567: Permutation in String",
         "ladder_next": "LC 76: Minimum Window Substring"
       }

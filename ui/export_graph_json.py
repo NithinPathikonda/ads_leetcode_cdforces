@@ -206,6 +206,12 @@ BRAIN_METADATA = {
         "pitfall": "Always divide and modulo by column count (cols), NOT row count. Divisor by rows causes out-of-bounds.",
         "code_path": "03_binary_search/lc_0074_search_a_2d_matrix.cpp"
     },
+    "LC 240: Search a 2D Matrix II": {
+        "trigger": "Rows and cols sorted without cross-row guarantee -> Top-right corner staircase walk in O(M+N).",
+        "invariant": "At cell (row, col): val > target prunes column (col--); val < target prunes row (row++).",
+        "pitfall": "Cannot flatten into 1D (monotonicity drops across rows). Top-left corner fails because both branches increase.",
+        "code_path": "03_binary_search/lc_0240_search_a_2d_matrix_ii.cpp"
+    },
     "LC 84: Largest Rectangle in Histogram": {
         "trigger": "Largest rectangle under bar heights -> Monotonic Increasing Stack of indices.",
         "invariant": "For bar i popped by smaller bar r, its left limit is the previous stack element, right limit is r.",

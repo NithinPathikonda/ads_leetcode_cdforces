@@ -1848,10 +1848,10 @@
           "Google"
         ],
         "intuition": "Identify which half is sorted; check if target falls in sorted interval.",
-        "trigger": "Core 15-second trigger: Rotated Array Binary Search pattern match.",
-        "invariant": "Maintain invariant for Rotated Array Binary Search across all state transitions.",
-        "pitfall": "Carefully verify boundary termination and duplicate deduplication.",
-        "code_path": "",
+        "trigger": "Rotated sorted array search in O(log N) -> Decouple sorted half; check if target is inside.",
+        "invariant": "At least one half [l..mid] or [mid..r] is strictly sorted. Range check determines which half to keep.",
+        "pitfall": "Use <= when comparing nums[mid] and nums[r] so single/two-element subarrays don't branch incorrectly.",
+        "code_path": "03_binary_search/lc_0033_search_in_rotated_sorted_array.cpp",
         "ladder_prev": "LC 704: Binary Search",
         "ladder_next": "LC 153: Find Minimum in Rotated Sorted Array"
       }

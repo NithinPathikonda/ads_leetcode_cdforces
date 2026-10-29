@@ -188,6 +188,12 @@ BRAIN_METADATA = {
         "pitfall": "Must call map.erase() when frequency drops to 0, otherwise map.size() still counts empty key.",
         "code_path": "02_two_pointers_sliding_window/lc_0904_fruit_into_baskets.cpp"
     },
+    "LC 33: Search in Rotated Sorted Array": {
+        "trigger": "Rotated sorted array search in O(log N) -> Decouple sorted half; check if target is inside.",
+        "invariant": "At least one half [l..mid] or [mid..r] is strictly sorted. Range check determines which half to keep.",
+        "pitfall": "Use <= when comparing nums[mid] and nums[r] so single/two-element subarrays don't branch incorrectly.",
+        "code_path": "03_binary_search/lc_0033_search_in_rotated_sorted_array.cpp"
+    },
     "LC 84: Largest Rectangle in Histogram": {
         "trigger": "Largest rectangle under bar heights -> Monotonic Increasing Stack of indices.",
         "invariant": "For bar i popped by smaller bar r, its left limit is the previous stack element, right limit is r.",

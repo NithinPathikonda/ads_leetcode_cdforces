@@ -1900,10 +1900,10 @@
           "Amazon"
         ],
         "intuition": "Treat M*N matrix as 1D sorted array with row = mid/N, col = mid%N.",
-        "trigger": "Core 15-second trigger: 2D Matrix Binary Search pattern match.",
-        "invariant": "Maintain invariant for 2D Matrix Binary Search across all state transitions.",
-        "pitfall": "Carefully verify boundary termination and duplicate deduplication.",
-        "code_path": "",
+        "trigger": "Search in row-sorted + cross-row strictly increasing grid -> Virtual 1D binary search in O(log(M*N)).",
+        "invariant": "Grid is isomorphic to sorted 1D array of length M*N: row = mid / cols, col = mid % cols.",
+        "pitfall": "Always divide and modulo by column count (cols), NOT row count. Divisor by rows causes out-of-bounds.",
+        "code_path": "03_binary_search/lc_0074_search_a_2d_matrix.cpp",
         "ladder_prev": null,
         "ladder_next": "LC 240: Search a 2D Matrix II"
       }

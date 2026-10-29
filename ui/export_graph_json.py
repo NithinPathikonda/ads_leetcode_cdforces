@@ -200,6 +200,12 @@ BRAIN_METADATA = {
         "pitfall": "Never do r = mid - 1 on the right-sorted branch, or you will exclude the minimum when nums[mid] is the min.",
         "code_path": "03_binary_search/lc_0153_find_minimum_in_rotated_sorted_array.cpp"
     },
+    "LC 74: Search a 2D Matrix": {
+        "trigger": "Search in row-sorted + cross-row strictly increasing grid -> Virtual 1D binary search in O(log(M*N)).",
+        "invariant": "Grid is isomorphic to sorted 1D array of length M*N: row = mid / cols, col = mid % cols.",
+        "pitfall": "Always divide and modulo by column count (cols), NOT row count. Divisor by rows causes out-of-bounds.",
+        "code_path": "03_binary_search/lc_0074_search_a_2d_matrix.cpp"
+    },
     "LC 84: Largest Rectangle in Histogram": {
         "trigger": "Largest rectangle under bar heights -> Monotonic Increasing Stack of indices.",
         "invariant": "For bar i popped by smaller bar r, its left limit is the previous stack element, right limit is r.",

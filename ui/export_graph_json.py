@@ -212,6 +212,12 @@ BRAIN_METADATA = {
         "pitfall": "Cannot flatten into 1D (monotonicity drops across rows). Top-left corner fails because both branches increase.",
         "code_path": "03_binary_search/lc_0240_search_a_2d_matrix_ii.cpp"
     },
+    "LC 875: Koko Eating Bananas": {
+        "trigger": "Minimum integer rate to complete discrete workloads within time H -> Binary search on answer [1, max(piles)].",
+        "invariant": "Total hours f(k) = sum(ceil(p/k)) is monotonically non-increasing. f(k) <= h defines valid speeds.",
+        "pitfall": "Accumulator total_hours will overflow 32-bit signed int when k=1 and piles reach 10^9. Must use long long.",
+        "code_path": "03_binary_search/lc_0875_koko_eating_bananas.cpp"
+    },
     "LC 84: Largest Rectangle in Histogram": {
         "trigger": "Largest rectangle under bar heights -> Monotonic Increasing Stack of indices.",
         "invariant": "For bar i popped by smaller bar r, its left limit is the previous stack element, right limit is r.",

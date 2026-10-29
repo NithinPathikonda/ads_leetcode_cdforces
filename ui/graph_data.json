@@ -1952,10 +1952,10 @@
           "Amazon"
         ],
         "intuition": "Binary search speed K with predicate sum(ceil(p / k)) <= h.",
-        "trigger": "Core 15-second trigger: Binary Search on Answer pattern match.",
-        "invariant": "Maintain invariant for Binary Search on Answer across all state transitions.",
-        "pitfall": "Carefully verify boundary termination and duplicate deduplication.",
-        "code_path": "",
+        "trigger": "Minimum integer rate to complete discrete workloads within time H -> Binary search on answer [1, max(piles)].",
+        "invariant": "Total hours f(k) = sum(ceil(p/k)) is monotonically non-increasing. f(k) <= h defines valid speeds.",
+        "pitfall": "Accumulator total_hours will overflow 32-bit signed int when k=1 and piles reach 10^9. Must use long long.",
+        "code_path": "03_binary_search/lc_0875_koko_eating_bananas.cpp",
         "ladder_prev": null,
         "ladder_next": "LC 1011: Capacity To Ship Packages Within D Days"
       }

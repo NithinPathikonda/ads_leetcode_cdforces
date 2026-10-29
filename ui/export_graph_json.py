@@ -194,6 +194,12 @@ BRAIN_METADATA = {
         "pitfall": "Use <= when comparing nums[mid] and nums[r] so single/two-element subarrays don't branch incorrectly.",
         "code_path": "03_binary_search/lc_0033_search_in_rotated_sorted_array.cpp"
     },
+    "LC 153: Find Minimum in Rotated Sorted Array": {
+        "trigger": "Minimum in rotated sorted array in O(log N) -> Compare nums[mid] with nums[r] for inflection point.",
+        "invariant": "If nums[mid] > nums[r], drop is to the right (l = mid + 1). Else mid or left is candidate (r = mid).",
+        "pitfall": "Never do r = mid - 1 on the right-sorted branch, or you will exclude the minimum when nums[mid] is the min.",
+        "code_path": "03_binary_search/lc_0153_find_minimum_in_rotated_sorted_array.cpp"
+    },
     "LC 84: Largest Rectangle in Histogram": {
         "trigger": "Largest rectangle under bar heights -> Monotonic Increasing Stack of indices.",
         "invariant": "For bar i popped by smaller bar r, its left limit is the previous stack element, right limit is r.",

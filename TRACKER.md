@@ -10,7 +10,7 @@
 | # | Topic / Pattern | Key Focus Areas | Problems | Solved | Status |
 |---|---|---|:---:|:---:| **01** | **Arrays & Hashing** | Prefix Sums, Kadane's, Difference Array, Dutch National Flag, Matrix Traversal | 12 | 11 | 🟡 In Progress |
 | **02** | **Two Pointers & Sliding Window** | Fixed & Dynamic Window, 2-Sum/3-Sum/4-Sum, Substrings with Constraints | 14 | 12 | 🟡 In Progress |
-| **03** | **Binary Search** | Standard, Rotated Arrays, Binary Search on Answer (Predicate/Monotonicity), 2D Matrix | 12 | 1 | 🟡 In Progress |
+| **03** | **Binary Search** | Standard, Rotated Arrays, Binary Search on Answer (Predicate/Monotonicity), 2D Matrix | 12 | 2 | 🟡 In Progress |
 | **04** | **Stack & Monotonic Stack** | Next Greater/Smaller Element, Largest Rectangle in Histogram, Rainwater Trapping, Infix/Postfix | 10 | 0 | ⏳ Not Started |
 | **05** | **Linked Lists** | In-place Reversal, Cycle Detection & Entry (Floyd's), Merge K Lists, Flattening | 8 | 0 | ⏳ Not Started |
 | **06** | **Recursion & Backtracking** | Subsets, Subsequences, Permutations, Combinations, N-Queens, Sudoku Solver, Word Search | 10 | 0 | ⏳ Not Started |
@@ -35,7 +35,7 @@
 | **25** | **Game Theory & Minimax** | Minimax / Alpha-Beta Pruning, Nim Game, Stone Game I/II/III/IV/VII | 5 | 0 | ⏳ Not Started |
 | **26** | **Reservoir Sampling & Randomized** | Reservoir Sampling ($K$ from Stream), Fisher-Yates Shuffle, Random Pick with Weight | 4 | 0 | ⏳ Not Started |
 | **27** | **Computational Geometry & Math** | Convex Hull (Graham Scan), Overlapping Area, Matrix Exponentiation | 4 | 0 | ⏳ Not Started |
-| | **TOTAL** | **100% Complete MNC Syllabus** | **230** | **24** | **10.4% Completed** |
+| | **TOTAL** | **100% Complete MNC Syllabus** | **230** | **25** | **10.9% Completed** |
 
 ---
 
@@ -68,6 +68,7 @@
 | 023 | [LC 76: Minimum Window Substring](https://leetcode.com/problems/minimum-window-substring/) | Dynamic Sliding Window / Required Matches Budget | Hard | Meta, Google, Amazon, Microsoft, Apple | ⏳ Queued (Day 6) | - | Apex Sliding Window problem. Count character requirements in hash map. Expand r to satisfy condition; shrink l while valid to minimize window. Track min_len and start_idx. O(N) time, O(1) space. |
 | 024 | [LC 904: Fruit Into Baskets](https://leetcode.com/problems/fruit-into-baskets/) | Dynamic Sliding Window / At Most 2 Types | Medium | Google, Amazon, Meta, Microsoft | ✅ Solved | [lc_0904_fruit_into_baskets.cpp](02_two_pointers_sliding_window/lc_0904_fruit_into_baskets.cpp) | Longest subarray with <= 2 distinct elements. Expand r, shrink l if distinct > 2 using erase on 0 count. Optimal non-shrinking ratchet `if` achieves O(N) 1-pass, O(1) space. |
 | 025 | [LC 33: Search in Rotated Sorted Array](https://leetcode.com/problems/search-in-rotated-sorted-array/) | Rotated Array Binary Search | Medium | Meta, Google, Amazon, Microsoft, Apple, Bloomberg | ✅ Solved | [lc_0033_search_in_rotated_sorted_array.cpp](03_binary_search/lc_0033_search_in_rotated_sorted_array.cpp) | At least one half [l..mid] or [mid..r] is always sorted. Check if target lies within boundaries of the sorted half to halve search space in O(log N) time, O(1) space. |
+| 026 | [LC 153: Find Minimum in Rotated Sorted Array](https://leetcode.com/problems/find-minimum-in-rotated-sorted-array/) | Rotated Array Binary Search | Medium | Meta, Amazon, Microsoft, Google, Bloomberg | ✅ Solved | [lc_0153_find_minimum_in_rotated_sorted_array.cpp](03_binary_search/lc_0153_find_minimum_in_rotated_sorted_array.cpp) | Compare nums[mid] with nums[r]: if nums[mid] > nums[r] min is in (mid..r] (l=mid+1), else min is in [l..mid] (r=mid). Half-elimination records running min. O(log N) time, O(1) space. |
 
 
 

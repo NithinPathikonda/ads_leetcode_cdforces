@@ -1874,10 +1874,10 @@
           "Amazon"
         ],
         "intuition": "Compare nums[mid] with nums[right] to find pivot inflection.",
-        "trigger": "Core 15-second trigger: Rotated Array Binary Search pattern match.",
-        "invariant": "Maintain invariant for Rotated Array Binary Search across all state transitions.",
-        "pitfall": "Carefully verify boundary termination and duplicate deduplication.",
-        "code_path": "",
+        "trigger": "Minimum in rotated sorted array in O(log N) -> Compare nums[mid] with nums[r] for inflection point.",
+        "invariant": "If nums[mid] > nums[r], drop is to the right (l = mid + 1). Else mid or left is candidate (r = mid).",
+        "pitfall": "Never do r = mid - 1 on the right-sorted branch, or you will exclude the minimum when nums[mid] is the min.",
+        "code_path": "03_binary_search/lc_0153_find_minimum_in_rotated_sorted_array.cpp",
         "ladder_prev": "LC 33: Search in Rotated Sorted Array",
         "ladder_next": null
       }

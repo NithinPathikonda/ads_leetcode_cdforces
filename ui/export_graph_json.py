@@ -218,6 +218,12 @@ BRAIN_METADATA = {
         "pitfall": "Accumulator total_hours will overflow 32-bit signed int when k=1 and piles reach 10^9. Must use long long.",
         "code_path": "03_binary_search/lc_0875_koko_eating_bananas.cpp"
     },
+    "LC 1011: Capacity To Ship Packages Within D Days": {
+        "trigger": "Minimum ship capacity to transport ordered packages in D days -> Binary search on [max(weights), sum(weights)].",
+        "invariant": "Greedy sequential bin-packing is optimal: accumulate weights until exceeding cap, then increment days.",
+        "pitfall": "Lower bound cannot be 1; must be max(weights) or include `if (w > cap) return false;` to prevent sinking ship.",
+        "code_path": "03_binary_search/lc_1011_capacity_to_ship_packages_within_d_days.cpp"
+    },
     "LC 84: Largest Rectangle in Histogram": {
         "trigger": "Largest rectangle under bar heights -> Monotonic Increasing Stack of indices.",
         "invariant": "For bar i popped by smaller bar r, its left limit is the previous stack element, right limit is r.",

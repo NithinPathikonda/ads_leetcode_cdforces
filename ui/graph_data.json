@@ -1978,10 +1978,10 @@
           "Google"
         ],
         "intuition": "Binary search minimal ship capacity with greedy simulation predicate.",
-        "trigger": "Core 15-second trigger: Binary Search on Answer pattern match.",
-        "invariant": "Maintain invariant for Binary Search on Answer across all state transitions.",
-        "pitfall": "Carefully verify boundary termination and duplicate deduplication.",
-        "code_path": "",
+        "trigger": "Minimum ship capacity to transport ordered packages in D days -> Binary search on [max(weights), sum(weights)].",
+        "invariant": "Greedy sequential bin-packing is optimal: accumulate weights until exceeding cap, then increment days.",
+        "pitfall": "Lower bound cannot be 1; must be max(weights) or include `if (w > cap) return false;` to prevent sinking ship.",
+        "code_path": "03_binary_search/lc_1011_capacity_to_ship_packages_within_d_days.cpp",
         "ladder_prev": "LC 875: Koko Eating Bananas",
         "ladder_next": "LC 410: Split Array Largest Sum"
       }

@@ -188,6 +188,12 @@ BRAIN_METADATA = {
         "pitfall": "Must call map.erase() when frequency drops to 0, otherwise map.size() still counts empty key.",
         "code_path": "02_two_pointers_sliding_window/lc_0904_fruit_into_baskets.cpp"
     },
+    "LC 704: Binary Search": {
+        "trigger": "Target search in ascending sorted array in O(log N) -> Classic interval halving on [l, r].",
+        "invariant": "Search space is closed interval [l, r]. Safe mid = (r - l) / 2 + l avoids 32-bit overflow.",
+        "pitfall": "Do not write while (l < r) or (l + r) / 2. Strict l = mid + 1 and r = mid - 1 prevents infinite loop.",
+        "code_path": "03_binary_search/lc_0704_binary_search.cpp"
+    },
     "LC 33: Search in Rotated Sorted Array": {
         "trigger": "Rotated sorted array search in O(log N) -> Decouple sorted half; check if target is inside.",
         "invariant": "At least one half [l..mid] or [mid..r] is strictly sorted. Range check determines which half to keep.",

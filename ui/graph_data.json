@@ -1821,10 +1821,10 @@
           "Google"
         ],
         "intuition": "Classic mid split on sorted array.",
-        "trigger": "Core 15-second trigger: Binary Search on Array pattern match.",
-        "invariant": "Maintain invariant for Binary Search on Array across all state transitions.",
-        "pitfall": "Carefully verify boundary termination and duplicate deduplication.",
-        "code_path": "",
+        "trigger": "Target search in ascending sorted array in O(log N) -> Classic interval halving on [l, r].",
+        "invariant": "Search space is closed interval [l, r]. Safe mid = (r - l) / 2 + l avoids 32-bit overflow.",
+        "pitfall": "Do not write while (l < r) or (l + r) / 2. Strict l = mid + 1 and r = mid - 1 prevents infinite loop.",
+        "code_path": "03_binary_search/lc_0704_binary_search.cpp",
         "ladder_prev": null,
         "ladder_next": "LC 33: Search in Rotated Sorted Array"
       }

@@ -21,3 +21,4 @@
 1. **Q1 (Find Mismatched Segments)**: Solved using XOR character matching and buffer accumulation. Optimized to two-pointer sliding window without string reallocations.
 2. **Q2 (Count Valid Suffix Sorts I)**: Full array simulation with repeated $O(N \log N)$ sorting caused TLE. Invariant observation: valid $l$ lies in $s \le l \le p$, requiring only a single suffix verification.
 3. **Q3 & Q4**: Queued for targeted upsolving sessions.
+

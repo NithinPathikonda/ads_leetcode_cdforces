@@ -30,3 +30,4 @@ int main() {
     cout << "Ready for upsolving Q3: Minimum Cost to Make Red Nodes Connected!" << endl;
     return 0;
 }
+

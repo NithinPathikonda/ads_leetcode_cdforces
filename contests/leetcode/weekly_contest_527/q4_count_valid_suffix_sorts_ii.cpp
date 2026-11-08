@@ -29,3 +29,4 @@ int main() {
     cout << "Ready for upsolving Q4: Count Valid Suffix Sorts II!" << endl;
     return 0;
 }
+

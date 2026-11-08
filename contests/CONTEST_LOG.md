@@ -8,6 +8,7 @@
 
 | Date | Platform & Contest | Rank / Rating | Solved Live | Target Upsolve | Status | Post-Mortem Link | Key Concept Missed |
 | :---: | :--- | :---: | :---: | :---: | :---: | :---: | :--- |
+| 2026-11-08 | LeetCode Weekly Contest 527 | - | Q1 (Find Mismatched Segments) | - | ✅ Solved Live | [Code & Optimization](leetcode/wc_527_find_mismatched_segments_between_two_strings.cpp) | XOR grouping solved live; two-pointer windowing optimal for O(1) extra allocation. |
 | *YYYY-MM-DD* | *LeetCode Weekly Contest 420* | *-* | *Q1, Q2* | *Q3* | ⏳ In Progress | [Link](leetcode/wc_420_q3.md) | *Didn't recognize Monotonic Queue for sliding window max.* |
 
 ---

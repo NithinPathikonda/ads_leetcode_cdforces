@@ -1,60 +1,38 @@
 ---
 title: "LC 242: Valid Anagram"
-module: "01 Arrays & Hashing"
-concept: "Hash Maps & Sets"
+number: "003"
 difficulty: "Easy"
-complexity: "O(N)"
-space_complexity: "O(N)"
-companies:
-  - Google
-  - Amazon
-  - Microsoft
-type: "problem-card"
+source: "Core 27-Module Curriculum"
+url: "https://leetcode.com/problems/valid-anagram/"
+status: "Solved"
 tags:
   - problem
   - easy
 ---
 
-# 🟢 LC 242: Valid Anagram
+# LC 242: Valid Anagram
 
-> [!abstract] 📋 Executive Problem Card
-> - **Module**: [[01 Arrays & Hashing]]
-> - **Core Concept**: [[Hash Maps & Sets]]
-> - **Difficulty**: Easy 🟢
-> - **Time Complexity**: $\mathcal{O}(O(N))$
-> - **Space Complexity**: $\mathcal{O}(O(N))$
-> - **Target MNCs**: [[Google]], [[Amazon]], [[Microsoft]]
-
----
-
-## ⚡ 15-Second Interview Mental Trigger
-> [!tip] ⚡ How to Recognize this Pattern in an Interview
-> - **Key Clue / Signal**: Hash Maps & Sets application in `01 Arrays & Hashing`.
-> - **Immediate Strategy**: 26-int frequency count comparison in single pass.
+- **Curriculum Index**: #003 (Core 27-Module Curriculum)
+- **Difficulty**: [[Easy]]
+- **Patterns / Archetypes**: [[Hash Maps & Frequency]]
+- **Target Companies**: [[Amazon]], [[Bloomberg]], [[Google]], [[Meta]], [[Microsoft]]
+- **Problem Link**: [LC 242: Valid Anagram](https://leetcode.com/problems/valid-anagram/)
+- **Backlink to Vault Hub**: [[Index|🏠 Master Knowledge Graph]]
 
 ---
 
-## 🛡️ The Golden Invariant & Mathematical Proof
-> [!note] 🛡️ Invariant Guarantee
-> Throughout the algorithm's execution, the state maintains the invariant required by **Hash Maps & Sets**.
-> Bounded state transitions ensure correctness without redundant recomputations.
+## 💡 Intuition & Core Takeaways
+> Check length equality first. Count frequencies with 26-int array in single pass (+1 for s, -1 for t). O(N) time, O(1) space.
 
 ---
 
-## ⚠️ Sneaky Interview Traps & Pitfalls
-> [!warning] ⚠️ Critical Gotchas to Avoid
-> 1. **Boundary Limits**: Always verify loop termination and off-by-one pointer conditions.
-> 2. **Duplicate Deduplication**: Ensure equal elements do not cause redundant branches or infinite loops.
-> 3. **Integer Overflow**: Use 64-bit integers (`long long`) when intermediate values exceed $2^{31}-1$.
+## 🔗 Related Knowledge Nodes
+- Patterns: [[Hash Maps & Frequency]]
+- Companies: [[Amazon]], [[Bloomberg]], [[Google]], [[Meta]], [[Microsoft]]
+- Difficulty Level: [[Easy]]
 
----
 
-## 🪜 Progressive Pattern Ladder & Variations
-- 🎯 **Foundational Anchor Pattern**: [[LC 242 Valid Anagram]]
-
----
-
-## 💻 Optimal C++20 Implementation
+## 💻 C++ Implementation
 
 ```cpp
 /**
@@ -143,3 +121,4 @@ int main() {
 }
 
 ```
+

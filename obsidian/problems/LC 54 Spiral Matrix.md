@@ -1,60 +1,38 @@
 ---
 title: "LC 54: Spiral Matrix"
-module: "01 Arrays & Hashing"
-concept: "Matrix Traversal"
+number: "011"
 difficulty: "Medium"
-complexity: "O(N * M)"
-space_complexity: "O(N)"
-companies:
-  - Microsoft
-  - Google
-  - Amazon
-type: "problem-card"
+source: "Core 27-Module Curriculum"
+url: "https://leetcode.com/problems/spiral-matrix/"
+status: "Solved"
 tags:
   - problem
   - medium
 ---
 
-# 🟡 LC 54: Spiral Matrix
+# LC 54: Spiral Matrix
 
-> [!abstract] 📋 Executive Problem Card
-> - **Module**: [[01 Arrays & Hashing]]
-> - **Core Concept**: [[Matrix Traversal]]
-> - **Difficulty**: Medium 🟡
-> - **Time Complexity**: $\mathcal{O}(O(N * M))$
-> - **Space Complexity**: $\mathcal{O}(O(N))$
-> - **Target MNCs**: [[Microsoft]], [[Google]], [[Amazon]]
-
----
-
-## ⚡ 15-Second Interview Mental Trigger
-> [!tip] ⚡ How to Recognize this Pattern in an Interview
-> - **Key Clue / Signal**: Matrix Traversal application in `01 Arrays & Hashing`.
-> - **Immediate Strategy**: 4 boundary pointers (top, bottom, left, right) layer peeling.
+- **Curriculum Index**: #011 (Core 27-Module Curriculum)
+- **Difficulty**: [[Medium]]
+- **Patterns / Archetypes**: [[4-Boundary Layer Traversal]]
+- **Target Companies**: [[Amazon]], [[Apple]], [[Google]], [[Meta]], [[Microsoft]]
+- **Problem Link**: [LC 54: Spiral Matrix](https://leetcode.com/problems/spiral-matrix/)
+- **Backlink to Vault Hub**: [[Index|🏠 Master Knowledge Graph]]
 
 ---
 
-## 🛡️ The Golden Invariant & Mathematical Proof
-> [!note] 🛡️ Invariant Guarantee
-> Throughout the algorithm's execution, the state maintains the invariant required by **Matrix Traversal**.
-> Bounded state transitions ensure correctness without redundant recomputations.
+## 💡 Intuition & Core Takeaways
+> 4 pointers: top, bottom, left, right. Golden rule: check (top <= bottom) before going Left, and (left <= right) before going Up to prevent duplicate traversals on 1-row/1-col matrices. O(M*N) time, O(1) space.
 
 ---
 
-## ⚠️ Sneaky Interview Traps & Pitfalls
-> [!warning] ⚠️ Critical Gotchas to Avoid
-> 1. **Boundary Limits**: Always verify loop termination and off-by-one pointer conditions.
-> 2. **Duplicate Deduplication**: Ensure equal elements do not cause redundant branches or infinite loops.
-> 3. **Integer Overflow**: Use 64-bit integers (`long long`) when intermediate values exceed $2^{31}-1$.
+## 🔗 Related Knowledge Nodes
+- Patterns: [[4-Boundary Layer Traversal]]
+- Companies: [[Amazon]], [[Apple]], [[Google]], [[Meta]], [[Microsoft]]
+- Difficulty Level: [[Medium]]
 
----
 
-## 🪜 Progressive Pattern Ladder & Variations
-- 🎯 **Foundational Anchor Pattern**: [[LC 54 Spiral Matrix]]
-
----
-
-## 💻 Optimal C++20 Implementation
+## 💻 C++ Implementation
 
 ```cpp
 /**
@@ -213,3 +191,4 @@ int main() {
 }
 
 ```
+

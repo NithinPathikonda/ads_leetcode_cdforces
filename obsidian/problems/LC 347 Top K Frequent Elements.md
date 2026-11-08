@@ -1,61 +1,38 @@
 ---
 title: "LC 347: Top K Frequent Elements"
-module: "01 Arrays & Hashing"
-concept: "Hash Maps & Sets"
+number: "005"
 difficulty: "Medium"
-complexity: "O(N)"
-space_complexity: "O(N)"
-companies:
-  - Meta
-  - Amazon
-  - Google
-type: "problem-card"
+source: "Core 27-Module Curriculum"
+url: "https://leetcode.com/problems/top-k-frequent-elements/"
+status: "Solved"
 tags:
   - problem
   - medium
 ---
 
-# 🟡 LC 347: Top K Frequent Elements
+# LC 347: Top K Frequent Elements
 
-> [!abstract] 📋 Executive Problem Card
-> - **Module**: [[01 Arrays & Hashing]]
-> - **Core Concept**: [[Hash Maps & Sets]]
-> - **Difficulty**: Medium 🟡
-> - **Time Complexity**: $\mathcal{O}(O(N))$
-> - **Space Complexity**: $\mathcal{O}(O(N))$
-> - **Target MNCs**: [[Meta]], [[Amazon]], [[Google]]
-
----
-
-## ⚡ 15-Second Interview Mental Trigger
-> [!tip] ⚡ How to Recognize this Pattern in an Interview
-> - **Key Clue / Signal**: Hash Maps & Sets application in `01 Arrays & Hashing`.
-> - **Immediate Strategy**: Frequency hash map + O(N) bucket sort array by counts.
+- **Curriculum Index**: #005 (Core 27-Module Curriculum)
+- **Difficulty**: [[Medium]]
+- **Patterns / Archetypes**: [[Bucket Sort]], [[Hash Maps & Frequency]]
+- **Target Companies**: [[Amazon]], [[Apple]], [[Google]], [[Meta]], [[Microsoft]]
+- **Problem Link**: [LC 347: Top K Frequent Elements](https://leetcode.com/problems/top-k-frequent-elements/)
+- **Backlink to Vault Hub**: [[Index|🏠 Master Knowledge Graph]]
 
 ---
 
-## 🛡️ The Golden Invariant & Mathematical Proof
-> [!note] 🛡️ Invariant Guarantee
-> Throughout the algorithm's execution, the state maintains the invariant required by **Hash Maps & Sets**.
-> Bounded state transitions ensure correctness without redundant recomputations.
+## 💡 Intuition & Core Takeaways
+> Count frequencies with hash map. Sort vector O(D log D) baseline. Optimize to O(N) using frequency buckets (max freq is N). Min-heap takes O(D log K).
 
 ---
 
-## ⚠️ Sneaky Interview Traps & Pitfalls
-> [!warning] ⚠️ Critical Gotchas to Avoid
-> 1. **Boundary Limits**: Always verify loop termination and off-by-one pointer conditions.
-> 2. **Duplicate Deduplication**: Ensure equal elements do not cause redundant branches or infinite loops.
-> 3. **Integer Overflow**: Use 64-bit integers (`long long`) when intermediate values exceed $2^{31}-1$.
+## 🔗 Related Knowledge Nodes
+- Patterns: [[Bucket Sort]], [[Hash Maps & Frequency]]
+- Companies: [[Amazon]], [[Apple]], [[Google]], [[Meta]], [[Microsoft]]
+- Difficulty Level: [[Medium]]
 
----
 
-## 🪜 Progressive Pattern Ladder & Variations
-- ⬅ **Prerequisite Pattern**: [[LC 215 Kth Largest Element in an Array]]
-- 🎯 **Current Anchor**: [[LC 347 Top K Frequent Elements]]
-
----
-
-## 💻 Optimal C++20 Implementation
+## 💻 C++ Implementation
 
 ```cpp
 /**
@@ -245,3 +222,4 @@ int main() {
 }
 
 ```
+

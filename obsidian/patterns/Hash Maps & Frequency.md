@@ -12,7 +12,7 @@ tags:
 
 ---
 
-## 🎯 Solved Problems Using This Pattern (8)
+## 🎯 Solved Problems Using This Pattern (9)
 - [[LC 1 Two Sum]] (Easy — #001)
 - [[LC 242 Valid Anagram]] (Easy — #003)
 - [[LC 49 Group Anagrams]] (Medium — #004)
@@ -21,6 +21,7 @@ tags:
 - [[LC 560 Subarray Sum Equals K]] (Medium — #008)
 - [[LC 424 Longest Repeating Character Replacement]] (Medium — #016)
 - [[LC 567 Permutation in String]] (Medium — #017)
+- [[LC 438 Find All Anagrams in a String]] (Medium — #022)
 
 ---
 

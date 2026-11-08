@@ -3,23 +3,28 @@ title: "Bloomberg"
 type: "company-hub"
 tags:
   - company
+  - bloomberg
 ---
 
-# 🟣 Target MNC Hub: Bloomberg
+# 🟣 Company Hub: Bloomberg
 
-> [!abstract] 🏢 Interview Question Frequency
-> - **Tier**: Tier-1 Tech Titan
-> - **Curated Question Count**: `6 benchmark problems`
+> Curated MNC problem bank asked in technical rounds at **Bloomberg**.
 
 ---
 
-## 📋 High-Yield Interview Question Bank
-- [[LC 42 Trapping Rain Water]] — Hard (`O(N)`) | [[Rainwater Trapping]]
-- [[LC 155 Min Stack]] — Medium (`O(1)`) | [[Monotonic Stack]]
-- [[LC 253 Meeting Rooms II]] — Medium (`O(N log N)`) | [[Interval Merging & Sweepline]]
-- [[LC 200 Number of Islands]] — Medium (`O(M * N)`) | [[Graph BFS & Shortest Path]]
-- [[LC 50 Pow(x, n)]] — Medium (`O(log N)`) | [[Fast Exponentiation]]
-- [[LC 146 LRU Cache]] — Medium (`O(1)`) | [[LRU & LFU Cache Design]]
+## 📋 Tagged Solved Problems (10)
+- [[LC 242 Valid Anagram]] — Easy (Hash Maps & Frequency)
+- [[LC 128 Longest Consecutive Sequence]] — Medium (Hash Maps & Frequency)
+- [[LC 209 Minimum Size Subarray Sum]] — Medium (Monotonic Stack, Sliding Window)
+- [[LC 42 Trapping Rain Water]] — Hard (Two Pointers)
+- [[LC 713 Subarray Product Less Than K]] — Medium (Sliding Window)
+- [[LC 33 Search in Rotated Sorted Array]] — Medium (Rotated Array Binary Search)
+- [[LC 153 Find Minimum in Rotated Sorted Array]] — Medium (Rotated Array Binary Search)
+- [[LC 875 Koko Eating Bananas]] — Medium (Monotonic Stack)
+- [[LC 1011 Capacity To Ship Packages Within D Days]] — Medium (Binary Search on Answer)
+- [[LC 20 Valid Parentheses]] — Easy (Monotonic Stack)
 
 ---
-- [[Index|🏠 Master Knowledge Galaxy Root]]
+
+## 🗺️ Navigation
+- [[Index|🏠 Master Knowledge Graph Hub]]

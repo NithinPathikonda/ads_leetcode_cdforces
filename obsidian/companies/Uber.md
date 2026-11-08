@@ -6,14 +6,16 @@ tags:
   - uber
 ---
 
-# 🟣 Target MNC Hub: Uber
+# 🟣 Company Hub: Uber
 
-> **Interview Archetype & Focus**:  
-> Focus on Graph Shortest Paths (Dijkstra, TopoSort), Sweepline, and Interval Scheduling.
+> Curated MNC problem bank asked in technical rounds at **Uber**.
+
+---
+
+## 📋 Tagged Solved Problems (1)
+- [[LC 875 Koko Eating Bananas]] — Medium (Monotonic Stack)
 
 ---
 
-## 📋 Curated Question Bank for Uber
-
----
-- [[Index|🏠 Master Knowledge Galaxy Root]]
+## 🗺️ Navigation
+- [[Index|🏠 Master Knowledge Graph Hub]]

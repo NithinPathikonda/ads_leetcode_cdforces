@@ -1,61 +1,38 @@
 ---
 title: "LC 238: Product of Array Except Self"
-module: "01 Arrays & Hashing"
-concept: "Prefix Sums"
+number: "006"
 difficulty: "Medium"
-complexity: "O(N)"
-space_complexity: "O(N)"
-companies:
-  - Amazon
-  - Apple
-  - Microsoft
-type: "problem-card"
+source: "Core 27-Module Curriculum"
+url: "https://leetcode.com/problems/product-of-array-except-self/"
+status: "Solved"
 tags:
   - problem
   - medium
 ---
 
-# 🟡 LC 238: Product of Array Except Self
+# LC 238: Product of Array Except Self
 
-> [!abstract] 📋 Executive Problem Card
-> - **Module**: [[01 Arrays & Hashing]]
-> - **Core Concept**: [[Prefix Sums]]
-> - **Difficulty**: Medium 🟡
-> - **Time Complexity**: $\mathcal{O}(O(N))$
-> - **Space Complexity**: $\mathcal{O}(O(N))$
-> - **Target MNCs**: [[Amazon]], [[Apple]], [[Microsoft]]
-
----
-
-## ⚡ 15-Second Interview Mental Trigger
-> [!tip] ⚡ How to Recognize this Pattern in an Interview
-> - **Key Clue / Signal**: Prefix Sums application in `01 Arrays & Hashing`.
-> - **Immediate Strategy**: Prefix product array in-place + running reverse suffix product.
+- **Curriculum Index**: #006 (Core 27-Module Curriculum)
+- **Difficulty**: [[Medium]]
+- **Patterns / Archetypes**: [[Prefix Sums]]
+- **Target Companies**: [[Amazon]], [[Apple]], [[Google]], [[Meta]], [[Microsoft]]
+- **Problem Link**: [LC 238: Product of Array Except Self](https://leetcode.com/problems/product-of-array-except-self/)
+- **Backlink to Vault Hub**: [[Index|🏠 Master Knowledge Graph]]
 
 ---
 
-## 🛡️ The Golden Invariant & Mathematical Proof
-> [!note] 🛡️ Invariant Guarantee
-> Throughout the algorithm's execution, the state maintains the invariant required by **Prefix Sums**.
-> Bounded state transitions ensure correctness without redundant recomputations.
+## 💡 Intuition & Core Takeaways
+> No-division constraint: ans[i] = Left product * Right product. Baseline with zero counting. Optimal: In-place prefix pass in output vector + reverse pass with single running suffix scalar O(N) time O(1) extra space.
 
 ---
 
-## ⚠️ Sneaky Interview Traps & Pitfalls
-> [!warning] ⚠️ Critical Gotchas to Avoid
-> 1. **Boundary Limits**: Always verify loop termination and off-by-one pointer conditions.
-> 2. **Duplicate Deduplication**: Ensure equal elements do not cause redundant branches or infinite loops.
-> 3. **Integer Overflow**: Use 64-bit integers (`long long`) when intermediate values exceed $2^{31}-1$.
+## 🔗 Related Knowledge Nodes
+- Patterns: [[Prefix Sums]]
+- Companies: [[Amazon]], [[Apple]], [[Google]], [[Meta]], [[Microsoft]]
+- Difficulty Level: [[Medium]]
 
----
 
-## 🪜 Progressive Pattern Ladder & Variations
-- ⬅ **Prerequisite Pattern**: [[LC 560 Subarray Sum Equals K]]
-- 🎯 **Current Anchor**: [[LC 238 Product of Array Except Self]]
-
----
-
-## 💻 Optimal C++20 Implementation
+## 💻 C++ Implementation
 
 ```cpp
 /**
@@ -252,3 +229,4 @@ int main() {
 }
 
 ```
+

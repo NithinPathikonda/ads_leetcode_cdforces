@@ -1,60 +1,38 @@
 ---
 title: "LC 128: Longest Consecutive Sequence"
-module: "01 Arrays & Hashing"
-concept: "Hash Maps & Sets"
+number: "007"
 difficulty: "Medium"
-complexity: "O(N)"
-space_complexity: "O(N)"
-companies:
-  - Google
-  - Meta
-  - Amazon
-type: "problem-card"
+source: "Core 27-Module Curriculum"
+url: "https://leetcode.com/problems/longest-consecutive-sequence/"
+status: "Solved"
 tags:
   - problem
   - medium
 ---
 
-# 🟡 LC 128: Longest Consecutive Sequence
+# LC 128: Longest Consecutive Sequence
 
-> [!abstract] 📋 Executive Problem Card
-> - **Module**: [[01 Arrays & Hashing]]
-> - **Core Concept**: [[Hash Maps & Sets]]
-> - **Difficulty**: Medium 🟡
-> - **Time Complexity**: $\mathcal{O}(O(N))$
-> - **Space Complexity**: $\mathcal{O}(O(N))$
-> - **Target MNCs**: [[Google]], [[Meta]], [[Amazon]]
-
----
-
-## ⚡ 15-Second Interview Mental Trigger
-> [!tip] ⚡ How to Recognize this Pattern in an Interview
-> - **Key Clue / Signal**: Hash Maps & Sets application in `01 Arrays & Hashing`.
-> - **Immediate Strategy**: Hash set lookup; only count streaks starting where (x-1) is not in set.
+- **Curriculum Index**: #007 (Core 27-Module Curriculum)
+- **Difficulty**: [[Medium]]
+- **Patterns / Archetypes**: [[Hash Maps & Frequency]]
+- **Target Companies**: [[Amazon]], [[Bloomberg]], [[Google]], [[Meta]], [[Microsoft]]
+- **Problem Link**: [LC 128: Longest Consecutive Sequence](https://leetcode.com/problems/longest-consecutive-sequence/)
+- **Backlink to Vault Hub**: [[Index|🏠 Master Knowledge Graph]]
 
 ---
 
-## 🛡️ The Golden Invariant & Mathematical Proof
-> [!note] 🛡️ Invariant Guarantee
-> Throughout the algorithm's execution, the state maintains the invariant required by **Hash Maps & Sets**.
-> Bounded state transitions ensure correctness without redundant recomputations.
+## 💡 Intuition & Core Takeaways
+> Only start counting streak if (x - 1) is not in set. Guarantees each element is visited at most twice. O(N) time, O(N) space.
 
 ---
 
-## ⚠️ Sneaky Interview Traps & Pitfalls
-> [!warning] ⚠️ Critical Gotchas to Avoid
-> 1. **Boundary Limits**: Always verify loop termination and off-by-one pointer conditions.
-> 2. **Duplicate Deduplication**: Ensure equal elements do not cause redundant branches or infinite loops.
-> 3. **Integer Overflow**: Use 64-bit integers (`long long`) when intermediate values exceed $2^{31}-1$.
+## 🔗 Related Knowledge Nodes
+- Patterns: [[Hash Maps & Frequency]]
+- Companies: [[Amazon]], [[Bloomberg]], [[Google]], [[Meta]], [[Microsoft]]
+- Difficulty Level: [[Medium]]
 
----
 
-## 🪜 Progressive Pattern Ladder & Variations
-- 🎯 **Foundational Anchor Pattern**: [[LC 128 Longest Consecutive Sequence]]
-
----
-
-## 💻 Optimal C++20 Implementation
+## 💻 C++ Implementation
 
 ```cpp
 /**
@@ -200,3 +178,4 @@ int main() {
 }
 
 ```
+

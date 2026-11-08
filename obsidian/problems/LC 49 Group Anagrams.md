@@ -1,60 +1,38 @@
 ---
 title: "LC 49: Group Anagrams"
-module: "01 Arrays & Hashing"
-concept: "Hash Maps & Sets"
+number: "004"
 difficulty: "Medium"
-complexity: "O(N * K)"
-space_complexity: "O(N)"
-companies:
-  - Amazon
-  - Meta
-  - Apple
-type: "problem-card"
+source: "Core 27-Module Curriculum"
+url: "https://leetcode.com/problems/group-anagrams/"
+status: "Solved"
 tags:
   - problem
   - medium
 ---
 
-# 🟡 LC 49: Group Anagrams
+# LC 49: Group Anagrams
 
-> [!abstract] 📋 Executive Problem Card
-> - **Module**: [[01 Arrays & Hashing]]
-> - **Core Concept**: [[Hash Maps & Sets]]
-> - **Difficulty**: Medium 🟡
-> - **Time Complexity**: $\mathcal{O}(O(N * K))$
-> - **Space Complexity**: $\mathcal{O}(O(N))$
-> - **Target MNCs**: [[Amazon]], [[Meta]], [[Apple]]
-
----
-
-## ⚡ 15-Second Interview Mental Trigger
-> [!tip] ⚡ How to Recognize this Pattern in an Interview
-> - **Key Clue / Signal**: Hash Maps & Sets application in `01 Arrays & Hashing`.
-> - **Immediate Strategy**: Sort string or 26-char count signature as canonical hash map key.
+- **Curriculum Index**: #004 (Core 27-Module Curriculum)
+- **Difficulty**: [[Medium]]
+- **Patterns / Archetypes**: [[Hash Maps & Frequency]]
+- **Target Companies**: [[Amazon]], [[Apple]], [[Google]], [[Meta]], [[Microsoft]]
+- **Problem Link**: [LC 49: Group Anagrams](https://leetcode.com/problems/group-anagrams/)
+- **Backlink to Vault Hub**: [[Index|🏠 Master Knowledge Graph]]
 
 ---
 
-## 🛡️ The Golden Invariant & Mathematical Proof
-> [!note] 🛡️ Invariant Guarantee
-> Throughout the algorithm's execution, the state maintains the invariant required by **Hash Maps & Sets**.
-> Bounded state transitions ensure correctness without redundant recomputations.
+## 💡 Intuition & Core Takeaways
+> Equivalence grouping -> Sort string as hash map key O(N*K log K) or 26-char count signature O(N*K). Use std::move when building result.
 
 ---
 
-## ⚠️ Sneaky Interview Traps & Pitfalls
-> [!warning] ⚠️ Critical Gotchas to Avoid
-> 1. **Boundary Limits**: Always verify loop termination and off-by-one pointer conditions.
-> 2. **Duplicate Deduplication**: Ensure equal elements do not cause redundant branches or infinite loops.
-> 3. **Integer Overflow**: Use 64-bit integers (`long long`) when intermediate values exceed $2^{31}-1$.
+## 🔗 Related Knowledge Nodes
+- Patterns: [[Hash Maps & Frequency]]
+- Companies: [[Amazon]], [[Apple]], [[Google]], [[Meta]], [[Microsoft]]
+- Difficulty Level: [[Medium]]
 
----
 
-## 🪜 Progressive Pattern Ladder & Variations
-- 🎯 **Foundational Anchor Pattern**: [[LC 49 Group Anagrams]]
-
----
-
-## 💻 Optimal C++20 Implementation
+## 💻 C++ Implementation
 
 ```cpp
 /**
@@ -198,3 +176,4 @@ int main() {
 }
 
 ```
+

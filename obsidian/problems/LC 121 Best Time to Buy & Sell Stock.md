@@ -1,62 +1,38 @@
 ---
 title: "LC 121: Best Time to Buy & Sell Stock"
-module: "01 Arrays & Hashing"
-concept: "Kadane's Algorithm"
+number: "002"
 difficulty: "Easy"
-complexity: "O(N)"
-space_complexity: "O(N)"
-companies:
-  - Amazon
-  - Meta
-  - Apple
-  - Google
-type: "problem-card"
+source: "Core 27-Module Curriculum"
+url: "https://leetcode.com/problems/best-time-to-buy-and-sell-stock/"
+status: "Solved"
 tags:
   - problem
   - easy
 ---
 
-# 🟢 LC 121: Best Time to Buy & Sell Stock
+# LC 121: Best Time to Buy & Sell Stock
 
-> [!abstract] 📋 Executive Problem Card
-> - **Module**: [[01 Arrays & Hashing]]
-> - **Core Concept**: [[Kadane's Algorithm]]
-> - **Difficulty**: Easy 🟢
-> - **Time Complexity**: $\mathcal{O}(O(N))$
-> - **Space Complexity**: $\mathcal{O}(O(N))$
-> - **Target MNCs**: [[Amazon]], [[Meta]], [[Apple]], [[Google]]
-
----
-
-## ⚡ 15-Second Interview Mental Trigger
-> [!tip] ⚡ How to Recognize this Pattern in an Interview
-> - **Key Clue / Signal**: Kadane's Algorithm application in `01 Arrays & Hashing`.
-> - **Immediate Strategy**: Track running min buy price and maximize profit.
+- **Curriculum Index**: #002 (Core 27-Module Curriculum)
+- **Difficulty**: [[Easy]]
+- **Patterns / Archetypes**: [[Kadane's Algorithm]], [[Prefix Sums]]
+- **Target Companies**: [[Amazon]], [[Google]], [[Meta]], [[Microsoft]]
+- **Problem Link**: [LC 121: Best Time to Buy & Sell Stock](https://leetcode.com/problems/best-time-to-buy-and-sell-stock/)
+- **Backlink to Vault Hub**: [[Index|🏠 Master Knowledge Graph]]
 
 ---
 
-## 🛡️ The Golden Invariant & Mathematical Proof
-> [!note] 🛡️ Invariant Guarantee
-> Throughout the algorithm's execution, the state maintains the invariant required by **Kadane's Algorithm**.
-> Bounded state transitions ensure correctness without redundant recomputations.
+## 💡 Intuition & Core Takeaways
+> Track minimum buying price seen so far. Maximize current price - minPrice. O(N) time, O(1) space.
 
 ---
 
-## ⚠️ Sneaky Interview Traps & Pitfalls
-> [!warning] ⚠️ Critical Gotchas to Avoid
-> 1. **Boundary Limits**: Always verify loop termination and off-by-one pointer conditions.
-> 2. **Duplicate Deduplication**: Ensure equal elements do not cause redundant branches or infinite loops.
-> 3. **Integer Overflow**: Use 64-bit integers (`long long`) when intermediate values exceed $2^{31}-1$.
+## 🔗 Related Knowledge Nodes
+- Patterns: [[Kadane's Algorithm]], [[Prefix Sums]]
+- Companies: [[Amazon]], [[Google]], [[Meta]], [[Microsoft]]
+- Difficulty Level: [[Easy]]
 
----
 
-## 🪜 Progressive Pattern Ladder & Variations
-- ⬅ **Prerequisite Pattern**: [[LC 53 Maximum Subarray]]
-- 🎯 **Current Anchor**: [[LC 121 Best Time to Buy & Sell Stock]]
-
----
-
-## 💻 Optimal C++20 Implementation
+## 💻 C++ Implementation
 
 ```cpp
 /**
@@ -131,3 +107,4 @@ int main() {
 }
 
 ```
+

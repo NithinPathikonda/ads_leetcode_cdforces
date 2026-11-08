@@ -1,59 +1,38 @@
 ---
 title: "LC 1614: Maximum Nesting Depth of the Parentheses"
-module: "04 Stack & Monotonic Stack"
-concept: "Monotonic Stack"
+number: "POTD-01"
 difficulty: "Easy"
-complexity: "O(N)"
-space_complexity: "O(N)"
-companies:
-  - Google
-  - Amazon
-type: "problem-card"
+source: "LeetCode Problem of the Day"
+url: "https://leetcode.com/problems/maximum-nesting-depth-of-the-parentheses/"
+status: "Solved"
 tags:
   - problem
   - easy
 ---
 
-# 🟢 LC 1614: Maximum Nesting Depth of the Parentheses
+# LC 1614: Maximum Nesting Depth of the Parentheses
 
-> [!abstract] 📋 Executive Problem Card
-> - **Module**: [[04 Stack & Monotonic Stack]]
-> - **Core Concept**: [[Monotonic Stack]]
-> - **Difficulty**: Easy 🟢
-> - **Time Complexity**: $\mathcal{O}(O(N))$
-> - **Space Complexity**: $\mathcal{O}(O(N))$
-> - **Target MNCs**: [[Google]], [[Amazon]]
-
----
-
-## ⚡ 15-Second Interview Mental Trigger
-> [!tip] ⚡ How to Recognize this Pattern in an Interview
-> - **Key Clue / Signal**: Monotonic Stack application in `04 Stack & Monotonic Stack`.
-> - **Immediate Strategy**: Parentheses depth counter tracking maximum depth in single pass.
+- **Curriculum Index**: #POTD-01 (LeetCode Problem of the Day)
+- **Difficulty**: [[Easy]]
+- **Patterns / Archetypes**: [[Stack & Simulation]]
+- **Target Companies**: [[Google]], [[Amazon]]
+- **Problem Link**: [LC 1614: Maximum Nesting Depth of the Parentheses](https://leetcode.com/problems/maximum-nesting-depth-of-the-parentheses/)
+- **Backlink to Vault Hub**: [[Index|🏠 Master Knowledge Graph]]
 
 ---
 
-## 🛡️ The Golden Invariant & Mathematical Proof
-> [!note] 🛡️ Invariant Guarantee
-> Throughout the algorithm's execution, the state maintains the invariant required by **Monotonic Stack**.
-> Bounded state transitions ensure correctness without redundant recomputations.
+## 💡 Intuition & Core Takeaways
+> Valid parentheses depth tracking. Single pass with counter O(N) time O(1) space.
 
 ---
 
-## ⚠️ Sneaky Interview Traps & Pitfalls
-> [!warning] ⚠️ Critical Gotchas to Avoid
-> 1. **Boundary Limits**: Always verify loop termination and off-by-one pointer conditions.
-> 2. **Duplicate Deduplication**: Ensure equal elements do not cause redundant branches or infinite loops.
-> 3. **Integer Overflow**: Use 64-bit integers (`long long`) when intermediate values exceed $2^{31}-1$.
+## 🔗 Related Knowledge Nodes
+- Patterns: [[Stack & Simulation]]
+- Companies: [[Google]], [[Amazon]]
+- Difficulty Level: [[Easy]]
 
----
 
-## 🪜 Progressive Pattern Ladder & Variations
-- 🎯 **Foundational Anchor Pattern**: [[LC 1614 Maximum Nesting Depth of the Parentheses]]
-
----
-
-## 💻 Optimal C++20 Implementation
+## 💻 C++ Implementation
 
 ```cpp
 /**
@@ -167,3 +146,4 @@ int main() {
 }
 
 ```
+

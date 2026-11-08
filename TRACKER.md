@@ -11,7 +11,7 @@
 |---|---|---|:---:|:---:| **01** | **Arrays & Hashing** | Prefix Sums, Kadane's, Difference Array, Dutch National Flag, Matrix Traversal | 12 | 11 | 🟡 In Progress |
 | **02** | **Two Pointers & Sliding Window** | Fixed & Dynamic Window, 2-Sum/3-Sum/4-Sum, Substrings with Constraints | 14 | 12 | 🟡 In Progress |
 | **03** | **Binary Search** | Standard, Rotated Arrays, Binary Search on Answer (Predicate/Monotonicity), 2D Matrix | 12 | 7 | 🟡 In Progress |
-| **04** | **Stack & Monotonic Stack** | Next Greater/Smaller Element, Largest Rectangle in Histogram, Rainwater Trapping, Infix/Postfix | 10 | 0 | ⏳ Not Started |
+| **04** | **Stack & Monotonic Stack** | Next Greater/Smaller Element, Largest Rectangle in Histogram, Rainwater Trapping, Infix/Postfix | 10 | 1 | 🟡 In Progress |
 | **05** | **Linked Lists** | In-place Reversal, Cycle Detection & Entry (Floyd's), Merge K Lists, Flattening | 8 | 0 | ⏳ Not Started |
 | **06** | **Recursion & Backtracking** | Subsets, Subsequences, Permutations, Combinations, N-Queens, Sudoku Solver, Word Search | 10 | 0 | ⏳ Not Started |
 | **07** | **Binary Trees & BST** | DFS/BFS, LCA, Tree Views, Morris Traversal, Path Sum, BST Properties, Serialization | 16 | 0 | ⏳ Not Started |
@@ -35,7 +35,7 @@
 | **25** | **Game Theory & Minimax** | Minimax / Alpha-Beta Pruning, Nim Game, Stone Game I/II/III/IV/VII | 5 | 0 | ⏳ Not Started |
 | **26** | **Reservoir Sampling & Randomized** | Reservoir Sampling ($K$ from Stream), Fisher-Yates Shuffle, Random Pick with Weight | 4 | 0 | ⏳ Not Started |
 | **27** | **Computational Geometry & Math** | Convex Hull (Graham Scan), Overlapping Area, Matrix Exponentiation | 4 | 0 | ⏳ Not Started |
-| | **TOTAL** | **100% Complete MNC Syllabus** | **230** | **30** | **13.0% Completed** |
+| | **TOTAL** | **100% Complete MNC Syllabus** | **230** | **32** | **13.9% Completed** |
 
 ---
 
@@ -74,6 +74,7 @@
 | 029 | [LC 875: Koko Eating Bananas](https://leetcode.com/problems/koko-eating-bananas/) | Binary Search on Answer / Monotonic Predicate | Medium | Google, Amazon, Meta, Bloomberg, Uber, Airbnb | ✅ Solved | [lc_0875_koko_eating_bananas.cpp](03_binary_search/lc_0875_koko_eating_bananas.cpp) | Monotonic hours function f(k) <= h. Binary search answer space [1, max(piles)]. Ceil divide with `(p + k - 1) / k`. Use `long long` for total_hours to prevent 32-bit overflow. |
 | 030 | [LC 1011: Capacity To Ship Packages Within D Days](https://leetcode.com/problems/capacity-to-ship-packages-within-d-days/) | Binary Search on Answer / Greedy Feasibility | Medium | Amazon, Google, Meta, Microsoft, Bloomberg | ✅ Solved | [lc_1011_capacity_to_ship_packages_within_d_days.cpp](03_binary_search/lc_1011_capacity_to_ship_packages_within_d_days.cpp) | Indivisible packages must ship in order. Binary search answer space [max(weights), sum(weights)]. Greedy load accumulation per day; guard rail `w > cap` prevents impossible loads. O(N log(sum)) time, O(1) space. |
 | 031 | [LC 704: Binary Search](https://leetcode.com/problems/binary-search/) | Classic Binary Search / Array Interval | Easy | Apple, Google, Microsoft, Meta, Amazon | ✅ Solved | [lc_0704_binary_search.cpp](03_binary_search/lc_0704_binary_search.cpp) | Closed search interval [l, r] with loop invariant l <= r. Overflow-safe mid = (r - l) / 2 + l. Halves search interval in O(log N) time, O(1) space. |
+| 032 | [LC 20: Valid Parentheses](https://leetcode.com/problems/valid-parentheses/) | Delimiter Matching / LIFO Stack | Easy/Foundation | Google, Meta, Amazon, Microsoft, Apple, Bloomberg | ✅ Solved | [lc_0020_valid_parentheses.cpp](04_stack_monotonic_stack/lc_0020_valid_parentheses.cpp) | Odd length returns false immediately. Push opening brackets; on closing bracket check non-empty stack and counterpart match. Stack must be empty at the end. O(N) time, O(N) space. |
 
 
 

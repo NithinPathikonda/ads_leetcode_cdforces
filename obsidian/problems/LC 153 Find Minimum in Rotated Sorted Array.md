@@ -1,79 +1,72 @@
 ---
 title: "LC 153: Find Minimum in Rotated Sorted Array"
-module: "03 Binary Search"
-concept: "Rotated Array Binary Search"
+number: "026"
 difficulty: "Medium"
-complexity: "O(log N)"
-space_complexity: "O(1)"
-companies:
-  - Meta
-  - Amazon
-  - Microsoft
-  - Google
-  - Bloomberg
-type: "problem-card"
+source: "Core 27-Module Curriculum"
+url: "https://leetcode.com/problems/find-minimum-in-rotated-sorted-array/"
+status: "Solved"
 tags:
   - problem
   - medium
-  - binary-search
-  - array
 ---
 
-# 🟡 LC 153: Find Minimum in Rotated Sorted Array
+# LC 153: Find Minimum in Rotated Sorted Array
 
-> [!abstract] 📋 Executive Problem Card
-> - **Module**: [[03 Binary Search]]
-> - **Core Concept**: [[Rotated Array Binary Search]]
-> - **Difficulty**: Medium 🟡
-> - **Time Complexity**: $\mathcal{O}(\log N)$ — binary search space halving
-> - **Space Complexity**: $\mathcal{O}(1)$ auxiliary space
-> - **Target MNCs**: [[Meta]], [[Amazon]], [[Microsoft]], [[Google]], [[Bloomberg]]
+- **Curriculum Index**: #026 (Core 27-Module Curriculum)
+- **Difficulty**: [[Medium]]
+- **Patterns / Archetypes**: [[Rotated Array Binary Search]]
+- **Target Companies**: [[Amazon]], [[Bloomberg]], [[Google]], [[Meta]], [[Microsoft]]
+- **Problem Link**: [LC 153: Find Minimum in Rotated Sorted Array](https://leetcode.com/problems/find-minimum-in-rotated-sorted-array/)
+- **Backlink to Vault Hub**: [[Index|🏠 Master Knowledge Graph]]
 
 ---
 
-## ⚡ 15-Second Interview Mental Trigger
-> [!tip] ⚡ How to Recognize this Pattern in an Interview
-> - **Key Clue / Signal**: "Find the minimum element in a rotated sorted array with unique elements" in $\mathcal{O}(\log N)$ time.
-> - **Immediate Strategy**: Compare `nums[mid]` against `nums[r]`:
->   - If `nums[mid] > nums[r]`: The pivot/inflection drop is strictly to the right $\implies$ `l = mid + 1`.
->   - If `nums[mid] <= nums[r]`: `mid` itself could be the minimum, or the minimum is to the left $\implies$ `r = mid`.
->   - Terminate when `l == r`; return `nums[l]`.
+## 💡 Intuition & Core Takeaways
+> Compare nums[mid] with nums[r]: if nums[mid] > nums[r] min is in (mid..r] (l=mid+1), else min is in [l..mid] (r=mid). Half-elimination records running min. O(log N) time, O(1) space.
 
 ---
 
-## 🛡️ The Golden Invariant & Mathematical Proof
-> [!note] 🛡️ Inflection Invariant
-> Let the minimum element be located at index $k$.
-> - For any subarray $[l, r]$, if $nums[mid] > nums[r]$, then the rotation inflection MUST occur in $(mid, r]$. Hence, $k \in (mid, r]$, proving $l = mid + 1$ is safe and discards zero candidate solutions.
-> - Conversely, if $nums[mid] \le nums[r]$, the right subarray $[mid \dots r]$ is sorted, so the minimum cannot lie in $(mid, r]$. Hence, $k \in [l, mid]$, proving $r = mid$ preserves the minimum.
-> - Because $r - l$ strictly decreases at each step, the search converges to $l = r = k$ in $\mathcal{O}(\log N)$ iterations.
+## 🔗 Related Knowledge Nodes
+- Patterns: [[Rotated Array Binary Search]]
+- Companies: [[Amazon]], [[Bloomberg]], [[Google]], [[Meta]], [[Microsoft]]
+- Difficulty Level: [[Medium]]
 
----
 
-## ⚠️ Sneaky Interview Traps & Pitfalls
-> [!warning] ⚠️ Critical Gotchas to Avoid
-> 1. **Do NOT Compare `nums[mid]` with `nums[l]`**:
->    Comparing with `nums[l]` fails on unrotated arrays (e.g. `[1, 2, 3]`), because `nums[mid] > nums[l]` happens both when rotated right AND when already sorted! Always compare against `nums[r]`.
-> 2. **Never Do `r = mid - 1` on the Right-Sorted Branch**:
->    If `nums[mid]` is the actual minimum (e.g. `[3, 1, 2]`), `r = mid - 1` would exclude the minimum element entirely. You must use `r = mid`.
-> 3. **The Duplicates Trap (LC 154)**:
->    If elements can be duplicates, `nums[mid] == nums[r]` could happen without knowing which side is sorted. You must fallback to `r--`, giving $\mathcal{O}(N)$ worst-case.
+## 💻 C++ Implementation
 
----
-
-## 🪜 Progressive Pattern Ladder & Variations
-- ⬅ **Prerequisite**: [[LC 33 Search in Rotated Sorted Array]] — Search for target with rotation
-- 🎯 **Current Anchor**: [[LC 153 Find Minimum in Rotated Sorted Array]] — Find inflection point in distinct array ($\mathcal{O}(\log N)$)
-- ➔ **Sister Variation**: [[LC 154 Find Minimum in Rotated Sorted Array II]] — Handling duplicates ($\mathcal{O}(N)$ worst-case)
-- ➔ **Next Step**: [[LC 74 Search a 2D Matrix]] — 2D coordinate flattening binary search
-
----
-
-## 💻 Optimal C++20 Implementations
-
-### Approach 1: User's Half-Elimination Search
 ```cpp
-// Time Complexity: O(log N) | Space Complexity: O(1)
+/**
+ * ============================================================================
+ * Problem: LC 153 - Find Minimum in Rotated Sorted Array
+ * Difficulty: Medium
+ * Pattern: Binary Search on Rotated Array / Inflection Point Detection
+ * Target MNCs: Meta, Amazon, Microsoft, Google, Bloomberg
+ * 
+ * Approaches Included:
+ *   1. User's Half-Elimination Search (Checks sorted half, records min, advances)
+ *   2. Canonical Inflection Bound (Compares mid with right: nums[mid] > nums[r])
+ * 
+ * Complexity:
+ *   - Time:  O(log N) — halving the search space each step
+ *   - Space: O(1) auxiliary space
+ * ============================================================================
+ */
+
+#include <iostream>
+#include <vector>
+#include <algorithm>
+#include <climits>
+#include <cassert>
+
+using namespace std;
+
+// ============================================================================
+// Approach 1: User's Half-Elimination Search
+// At each mid, determine which half is sorted:
+// - If left is sorted: nums[l] is the minimum of that half; record it and search right.
+// - Else right is sorted: nums[mid] is candidate minimum; record it and search left.
+// Time: O(log N) | Space: O(1)
+// ============================================================================
 class SolutionUser {
 public:
     int findMin(const vector<int>& nums) {
@@ -93,13 +86,15 @@ public:
         return mini;
     }
 };
-```
 
----
-
-### Approach 2: Canonical Inflection Check (Interview Standard)
-```cpp
-// Time Complexity: O(log N) | Space Complexity: O(1)
+// ============================================================================
+// Approach 2: Canonical Inflection Comparison (Interview Standard)
+// Compares nums[mid] directly with nums[r]:
+// - If nums[mid] > nums[r]: inflection point (drop) MUST be strictly to the right -> l = mid + 1.
+// - If nums[mid] <= nums[r]: nums[mid] could be the min or min is to the left -> r = mid.
+// Loop terminates when l == r, pointing exactly to the minimum element.
+// Time: O(log N) | Space: O(1)
+// ============================================================================
 class SolutionCanonical {
 public:
     int findMin(const vector<int>& nums) {
@@ -111,11 +106,57 @@ public:
             if (nums[mid] > nums[r]) {
                 l = mid + 1; // Minimum must be in (mid, r]
             } else {
-                r = mid;     // Minimum could be mid or in [l, mid]
+                r = mid;     // Minimum could be at mid or in [l, mid]
             }
         }
 
         return nums[l];
     }
 };
+
+// ============================================================================
+// Comprehensive Unit Test Suite
+// ============================================================================
+int main() {
+    SolutionUser user_sol;
+    SolutionCanonical canonical_sol;
+
+    auto run_tests = [&](const string& name, auto& solver) {
+        cout << "Testing " << name << "..." << endl;
+
+        // Test 1: Standard rotation
+        assert(solver.findMin({3, 4, 5, 1, 2}) == 1);
+
+        // Test 2: Standard rotation with 0
+        assert(solver.findMin({4, 5, 6, 7, 0, 1, 2}) == 0);
+
+        // Test 3: Unrotated strictly sorted array
+        assert(solver.findMin({11, 13, 15, 17}) == 11);
+
+        // Test 4: Single element
+        assert(solver.findMin({42}) == 42);
+
+        // Test 5: Two elements rotated
+        assert(solver.findMin({2, 1}) == 1);
+
+        // Test 6: Two elements sorted
+        assert(solver.findMin({1, 2}) == 1);
+
+        // Test 7: Minimum at index 1
+        assert(solver.findMin({5, 1, 2, 3, 4}) == 1);
+
+        // Test 8: Large odd-sized rotation
+        assert(solver.findMin({3, 1, 2}) == 1);
+
+        cout << "  ✅ Passed all test scenarios!" << endl;
+    };
+
+    run_tests("Approach 1 (User's Half Elimination)", user_sol);
+    run_tests("Approach 2 (Canonical Inflection Check)", canonical_sol);
+
+    cout << "\n🎉 ALL IMPLEMENTATIONS VERIFIED CORRECT!" << endl;
+    return 0;
+}
+
 ```
+

@@ -12,7 +12,9 @@ tags:
 
 ---
 
-## 🎯 Solved Problems Using This Pattern (1)
+## 🎯 Solved Problems Using This Pattern (3)
+- [[LC 74 Search a 2D Matrix]] (Medium — #027)
+- [[LC 240 Search a 2D Matrix II]] (Medium — #028)
 - [[LC 3963 Create Grid With Exactly One Path]] (Easy — #POTD-02)
 
 ---

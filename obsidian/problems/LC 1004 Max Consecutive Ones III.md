@@ -1,60 +1,38 @@
 ---
 title: "LC 1004: Max Consecutive Ones III"
-module: "02 Two Pointers & Sliding Window"
-concept: "Dynamic Sliding Window"
+number: "020"
 difficulty: "Medium"
-complexity: "O(N)"
-space_complexity: "O(N)"
-companies:
-  - Meta
-  - Google
-type: "problem-card"
+source: "Core 27-Module Curriculum"
+url: "https://leetcode.com/problems/max-consecutive-ones-iii/"
+status: "Solved"
 tags:
   - problem
   - medium
 ---
 
-# 🟡 LC 1004: Max Consecutive Ones III
+# LC 1004: Max Consecutive Ones III
 
-> [!abstract] 📋 Executive Problem Card
-> - **Module**: [[02 Two Pointers & Sliding Window]]
-> - **Core Concept**: [[Dynamic Sliding Window]]
-> - **Difficulty**: Medium 🟡
-> - **Time Complexity**: $\mathcal{O}(O(N))$
-> - **Space Complexity**: $\mathcal{O}(O(N))$
-> - **Target MNCs**: [[Meta]], [[Google]]
-
----
-
-## ⚡ 15-Second Interview Mental Trigger
-> [!tip] ⚡ How to Recognize this Pattern in an Interview
-> - **Key Clue / Signal**: Dynamic Sliding Window application in `02 Two Pointers & Sliding Window`.
-> - **Immediate Strategy**: Dynamic window with at most K zero flips.
+- **Curriculum Index**: #020 (Core 27-Module Curriculum)
+- **Difficulty**: [[Medium]]
+- **Patterns / Archetypes**: [[Sliding Window]]
+- **Target Companies**: [[Amazon]], [[ByteDance]], [[Google]], [[Meta]], [[Microsoft]]
+- **Problem Link**: [LC 1004: Max Consecutive Ones III](https://leetcode.com/problems/max-consecutive-ones-iii/)
+- **Backlink to Vault Hub**: [[Index|🏠 Master Knowledge Graph]]
 
 ---
 
-## 🛡️ The Golden Invariant & Mathematical Proof
-> [!note] 🛡️ Invariant Guarantee
-> Throughout the algorithm's execution, the state maintains the invariant required by **Dynamic Sliding Window**.
-> Bounded state transitions ensure correctness without redundant recomputations.
+## 💡 Intuition & Core Takeaways
+> At most k zero flips translates directly to longest window with <= k zeros. Expand r counting zeros; while zero_count > k shrink l. O(N) time, O(1) space.
 
 ---
 
-## ⚠️ Sneaky Interview Traps & Pitfalls
-> [!warning] ⚠️ Critical Gotchas to Avoid
-> 1. **Boundary Limits**: Always verify loop termination and off-by-one pointer conditions.
-> 2. **Duplicate Deduplication**: Ensure equal elements do not cause redundant branches or infinite loops.
-> 3. **Integer Overflow**: Use 64-bit integers (`long long`) when intermediate values exceed $2^{31}-1$.
+## 🔗 Related Knowledge Nodes
+- Patterns: [[Sliding Window]]
+- Companies: [[Amazon]], [[ByteDance]], [[Google]], [[Meta]], [[Microsoft]]
+- Difficulty Level: [[Medium]]
 
----
 
-## 🪜 Progressive Pattern Ladder & Variations
-- ⬅ **Prerequisite Pattern**: [[LC 424 Longest Repeating Character Replacement]]
-- 🎯 **Current Anchor**: [[LC 1004 Max Consecutive Ones III]]
-
----
-
-## 💻 Optimal C++20 Implementation
+## 💻 C++ Implementation
 
 ```cpp
 /**
@@ -164,3 +142,4 @@ int main() {
 }
 
 ```
+

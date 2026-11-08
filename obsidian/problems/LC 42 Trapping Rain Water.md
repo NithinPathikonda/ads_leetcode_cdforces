@@ -1,64 +1,38 @@
 ---
 title: "LC 42: Trapping Rain Water"
-module: "02 Two Pointers & Sliding Window"
-concept: "Rainwater Trapping"
+number: "019"
 difficulty: "Hard"
-complexity: "O(N)"
-space_complexity: "O(N)"
-companies:
-  - Google
-  - Amazon
-  - Meta
-  - Bloomberg
-type: "problem-card"
+source: "Core 27-Module Curriculum"
+url: "https://leetcode.com/problems/trapping-rain-water/"
+status: "Solved"
 tags:
   - problem
   - hard
 ---
 
-# 🔴 LC 42: Trapping Rain Water
+# LC 42: Trapping Rain Water
 
-> [!abstract] 📋 Executive Problem Card
-> - **Module**: [[02 Two Pointers & Sliding Window]]
-> - **Core Concept**: [[Rainwater Trapping]]
-> - **Difficulty**: Hard 🔴
-> - **Time Complexity**: $\mathcal{O}(O(N))$
-> - **Space Complexity**: $\mathcal{O}(O(N))$
-> - **Target MNCs**: [[Google]], [[Amazon]], [[Meta]], [[Bloomberg]]
-
----
-
-## ⚡ 15-Second Interview Mental Trigger
-> [!tip] ⚡ How to Recognize this Pattern in an Interview
-> - **Key Clue / Signal**: Rainwater Trapping application in `02 Two Pointers & Sliding Window`.
-> - **Immediate Strategy**: Water bounded by min(left_max, right_max) - height[i].
+- **Curriculum Index**: #019 (Core 27-Module Curriculum)
+- **Difficulty**: [[Hard]]
+- **Patterns / Archetypes**: [[Two Pointers]]
+- **Target Companies**: [[Amazon]], [[Apple]], [[Bloomberg]], [[Google]], [[Meta]], [[Microsoft]]
+- **Problem Link**: [LC 42: Trapping Rain Water](https://leetcode.com/problems/trapping-rain-water/)
+- **Backlink to Vault Hub**: [[Index|🏠 Master Knowledge Graph]]
 
 ---
 
-## 🛡️ The Golden Invariant & Mathematical Proof
-> [!note] 🛡️ Invariant Guarantee
-> Throughout the algorithm's execution, the state maintains the invariant required by **Rainwater Trapping**.
-> Bounded state transitions ensure correctness without redundant recomputations.
+## 💡 Intuition & Core Takeaways
+> Water at i = min(left_max, right_max) - height[i]. Two Pointers O(1) space: bottleneck is always the smaller boundary. Advance l if left_max <= right_max, else advance r. O(N) time, O(1) space.
 
 ---
 
-## ⚠️ Sneaky Interview Traps & Pitfalls
-> [!warning] ⚠️ Critical Gotchas to Avoid
-> 1. **Boundary Limits**: Always verify loop termination and off-by-one pointer conditions.
-> 2. **Duplicate Deduplication**: Ensure equal elements do not cause redundant branches or infinite loops.
-> 3. **Integer Overflow**: Use 64-bit integers (`long long`) when intermediate values exceed $2^{31}-1$.
+## 🔗 Related Knowledge Nodes
+- Patterns: [[Two Pointers]]
+- Companies: [[Amazon]], [[Apple]], [[Bloomberg]], [[Google]], [[Meta]], [[Microsoft]]
+- Difficulty Level: [[Hard]]
 
----
 
-## 🪜 Progressive Pattern Ladder & Variations
-- ⬅ **Prerequisite Pattern**: [[LC 11 Container With Most Water]]
-- ⬅ **Prerequisite Pattern**: [[LC 239 Sliding Window Maximum]]
-- 🎯 **Current Anchor**: [[LC 42 Trapping Rain Water]]
-- ➔ **Next Boss Variation**: [[LC 84 Largest Rectangle in Histogram]]
-
----
-
-## 💻 Optimal C++20 Implementation
+## 💻 C++ Implementation
 
 ```cpp
 /**
@@ -187,3 +161,4 @@ int main() {
 }
 
 ```
+

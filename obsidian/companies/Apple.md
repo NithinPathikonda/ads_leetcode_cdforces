@@ -3,27 +3,38 @@ title: "Apple"
 type: "company-hub"
 tags:
   - company
+  - apple
 ---
 
-# 🟣 Target MNC Hub: Apple
+# 🟣 Company Hub: Apple
 
-> [!abstract] 🏢 Interview Question Frequency
-> - **Tier**: Tier-1 Tech Titan
-> - **Curated Question Count**: `10 benchmark problems`
+> Curated MNC problem bank asked in technical rounds at **Apple**.
 
 ---
 
-## 📋 High-Yield Interview Question Bank
-- [[LC 1 Two Sum]] — Easy (`O(N)`) | [[Hash Maps & Sets]]
-- [[LC 121 Best Time to Buy & Sell Stock]] — Easy (`O(N)`) | [[Kadane's Algorithm]]
-- [[LC 49 Group Anagrams]] — Medium (`O(N * K)`) | [[Hash Maps & Sets]]
-- [[LC 238 Product of Array Except Self]] — Medium (`O(N)`) | [[Prefix Sums]]
-- [[LC 53 Maximum Subarray]] — Medium (`O(N)`) | [[Kadane's Algorithm]]
-- [[LC 15 3Sum]] — Medium (`O(N^2)`) | [[Two Pointers]]
-- [[LC 704 Binary Search]] — Easy (`O(log N)`) | [[Binary Search on Array]]
-- [[LC 206 Reverse Linked List]] — Easy (`O(N)`) | [[In-Place Linked List Reversal]]
-- [[LC 21 Merge Two Sorted Lists]] — Easy (`O(N)`) | [[In-Place Linked List Reversal]]
-- [[LC 191 Number of 1 Bits]] — Easy (`O(k)`) | [[Bitwise Tricks]]
+## 📋 Tagged Solved Problems (20)
+- [[LC 1 Two Sum]] — Easy (Hash Maps & Frequency)
+- [[LC 49 Group Anagrams]] — Medium (Hash Maps & Frequency)
+- [[LC 347 Top K Frequent Elements]] — Medium (Bucket Sort, Hash Maps & Frequency)
+- [[LC 238 Product of Array Except Self]] — Medium (Prefix Sums)
+- [[LC 560 Subarray Sum Equals K]] — Medium (Hash Maps & Frequency, Prefix Sums)
+- [[LC 53 Maximum Subarray]] — Medium (Kadane's Algorithm)
+- [[LC 75 Sort Colors]] — Medium (Dutch National Flag)
+- [[LC 54 Spiral Matrix]] — Medium (4-Boundary Layer Traversal)
+- [[LC 167 Two Sum II - Input Array Is Sorted]] — Medium (Two Pointers)
+- [[LC 15 3Sum]] — Medium (Two Pointers)
+- [[LC 11 Container With Most Water]] — Medium (Two Pointers)
+- [[LC 3 Longest Substring Without Repeating Characters]] — Medium (Sliding Window)
+- [[LC 567 Permutation in String]] — Medium (Hash Maps & Frequency, Sliding Window)
+- [[LC 42 Trapping Rain Water]] — Hard (Two Pointers)
+- [[LC 438 Find All Anagrams in a String]] — Medium (Hash Maps & Frequency, Sliding Window)
+- [[LC 33 Search in Rotated Sorted Array]] — Medium (Rotated Array Binary Search)
+- [[LC 74 Search a 2D Matrix]] — Medium (Matrix Traversal)
+- [[LC 240 Search a 2D Matrix II]] — Medium (Matrix Traversal)
+- [[LC 704 Binary Search]] — Easy (Classic Binary Search)
+- [[LC 20 Valid Parentheses]] — Easy (Monotonic Stack)
 
 ---
-- [[Index|🏠 Master Knowledge Galaxy Root]]
+
+## 🗺️ Navigation
+- [[Index|🏠 Master Knowledge Graph Hub]]

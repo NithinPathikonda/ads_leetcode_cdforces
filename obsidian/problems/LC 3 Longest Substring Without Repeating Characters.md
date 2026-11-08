@@ -1,62 +1,38 @@
 ---
 title: "LC 3: Longest Substring Without Repeating Characters"
-module: "02 Two Pointers & Sliding Window"
-concept: "Dynamic Sliding Window"
+number: "015"
 difficulty: "Medium"
-complexity: "O(N)"
-space_complexity: "O(N)"
-companies:
-  - Amazon
-  - Google
-  - Meta
-  - Microsoft
-type: "problem-card"
+source: "Core 27-Module Curriculum"
+url: "https://leetcode.com/problems/longest-substring-without-repeating-characters/"
+status: "Solved"
 tags:
   - problem
   - medium
 ---
 
-# 🟡 LC 3: Longest Substring Without Repeating Characters
+# LC 3: Longest Substring Without Repeating Characters
 
-> [!abstract] 📋 Executive Problem Card
-> - **Module**: [[02 Two Pointers & Sliding Window]]
-> - **Core Concept**: [[Dynamic Sliding Window]]
-> - **Difficulty**: Medium 🟡
-> - **Time Complexity**: $\mathcal{O}(O(N))$
-> - **Space Complexity**: $\mathcal{O}(O(N))$
-> - **Target MNCs**: [[Amazon]], [[Google]], [[Meta]], [[Microsoft]]
-
----
-
-## ⚡ 15-Second Interview Mental Trigger
-> [!tip] ⚡ How to Recognize this Pattern in an Interview
-> - **Key Clue / Signal**: Dynamic Sliding Window application in `02 Two Pointers & Sliding Window`.
-> - **Immediate Strategy**: Sliding window with last seen character index map.
+- **Curriculum Index**: #015 (Core 27-Module Curriculum)
+- **Difficulty**: [[Medium]]
+- **Patterns / Archetypes**: [[Sliding Window]]
+- **Target Companies**: [[Amazon]], [[Apple]], [[Google]], [[Meta]], [[Microsoft]]
+- **Problem Link**: [LC 3: Longest Substring Without Repeating Characters](https://leetcode.com/problems/longest-substring-without-repeating-characters/)
+- **Backlink to Vault Hub**: [[Index|🏠 Master Knowledge Graph]]
 
 ---
 
-## 🛡️ The Golden Invariant & Mathematical Proof
-> [!note] 🛡️ Invariant Guarantee
-> Throughout the algorithm's execution, the state maintains the invariant required by **Dynamic Sliding Window**.
-> Bounded state transitions ensure correctness without redundant recomputations.
+## 💡 Intuition & Core Takeaways
+> Expand r; on duplicate, shrink l and erase from map (O(2N)). Optimal 1-pass: store last seen index and jump l = max(l, last_seen[c] + 1) using 128-element array (O(N) time, O(1) space).
 
 ---
 
-## ⚠️ Sneaky Interview Traps & Pitfalls
-> [!warning] ⚠️ Critical Gotchas to Avoid
-> 1. **Boundary Limits**: Always verify loop termination and off-by-one pointer conditions.
-> 2. **Duplicate Deduplication**: Ensure equal elements do not cause redundant branches or infinite loops.
-> 3. **Integer Overflow**: Use 64-bit integers (`long long`) when intermediate values exceed $2^{31}-1$.
+## 🔗 Related Knowledge Nodes
+- Patterns: [[Sliding Window]]
+- Companies: [[Amazon]], [[Apple]], [[Google]], [[Meta]], [[Microsoft]]
+- Difficulty Level: [[Medium]]
 
----
 
-## 🪜 Progressive Pattern Ladder & Variations
-- 🎯 **Current Anchor**: [[LC 3 Longest Substring Without Repeating Characters]]
-- ➔ **Next Boss Variation**: [[LC 424 Longest Repeating Character Replacement]]
-
----
-
-## 💻 Optimal C++20 Implementation
+## 💻 C++ Implementation
 
 ```cpp
 /**
@@ -213,3 +189,4 @@ int main() {
 }
 
 ```
+

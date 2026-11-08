@@ -1,61 +1,38 @@
 ---
 title: "LC 560: Subarray Sum Equals K"
-module: "01 Arrays & Hashing"
-concept: "Prefix Sums"
+number: "008"
 difficulty: "Medium"
-complexity: "O(N)"
-space_complexity: "O(N)"
-companies:
-  - Meta
-  - Google
-  - Amazon
-type: "problem-card"
+source: "Core 27-Module Curriculum"
+url: "https://leetcode.com/problems/subarray-sum-equals-k/"
+status: "Solved"
 tags:
   - problem
   - medium
 ---
 
-# 🟡 LC 560: Subarray Sum Equals K
+# LC 560: Subarray Sum Equals K
 
-> [!abstract] 📋 Executive Problem Card
-> - **Module**: [[01 Arrays & Hashing]]
-> - **Core Concept**: [[Prefix Sums]]
-> - **Difficulty**: Medium 🟡
-> - **Time Complexity**: $\mathcal{O}(O(N))$
-> - **Space Complexity**: $\mathcal{O}(O(N))$
-> - **Target MNCs**: [[Meta]], [[Google]], [[Amazon]]
-
----
-
-## ⚡ 15-Second Interview Mental Trigger
-> [!tip] ⚡ How to Recognize this Pattern in an Interview
-> - **Key Clue / Signal**: Prefix Sums application in `01 Arrays & Hashing`.
-> - **Immediate Strategy**: Running prefix sum with hash map frequencies. Lookup prefix - k.
+- **Curriculum Index**: #008 (Core 27-Module Curriculum)
+- **Difficulty**: [[Medium]]
+- **Patterns / Archetypes**: [[Hash Maps & Frequency]], [[Prefix Sums]]
+- **Target Companies**: [[Amazon]], [[Apple]], [[Google]], [[Meta]], [[Microsoft]]
+- **Problem Link**: [LC 560: Subarray Sum Equals K](https://leetcode.com/problems/subarray-sum-equals-k/)
+- **Backlink to Vault Hub**: [[Index|🏠 Master Knowledge Graph]]
 
 ---
 
-## 🛡️ The Golden Invariant & Mathematical Proof
-> [!note] 🛡️ Invariant Guarantee
-> Throughout the algorithm's execution, the state maintains the invariant required by **Prefix Sums**.
-> Bounded state transitions ensure correctness without redundant recomputations.
+## 💡 Intuition & Core Takeaways
+> Running prefix sum with hash map frequencies. Check (prefix - k) before inserting prefix. Must initialize mpp[0] = 1 for subarrays starting at index 0. O(N) time, O(N) space.
 
 ---
 
-## ⚠️ Sneaky Interview Traps & Pitfalls
-> [!warning] ⚠️ Critical Gotchas to Avoid
-> 1. **Boundary Limits**: Always verify loop termination and off-by-one pointer conditions.
-> 2. **Duplicate Deduplication**: Ensure equal elements do not cause redundant branches or infinite loops.
-> 3. **Integer Overflow**: Use 64-bit integers (`long long`) when intermediate values exceed $2^{31}-1$.
+## 🔗 Related Knowledge Nodes
+- Patterns: [[Hash Maps & Frequency]], [[Prefix Sums]]
+- Companies: [[Amazon]], [[Apple]], [[Google]], [[Meta]], [[Microsoft]]
+- Difficulty Level: [[Medium]]
 
----
 
-## 🪜 Progressive Pattern Ladder & Variations
-- 🎯 **Current Anchor**: [[LC 560 Subarray Sum Equals K]]
-- ➔ **Next Boss Variation**: [[LC 238 Product of Array Except Self]]
-
----
-
-## 💻 Optimal C++20 Implementation
+## 💻 C++ Implementation
 
 ```cpp
 /**
@@ -213,3 +190,4 @@ int main() {
 }
 
 ```
+

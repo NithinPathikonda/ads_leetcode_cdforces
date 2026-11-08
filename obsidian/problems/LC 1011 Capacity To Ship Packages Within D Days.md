@@ -1,109 +1,102 @@
 ---
 title: "LC 1011: Capacity To Ship Packages Within D Days"
-module: "03 Binary Search"
-concept: "Binary Search on Answer"
+number: "030"
 difficulty: "Medium"
-complexity: "O(N log(sum_weight))"
-space_complexity: "O(1)"
-companies:
-  - Amazon
-  - Google
-  - Meta
-  - Microsoft
-  - Bloomberg
-type: "problem-card"
+source: "Core 27-Module Curriculum"
+url: "https://leetcode.com/problems/capacity-to-ship-packages-within-d-days/"
+status: "Solved"
 tags:
   - problem
   - medium
-  - binary-search
-  - binary-search-on-answer
-  - greedy
 ---
 
-# 🟡 LC 1011: Capacity To Ship Packages Within D Days
+# LC 1011: Capacity To Ship Packages Within D Days
 
-> [!abstract] 📋 Executive Problem Card
-> - **Module**: [[03 Binary Search]]
-> - **Core Concept**: [[Binary Search on Answer]] (Greedy Sequential Bin-Packing)
-> - **Difficulty**: Medium 🟡
-> - **Time Complexity**: $\mathcal{O}(N \log(\sum \text{weights} - \max(\text{weights})))$
-> - **Space Complexity**: $\mathcal{O}(1)$ auxiliary space
-> - **Target MNCs**: [[Amazon]], [[Google]], [[Meta]], [[Microsoft]], [[Bloomberg]]
+- **Curriculum Index**: #030 (Core 27-Module Curriculum)
+- **Difficulty**: [[Medium]]
+- **Patterns / Archetypes**: [[Binary Search on Answer]]
+- **Target Companies**: [[Amazon]], [[Bloomberg]], [[Google]], [[Meta]], [[Microsoft]]
+- **Problem Link**: [LC 1011: Capacity To Ship Packages Within D Days](https://leetcode.com/problems/capacity-to-ship-packages-within-d-days/)
+- **Backlink to Vault Hub**: [[Index|🏠 Master Knowledge Graph]]
 
 ---
 
-## ⚡ 15-Second Interview Mental Trigger
-> [!tip] ⚡ How to Recognize this Pattern in an Interview
-> - **Key Clue / Signal**: "Find the minimum container/ship capacity to transport items in **strict sequential order** within $D$ days."
-> - **Immediate Strategy**:
->   1. Search space is bounded by $[\max(\text{weights}), \sum \text{weights}]$.
->   2. Define feasibility predicate `isPossible(cap)`: greedily pack consecutive items into today's ship until exceeding `cap`, then increment day count.
->   3. As capacity increases, required days monotonically decreases $\implies$ Binary search for the first valid capacity.
+## 💡 Intuition & Core Takeaways
+> Indivisible packages must ship in order. Binary search answer space [max(weights), sum(weights)]. Greedy load accumulation per day; guard rail `w > cap` prevents impossible loads. O(N log(sum)) time, O(1) space.
 
 ---
 
-## 🛡️ The Golden Invariant & Mathematical Proof
-> [!note] 🛡️ Monotonic Greedy Bin-Packing Invariant
-> Let $g(C)$ be the minimum number of days needed to ship packages with capacity $C$ while preserving given order.
-> 1. **Monotonicity**:
->    $$\forall C_1 < C_2, \quad g(C_1) \ge g(C_2)$$
->    Hence, the predicate $P(C) = (g(C) \le D)$ generates a monotonic boolean array:
->    $$[\text{false}, \text{false}, \dots, \text{false}, \mathbf{true}, \text{true}, \dots, \text{true}]$$
-> 2. **Optimal Substructure of Greedy Packing**:
->    Because packages must be loaded in the given order, maximizing the load on day $t$ strictly leaves fewer or equal packages for days $\ge t + 1$. A greedy accumulation never requires more days than any non-greedy partition.
-> 3. **Search Space Bounds**:
->    - **Lower Bound ($low = \max(\text{weights})$)**: Packages cannot be split. If $C < \max(\text{weights})$, the heaviest package will never fit on any day, sinking the ship.
->    - **Upper Bound ($high = \sum \text{weights}$)**: Carrying every package in a single day ($D = 1$).
+## 🔗 Related Knowledge Nodes
+- Patterns: [[Binary Search on Answer]]
+- Companies: [[Amazon]], [[Bloomberg]], [[Google]], [[Meta]], [[Microsoft]]
+- Difficulty Level: [[Medium]]
 
----
 
-## ⚠️ Sneaky Interview Traps & Pitfalls
-> [!warning] ⚠️ Critical Gotchas to Avoid
-> 1. **The `l = 1` vs `l = max_w` Trap (The Sinking Ship Bug)**:
->    If $l = 1$ and `isPossible` does not check `if (w > cap) return false;`, the `else` branch will blindly assign `current_load = w`, putting a $10\text{ kg}$ box onto a $1\text{ kg}$ ship and falsely reporting `true`! Either set $l = \max(\text{weights})$ or add the guard rail inside `isPossible`.
-> 2. **Do NOT Sort the Weights**:
->    Packages must be shipped in the order given. Sorting alters the problem completely and yields wrong answers.
-> 3. **Initial Day Count**:
->    Initialize `days_needed = 1` (not `0`), because packing the first package occupies Day 1.
-
----
-
-## 🪜 Progressive Pattern Ladder & Variations
-- ⬅ **Prerequisite**: [[LC 875 Koko Eating Bananas]] — Independent ceiling sum on unsorted piles
-- 🎯 **Current Anchor**: [[LC 1011 Capacity To Ship Packages Within D Days]] — Order-preserved greedy packing
-- ➔ **Next Boss Variation**: [[LC 410 Split Array Largest Sum]] — Minimizing maximum subarray sum (identical mathematical isomorphic formulation!)
-
----
-
-## 💻 Optimal C++20 Implementation
+## 💻 C++ Implementation
 
 ```cpp
-// Optimal C++20 Solution for LC 1011: Capacity To Ship Packages Within D Days
-// Time Complexity: O(N log(sum_weight)) | Space Complexity: O(1)
-// Technique: Binary Search on Answer / Greedy Feasibility (03 Binary Search)
+/**
+ * ============================================================================
+ * Problem: LC 1011 - Capacity To Ship Packages Within D Days
+ * Difficulty: Medium
+ * Pattern: Binary Search on Answer / Greedy Feasibility Simulation
+ * Target MNCs: Amazon, Google, Meta, Microsoft, Bloomberg
+ * 
+ * Invariant & Mathematical Formulation:
+ *   Let C be the ship capacity.
+ *   Packages must be shipped in the order given (no reordering or splitting).
+ * 
+ * Feasibility Predicate (canShip(weights, days, C)):
+ *   Greedily accumulate package weights into the current day:
+ *     - If w > C: package cannot fit on any ship -> return false (guard rail).
+ *     - If current_load + w <= C: add w to today's load.
+ *     - Else: send today's ship away, increment days_needed++, start new day with w.
+ *   Return days_needed <= days.
+ * 
+ * Monotonicity:
+ *   As capacity C increases, the required days is monotonically non-increasing.
+ *   Predicate: [false, false, ..., false, true, true, ..., true]
+ *   We seek the MINIMAL capacity C that yields true.
+ * 
+ * Search Boundaries:
+ *   - Lower Bound (low): max(weights) — the ship MUST be able to carry the
+ *     heaviest single package, as packages cannot be split.
+ *   - Upper Bound (high): sum(weights) — shipping all packages in a single day.
+ * 
+ * Complexity:
+ *   - Time:  O(N * log(sum(weights) - max(weights)))
+ *   - Space: O(1) auxiliary space
+ * ============================================================================
+ */
 
 #include <iostream>
 #include <vector>
 #include <algorithm>
 #include <numeric>
+#include <climits>
+#include <cassert>
 
 using namespace std;
 
 class Solution {
 private:
+    /**
+     * Helper predicate: checks if packages can be shipped within 'days' at capacity 'cap'.
+     * Features the defensive guard rail (w > cap) to guarantee physical feasibility.
+     */
     bool isPossible(const vector<int>& weights, int days, int cap) {
         int days_needed = 1;
         int current_load = 0;
 
         for (int w : weights) {
-            // Guard rail: single package exceeds capacity
+            // Guard rail: if a single package exceeds capacity, it can never ship
             if (w > cap) return false;
 
             if (current_load + w <= cap) {
                 current_load += w;
             } else {
                 days_needed++;
-                current_load = w; // Start next day with this package
+                current_load = w; // Start new day with this package
             }
         }
 
@@ -114,6 +107,7 @@ public:
     int shipWithinDays(const vector<int>& weights, int days) {
         int max_w = 0;
         int sum_w = 0;
+
         for (int w : weights) {
             max_w = max(max_w, w);
             sum_w += w;
@@ -127,14 +121,72 @@ public:
             int mid = l + (r - l) / 2;
 
             if (isPossible(weights, days, mid)) {
-                ans = mid;      // Feasible capacity, try searching smaller
+                ans = mid;         // Feasible capacity, try searching for smaller
                 r = mid - 1;
             } else {
-                l = mid + 1;    // Capacity too small, increase
+                l = mid + 1;       // Capacity too small, must increase
             }
         }
 
         return ans;
     }
 };
+
+// ============================================================================
+// Comprehensive Unit Test Suite
+// ============================================================================
+int main() {
+    Solution solver;
+
+    // Test 1: Standard LeetCode Example 1
+    // weights = [1,2,3,4,5,6,7,8,9,10], days = 5 -> expected 15
+    vector<int> t1 = {1, 2, 3, 4, 5, 6, 7, 8, 9, 10};
+    assert(solver.shipWithinDays(t1, 5) == 15);
+
+    // Test 2: Standard LeetCode Example 2
+    // weights = [3,2,2,4,1,4], days = 3 -> expected 6
+    vector<int> t2 = {3, 2, 2, 4, 1, 4};
+    assert(solver.shipWithinDays(t2, 3) == 6);
+
+    // Test 3: Standard LeetCode Example 3
+    // weights = [1,2,3,1,1], days = 4 -> expected 3
+    vector<int> t3 = {1, 2, 3, 1, 1};
+    assert(solver.shipWithinDays(t3, 4) == 3);
+
+    // Test 4: The Oversized Package Trap Case ([2, 10, 3], days = 3)
+    // Capacity must be at least 10 to carry the 10kg package!
+    vector<int> t4 = {2, 10, 3};
+    assert(solver.shipWithinDays(t4, 3) == 10);
+
+    // Test 5: Single element array, 1 day
+    vector<int> t5 = {10};
+    assert(solver.shipWithinDays(t5, 1) == 10);
+
+    // Test 6: Single element array, excess days
+    vector<int> t6 = {10};
+    assert(solver.shipWithinDays(t6, 5) == 10);
+
+    // Test 7: days == 1 (must ship everything in 1 trip -> sum of all weights)
+    vector<int> t7 = {1, 2, 3, 4, 5};
+    assert(solver.shipWithinDays(t7, 1) == 15);
+
+    // Test 8: days == weights.size() (can ship 1 item per day -> max weight)
+    vector<int> t8 = {1, 2, 3, 4, 5};
+    assert(solver.shipWithinDays(t8, 5) == 5);
+
+    // Test 9: All identical weights
+    // weights = [5, 5, 5, 5], days = 2 -> expected 10 (2 items per day)
+    vector<int> t9 = {5, 5, 5, 5};
+    assert(solver.shipWithinDays(t9, 2) == 10);
+
+    // Test 10: Large weights
+    vector<int> t10 = {500, 500, 500, 500};
+    assert(solver.shipWithinDays(t10, 4) == 500);
+
+    cout << "✅ All 10 test scenarios passed successfully for LC 1011 (Capacity To Ship Packages Within D Days)!" << endl;
+    return 0;
+}
+
+
 ```
+

@@ -12,8 +12,10 @@ tags:
 
 ---
 
-## 🎯 Solved Problems Using This Pattern (1)
+## 🎯 Solved Problems Using This Pattern (3)
 - [[LC 209 Minimum Size Subarray Sum]] (Medium — #018)
+- [[LC 875 Koko Eating Bananas]] (Medium — #029)
+- [[LC 20 Valid Parentheses]] (Easy — #032)
 
 ---
 

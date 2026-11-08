@@ -1,87 +1,62 @@
 ---
 title: "LC 33: Search in Rotated Sorted Array"
-module: "03 Binary Search"
-concept: "Rotated Array Binary Search"
+number: "025"
 difficulty: "Medium"
-complexity: "O(log N)"
-space_complexity: "O(1)"
-companies:
-  - Meta
-  - Google
-  - Amazon
-  - Microsoft
-  - Apple
-  - Bloomberg
-type: "problem-card"
+source: "Core 27-Module Curriculum"
+url: "https://leetcode.com/problems/search-in-rotated-sorted-array/"
+status: "Solved"
 tags:
   - problem
   - medium
-  - binary-search
-  - array
 ---
 
-# 🟡 LC 33: Search in Rotated Sorted Array
+# LC 33: Search in Rotated Sorted Array
 
-> [!abstract] 📋 Executive Problem Card
-> - **Module**: [[03 Binary Search]]
-> - **Core Concept**: [[Rotated Array Binary Search]]
-> - **Difficulty**: Medium 🟡
-> - **Time Complexity**: $\mathcal{O}(\log N)$ — logarithmic search space halving
-> - **Space Complexity**: $\mathcal{O}(1)$ auxiliary space
-> - **Target MNCs**: [[Meta]], [[Google]], [[Amazon]], [[Microsoft]], [[Apple]], [[Bloomberg]]
+- **Curriculum Index**: #025 (Core 27-Module Curriculum)
+- **Difficulty**: [[Medium]]
+- **Patterns / Archetypes**: [[Rotated Array Binary Search]]
+- **Target Companies**: [[Amazon]], [[Apple]], [[Bloomberg]], [[Google]], [[Meta]], [[Microsoft]]
+- **Problem Link**: [LC 33: Search in Rotated Sorted Array](https://leetcode.com/problems/search-in-rotated-sorted-array/)
+- **Backlink to Vault Hub**: [[Index|🏠 Master Knowledge Graph]]
 
 ---
 
-## ⚡ 15-Second Interview Mental Trigger
-> [!tip] ⚡ How to Recognize this Pattern in an Interview
-> - **Key Clue / Signal**: "Sorted array rotated at unknown pivot", searching for target in $\mathcal{O}(\log N)$ time.
-> - **Immediate Strategy**: **At least one half is always sorted!**
->   1. Compute `mid = l + (r - l) / 2`.
->   2. Check if right half is sorted (`nums[mid] <= nums[r]`):
->      - If target lies in `(nums[mid], nums[r]]`, search right (`l = mid + 1`).
->      - Otherwise, search left (`r = mid - 1`).
->   3. Else, the left half must be sorted:
->      - If target lies in `[nums[l], nums[mid])`, search left (`r = mid - 1`).
->      - Otherwise, search right (`l = mid + 1`).
+## 💡 Intuition & Core Takeaways
+> At least one half [l..mid] or [mid..r] is always sorted. Check if target lies within boundaries of the sorted half to halve search space in O(log N) time, O(1) space.
 
 ---
 
-## 🛡️ The Golden Invariant & Mathematical Proof
-> [!note] 🛡️ Half-Sorted Invariant
-> Let array $A[l \dots r]$ be formed by rotating a strictly increasing array.
-> For any choice of $mid \in [l, r]$:
-> $$\text{Either } A[l \dots mid] \text{ is strictly sorted, OR } A[mid \dots r] \text{ is strictly sorted (or both)}.$$
-> **Proof by Contradiction**: The original array has at most **one** rotation inflection point (where $A[k] > A[k+1]$). A single inflection point cannot exist simultaneously in both the open interval $(l, mid)$ and $(mid, r)$. Therefore, at least one sub-interval contains zero inflection points, making it strictly monotonic. Checking boundary conditions against the sorted half decides with 100% certainty whether $target$ lies in that half or the other.
+## 🔗 Related Knowledge Nodes
+- Patterns: [[Rotated Array Binary Search]]
+- Companies: [[Amazon]], [[Apple]], [[Bloomberg]], [[Google]], [[Meta]], [[Microsoft]]
+- Difficulty Level: [[Medium]]
 
----
 
-## ⚠️ Sneaky Interview Traps & Pitfalls
-> [!warning] ⚠️ Critical Gotchas to Avoid
-> 1. **Handling Single Elements (`<=` vs `<`)**:
->    Always use `nums[mid] <= nums[r]` (or `nums[l] <= nums[mid]`). When $l == mid$, using strict `<` incorrectly branches into the wrong half for 2-element arrays (e.g., `[3, 1]` searching for `1` or `3`).
-> 2. **Target Boundary Inclusivity**:
->    - For the right sorted half: `nums[mid] < target && target <= nums[r]` (strictly greater than `nums[mid]` because `nums[mid] == target` is already checked; inclusive of `nums[r]`).
->    - For the left sorted half: `nums[l] <= target && target < nums[mid]` (inclusive of `nums[l]`; strictly less than `nums[mid]`).
-> 3. **The Duplicates Follow-Up (LC 81)**:
->    If duplicates were allowed (`nums[l] == nums[mid] == nums[r]`), we cannot determine which half is sorted. In that case, worst-case time degrades to $\mathcal{O}(N)$ by incrementing $l++$ and decrementing $r--$.
-
----
-
-## 🪜 Progressive Pattern Ladder & Variations
-- ⬅ **Prerequisite**: [[LC 704 Binary Search]] — Standard monotonic binary search
-- 🎯 **Current Anchor**: [[LC 33 Search in Rotated Sorted Array]] — Pivot handling with distinct values ($\mathcal{O}(\log N)$)
-- ➔ **Sister Variation**: [[LC 81 Search in Rotated Sorted Array II]] — Handling duplicate elements ($\mathcal{O}(N)$ worst-case)
-- ➔ **Next Step**: [[LC 153 Find Minimum in Rotated Sorted Array]] — Binary search for the inflection pivot itself
-- ➔ **Final Boss**: [[LC 4 Median of Two Sorted Arrays]] — Dual binary search across two partitions (Hard)
-
----
-
-## 💻 Optimal C++20 Implementation
+## 💻 C++ Implementation
 
 ```cpp
-// Optimal C++20 Solution for LC 33: Search in Rotated Sorted Array
-// Time Complexity: O(log N) | Space Complexity: O(1)
-// Technique: Rotated Array Binary Search (03 Binary Search)
+/**
+ * ============================================================================
+ * Problem: LC 33 - Search in Rotated Sorted Array
+ * Difficulty: Medium
+ * Pattern: Binary Search / Rotated Array Boundary Decoupling
+ * Target MNCs: Meta, Google, Amazon, Microsoft, Apple, Bloomberg
+ * 
+ * Invariant:
+ *   In any rotated sorted array split at mid, at least ONE half ([l..mid] or 
+ *   [mid..r]) is GUARANTEED to be strictly sorted.
+ *   1. Check if the right half is sorted (nums[mid] <= nums[r]).
+ *      - If target lies within (nums[mid], nums[r]], search right (l = mid + 1).
+ *      - Otherwise, search left (r = mid - 1).
+ *   2. Else, the left half must be sorted (nums[l] <= nums[mid]).
+ *      - If target lies within [nums[l], nums[mid]), search left (r = mid - 1).
+ *      - Otherwise, search right (l = mid + 1).
+ * 
+ * Complexity:
+ *   - Time:  O(log N) — halving search space at each iteration
+ *   - Space: O(1) auxiliary space
+ * ============================================================================
+ */
 
 #include <iostream>
 #include <vector>
@@ -91,6 +66,8 @@ using namespace std;
 
 class Solution {
 public:
+    // User's Verified Optimal Solution
+    // Time: O(log N) | Space: O(1)
     int search(const vector<int>& nums, int target) {
         int l = 0, r = nums.size() - 1;
 
@@ -122,4 +99,43 @@ public:
         return -1; // Target not found
     }
 };
+
+// ============================================================================
+// Comprehensive Unit Test Suite
+// ============================================================================
+int main() {
+    Solution solver;
+
+    // Test 1: Standard rotated array (target present in right half)
+    assert(solver.search({4, 5, 6, 7, 0, 1, 2}, 0) == 4);
+
+    // Test 2: Standard rotated array (target not present)
+    assert(solver.search({4, 5, 6, 7, 0, 1, 2}, 3) == -1);
+
+    // Test 3: Standard rotated array (target present in left half)
+    assert(solver.search({4, 5, 6, 7, 0, 1, 2}, 5) == 1);
+
+    // Test 4: Single element array (match)
+    assert(solver.search({1}, 1) == 0);
+
+    // Test 5: Single element array (no match)
+    assert(solver.search({1}, 0) == -1);
+
+    // Test 6: Two elements rotated (search first)
+    assert(solver.search({3, 1}, 3) == 0);
+
+    // Test 7: Two elements rotated (search second)
+    assert(solver.search({3, 1}, 1) == 1);
+
+    // Test 8: Unrotated strictly sorted array
+    assert(solver.search({1, 2, 3, 4, 5, 6, 7}, 4) == 3);
+
+    // Test 9: Pivot at the very end
+    assert(solver.search({2, 3, 4, 5, 6, 7, 1}, 1) == 6);
+
+    cout << "✅ All 9 test cases passed successfully for LC 33!" << endl;
+    return 0;
+}
+
 ```
+

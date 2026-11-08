@@ -1,60 +1,38 @@
 ---
 title: "LC 567: Permutation in String"
-module: "02 Two Pointers & Sliding Window"
-concept: "Fixed Sliding Window"
+number: "017"
 difficulty: "Medium"
-complexity: "O(N)"
-space_complexity: "O(N)"
-companies:
-  - Microsoft
-  - Amazon
-type: "problem-card"
+source: "Core 27-Module Curriculum"
+url: "https://leetcode.com/problems/permutation-in-string/"
+status: "Solved"
 tags:
   - problem
   - medium
 ---
 
-# 🟡 LC 567: Permutation in String
+# LC 567: Permutation in String
 
-> [!abstract] 📋 Executive Problem Card
-> - **Module**: [[02 Two Pointers & Sliding Window]]
-> - **Core Concept**: [[Fixed Sliding Window]]
-> - **Difficulty**: Medium 🟡
-> - **Time Complexity**: $\mathcal{O}(O(N))$
-> - **Space Complexity**: $\mathcal{O}(O(N))$
-> - **Target MNCs**: [[Microsoft]], [[Amazon]]
-
----
-
-## ⚡ 15-Second Interview Mental Trigger
-> [!tip] ⚡ How to Recognize this Pattern in an Interview
-> - **Key Clue / Signal**: Fixed Sliding Window application in `02 Two Pointers & Sliding Window`.
-> - **Immediate Strategy**: Fixed window of size s1.length() tracking 26 character matches.
+- **Curriculum Index**: #017 (Core 27-Module Curriculum)
+- **Difficulty**: [[Medium]]
+- **Patterns / Archetypes**: [[Hash Maps & Frequency]], [[Sliding Window]]
+- **Target Companies**: [[Amazon]], [[Apple]], [[Google]], [[Meta]], [[Microsoft]]
+- **Problem Link**: [LC 567: Permutation in String](https://leetcode.com/problems/permutation-in-string/)
+- **Backlink to Vault Hub**: [[Index|🏠 Master Knowledge Graph]]
 
 ---
 
-## 🛡️ The Golden Invariant & Mathematical Proof
-> [!note] 🛡️ Invariant Guarantee
-> Throughout the algorithm's execution, the state maintains the invariant required by **Fixed Sliding Window**.
-> Bounded state transitions ensure correctness without redundant recomputations.
+## 💡 Intuition & Core Takeaways
+> Fixed window of size s1.length(). Approach 1: 26-element vector comparison O(26*N). Approach 2 (Optimal): `matches` counter tracking (0 to 26) with O(1) arithmetic updates per slide, strictly O(N) time and O(1) space.
 
 ---
 
-## ⚠️ Sneaky Interview Traps & Pitfalls
-> [!warning] ⚠️ Critical Gotchas to Avoid
-> 1. **Boundary Limits**: Always verify loop termination and off-by-one pointer conditions.
-> 2. **Duplicate Deduplication**: Ensure equal elements do not cause redundant branches or infinite loops.
-> 3. **Integer Overflow**: Use 64-bit integers (`long long`) when intermediate values exceed $2^{31}-1$.
+## 🔗 Related Knowledge Nodes
+- Patterns: [[Hash Maps & Frequency]], [[Sliding Window]]
+- Companies: [[Amazon]], [[Apple]], [[Google]], [[Meta]], [[Microsoft]]
+- Difficulty Level: [[Medium]]
 
----
 
-## 🪜 Progressive Pattern Ladder & Variations
-- 🎯 **Current Anchor**: [[LC 567 Permutation in String]]
-- ➔ **Next Boss Variation**: [[LC 438 Find All Anagrams in a String]]
-
----
-
-## 💻 Optimal C++20 Implementation
+## 💻 C++ Implementation
 
 ```cpp
 /**
@@ -198,3 +176,4 @@ int main() {
 }
 
 ```
+

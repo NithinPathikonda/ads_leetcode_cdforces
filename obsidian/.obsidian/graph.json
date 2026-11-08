@@ -5,62 +5,55 @@
   "localBacklinks": true,
   "localForelinks": true,
   "localInterlinks": true,
-  "showTags": false,
+  "showTags": true,
   "showAttachments": false,
   "hideUnresolved": false,
   "collapse-color-groups": false,
   "colorGroups": [
     {
-      "query": "path:modules",
+      "query": "path:patterns",
       "color": {
         "a": 1,
-        "rgb": 3718648
+        "rgb": 1098689
       }
     },
     {
-      "query": "path:concepts",
+      "query": "path:problems",
       "color": {
         "a": 1,
-        "rgb": 11032055
+        "rgb": 3923448
       }
     },
     {
       "query": "path:companies",
       "color": {
         "a": 1,
-        "rgb": 16097035
-      }
-    },
-    {
-      "query": "path:problems",
-      "color": {
-        "a": 0.95,
-        "rgb": 15857145
+        "rgb": 12617212
       }
     },
     {
       "query": "path:difficulty",
       "color": {
         "a": 1,
-        "rgb": 1096065
+        "rgb": 16097035
       }
     },
     {
       "query": "file:Index",
       "color": {
         "a": 1,
-        "rgb": 16777215
+        "rgb": 15485081
       }
     }
   ],
   "collapse-display": false,
-  "showArrow": false,
-  "textFadeMultiplier": 0.35,
-  "nodeSizeMultiplier": 1.35,
-  "lineSizeMultiplier": 1.25,
+  "showArrow": true,
+  "textFadeMultiplier": 0,
+  "nodeSizeMultiplier": 1.25,
+  "lineSizeMultiplier": 1.2,
   "collapse-forces": false,
-  "centerStrength": 0.52,
-  "repelStrength": 10.5,
-  "linkStrength": 0.85,
-  "linkDistance": 92
+  "centerStrength": 0.518,
+  "repelStrength": 10,
+  "linkStrength": 1,
+  "linkDistance": 120
 }

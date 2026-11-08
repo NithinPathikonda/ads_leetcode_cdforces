@@ -1,78 +1,70 @@
 ---
 title: "LC 904: Fruit Into Baskets"
-module: "02 Two Pointers & Sliding Window"
-concept: "Dynamic Sliding Window"
+number: "024"
 difficulty: "Medium"
-complexity: "O(N)"
-space_complexity: "O(1)"
-companies:
-  - Google
-  - Amazon
-  - Meta
-  - Microsoft
-type: "problem-card"
+source: "Core 27-Module Curriculum"
+url: "https://leetcode.com/problems/fruit-into-baskets/"
+status: "Solved"
 tags:
   - problem
   - medium
-  - sliding-window
-  - hash-table
-  - array
 ---
 
-# 🟡 LC 904: Fruit Into Baskets
+# LC 904: Fruit Into Baskets
 
-> [!abstract] 📋 Executive Problem Card
-> - **Module**: [[02 Two Pointers & Sliding Window]]
-> - **Core Concept**: [[Dynamic Sliding Window]] (At Most $K$ Distinct Elements, $K=2$)
-> - **Difficulty**: Medium 🟡
-> - **Time Complexity**: $\mathcal{O}(N)$ where $N = \text{fruits.length}$
-> - **Space Complexity**: $\mathcal{O}(1)$ auxiliary space (hash map contains at most 3 entries)
-> - **Target MNCs**: [[Google]], [[Amazon]], [[Meta]], [[Microsoft]]
+- **Curriculum Index**: #024 (Core 27-Module Curriculum)
+- **Difficulty**: [[Medium]]
+- **Patterns / Archetypes**: [[Sliding Window]]
+- **Target Companies**: [[Amazon]], [[Google]], [[Meta]], [[Microsoft]]
+- **Problem Link**: [LC 904: Fruit Into Baskets](https://leetcode.com/problems/fruit-into-baskets/)
+- **Backlink to Vault Hub**: [[Index|🏠 Master Knowledge Graph]]
 
 ---
 
-## ⚡ 15-Second Interview Mental Trigger
-> [!tip] ⚡ How to Recognize this Pattern in an Interview
-> - **Key Clue / Signal**: "Find the longest contiguous subarray containing at most 2 distinct values."
-> - **Immediate Strategy**: Dynamic sliding window with a frequency map `count`:
->   1. **Expand $r$**: Pick `fruits[r]`, incrementing `count[fruits[r]]++`.
->   2. **Shrink $l$**: If `count.size() > 2`, evict from the left (`count[fruits[l]]--`). If count hits 0, erase the key, then increment $l++$.
->   3. **Maximize**: `ans = max(ans, r - l + 1)`.
+## 💡 Intuition & Core Takeaways
+> Longest subarray with <= 2 distinct elements. Expand r, shrink l if distinct > 2 using erase on 0 count. Optimal non-shrinking ratchet `if` achieves O(N) 1-pass, O(1) space.
 
 ---
 
-## 🛡️ The Golden Invariant & Mathematical Proof
-> [!note] 🛡️ Window State Invariant
-> Let $W = [l, r]$ represent the contiguous subarray currently under inspection.
-> - **Validity Invariant**: $W$ is valid iff $|\text{distinct}(W)| \le 2$.
-> - **Linearity Guarantee**: Pointer $r$ advances from $0$ to $N-1$ ($N$ steps). Pointer $l$ only advances forward and never exceeds $r$ (at most $N$ steps). Total hash map operations are at most $2N \implies \mathcal{O}(N)$ amortized time.
+## 🔗 Related Knowledge Nodes
+- Patterns: [[Sliding Window]]
+- Companies: [[Amazon]], [[Google]], [[Meta]], [[Microsoft]]
+- Difficulty Level: [[Medium]]
 
----
 
-## ⚠️ Sneaky Interview Traps & Pitfalls
-> [!warning] ⚠️ Critical Gotchas to Avoid
-> 1. **Forgetting to Erase Zero-Count Keys**:
->    In C++, `mpp[key] = 0` does **NOT** remove the key! `mpp.size()` will still count it as present. You **must** call `mpp.erase(key)` when the count drops to 0.
-> 2. **Double Evaluation of `mpp[fruits[l]]`**:
->    Calling `mpp[fruits[l]]` after decrementing can re-insert the key with value 0 if not careful. Always check `if (mpp[fruits[l]] == 0)` and erase immediately.
-> 3. **The Non-Shrinking Ratchet (`if` vs `while`)**:
->    Replacing `while (mpp.size() > 2)` with `if (mpp.size() > 2)` turns the window into a non-shrinking ratchet. The window never shrinks; it only slides forward or expands, preserving the maximum valid window size seen so far.
+## 💻 C++ Implementation
 
----
-
-## 🪜 Progressive Pattern Ladder & Variations
-- ⬅ **Simpler Anchor**: [[LC 3 Longest Substring Without Repeating Characters]] — At most 1 occurrence of each character
-- 🎯 **Current Anchor**: [[LC 904 Fruit Into Baskets]] — Longest subarray with at most $K=2$ distinct elements
-- ➔ **Direct Generalization**: [[LC 340 Longest Substring with At Most K Distinct Characters]] — Arbitrary $K$
-- ➔ **Next Boss**: [[LC 76 Minimum Window Substring]] — Dynamic contraction variable window with required counts (Hard)
-
----
-
-## 💻 Optimal C++20 Implementations
-
-### Approach 1: Classic Dynamic Sliding Window (`while`)
 ```cpp
-// Time Complexity: O(N) | Space Complexity: O(1)
+/**
+ * ============================================================================
+ * Problem: LC 904 - Fruit Into Baskets
+ * Difficulty: Medium
+ * Pattern: Dynamic Sliding Window (At Most K Distinct Elements, K = 2)
+ * Target MNCs: Google, Amazon, Meta, Microsoft
+ * 
+ * Approaches Included:
+ *   1. Classic Dynamic Window (Intuitive `while (mpp.size() > 2)`)
+ *   2. Optimal Non-Shrinking Window (User's `if (mpp.size() > 2)` Ratchet)
+ * 
+ * Complexity:
+ *   - Time:  O(N) where N = fruits.length()
+ *   - Space: O(1) auxiliary space (hash map contains at most 3 entries)
+ * ============================================================================
+ */
+
+#include <iostream>
+#include <vector>
+#include <unordered_map>
+#include <algorithm>
+#include <cassert>
+
+using namespace std;
+
+// ============================================================================
+// Approach 1: Classic Dynamic Sliding Window (`while` loop)
+// Standard interview approach: expand r, shrink l until window is valid (<= 2).
+// Time: O(N) | Space: O(1) (at most 3 keys in hash map)
+// ============================================================================
 class SolutionClassic {
 public:
     int totalFruit(const vector<int>& fruits) {
@@ -83,7 +75,7 @@ public:
         for (int r = 0; r < n; ++r) {
             count[fruits[r]]++;
 
-            // Shrink window from the left while distinct fruit types > 2
+            // Shrink window from the left while we exceed 2 distinct fruit types
             while (count.size() > 2) {
                 count[fruits[l]]--;
                 if (count[fruits[l]] == 0) {
@@ -98,13 +90,13 @@ public:
         return max_fruits;
     }
 };
-```
 
----
-
-### Approach 2: Optimal Non-Shrinking Window (`if` Ratchet) — Your Solution
-```cpp
-// Time Complexity: O(N) 1-pass | Space Complexity: O(1)
+// ============================================================================
+// Approach 2: Optimal Non-Shrinking Sliding Window (User's Ratchet `if`)
+// The window size `r - l + 1` never decreases. Once it reaches a valid size W,
+// it only slides forward without shrinking. If invalid, both r and l advance.
+// Time: O(N) strictly 1-pass | Space: O(1)
+// ============================================================================
 class SolutionNonShrinking {
 public:
     int totalFruit(const vector<int>& fruits) {
@@ -116,7 +108,7 @@ public:
         for (r = 0; r < n; ++r) {
             mpp[fruits[r]]++;
 
-            // If invalid, shift left boundary by 1 to maintain maximum size
+            // If invalid, shift left boundary by 1 to maintain maximum window size
             if (mpp.size() > 2) {
                 mpp[fruits[l]]--;
                 if (mpp[fruits[l]] == 0) {
@@ -131,4 +123,44 @@ public:
         return ans;
     }
 };
+
+// ============================================================================
+// Verification Test Suite
+// ============================================================================
+int main() {
+    SolutionClassic s1;
+    SolutionNonShrinking s2;
+
+    auto run_tests = [&](const string& name, auto& solver) {
+        cout << "Testing " << name << "..." << endl;
+
+        // Test 1: Standard alternating 2 fruits
+        assert(solver.totalFruit({1, 2, 1}) == 3);
+
+        // Test 2: Skip first tree for longer streak
+        assert(solver.totalFruit({0, 1, 2, 2}) == 3);
+
+        // Test 3: Multiple occurrences of 2 types
+        assert(solver.totalFruit({1, 2, 3, 2, 2}) == 4);
+
+        // Test 4: Single tree
+        assert(solver.totalFruit({42}) == 1);
+
+        // Test 5: All trees identical
+        assert(solver.totalFruit({5, 5, 5, 5, 5}) == 5);
+
+        // Test 6: Many transitions
+        assert(solver.totalFruit({3, 3, 3, 1, 2, 1, 1, 2, 3, 3, 4}) == 5);
+
+        cout << "  ✅ Passed all test scenarios!" << endl;
+    };
+
+    run_tests("Approach 1 (Classic While)", s1);
+    run_tests("Approach 2 (User's Non-Shrinking If)", s2);
+
+    cout << "\n🎉 ALL ALGORITHMIC IMPLEMENTATIONS VERIFIED CORRECT!" << endl;
+    return 0;
+}
+
 ```
+

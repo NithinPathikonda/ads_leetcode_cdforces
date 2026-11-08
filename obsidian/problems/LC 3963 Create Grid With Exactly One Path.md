@@ -1,59 +1,38 @@
 ---
 title: "LC 3963: Create Grid With Exactly One Path"
-module: "15 Dynamic Programming 2 2D & Grids"
-concept: "Constructive Grid Path"
+number: "POTD-02"
 difficulty: "Easy"
-complexity: "O(M + N)"
-space_complexity: "O(K)"
-companies:
-  - Google
-  - Meta
-type: "problem-card"
+source: "LeetCode Problem of the Day"
+url: "https://leetcode.com/problems/create-grid-with-exactly-one-path/"
+status: "Solved"
 tags:
   - problem
   - easy
 ---
 
-# 🟢 LC 3963: Create Grid With Exactly One Path
+# LC 3963: Create Grid With Exactly One Path
 
-> [!abstract] 📋 Executive Problem Card
-> - **Module**: [[15 Dynamic Programming 2 2D & Grids]]
-> - **Core Concept**: [[Constructive Grid Path]]
-> - **Difficulty**: Easy 🟢
-> - **Time Complexity**: $\mathcal{O}(O(M + N))$
-> - **Space Complexity**: $\mathcal{O}(O(K))$
-> - **Target MNCs**: [[Google]], [[Meta]]
-
----
-
-## ⚡ 15-Second Interview Mental Trigger
-> [!tip] ⚡ How to Recognize this Pattern in an Interview
-> - **Key Clue / Signal**: Constructive Grid Path application in `15 Dynamic Programming 2 2D & Grids`.
-> - **Immediate Strategy**: Construct L-shaped path: traverse row 0 and col n-1, block other cells with '#'.
+- **Curriculum Index**: #POTD-02 (LeetCode Problem of the Day)
+- **Difficulty**: [[Easy]]
+- **Patterns / Archetypes**: [[Constructive Algorithms]], [[Matrix Traversal]]
+- **Target Companies**: [[Google]], [[Meta]]
+- **Problem Link**: [LC 3963: Create Grid With Exactly One Path](https://leetcode.com/problems/create-grid-with-exactly-one-path/)
+- **Backlink to Vault Hub**: [[Index|🏠 Master Knowledge Graph]]
 
 ---
 
-## 🛡️ The Golden Invariant & Mathematical Proof
-> [!note] 🛡️ Invariant Guarantee
-> Throughout the algorithm's execution, the state maintains the invariant required by **Constructive Grid Path**.
-> Bounded state transitions ensure correctness without redundant recomputations.
+## 💡 Intuition & Core Takeaways
+> Construct L-shaped path: traverse first row (i=0) and last column (j=n-1). Block all other cells with '#' to prevent branching.
 
 ---
 
-## ⚠️ Sneaky Interview Traps & Pitfalls
-> [!warning] ⚠️ Critical Gotchas to Avoid
-> 1. **Boundary Limits**: Always verify loop termination and off-by-one pointer conditions.
-> 2. **Duplicate Deduplication**: Ensure equal elements do not cause redundant branches or infinite loops.
-> 3. **Integer Overflow**: Use 64-bit integers (`long long`) when intermediate values exceed $2^{31}-1$.
+## 🔗 Related Knowledge Nodes
+- Patterns: [[Constructive Algorithms]], [[Matrix Traversal]]
+- Companies: [[Google]], [[Meta]]
+- Difficulty Level: [[Easy]]
 
----
 
-## 🪜 Progressive Pattern Ladder & Variations
-- 🎯 **Foundational Anchor Pattern**: [[LC 3963 Create Grid With Exactly One Path]]
-
----
-
-## 💻 Optimal C++20 Implementation
+## 💻 C++ Implementation
 
 ```cpp
 /**
@@ -215,3 +194,4 @@ int main() {
 }
 
 ```
+

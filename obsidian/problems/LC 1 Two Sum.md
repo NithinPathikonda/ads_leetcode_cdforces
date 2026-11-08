@@ -1,63 +1,38 @@
 ---
 title: "LC 1: Two Sum"
-module: "01 Arrays & Hashing"
-concept: "Hash Maps & Sets"
+number: "001"
 difficulty: "Easy"
-complexity: "O(N)"
-space_complexity: "O(N)"
-companies:
-  - Google
-  - Meta
-  - Amazon
-  - Microsoft
-  - Apple
-type: "problem-card"
+source: "Core 27-Module Curriculum"
+url: "https://leetcode.com/problems/two-sum/"
+status: "Solved"
 tags:
   - problem
   - easy
 ---
 
-# 🟢 LC 1: Two Sum
+# LC 1: Two Sum
 
-> [!abstract] 📋 Executive Problem Card
-> - **Module**: [[01 Arrays & Hashing]]
-> - **Core Concept**: [[Hash Maps & Sets]]
-> - **Difficulty**: Easy 🟢
-> - **Time Complexity**: $\mathcal{O}(O(N))$
-> - **Space Complexity**: $\mathcal{O}(O(N))$
-> - **Target MNCs**: [[Google]], [[Meta]], [[Amazon]], [[Microsoft]], [[Apple]]
-
----
-
-## ⚡ 15-Second Interview Mental Trigger
-> [!tip] ⚡ How to Recognize this Pattern in an Interview
-> - **Key Clue / Signal**: Hash Maps & Sets application in `01 Arrays & Hashing`.
-> - **Immediate Strategy**: Hash map complement lookup in single pass.
+- **Curriculum Index**: #001 (Core 27-Module Curriculum)
+- **Difficulty**: [[Easy]]
+- **Patterns / Archetypes**: [[Hash Maps & Frequency]]
+- **Target Companies**: [[Amazon]], [[Apple]], [[Google]], [[Meta]]
+- **Problem Link**: [LC 1: Two Sum](https://leetcode.com/problems/two-sum/)
+- **Backlink to Vault Hub**: [[Index|🏠 Master Knowledge Graph]]
 
 ---
 
-## 🛡️ The Golden Invariant & Mathematical Proof
-> [!note] 🛡️ Invariant Guarantee
-> Throughout the algorithm's execution, the state maintains the invariant required by **Hash Maps & Sets**.
-> Bounded state transitions ensure correctness without redundant recomputations.
+## 💡 Intuition & Core Takeaways
+> Unsorted pair sum -> 1-pass hash map. Check complement before insert to handle duplicates. Use iterator to avoid double hash.
 
 ---
 
-## ⚠️ Sneaky Interview Traps & Pitfalls
-> [!warning] ⚠️ Critical Gotchas to Avoid
-> 1. **Boundary Limits**: Always verify loop termination and off-by-one pointer conditions.
-> 2. **Duplicate Deduplication**: Ensure equal elements do not cause redundant branches or infinite loops.
-> 3. **Integer Overflow**: Use 64-bit integers (`long long`) when intermediate values exceed $2^{31}-1$.
+## 🔗 Related Knowledge Nodes
+- Patterns: [[Hash Maps & Frequency]]
+- Companies: [[Amazon]], [[Apple]], [[Google]], [[Meta]]
+- Difficulty Level: [[Easy]]
 
----
 
-## 🪜 Progressive Pattern Ladder & Variations
-- 🎯 **Current Anchor**: [[LC 1 Two Sum]]
-- ➔ **Next Boss Variation**: [[LC 167 Two Sum II - Input Array Is Sorted]]
-
----
-
-## 💻 Optimal C++20 Implementation
+## 💻 C++ Implementation
 
 ```cpp
 /**
@@ -135,3 +110,4 @@ int main() {
 }
 
 ```
+

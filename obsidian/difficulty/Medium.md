@@ -1,87 +1,45 @@
 ---
 title: "Medium"
-type: "difficulty-hub"
+type: "difficulty-tier"
 tags:
   - difficulty
+  - medium
 ---
 
-# 🟢 Difficulty Tier: Medium
+# 🟡 Difficulty Tier: Medium
 
-Total Curated Problems: `74`
+Total Solved in this tier: **25**
 
 ---
 
-- [[LC 49 Group Anagrams]] — [[01 Arrays & Hashing]] (`O(N * K)`)
-- [[LC 347 Top K Frequent Elements]] — [[01 Arrays & Hashing]] (`O(N)`)
-- [[LC 238 Product of Array Except Self]] — [[01 Arrays & Hashing]] (`O(N)`)
-- [[LC 128 Longest Consecutive Sequence]] — [[01 Arrays & Hashing]] (`O(N)`)
-- [[LC 560 Subarray Sum Equals K]] — [[01 Arrays & Hashing]] (`O(N)`)
-- [[LC 53 Maximum Subarray]] — [[01 Arrays & Hashing]] (`O(N)`)
-- [[LC 75 Sort Colors]] — [[01 Arrays & Hashing]] (`O(N)`)
-- [[LC 54 Spiral Matrix]] — [[01 Arrays & Hashing]] (`O(N * M)`)
-- [[LC 167 Two Sum II - Input Array Is Sorted]] — [[02 Two Pointers & Sliding Window]] (`O(N)`)
-- [[LC 15 3Sum]] — [[02 Two Pointers & Sliding Window]] (`O(N^2)`)
-- [[LC 11 Container With Most Water]] — [[02 Two Pointers & Sliding Window]] (`O(N)`)
-- [[LC 3 Longest Substring Without Repeating Characters]] — [[02 Two Pointers & Sliding Window]] (`O(N)`)
-- [[LC 424 Longest Repeating Character Replacement]] — [[02 Two Pointers & Sliding Window]] (`O(N)`)
-- [[LC 567 Permutation in String]] — [[02 Two Pointers & Sliding Window]] (`O(N)`)
-- [[LC 209 Minimum Size Subarray Sum]] — [[02 Two Pointers & Sliding Window]] (`O(N)`)
-- [[LC 1004 Max Consecutive Ones III]] — [[02 Two Pointers & Sliding Window]] (`O(N)`)
-- [[LC 713 Subarray Product Less Than K]] — [[02 Two Pointers & Sliding Window]] (`O(N)`)
-- [[LC 438 Find All Anagrams in a String]] — [[02 Two Pointers & Sliding Window]] (`O(N)`)
-- [[LC 33 Search in Rotated Sorted Array]] — [[03 Binary Search]] (`O(log N)`)
-- [[LC 153 Find Minimum in Rotated Sorted Array]] — [[03 Binary Search]] (`O(log N)`)
-- [[LC 74 Search a 2D Matrix]] — [[03 Binary Search]] (`O(log(M * N))`)
-- [[LC 240 Search a 2D Matrix II]] — [[03 Binary Search]] (`O(M + N)`)
-- [[LC 875 Koko Eating Bananas]] — [[03 Binary Search]] (`O(N log(max_pile))`)
-- [[LC 1011 Capacity To Ship Packages Within D Days]] — [[03 Binary Search]] (`O(N log(sum_weight))`)
-- [[LC 155 Min Stack]] — [[04 Stack & Monotonic Stack]] (`O(1)`)
-- [[LC 739 Daily Temperatures]] — [[04 Stack & Monotonic Stack]] (`O(N)`)
-- [[LC 142 Linked List Cycle II]] — [[05 Linked Lists]] (`O(N)`)
-- [[LC 143 Reorder List]] — [[05 Linked Lists]] (`O(N)`)
-- [[LC 78 Subsets]] — [[06 Recursion & Backtracking]] (`O(2^N)`)
-- [[LC 90 Subsets II]] — [[06 Recursion & Backtracking]] (`O(2^N)`)
-- [[LC 46 Permutations]] — [[06 Recursion & Backtracking]] (`O(N!)`)
-- [[LC 39 Combination Sum]] — [[06 Recursion & Backtracking]] (`O(2^T)`)
-- [[LC 79 Word Search]] — [[06 Recursion & Backtracking]] (`O(M * N * 3^L)`)
-- [[LC 102 Binary Tree Level Order Traversal]] — [[07 Binary Trees & BST]] (`O(N)`)
-- [[LC 236 Lowest Common Ancestor of a Binary Tree]] — [[07 Binary Trees & BST]] (`O(N)`)
-- [[LC 98 Validate Binary Search Tree]] — [[07 Binary Trees & BST]] (`O(N)`)
-- [[LC 215 Kth Largest Element in an Array]] — [[08 Heaps & Priority Queues]] (`O(N log K)`)
-- [[LC 621 Task Scheduler]] — [[08 Heaps & Priority Queues]] (`O(N)`)
-- [[LC 56 Merge Intervals]] — [[09 Intervals & Sweepline]] (`O(N log N)`)
-- [[LC 57 Insert Interval]] — [[09 Intervals & Sweepline]] (`O(N)`)
-- [[LC 435 Non-overlapping Intervals]] — [[09 Intervals & Sweepline]] (`O(N log N)`)
-- [[LC 253 Meeting Rooms II]] — [[09 Intervals & Sweepline]] (`O(N log N)`)
-- [[LC 208 Implement Trie (Prefix Tree)]] — [[10 Tries (Prefix Trees)]] (`O(L)`)
-- [[LC 211 Design Add and Search Words]] — [[10 Tries (Prefix Trees)]] (`O(26^dots)`)
-- [[LC 200 Number of Islands]] — [[11 Graphs 1 Traversals & Fundamentals]] (`O(M * N)`)
-- [[LC 133 Clone Graph]] — [[11 Graphs 1 Traversals & Fundamentals]] (`O(V + E)`)
-- [[LC 994 Rotting Oranges]] — [[11 Graphs 1 Traversals & Fundamentals]] (`O(M * N)`)
-- [[LC 785 Is Graph Bipartite]] — [[11 Graphs 1 Traversals & Fundamentals]] (`O(V + E)`)
-- [[LC 207 Course Schedule]] — [[12 Graphs 2 TopoSort & Shortest Paths]] (`O(V + E)`)
-- [[LC 210 Course Schedule II]] — [[12 Graphs 2 TopoSort & Shortest Paths]] (`O(V + E)`)
-- [[LC 743 Network Delay Time]] — [[12 Graphs 2 TopoSort & Shortest Paths]] (`O((V + E) log V)`)
-- [[LC 787 Cheapest Flights Within K Stops]] — [[12 Graphs 2 TopoSort & Shortest Paths]] (`O(K * E)`)
-- [[LC 684 Redundant Connection]] — [[13 Disjoint Set Union (DSU) & MST]] (`O(N * alpha(N))`)
-- [[LC 1584 Min Cost to Connect All Points]] — [[13 Disjoint Set Union (DSU) & MST]] (`O(E log V)`)
-- [[LC 198 House Robber]] — [[14 Dynamic Programming 1 1D & Classics]] (`O(N)`)
-- [[LC 322 Coin Change]] — [[14 Dynamic Programming 1 1D & Classics]] (`O(amount * coins)`)
-- [[LC 300 Longest Increasing Subsequence]] — [[14 Dynamic Programming 1 1D & Classics]] (`O(N log N)`)
-- [[LC 62 Unique Paths]] — [[15 Dynamic Programming 2 2D & Grids]] (`O(M * N)`)
-- [[LC 64 Minimum Path Sum]] — [[15 Dynamic Programming 2 2D & Grids]] (`O(M * N)`)
-- [[LC 221 Maximal Square]] — [[15 Dynamic Programming 2 2D & Grids]] (`O(M * N)`)
-- [[LC 1143 Longest Common Subsequence]] — [[16 Dynamic Programming 3 Strings & Sequences]] (`O(M * N)`)
-- [[LC 72 Edit Distance]] — [[16 Dynamic Programming 3 Strings & Sequences]] (`O(M * N)`)
-- [[LC 416 Partition Equal Subset Sum]] — [[17 Dynamic Programming 4 Knapsack & Partition]] (`O(N * target)`)
-- [[LC 337 House Robber III]] — [[18 Dynamic Programming 5 Trees, Bitmask & Digit DP]] (`O(N)`)
-- [[LC 55 Jump Game]] — [[19 Greedy Algorithms]] (`O(N)`)
-- [[LC 45 Jump Game II]] — [[19 Greedy Algorithms]] (`O(N)`)
-- [[LC 134 Gas Station]] — [[19 Greedy Algorithms]] (`O(N)`)
-- [[LC 50 Pow(x, n)]] — [[20 Bit Manipulation & Math]] (`O(log N)`)
-- [[LC 307 Range Sum Query - Mutable]] — [[21 Segment Trees & Fenwick (BIT)]] (`O(log N)`)
-- [[LC 146 LRU Cache]] — [[22 Design Data Structures]] (`O(1)`)
-- [[LC 5 Longest Palindromic Substring]] — [[23 Advanced Strings (KMP & Rabin-Karp)]] (`O(N)`)
-- [[LC 877 Stone Game]] — [[25 Game Theory & Minimax]] (`O(1)`)
-- [[LC 398 Random Pick Index]] — [[26 Reservoir Sampling & Randomized]] (`O(N)`)
-- [[LC 384 Shuffle an Array]] — [[26 Reservoir Sampling & Randomized]] (`O(N)`)
+## Problems
+- [[LC 49 Group Anagrams]] — Hash Maps & Frequency
+- [[LC 347 Top K Frequent Elements]] — Bucket Sort, Hash Maps & Frequency
+- [[LC 238 Product of Array Except Self]] — Prefix Sums
+- [[LC 128 Longest Consecutive Sequence]] — Hash Maps & Frequency
+- [[LC 560 Subarray Sum Equals K]] — Hash Maps & Frequency, Prefix Sums
+- [[LC 53 Maximum Subarray]] — Kadane's Algorithm
+- [[LC 75 Sort Colors]] — Dutch National Flag
+- [[LC 54 Spiral Matrix]] — 4-Boundary Layer Traversal
+- [[LC 167 Two Sum II - Input Array Is Sorted]] — Two Pointers
+- [[LC 15 3Sum]] — Two Pointers
+- [[LC 11 Container With Most Water]] — Two Pointers
+- [[LC 3 Longest Substring Without Repeating Characters]] — Sliding Window
+- [[LC 424 Longest Repeating Character Replacement]] — Hash Maps & Frequency, Sliding Window
+- [[LC 567 Permutation in String]] — Hash Maps & Frequency, Sliding Window
+- [[LC 209 Minimum Size Subarray Sum]] — Monotonic Stack, Sliding Window
+- [[LC 1004 Max Consecutive Ones III]] — Sliding Window
+- [[LC 713 Subarray Product Less Than K]] — Sliding Window
+- [[LC 438 Find All Anagrams in a String]] — Hash Maps & Frequency, Sliding Window
+- [[LC 904 Fruit Into Baskets]] — Sliding Window
+- [[LC 33 Search in Rotated Sorted Array]] — Rotated Array Binary Search
+- [[LC 153 Find Minimum in Rotated Sorted Array]] — Rotated Array Binary Search
+- [[LC 74 Search a 2D Matrix]] — Matrix Traversal
+- [[LC 240 Search a 2D Matrix II]] — Matrix Traversal
+- [[LC 875 Koko Eating Bananas]] — Monotonic Stack
+- [[LC 1011 Capacity To Ship Packages Within D Days]] — Binary Search on Answer
+
+---
+
+## 🗺️ Navigation
+- [[Index|🏠 Master Knowledge Graph Hub]]

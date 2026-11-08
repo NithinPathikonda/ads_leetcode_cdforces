@@ -1,61 +1,38 @@
 ---
 title: "LC 53: Maximum Subarray"
-module: "01 Arrays & Hashing"
-concept: "Kadane's Algorithm"
+number: "009"
 difficulty: "Medium"
-complexity: "O(N)"
-space_complexity: "O(N)"
-companies:
-  - Amazon
-  - Microsoft
-  - Apple
-type: "problem-card"
+source: "Core 27-Module Curriculum"
+url: "https://leetcode.com/problems/maximum-subarray/"
+status: "Solved"
 tags:
   - problem
   - medium
 ---
 
-# 🟡 LC 53: Maximum Subarray
+# LC 53: Maximum Subarray
 
-> [!abstract] 📋 Executive Problem Card
-> - **Module**: [[01 Arrays & Hashing]]
-> - **Core Concept**: [[Kadane's Algorithm]]
-> - **Difficulty**: Medium 🟡
-> - **Time Complexity**: $\mathcal{O}(O(N))$
-> - **Space Complexity**: $\mathcal{O}(O(N))$
-> - **Target MNCs**: [[Amazon]], [[Microsoft]], [[Apple]]
-
----
-
-## ⚡ 15-Second Interview Mental Trigger
-> [!tip] ⚡ How to Recognize this Pattern in an Interview
-> - **Key Clue / Signal**: Kadane's Algorithm application in `01 Arrays & Hashing`.
-> - **Immediate Strategy**: Kadane's algorithm: reset running sum when negative.
+- **Curriculum Index**: #009 (Core 27-Module Curriculum)
+- **Difficulty**: [[Medium]]
+- **Patterns / Archetypes**: [[Kadane's Algorithm]]
+- **Target Companies**: [[Amazon]], [[Apple]], [[Google]], [[Meta]], [[Microsoft]]
+- **Problem Link**: [LC 53: Maximum Subarray](https://leetcode.com/problems/maximum-subarray/)
+- **Backlink to Vault Hub**: [[Index|🏠 Master Knowledge Graph]]
 
 ---
 
-## 🛡️ The Golden Invariant & Mathematical Proof
-> [!note] 🛡️ Invariant Guarantee
-> Throughout the algorithm's execution, the state maintains the invariant required by **Kadane's Algorithm**.
-> Bounded state transitions ensure correctness without redundant recomputations.
+## 💡 Intuition & Core Takeaways
+> Running sum reset when < 0. Update global max before reset to handle all-negative arrays. O(N) time, O(1) space. Divide & Conquer O(N log N).
 
 ---
 
-## ⚠️ Sneaky Interview Traps & Pitfalls
-> [!warning] ⚠️ Critical Gotchas to Avoid
-> 1. **Boundary Limits**: Always verify loop termination and off-by-one pointer conditions.
-> 2. **Duplicate Deduplication**: Ensure equal elements do not cause redundant branches or infinite loops.
-> 3. **Integer Overflow**: Use 64-bit integers (`long long`) when intermediate values exceed $2^{31}-1$.
+## 🔗 Related Knowledge Nodes
+- Patterns: [[Kadane's Algorithm]]
+- Companies: [[Amazon]], [[Apple]], [[Google]], [[Meta]], [[Microsoft]]
+- Difficulty Level: [[Medium]]
 
----
 
-## 🪜 Progressive Pattern Ladder & Variations
-- 🎯 **Current Anchor**: [[LC 53 Maximum Subarray]]
-- ➔ **Next Boss Variation**: [[LC 121 Best Time to Buy & Sell Stock]]
-
----
-
-## 💻 Optimal C++20 Implementation
+## 💻 C++ Implementation
 
 ```cpp
 /**
@@ -251,3 +228,4 @@ int main() {
 }
 
 ```
+

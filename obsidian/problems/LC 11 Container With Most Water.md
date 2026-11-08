@@ -1,61 +1,38 @@
 ---
 title: "LC 11: Container With Most Water"
-module: "02 Two Pointers & Sliding Window"
-concept: "Two Pointers"
+number: "014"
 difficulty: "Medium"
-complexity: "O(N)"
-space_complexity: "O(1)"
-companies:
-  - Amazon
-  - Google
-  - Meta
-type: "problem-card"
+source: "Core 27-Module Curriculum"
+url: "https://leetcode.com/problems/container-with-most-water/"
+status: "Solved"
 tags:
   - problem
   - medium
 ---
 
-# 🟡 LC 11: Container With Most Water
+# LC 11: Container With Most Water
 
-> [!abstract] 📋 Executive Problem Card
-> - **Module**: [[02 Two Pointers & Sliding Window]]
-> - **Core Concept**: [[Two Pointers]]
-> - **Difficulty**: Medium 🟡
-> - **Time Complexity**: $\mathcal{O}(O(N))$
-> - **Space Complexity**: $\mathcal{O}(O(1))$
-> - **Target MNCs**: [[Amazon]], [[Google]], [[Meta]]
-
----
-
-## ⚡ 15-Second Interview Mental Trigger
-> [!tip] ⚡ How to Recognize this Pattern in an Interview
-> - **Key Clue / Signal**: Two Pointers application in `02 Two Pointers & Sliding Window`.
-> - **Immediate Strategy**: Greedy two pointers: always advance shorter vertical boundary inward.
+- **Curriculum Index**: #014 (Core 27-Module Curriculum)
+- **Difficulty**: [[Medium]]
+- **Patterns / Archetypes**: [[Two Pointers]]
+- **Target Companies**: [[Amazon]], [[Apple]], [[Google]], [[Meta]], [[Microsoft]]
+- **Problem Link**: [LC 11: Container With Most Water](https://leetcode.com/problems/container-with-most-water/)
+- **Backlink to Vault Hub**: [[Index|🏠 Master Knowledge Graph]]
 
 ---
 
-## 🛡️ The Golden Invariant & Mathematical Proof
-> [!note] 🛡️ Invariant Guarantee
-> Throughout the algorithm's execution, the state maintains the invariant required by **Two Pointers**.
-> Bounded state transitions ensure correctness without redundant recomputations.
+## 💡 Intuition & Core Takeaways
+> Maximize min(h[i], h[j]) * (j - i). Greedy choice: always move the shorter line inward because keeping the shorter line while decreasing width cannot possibly increase area. O(N) time, O(1) space.
 
 ---
 
-## ⚠️ Sneaky Interview Traps & Pitfalls
-> [!warning] ⚠️ Critical Gotchas to Avoid
-> 1. **Boundary Limits**: Always verify loop termination and off-by-one pointer conditions.
-> 2. **Duplicate Deduplication**: Ensure equal elements do not cause redundant branches or infinite loops.
-> 3. **Integer Overflow**: Use 64-bit integers (`long long`) when intermediate values exceed $2^{31}-1$.
+## 🔗 Related Knowledge Nodes
+- Patterns: [[Two Pointers]]
+- Companies: [[Amazon]], [[Apple]], [[Google]], [[Meta]], [[Microsoft]]
+- Difficulty Level: [[Medium]]
 
----
 
-## 🪜 Progressive Pattern Ladder & Variations
-- 🎯 **Current Anchor**: [[LC 11 Container With Most Water]]
-- ➔ **Next Boss Variation**: [[LC 42 Trapping Rain Water]]
-
----
-
-## 💻 Optimal C++20 Implementation
+## 💻 C++ Implementation
 
 ```cpp
 /**
@@ -191,3 +168,4 @@ int main() {
 }
 
 ```
+

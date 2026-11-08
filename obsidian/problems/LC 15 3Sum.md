@@ -1,62 +1,38 @@
 ---
 title: "LC 15: 3Sum"
-module: "02 Two Pointers & Sliding Window"
-concept: "Two Pointers"
+number: "013"
 difficulty: "Medium"
-complexity: "O(N^2)"
-space_complexity: "O(1)"
-companies:
-  - Meta
-  - Amazon
-  - Apple
-  - Microsoft
-type: "problem-card"
+source: "Core 27-Module Curriculum"
+url: "https://leetcode.com/problems/3sum/"
+status: "Solved"
 tags:
   - problem
   - medium
 ---
 
-# 🟡 LC 15: 3Sum
+# LC 15: 3Sum
 
-> [!abstract] 📋 Executive Problem Card
-> - **Module**: [[02 Two Pointers & Sliding Window]]
-> - **Core Concept**: [[Two Pointers]]
-> - **Difficulty**: Medium 🟡
-> - **Time Complexity**: $\mathcal{O}(O(N^2))$
-> - **Space Complexity**: $\mathcal{O}(O(1))$
-> - **Target MNCs**: [[Meta]], [[Amazon]], [[Apple]], [[Microsoft]]
-
----
-
-## ⚡ 15-Second Interview Mental Trigger
-> [!tip] ⚡ How to Recognize this Pattern in an Interview
-> - **Key Clue / Signal**: Two Pointers application in `02 Two Pointers & Sliding Window`.
-> - **Immediate Strategy**: Sort array, fix first element, two pointers for remaining pair.
+- **Curriculum Index**: #013 (Core 27-Module Curriculum)
+- **Difficulty**: [[Medium]]
+- **Patterns / Archetypes**: [[Two Pointers]]
+- **Target Companies**: [[Amazon]], [[Apple]], [[Google]], [[Meta]], [[Microsoft]]
+- **Problem Link**: [LC 15: 3Sum](https://leetcode.com/problems/3sum/)
+- **Backlink to Vault Hub**: [[Index|🏠 Master Knowledge Graph]]
 
 ---
 
-## 🛡️ The Golden Invariant & Mathematical Proof
-> [!note] 🛡️ Invariant Guarantee
-> Throughout the algorithm's execution, the state maintains the invariant required by **Two Pointers**.
-> Bounded state transitions ensure correctness without redundant recomputations.
+## 💡 Intuition & Core Takeaways
+> Sort first to enable Two Sum II and deduplication. Skip nums[i]==nums[i-1]. Skip duplicates for j and k guarded by j < k to prevent segfaults. O(N^2) time, O(1) auxiliary space.
 
 ---
 
-## ⚠️ Sneaky Interview Traps & Pitfalls
-> [!warning] ⚠️ Critical Gotchas to Avoid
-> 1. **Boundary Limits**: Always verify loop termination and off-by-one pointer conditions.
-> 2. **Duplicate Deduplication**: Ensure equal elements do not cause redundant branches or infinite loops.
-> 3. **Integer Overflow**: Use 64-bit integers (`long long`) when intermediate values exceed $2^{31}-1$.
+## 🔗 Related Knowledge Nodes
+- Patterns: [[Two Pointers]]
+- Companies: [[Amazon]], [[Apple]], [[Google]], [[Meta]], [[Microsoft]]
+- Difficulty Level: [[Medium]]
 
----
 
-## 🪜 Progressive Pattern Ladder & Variations
-- ⬅ **Prerequisite Pattern**: [[LC 167 Two Sum II - Input Array Is Sorted]]
-- 🎯 **Current Anchor**: [[LC 15 3Sum]]
-
----
-
-## 💻 Optimal C++20 Implementation
+## 💻 C++ Implementation
 
 ```cpp
 /**
@@ -189,3 +165,4 @@ int main() {
 }
 
 ```
+
